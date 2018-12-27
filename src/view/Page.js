@@ -315,6 +315,12 @@ class Page extends Component {
       <section id={data.id} className="overflow-x-hidden">
         <Helmet>
             <title>{data.title + " - 我們的島二十週年"}</title>
+            <meta name="description" content={data.description}/>
+            <meta property="og:image:width" content="1200" />
+            <meta property="og:image:height" content="630" />
+            <meta property="og:title" content={data.title + " - 我們的島二十週年"} />
+            <meta property="og:description" content={data.description}/>
+            <meta property="og:image" content={data.thumbnail} />
         </Helmet>
         <Nav timeline={false}/>
         {/*Progress Bar*/}
@@ -552,7 +558,7 @@ function PhotoTextFull(props) {
   
   var label_content = null;
   if(props.label !== "") {
-    label_content = (<label className="white absolute lh-normal f6-ns f7 pn" style={bottomRight}>{props.label}</label>)
+    label_content = (<label className="white absolute lh-normal f6-ns f8 pn" style={bottomRight}>{props.label}</label>)
   }
 
   if(props.text1 !== "") {
@@ -602,7 +608,8 @@ function PhotoCenterTextFull(props) {
   var fullImage = {
     height: "100vh",
     objectFit: "cover",
-    width: "100%"
+    width: "100%",
+    objectPosition: props.objectP
   }
   var bottomRight = {
     bottom: "0px",
@@ -629,7 +636,7 @@ function PhotoCenterTextFull(props) {
             <img className="w-100" style={fullImage} src={props.image} alt="background"/>
           </figure>
           <div className={mask+" w-100 h-100 absolute pn top-left z4"}/>
-          <label className="white absolute lh-normal z10 f6-ns f7 pn" style={bottomRight}>{props.label}</label>
+          <label className="white absolute lh-normal z10 f6-ns f8 pn" style={bottomRight}>{props.label}</label>
         </div>
       </div>
       <div className="w-100 center ph4-ns ph3 z4 relative">
@@ -1006,7 +1013,7 @@ function PhotoMultiple(props) {
       padding: mobile ? "10px" :" 20px"
     }
     
-    var label_content = mobile ? "" : (<label className="white absolute lh-normal z10 f6-ns f7 pn" style={bottomRight}>{props.label[i]}</label>);
+    var label_content = (<label className="white absolute lh-normal z10 f6-ns f8 pn" style={bottomRight}>{props.label[i]}</label>);
 
 
     var photos = (
@@ -1740,7 +1747,7 @@ function Panorama(props) {
       </figure>
       <div className="panorama-icon"></div>
       <div className="panorama-text text-shadow">左右移動看看</div>
-      <label className="white absolute lh-normal z10 f6-ns f7 pn db-ns dn" style={bottomRight}>{props.label}</label>
+      <label className="white absolute lh-normal z10 f6-ns f8 pn db-ns dn" style={bottomRight}>{props.label}</label>
     </section>
   )
 }
@@ -1863,7 +1870,7 @@ function TimeChangeFull(props) {
     h = "min-vh-200"
   }
 
-  var label_content = props.label !== "" ? (<label className="white absolute lh-normal z10 f6-ns f7 pn" style={bottomRight}>{props.label}</label>) : null;
+  var label_content = props.label !== "" ? (<label className="white absolute lh-normal z10 f6-ns f8 pn" style={bottomRight}>{props.label}</label>) : null;
 
   var earth = props.earth ? <GoogleEarthLogo text={props.earthText} /> : null;
 
@@ -2011,7 +2018,7 @@ function Blog(props) {
       padding: mobile ? "10px" : "20px"
     }
 
-    var label_content = (<label className="white absolute lh-normal z10 f6-ns f7 pn" style={bottomRight}>{props.label[i]}</label>)
+    var label_content = (<label className="white absolute lh-normal z10 f6-ns f8 pn" style={bottomRight}>{props.label[i]}</label>)
     var photos = (
       <div className="grid-item bg-gray relative cp" alt={props.label[i]} style={item} key={i} onClick={(e) => props.onOpenModal(e.target.style.backgroundImage.split('"')[1], e.target.getAttribute("alt"))}>
         {label_content}
@@ -2128,7 +2135,7 @@ function More(props) {
 
 
   return(
-    <section id={props.id} className="bg-white pv6-l pv5" style={border}>
+    <section id={props.id} className="bg-white pv6-l pv5 relative z10" style={border}>
       <div className="mw8 center ph3">
         <div className="cf ph2-ns tc">
           <h1 className="ph2 fw7 tracked mb5-l mb4 f2rem">同場加映</h1>
@@ -2142,7 +2149,7 @@ function More(props) {
 
 function CTA(props) {
     return (
-      <section id={props.id} className="bg-near-white pv6-l pv5">
+      <section id={props.id} className="bg-near-white pv6-l pv5 relative z10">
         <div className="mw8 center ph3">
           <div className="cf ph2-ns tc">
             <div className="fl w-third-l w-100 pa2 cp">
@@ -2740,6 +2747,7 @@ class Event03 extends Component {
           image = {this.props.data.photoFull[0]}
           label = {this.props.data.photoFullTextLabel[0]}
           bg={true}
+          objectP={"75%"}
         />
 
         <PhotoMultiple
