@@ -675,7 +675,10 @@ nav .btn {
   .event {
     height: 220px;
   }
-
+  .circle-10 img{
+    width: 100px !important;
+    height: 100px !important;
+  }
 }
 
 

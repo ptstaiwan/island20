@@ -1597,7 +1597,12 @@ function Timeline(props) {
   }
 
   var mobile = $(window).width() <= 959 ? true : false;
-  var w = mobile ? "100vw" : "480px";
+  var w = ""
+  if(!special) w = "480px"
+  else {
+    if(mobile) w = "320px"
+    else w = "360px"
+  }
 
 
   for (var i = 0; i < props.images.length; i++){
@@ -1605,7 +1610,8 @@ function Timeline(props) {
       width: w,
       height: special ? "560px" : "320px",
       backgroundImage: "url("+props.images[i]+")",
-      backgroundSize: "cover",
+      backgroundSize: special ? "contain" : "cover",
+      backgroundRepeat: "no-repeat",
       backgroundPosition: "center center"
     }
     var textGridStyle = {
