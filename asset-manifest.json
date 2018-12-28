@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.ce7d59d4.css",
   "main.css.map": "static/css/main.ce7d59d4.css.map",
-  "main.js": "static/js/main.c2af31fd.js",
-  "main.js.map": "static/js/main.c2af31fd.js.map",
+  "main.js": "static/js/main.93d0fc59.js",
+  "main.js.map": "static/js/main.93d0fc59.js.map",
   "static/media/4_數字_1.gif": "static/media/4_數字_1.d01f85a1.gif",
   "static/media/4_數字_2.gif": "static/media/4_數字_2.2c18928e.gif",
   "static/media/4_數字_3.gif": "static/media/4_數字_3.d82d5842.gif",
@@ -23,6 +23,7 @@
   "static/media/fish-5.svg": "static/media/fish-5.7e74d338.svg",
   "static/media/google_earth.svg": "static/media/google_earth.fe49f8bb.svg",
   "static/media/hand.svg": "static/media/hand.f92ac56d.svg",
+  "static/media/home.jpg": "static/media/home.80892c54.jpg",
   "static/media/kinmen.jpg": "static/media/kinmen.6e215478.jpg",
   "static/media/loading.gif": "static/media/loading.dc5a5c54.gif",
   "static/media/lock.svg": "static/media/lock.a57441a4.svg",
