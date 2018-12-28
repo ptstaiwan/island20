@@ -130,7 +130,7 @@ var data = {
 
         "title": "變遷 淡水河",
         "description": "台北人熟悉的淡水河，也曾經堆滿了垃圾？一起乘著島嶼時光機，回首垃圾山，臭氣憶當年。",
-        "thumbnail": "/island20/events/changing-tamsui-river/thumbnailA.png",
+        "thumbnail": "/island20/events/changing-tamsui-river/thumbnailA.jpg",
         "id": "事件1",
         "code": "/island20/events/changing-tamsui-river/videos/coverA.png",
 
@@ -300,7 +300,7 @@ var data = {
     "reborn-erren-river": {
         "title": "重生 二仁溪",
         "description": "靠著廢五金致富，卻留下污染，造就黑龍江。得花多少時間與金錢，才能換回二仁溪的重生？",
-        "thumbnail": "/island20/events/reborn-erren-river/thumbnailB.png",
+        "thumbnail": "/island20/events/reborn-erren-river/thumbnailB.jpg",
         "id": "事件2",
         "code": "/island20/events/reborn-erren-river/videos/coverB.png",
 
@@ -445,7 +445,7 @@ var data = {
     "land-crabs-survival": {
       "title": "陸蟹闖天關",
       "description": "從誕生的那一刻起，牠們必須勇敢的一關闖過一關。陸蟹的一生，就是一場實境版的生存遊戲。",
-      "thumbnail": "/island20/events/reborn-erren-river/thumbnailC.png",
+      "thumbnail": "/island20/events/land-crabs-survival/thumbnailC.jpg",
       "id": "事件3",
       "code": "/island20/events/land-crabs-survival/videos/coverC.png",
 
@@ -655,7 +655,7 @@ var data = {
     "dawu-fishing-port": {
       "title": "漁港的黑色幽默",
       "description": "漁港變成砂石場，怪手挖不完，漁船出不了海。蓋了快七十年，還沒有完工的永續工程。",
-      "thumbnail": "/island20/events/reborn-erren-river/thumbnailD.png",
+      "thumbnail": "/island20/events/dawu-fishing-port/thumbnailD.jpg",
       "id": "事件4",
       "code": "/island20/events/dawu-fishing-port/videos/coverD.png",
       
@@ -849,7 +849,7 @@ var data = {
     "kinmen-Hou-feng-kang": {
     "title": "不靠海的金門後豐港",
     "description": "一個名稱有港，卻無法出港的地方。一個以海維生的百年漁村聚落，卻再也不能輕易地親近海。",
-    "thumbnail": "/island20/events/reborn-erren-river/thumbnailE.png",
+    "thumbnail": "/island20/events/kinmen-Hou-feng-kang/thumbnailE.jpg",
     "id": "事件5",
     "code": "/island20/events/kinmen-Hou-feng-kang/videos/coverE.png",
 
