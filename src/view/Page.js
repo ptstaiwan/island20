@@ -118,13 +118,11 @@ class Page extends Component {
 
   componentDidMount(){
     var $t = this;
-    
-    $(document).scrollTop(0);
-    document.body.classList.add('ds');
-    document.getElementById('loading').classList.remove('fade');
+    $(document).ready(function(){
+      $(document).scrollTop(0);
+      document.body.classList.add('ds');
+      document.getElementById('loading').classList.remove('fade');
 
-    var vid = document.getElementById("coverVideo");
-    vid.onloadstart = function() {
       var p = 0;
       var id = setInterval(frame, 10);
       function frame() {
@@ -140,38 +138,37 @@ class Page extends Component {
         }
       }
       frame();
-    };
 
-    // $('.video-content').each( function(i){
-    //   var $this = $(this);
-    //   $this.find('video').get(0).pause()
-    // });
+      // $('.video-content').each( function(i){
+      //   var $this = $(this);
+      //   $this.find('video').get(0).pause()
+      // });
 
-    var scrolling = false;
-    $t.state.scrollprogress = setInterval(function(){
-      if(!$('.progress.active').hasClass('scrolling')) {
-        $('.progress.active').addClass('scrolling');
-        scrolling = false;
-        console.log("false scroll");
-      }
-    },1000)
+      var scrolling = false;
+      $t.state.scrollprogress = setInterval(function(){
+        if(!$('.progress.active').hasClass('scrolling')) {
+          $('.progress.active').addClass('scrolling');
+          scrolling = false;
+          console.log("false scroll");
+        }
+      },1000)
 
-    $('.dragscroll').scrollLeft(0);
-    // Horizontal Scroll
-    // $('.dragscroll').mousewheel(function(event, change) {
-    //   console.log("scrollingmount");
-    //   var newScrollLeft = $(this).scrollLeft(),
-    //       width = $(this).outerWidth(),
-    //       scrollWidth = $(this).get(0).scrollWidth;
-    //   if(newScrollLeft === 0 && change > 0) ;
-    //   else if (scrollWidth - newScrollLeft === width && change < 0) ;
-    //   else {
-    //     this.scrollLeft -= (change * .5); //need a value to speed up the change
-    //     event.preventDefault();
-    //   }
-    // });
+      $('.dragscroll').scrollLeft(0);
+      // Horizontal Scroll
+      // $('.dragscroll').mousewheel(function(event, change) {
+      //   console.log("scrollingmount");
+      //   var newScrollLeft = $(this).scrollLeft(),
+      //       width = $(this).outerWidth(),
+      //       scrollWidth = $(this).get(0).scrollWidth;
+      //   if(newScrollLeft === 0 && change > 0) ;
+      //   else if (scrollWidth - newScrollLeft === width && change < 0) ;
+      //   else {
+      //     this.scrollLeft -= (change * .5); //need a value to speed up the change
+      //     event.preventDefault();
+      //   }
+      // });
 
-    $(document).ready(function(){
+      
       // Autoscroll
       var scroll = 0;
       var add = 0;

@@ -15,11 +15,10 @@ var id = ['cover','topic-1','topic-2','topic-3','timeline-preview', 'cta'];
 class Home extends Component {
   componentDidMount(){
     $(document).scrollTop(0);
-    document.body.classList.add('ds');
-    document.getElementById('loading').classList.remove('fade');
+    $(document).ready(function(){
+      document.body.classList.add('ds');
+      document.getElementById('loading').classList.remove('fade');
 
-    var vid = document.getElementById("coverVideo");
-    vid.onloadstart = function() {
       var p = 0;
       var id = setInterval(frame, 10);
       function frame() {
@@ -35,37 +34,38 @@ class Home extends Component {
         }
       }
       frame();
-    };
 
-    // function setHeight() {
-    //   var windowHeight = $(window).height(),
-    //     $block = $('#cover, .cover');
-    //     if(windowHeight > 550) { // 550px is your css min-height for this block
-    //       $block.css('min-height', windowHeight + 'px') 
-    //     } else {
-    //       $block.css('min-height': '') 
-    //     }
-    // }
-    // setHeight();
-    // $(window).on('resize orientationchange', setHeight);
+      // function setHeight() {
+      //   var windowHeight = $(window).height(),
+      //     $block = $('#cover, .cover');
+      //     if(windowHeight > 550) { // 550px is your css min-height for this block
+      //       $block.css('min-height', windowHeight + 'px') 
+      //     } else {
+      //       $block.css('min-height': '') 
+      //     }
+      // }
+      // setHeight();
+      // $(window).on('resize orientationchange', setHeight);
 
-    
-    $('#section-nav a').click(function(){
-      $('html, body').animate({
-          scrollTop: $( $.attr(this, 'href') ).offset().top - 66
-      }, 800);
-      return false;
-    });
-    $(window).scroll( function(){
-      for (var i = 0; i < 6; i++) {
-        if($('#'+id[i]).length >= 1) {
-          if($(window).scrollTop() >= $('#'+id[i]).offset().top - $(window).height()/2) {
-            $('.active').removeClass('active');
-            $('a[href="#'+id[i]+'"]').addClass('active');
+      
+      $('#section-nav a').click(function(){
+        $('html, body').animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top - 66
+        }, 800);
+        return false;
+      });
+      $(window).scroll( function(){
+        for (var i = 0; i < 6; i++) {
+          if($('#'+id[i]).length >= 1) {
+            if($(window).scrollTop() >= $('#'+id[i]).offset().top - $(window).height()/2) {
+              $('.active').removeClass('active');
+              $('a[href="#'+id[i]+'"]').addClass('active');
+            }
           }
         }
-      }
+      });
     });
+    
   }
 
   render() {

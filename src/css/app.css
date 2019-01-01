@@ -836,7 +836,7 @@ ul.none {
   background-color: #fff;
   background-image: url(assets/images/loading.gif);
   background-repeat: no-repeat;
-  background-size: 240px;
+  background-size: 200px;
   background-position: center center;
   opacity: 1;
   z-index: 100;
