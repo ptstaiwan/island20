@@ -51,7 +51,7 @@ class Cover extends Component {
         <div className="bg-light-gray w-100 h-100 absolute">
           <div className="bg-near-black o-20 w-100 h-100 absolute z1"/>
           <div className="videoBg">
-            <video id="video" muted loop autoPlay playsInline>
+            <video id="coverVideo" muted loop autoPlay playsInline>
               <source src={coverVideo} type="video/mp4"/>
             </video>
           </div>

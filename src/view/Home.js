@@ -15,6 +15,28 @@ var id = ['cover','topic-1','topic-2','topic-3','timeline-preview', 'cta'];
 class Home extends Component {
   componentDidMount(){
     $(document).scrollTop(0);
+    document.body.classList.add('ds');
+    document.getElementById('loading').classList.remove('fade');
+
+    var vid = document.getElementById("coverVideo");
+    vid.onloadstart = function() {
+      var p = 0;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (p >= 100) {
+          clearInterval(id);
+          setTimeout(function(){
+            document.getElementById('loading').classList.add('fade');
+            document.body.classList.remove('ds');
+          },600);
+        } else {
+          p++; 
+          $('.progress-view').text(p+'%');
+        }
+      }
+      frame();
+    };
+
     // function setHeight() {
     //   var windowHeight = $(window).height(),
     //     $block = $('#cover, .cover');
@@ -44,37 +66,6 @@ class Home extends Component {
         }
       }
     });
-
-    document.body.classList.add('ds');
-    document.getElementById('loading').classList.remove('fade');
-
-    var images  = [];
-    loadImage(images)
-    .then(function (allImgs) {
-      console.log(allImgs.length, 'images loaded!', allImgs);
-
-      var p = 0;
-      var id = setInterval(frame, 10);
-      function frame() {
-        if (p >= 100) {
-          clearInterval(id);
-          setTimeout(function(){
-            document.getElementById('loading').classList.add('fade');
-            document.body.classList.remove('ds');
-          },600);
-        } else {
-          p++; 
-          $('.progress-view').text(p+'%');
-        }
-      }
-    })
-    .catch(function (err) {
-      console.error('One or more images have failed to load :(');
-      console.error(err.errored);
-      console.info('But these loaded fine:');
-      console.info(err.loaded);
-    });
-    
   }
 
   render() {

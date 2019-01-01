@@ -118,11 +118,29 @@ class Page extends Component {
 
   componentDidMount(){
     var $t = this;
-    console.log('mount');
     
     $(document).scrollTop(0);
     document.body.classList.add('ds');
     document.getElementById('loading').classList.remove('fade');
+
+    var vid = document.getElementById("coverVideo");
+    vid.onloadstart = function() {
+      var p = 0;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (p >= 100) {
+          clearInterval(id);
+          setTimeout(function(){
+            document.getElementById('loading').classList.add('fade');
+            document.body.classList.remove('ds');
+          },600);
+        } else {
+          p++; 
+          $('.progress-view').text(p+'%');
+        }
+      }
+      frame();
+    };
 
     // $('.video-content').each( function(i){
     //   var $this = $(this);
@@ -153,38 +171,7 @@ class Page extends Component {
     //   }
     // });
 
-    var images  = [];
-    loadImage(images)
-    .then(function (allImgs) {
-      console.log(allImgs.length, 'images loaded!', allImgs);
-      var vid = document.getElementById("coverVideo");
-      vid.onloadstart = function() {
-        var p = 0;
-        var id = setInterval(frame, 10);
-        function frame() {
-          if (p >= 100) {
-            clearInterval(id);
-            setTimeout(function(){
-              document.getElementById('loading').classList.add('fade');
-              document.body.classList.remove('ds');
-            },600);
-          } else {
-            p++; 
-            $('.progress-view').text(p+'%');
-          }
-        }
-      };
-    })
-    .catch(function (err) {
-      console.error('One or more images have failed to load :(');
-      console.error(err.errored);
-      console.info('But these loaded fine:');
-      console.info(err.loaded);
-    });
     $(document).ready(function(){
-      
-
-
       // Autoscroll
       var scroll = 0;
       var add = 0;
