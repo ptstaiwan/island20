@@ -99,30 +99,12 @@ class Page extends Component {
   // }
 
   componentDidUpdate() {
-    var p = 0;
-    var id = setInterval(frame, 10);
-
-    function frame() {
-      if (p >= 100) {
-        clearInterval(id);
-        setTimeout(function(){
-          document.getElementById('loading').classList.add('fade');
-          document.body.classList.remove('ds');
-        },600);
-      } else {
-        p++; 
-        $('.progress-view').text(p+'%');
-      }
-    }
-  }
-
-  componentDidMount(){
-    var $t = this;
-    $(document).ready(function(){
-      $(document).scrollTop(0);
-      document.body.classList.add('ds');
-      document.getElementById('loading').classList.remove('fade');
-
+    var data = pageEvent_data[this.state.id];
+    var images  = [data.code];
+    // var images  = [];
+    loadImage(images)
+    .then(function (allImgs) {
+      console.log(allImgs.length, 'images loaded!', allImgs);
       var p = 0;
       var id = setInterval(frame, 10);
       function frame() {
@@ -138,6 +120,50 @@ class Page extends Component {
         }
       }
       frame();
+    })
+    .catch(function (err) {
+      console.error('One or more images have failed to load :(');
+      console.error(err.errored);
+      console.info('But these loaded fine:');
+      console.info(err.loaded);
+    });
+  }
+
+  componentDidMount(){
+    var $t = this;
+    $(document).ready(function(){
+      $(document).scrollTop(0);
+      document.body.classList.add('ds');
+      document.getElementById('loading').classList.remove('fade');
+
+      var data = pageEvent_data[$t.state.id];
+      var images  = [data.code];
+      // var images  = [];
+      loadImage(images)
+      .then(function (allImgs) {
+        console.log(allImgs.length, 'images loaded!', allImgs);
+        var p = 0;
+        var id = setInterval(frame, 10);
+        function frame() {
+          if (p >= 100) {
+            clearInterval(id);
+            setTimeout(function(){
+              document.getElementById('loading').classList.add('fade');
+              document.body.classList.remove('ds');
+            },600);
+          } else {
+            p++; 
+            $('.progress-view').text(p+'%');
+          }
+        }
+        frame();
+      })
+      .catch(function (err) {
+        console.error('One or more images have failed to load :(');
+        console.error(err.errored);
+        console.info('But these loaded fine:');
+        console.info(err.loaded);
+      });
 
       // $('.video-content').each( function(i){
       //   var $this = $(this);
@@ -280,26 +306,26 @@ class Page extends Component {
         
 
         }
-        $('.video-content').each( function(i){
-          var top_of_object = $(this).offset().top;
-          var bottom_of_object = $(this).offset().top + $(this).height();
+        // $('.video-content').each( function(i){
+        //   var top_of_object = $(this).offset().top;
+        //   var bottom_of_object = $(this).offset().top + $(this).height();
           
-          var $this = $(this);
-          if( center_of_window >= top_of_object && center_of_window <= bottom_of_object ){
-            if($this.find('video').get(0).paused) {
-              if($this.find('video').hasClass('clicked')) ;
-              else {
-                $this.find('video').get(0).play();
-                $this.find('.play').removeClass('pause');
-              }
-            }
-          } else {
-            if(!$this.find('video').get(0).paused) {
-              $this.find('video').get(0).pause();
-              $this.find('.play').addClass('pause');
-            }
-          }
-        });
+        //   var $this = $(this);
+        //   if( center_of_window >= top_of_object && center_of_window <= bottom_of_object ){
+        //     if($this.find('video').get(0).paused) {
+        //       if($this.find('video').hasClass('clicked')) ;
+        //       else {
+        //         $this.find('video').get(0).play();
+        //         $this.find('.play').removeClass('pause');
+        //       }
+        //     }
+        //   } else {
+        //     if(!$this.find('video').get(0).paused) {
+        //       $this.find('video').get(0).pause();
+        //       $this.find('.play').addClass('pause');
+        //     }
+        //   }
+        // });
       });
     })
   }
@@ -390,7 +416,7 @@ function CoverVideo(props) {
       <div className="w-100 h-100 absolute top-left clipping">
       <div className="w-100 h-100 fixed fixed-content pn">
         <div className="videoBg">
-          <video id="coverVideo" muted loop autoPlay playsInline poster={props.code}>
+          <video id="coverVideo" muted loop autoPlay playsInline poster={props.code} data-autoplay-fallback="muted" preload="auto">
             <source src={props.link} type="video/mp4"/>
           </video>
         </div>
@@ -1005,7 +1031,7 @@ function PhotoSwitch(props) {
   return (
     <section id={props.id} className={h+" flex aic w-100 relative bvh bg-black"}>
       <div className="w-100 h-100 absolute top-left clipping">
-        <div className="bg-light-gray w-100 h-100 fixed fixed-content">
+        <div className="w-100 h-100 fixed fixed-content">
           <ImageGallery items={images} showFullscreenButton={false} showThumbnails={false} showPlayButton={false} autoPlay={true} showBullets={true} slideInterval={7000}/>
         </div>
       </div>
@@ -1126,319 +1152,360 @@ function PhotoContrast(props) {
 }
 
 /*09*/
-function Video(props) {
-  function playVideo(e) {
-    var $video = $('#video'+props.videoID);
-    if(e.target.classList.contains('pause')) {
-      e.target.classList.remove('pause');
-      $video.get(0).play();
-      $video.removeClass('clicked');
-    }
-    else {
-      e.target.classList.add('pause');
-      $video.get(0).pause();
-      $video.addClass('clicked');
-    }
+class Video extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: false
+    };
   }
-  function soundVideo(e) {
-    var $video = $('#video'+props.videoID);
-    if(e.target.classList.contains('unmute')) {
-      e.target.classList.remove('unmute');
-      $video.prop('muted', true);
+  render() {
+    function playVideo(e) {
+      var $video = $('#video'+this.props.videoID);
+      if(e.target.classList.contains('pause')) {
+        e.target.classList.remove('pause');
+        $video.get(0).play();
+        $video.removeClass('clicked');
+      }
+      else {
+        e.target.classList.add('pause');
+        $video.get(0).pause();
+        $video.addClass('clicked');
+      }
     }
-    else {
-      e.target.classList.add('unmute');
-      $video.prop('muted', false);
+    function soundVideo(e) {
+      var $video = $('#video'+this.props.videoID);
+      if(e.target.classList.contains('unmute')) {
+        e.target.classList.remove('unmute');
+        $video.prop('muted', true);
+      }
+      else {
+        e.target.classList.add('unmute');
+        $video.prop('muted', false);
+      }
     }
-  }
-  var text1 = null
-  var bgcolor = ""
-  var textcolor = ""
-  var h = "min-vh-150"
-  if(props.color === "dark") {
-    bgcolor = "bg-black o-60";
-    textcolor = "white";
-  } else {
-    bgcolor = "bg-white o-85";
-    textcolor = "black";
-  }
-
-  if(props.text1 !== "") {
-    h = "min-vh-200"
-    if($(window).width() <= 959) {
-      bgcolor = "transparent";
+    var text1 = null
+    var bgcolor = ""
+    var textcolor = ""
+    var h = "min-vh-150"
+    if(this.props.color === "dark") {
+      bgcolor = "bg-black o-60";
+      textcolor = "white";
+    } else {
+      bgcolor = "bg-white o-85";
       textcolor = "black";
     }
-    text1 = (
-        <div className="">
-          <div className={props.position+" w-50-l mw500 mh3-l mh3-l center w-100 pa4-l relative mt0-l mt4"}>
+
+    if(this.props.text1 !== "") {
+      h = "min-vh-200"
+      if($(window).width() <= 959) {
+        bgcolor = "transparent";
+        textcolor = "black";
+      }
+      text1 = (
+          <div className="">
+            <div className={this.props.position+" w-50-l mw500 mh3-l mh3-l center w-100 pa4-l relative mt0-l mt4"}>
+              <div className={bgcolor+" w-100 h-100 absolute pn top-left"}/>
+              <p className={"pre-wrap f5-ns f6 lh-copy mv0 z4 relative ph0-l ph3 "+textcolor}>{this.props.text1}</p>
+            </div>
+          </div>
+        
+      )
+    }
+
+    var text2 = null;
+    if(this.props.number === 2) {
+      h = "min-vh-300"
+      if($(window).width() <= 959) {
+        bgcolor = "transparent";
+        textcolor = "black";
+      }
+      text2 = (
+        <div className="mt50vh">
+          <div className={this.props.position+" w-50-l mw500 mh3-l center w-100 pa4-l relative mt0-l mt4"}>
             <div className={bgcolor+" w-100 h-100 absolute pn top-left"}/>
-            <p className={"pre-wrap f5-ns f6 lh-copy mv0 z4 relative ph0-l ph3 "+textcolor}>{props.text1}</p>
+            <p className={"pre-wrap f5-ns f6 lh-copy mv0 z4 relative ph0-l ph3 "+textcolor}>{this.props.text2}</p>
           </div>
         </div>
-      
-    )
-  }
-
-  var text2 = null;
-  if(props.number === 2) {
-    h = "min-vh-300"
-    if($(window).width() <= 959) {
-      bgcolor = "transparent";
-      textcolor = "black";
+      )
     }
-    text2 = (
-      <div className="mt50vh">
-        <div className={props.position+" w-50-l mw500 mh3-l center w-100 pa4-l relative mt0-l mt4"}>
-          <div className={bgcolor+" w-100 h-100 absolute pn top-left"}/>
-          <p className={"pre-wrap f5-ns f6 lh-copy mv0 z4 relative ph0-l ph3 "+textcolor}>{props.text2}</p>
-        </div>
-      </div>
-    )
-  }
-  
-  var unmuteTag = "";
-  var $video = $('#video'+props.videoID);
-  var video = (
-    <video id={'video'+props.videoID} loop playsInline muted autoPlay>
-      <source src={props.link+'#t=0.1'} type="video/mp4"/>
-    </video>
-  )
-  if(props.sound) {
-    unmuteTag = "unmute";
+    
+    var unmuteTag = "";
+    var $video = $('#video'+this.props.videoID);
     var video = (
-      <video id={'video'+props.videoID} loop playsInline>
-        <source src={props.link+'#t=0.1'} type="video/mp4"/>
+      <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+        <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
       </video>
     )
-  }
+    if(this.props.sound) {
+      unmuteTag = "unmute";
+      var video = (
+        <video id={'video'+this.props.videoID} loop playsInline>
+          <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
+        </video>
+      )
+    }
 
-  var playButton = props.playing ? (<div className="fixed play cp z10" onClick={(e) => playVideo(e)}></div>) : null
+    var playButton = this.props.playing ? (<div className="fixed play cp z10" onClick={(e) => playVideo(e)}></div>) : null
 
-  var video_content = (
-      <div className="w-100 h-100 absolute top-left clipping">
-        {playButton}
-        <div className={unmuteTag+" fixed sound cp z10"} onClick={(e) => soundVideo(e)}></div>
-        <div className="bg-light-gray w-100 h-100 fixed fixed-content pn">
-          <div className="videoBg">
-            {video}
+    var video_content = this.state.active ? (
+        <div className="w-100 h-100 absolute top-left clipping">
+          {playButton}
+          <div className={unmuteTag+" fixed sound cp z10"} onClick={(e) => soundVideo(e)}></div>
+          <div className="w-100 h-100 fixed fixed-content pn">
+            <div className="videoBg">
+              {video}
+            </div>
           </div>
         </div>
-      </div>
-  )
+    ) : null;
 
-  var text_content = (
-      <div className="mw80 center ph4-ns ph3 w-100 z4 pre-wrap">
-        {text1}
-        {text2}
-      </div>
-  )
-
-  if($(window).width() <= 959) {
-    h = "pv5 bg-near-white";
-    var mb4 = ""
-    if(props.text1 !== "") mb4 = "mb4"
-    video_content = (
-      <div className={"cf flex aic jcc w-100" + mb4}>
-        <div className="center relative">
-          <video className="w-100" id={'video'+props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay>
-            <source src={props.link} type="video/mp4"/>
-          </video>
+    var text_content = (
+        <div className="mw80 center ph4-ns ph3 w-100 z4 pre-wrap">
+          {text1}
+          {text2}
         </div>
-      </div>
+    )
+
+    if($(window).width() <= 959) {
+      h = "pv5 bg-near-white";
+      var mb4 = ""
+      if(this.props.text1 !== "") mb4 = "mb4"
+      video_content = this.state.active ? (
+        <div className={"cf flex aic jcc w-100" + mb4}>
+          <div className="center relative">
+            <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+              <source src={this.props.link} type="video/mp4"/>
+            </video>
+          </div>
+        </div>
+      ) : null;
+    }
+
+    return (
+      <section id={this.props.id} className={h+" flex aic flex-column-s relative video-content full-video bg-black"} data-active="false">
+        {video_content}
+        {text_content}
+      </section>
     )
   }
-
-  return (
-    <section id={props.id} className={h+" flex aic flex-column-s relative video-content full-video bg-black"}>
-      {video_content}
-      {text_content}
-    </section>
-  )
 }
 
 /*09-1*/
-function SmallVideo(props) {
-  function playVideo(e) {
-    var $video = $('#video'+props.videoID);
-    if(e.target.classList.contains('pause')) {
-      e.target.classList.remove('pause');
-      $video.get(0).play();
-      $video.removeClass('clicked');
-    }
-    else {
-      e.target.classList.add('pause');
-      $video.get(0).pause();
-      $video.addClass('clicked');
-    }
+class SmallVideo extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: false
+    };
   }
-  function soundVideo(e) {
-    var $video = $('#video'+props.videoID);
-    if(e.target.classList.contains('unmute')) {
-      e.target.classList.remove('unmute');
-      $video.prop('muted', true);
+  render(){
+    function playVideo(e) {
+      var $video = $('#video'+this.props.videoID);
+      if(e.target.classList.contains('pause')) {
+        e.target.classList.remove('pause');
+        $video.get(0).play();
+        $video.removeClass('clicked');
+      }
+      else {
+        e.target.classList.add('pause');
+        $video.get(0).pause();
+        $video.addClass('clicked');
+      }
     }
-    else {
-      e.target.classList.add('unmute');
-      $video.prop('muted', false);
+    function soundVideo(e) {
+      var $video = $('#video'+this.props.videoID);
+      if(e.target.classList.contains('unmute')) {
+        e.target.classList.remove('unmute');
+        $video.prop('muted', true);
+      }
+      else {
+        e.target.classList.add('unmute');
+        $video.prop('muted', false);
+      }
     }
-  }
-  return (
-    <section id={props.id} className={"flex aic relative pv6-l pv5 video-content smallVideo "+props.bg}>
-      <div className="mw80 w-100 center z4 relative">
-        <div className="cf flex aic flex-column-s">
-          <div className="fl-l w-100 w-50-l ph2-l pv3 relative">
-            <video id={'video'+props.videoID} className="w-100" controls controlsList="nodownload" loop playsInline muted autoPlay>
-              <source src={props.link+'#t=0.1'} type="video/mp4"/>
-            </video>
-          </div>
-          <div className="fr-l w-100 w-50-l mw500 center ml5-l ph4-ns ph3 pv3">
-            <p className="pre-wrap f5-ns f6 lh-copy mv0 z4 relative black mt0-ns mt4 ph0-ns ph3">{props.text}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
-}
 
-/*09-2*/
-function CenterVideo(props) {
-  function playVideo(e) {
-    var $video = $('#video'+props.videoID);
-    if(e.target.classList.contains('pause')) {
-      e.target.classList.remove('pause');
-      $video.get(0).play();
-      $video.removeClass('clicked');
-    }
-    else {
-      e.target.classList.add('pause');
-      $video.get(0).pause();
-      $video.addClass('clicked');
-    }
-  }
-  function soundVideo(e) {
-    var $video = $('#video'+props.videoID);
-    if(e.target.classList.contains('unmute')) {
-      e.target.classList.remove('unmute');
-      $video.prop('muted', true);
-    }
-    else {
-      e.target.classList.add('unmute');
-      $video.prop('muted', false);
-    }
-  }
-  var max = {
-    maxWidth: "800px"
-  }
-  var textShadow = "text-shadow f4-ns f5";
-  var bgColor = "";
-  var mask = "bg-dark-gray o-40";
-  if(props.bg) {
-    textShadow = "f5-ns f6";
-    bgColor = "bg-black o-60";
-    mask = "";
-  }
-
-  var unmuteTag = "";
-  var $video = $('#video'+props.videoID);
-  var video = (
-    <video id={'video'+props.videoID} loop playsInline muted autoPlay>
-      <source src={props.link+'#t=0.1'} type="video/mp4"/>
-    </video>
-  )
-  if(props.sound) {
-    unmuteTag = "unmute";
-    var video = (
-      <video id={'video'+props.videoID} loop playsInline>
-        <source src={props.link+'#t=0.1'} type="video/mp4"/>
+    var video_content = this.state.active ? (
+      <video id={'video'+this.props.videoID} className="w-100" controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+        <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
       </video>
+    ) : null;
+
+    return (
+      <section id={this.props.id} className={"flex aic relative pv6-l pv5 video-content smallVideo "+this.props.bg}>
+        <div className="mw80 w-100 center z4 relative">
+          <div className="cf flex aic flex-column-s">
+            <div className="fl-l w-100 w-50-l ph2-l pv3 relative">
+              {video_content}
+            </div>
+            <div className="fr-l w-100 w-50-l mw500 center ml5-l ph4-ns ph3 pv3">
+              <p className="pre-wrap f5-ns f6 lh-copy mv0 z4 relative black mt0-ns mt4 ph0-ns ph3">{this.props.text}</p>
+            </div>
+          </div>
+        </div>
+      </section>
     )
   }
-
-  return (
-    <section id={props.id} className="min-vh-150 flex aic relative pv6-l pv5 video-content bg-black z4">
-      <div className="w-100 h-100 absolute top-left clipping">
-        <div className={mask+" w-100 h-100 absolute pn top-left z4"}/>
-        {/*<div className="fixed play cp z10" onClick={(e) => playVideo(e)}></div>*/}
-        <div className={unmuteTag+" fixed sound cp z10"} onClick={(e) => soundVideo(e)}></div>
-        <div className="bg-light-gray w-100 h-100 fixed fixed-content pn">
-          <div className="videoBg">
-            {video}
-          </div>
-        </div>
-      </div>
-      <div className="w-100 center ph4-ns ph3 z4 relative">
-        <div className="cf flex aic">
-          <div className="w-100 w-50-l center pa4-l pa3 relative" style={max}>
-            <div className={bgColor+" w-100 h-100 absolute pn top-left"}/>
-            <p className={"pre-wrap f4 lh-copy mv0 z4 relative white "+textShadow}>{props.text1}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  )
 }
 
 /*09-2*/
-function CenterSmallVideo(props) {
-  function playVideo(e) {
-    var $video = $('#video'+props.videoID);
-    if(e.target.classList.contains('pause')) {
-      e.target.classList.remove('pause');
-      $video.get(0).play();
-      $video.removeClass('clicked');
-    }
-    else {
-      e.target.classList.add('pause');
-      $video.get(0).pause();
-      $video.addClass('clicked');
-    }
+class CenterVideo extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: false
+    };
   }
-  function soundVideo(e) {
-    var $video = $('#video'+props.videoID);
-    if(e.target.classList.contains('unmute')) {
-      e.target.classList.remove('unmute');
-      $video.prop('muted', true);
+  render(){
+    function playVideo(e) {
+      var $video = $('#video'+this.props.videoID);
+      if(e.target.classList.contains('pause')) {
+        e.target.classList.remove('pause');
+        $video.get(0).play();
+        $video.removeClass('clicked');
+      }
+      else {
+        e.target.classList.add('pause');
+        $video.get(0).pause();
+        $video.addClass('clicked');
+      }
     }
-    else {
-      e.target.classList.add('unmute');
-      $video.prop('muted', false);
+    function soundVideo(e) {
+      var $video = $('#video'+this.props.videoID);
+      if(e.target.classList.contains('unmute')) {
+        e.target.classList.remove('unmute');
+        $video.prop('muted', true);
+      }
+      else {
+        e.target.classList.add('unmute');
+        $video.prop('muted', false);
+      }
     }
-  }
-  var max = {
-    maxWidth: "800px"
-  }
-  var top = {
-    top: "40px"
-  }
-  var color = "";
-  if(props.color === "invert") color = "bg-near-white"
+    var max = {
+      maxWidth: "800px"
+    }
+    var textShadow = "text-shadow f4-ns f5";
+    var bgColor = "";
+    var mask = "bg-dark-gray o-40";
+    if(this.props.bg) {
+      textShadow = "f5-ns f6";
+      bgColor = "bg-black o-60";
+      mask = "";
+    }
 
-  let text = null;
-  if(props.text !== "") {
-    text = (
-      <div className="mw80 center black mb5-ns mb4 pre-wrap">
-        <div className="mw7 w-100 center ph3 pv3">
-          <p className={"f5-ns f6 lh-copy mv0 "+props.align}>{props.text}</p>
-        </div>
-      </div>
-    )
-  }
+    var unmuteTag = "";
+    var $video = $('#video'+this.props.videoID);
+    var video = this.state.active ? (
+      <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+        <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
+      </video>
+    ) : null;
+    if(this.props.sound) {
+      unmuteTag = "unmute";
+      video = this.state.active ? (
+        <video id={'video'+this.props.videoID} loop playsInline>
+          <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
+        </video>
+      ) : null;
+    }
 
-  return (
-    <section id={props.id} className={"flex aic relative pv6-l pv5 video-content "+color}>
-      <div className="w-100 center ph4-ns ph3 z4 relative">
-        {text}
-        <div className="cf flex aic jcc w-100 pv3">
-          <div className="center relative">
-            <video className="w-100" id={'video'+props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay style={max}>
-              <source src={props.link+'#t=0.1'} type="video/mp4"/>
-            </video>
+    return (
+      <section id={this.props.id} className="min-vh-150 flex aic relative pv6-l pv5 video-content bg-black z4">
+        <div className="w-100 h-100 absolute top-left clipping">
+          <div className={mask+" w-100 h-100 absolute pn top-left z4"}/>
+          {/*<div className="fixed play cp z10" onClick={(e) => playVideo(e)}></div>*/}
+          <div className={unmuteTag+" fixed sound cp z10"} onClick={(e) => soundVideo(e)}></div>
+          <div className="w-100 h-100 fixed fixed-content pn">
+            <div className="videoBg">
+              {video}
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  )
+        <div className="w-100 center ph4-ns ph3 z4 relative">
+          <div className="cf flex aic">
+            <div className="w-100 w-50-l center pa4-l pa3 relative" style={max}>
+              <div className={bgColor+" w-100 h-100 absolute pn top-left"}/>
+              <p className={"pre-wrap f4 lh-copy mv0 z4 relative white "+textShadow}>{this.props.text1}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
+}
+
+/*09-2*/
+class CenterSmallVideo extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      active: false
+    };
+  }
+  render(){
+    function playVideo(e) {
+      var $video = $('#video'+this.props.videoID);
+      if(e.target.classList.contains('pause')) {
+        e.target.classList.remove('pause');
+        $video.get(0).play();
+        $video.removeClass('clicked');
+      }
+      else {
+        e.target.classList.add('pause');
+        $video.get(0).pause();
+        $video.addClass('clicked');
+      }
+    }
+    function soundVideo(e) {
+      var $video = $('#video'+this.props.videoID);
+      if(e.target.classList.contains('unmute')) {
+        e.target.classList.remove('unmute');
+        $video.prop('muted', true);
+      }
+      else {
+        e.target.classList.add('unmute');
+        $video.prop('muted', false);
+      }
+    }
+    var max = {
+      maxWidth: "800px"
+    }
+    var top = {
+      top: "40px"
+    }
+    var color = "";
+    if(this.props.color === "invert") color = "bg-near-white"
+
+    let text = null;
+    if(this.props.text !== "") {
+      text = (
+        <div className="mw80 center black mb5-ns mb4 pre-wrap">
+          <div className="mw7 w-100 center ph3 pv3">
+            <p className={"f5-ns f6 lh-copy mv0 "+this.props.align}>{this.props.text}</p>
+          </div>
+        </div>
+      )
+    }
+
+    var video_content = this.state.active ? (
+      <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay style={max} data-autoplay-fallback="muted" preload="auto">
+        <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
+      </video>
+    ) : null;
+
+    return (
+      <section id={this.props.id} className={"flex aic relative pv6-l pv5 video-content "+color}>
+        <div className="w-100 center ph4-ns ph3 z4 relative">
+          {text}
+          <div className="cf flex aic jcc w-100 pv3">
+            <div className="center relative">
+              {video_content}
+            </div>
+          </div>
+        </div>
+      </section>
+    )
+  }
 }
 
 /*10*/
