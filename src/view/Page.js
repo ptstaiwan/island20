@@ -131,40 +131,41 @@ class Page extends Component {
 
   componentDidMount(){
     var $t = this;
-    $(document).ready(function(){
-      $(document).scrollTop(0);
-      document.body.classList.add('ds');
-      document.getElementById('loading').classList.remove('fade');
+    
+    $(document).scrollTop(0);
+    document.body.classList.add('ds');
+    document.getElementById('loading').classList.remove('fade');
 
-      var data = pageEvent_data[$t.state.id];
-      var images  = [data.code];
-      // var images  = [];
-      loadImage(images)
-      .then(function (allImgs) {
-        console.log(allImgs.length, 'images loaded!', allImgs);
-        var p = 0;
-        var id = setInterval(frame, 10);
-        function frame() {
-          if (p >= 100) {
-            clearInterval(id);
-            setTimeout(function(){
-              document.getElementById('loading').classList.add('fade');
-              document.body.classList.remove('ds');
-            },600);
-          } else {
-            p++; 
-            $('.progress-view').text(p+'%');
-          }
+    var data = pageEvent_data[$t.state.id];
+    var images  = [data.code];
+    // var images  = [];
+    loadImage(images)
+    .then(function (allImgs) {
+      console.log(allImgs.length, 'images loaded!', allImgs);
+      var p = 0;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (p >= 100) {
+          clearInterval(id);
+          setTimeout(function(){
+            document.getElementById('loading').classList.add('fade');
+            document.body.classList.remove('ds');
+          },600);
+        } else {
+          p++; 
+          $('.progress-view').text(p+'%');
         }
-        frame();
-      })
-      .catch(function (err) {
-        console.error('One or more images have failed to load :(');
-        console.error(err.errored);
-        console.info('But these loaded fine:');
-        console.info(err.loaded);
-      });
+      }
+      frame();
+    })
+    .catch(function (err) {
+      console.error('One or more images have failed to load :(');
+      console.error(err.errored);
+      console.info('But these loaded fine:');
+      console.info(err.loaded);
+    });
 
+    $(document).ready(function(){
       // $('.video-content').each( function(i){
       //   var $this = $(this);
       //   $this.find('video').get(0).pause()
@@ -175,7 +176,7 @@ class Page extends Component {
         if(!$('.progress.active').hasClass('scrolling')) {
           $('.progress.active').addClass('scrolling');
           scrolling = false;
-          console.log("false scroll");
+          // console.log("false scroll");
         }
       },1000)
 
@@ -301,31 +302,28 @@ class Page extends Component {
             k2 = 0;
           }
         });
-
-
         
-
         }
-        // $('.video-content').each( function(i){
-        //   var top_of_object = $(this).offset().top;
-        //   var bottom_of_object = $(this).offset().top + $(this).height();
+        $('.video-content').each( function(i){
+          var top_of_object = $(this).offset().top;
+          var bottom_of_object = $(this).offset().top + $(this).height();
           
-        //   var $this = $(this);
-        //   if( center_of_window >= top_of_object && center_of_window <= bottom_of_object ){
-        //     if($this.find('video').get(0).paused) {
-        //       if($this.find('video').hasClass('clicked')) ;
-        //       else {
-        //         $this.find('video').get(0).play();
-        //         $this.find('.play').removeClass('pause');
-        //       }
-        //     }
-        //   } else {
-        //     if(!$this.find('video').get(0).paused) {
-        //       $this.find('video').get(0).pause();
-        //       $this.find('.play').addClass('pause');
-        //     }
-        //   }
-        // });
+          var $this = $(this);
+          if( center_of_window >= top_of_object && center_of_window <= bottom_of_object ){
+            if($this.find('video').get(0).paused) {
+              if($this.find('video').hasClass('clicked')) ;
+              else {
+                $this.find('video').get(0).play();
+                $this.find('.play').removeClass('pause');
+              }
+            }
+          } else {
+            if(!$this.find('video').get(0).paused) {
+              $this.find('video').get(0).pause();
+              $this.find('.play').addClass('pause');
+            }
+          }
+        });
       });
     })
   }
@@ -1156,7 +1154,7 @@ class Video extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: false
+      active: true
     };
   }
   render() {
@@ -1296,7 +1294,7 @@ class SmallVideo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: false
+      active: true
     };
   }
   render(){
@@ -1353,7 +1351,7 @@ class CenterVideo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: false
+      active: true
     };
   }
   render(){
@@ -1439,7 +1437,7 @@ class CenterSmallVideo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: false
+      active: true
     };
   }
   render(){

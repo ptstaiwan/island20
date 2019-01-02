@@ -15,40 +15,40 @@ import thumbnail from '../assets/thumbnail/home.jpg';
 class Home extends Component {
   componentDidMount(){
     $(document).scrollTop(0);
-    $(document).ready(function(){
-      document.body.classList.add('ds');
-      document.getElementById('loading').classList.remove('fade');
+    
+    document.body.classList.add('ds');
+    document.getElementById('loading').classList.remove('fade');
 
-      // var images  = [];
-      var images  = ["/island20/images/1-1_A22.jpg","/island20/images/1-2_B6.jpg","/island20/images/1-3_C1.jpg","/island20/images/1-4_D32.jpg","/island20/images/1-5_E7.jpg"];
-      loadImage(images)
-      .then(function (allImgs) {
-        console.log(allImgs.length, 'images loaded!', allImgs);
-        var p = 0;
-        var id = setInterval(frame, 10);
-        function frame() {
-          if (p >= 100) {
-            clearInterval(id);
-            setTimeout(function(){
-              document.getElementById('loading').classList.add('fade');
-              document.body.classList.remove('ds');
-            },600);
-          } else {
-            p++; 
-            $('.progress-view').text(p+'%');
-          }
+    // var images  = [];
+    var images  = ["/island20/images/1-1_A22.jpg","/island20/images/1-2_B6.jpg","/island20/images/1-3_C1.jpg","/island20/images/1-4_D32.jpg","/island20/images/1-5_E7.jpg"];
+    loadImage(images)
+    .then(function (allImgs) {
+      console.log(allImgs.length, 'images loaded!', allImgs);
+      var p = 0;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (p >= 100) {
+          clearInterval(id);
+          setTimeout(function(){
+            document.getElementById('loading').classList.add('fade');
+            document.body.classList.remove('ds');
+          },600);
+        } else {
+          p++; 
+          $('.progress-view').text(p+'%');
         }
-        frame();
-      })
-      .catch(function (err) {
-        console.error('One or more images have failed to load :(');
-        console.error(err.errored);
-        console.info('But these loaded fine:');
-        console.info(err.loaded);
-      });
+      }
+      frame();
+    })
+    .catch(function (err) {
+      console.error('One or more images have failed to load :(');
+      console.error(err.errored);
+      console.info('But these loaded fine:');
+      console.info(err.loaded);
+    });
 
       
-
+    $(document).ready(function(){
       // function setHeight() {
       //   var windowHeight = $(window).height(),
       //     $block = $('#cover, .cover');
