@@ -1210,6 +1210,10 @@ ul.none {
   }
 }
 
+.sharing a:hover {
+  opacity: .5;
+}
+
 /* grid */
 .grid-container {
   display: grid;
