@@ -101,25 +101,38 @@ class Page extends Component {
   componentDidUpdate() {
     var data = pageEvent_data[this.state.id];
     var images  = [data.code];
+    var loaded = false;
+    var p = 0;
+    var id = setInterval(frame, 10);
+    
+    function frame() {
+      console.log(loaded)
+      if (p >= 100) {
+        if(loaded) {
+          setTimeout(function(){
+            document.getElementById('loading').classList.add('fade');
+            document.body.classList.remove('ds');
+          },400);
+          clearInterval(id);
+        }
+      } else {
+        p++; 
+        $('.progress-view').text(p+'%');
+      }
+    }
     // var images  = [];
     loadImage(images)
     .then(function (allImgs) {
       console.log(allImgs.length, 'images loaded!', allImgs);
-      var p = 0;
-      var id = setInterval(frame, 10);
-      function frame() {
-        if (p >= 100) {
-          clearInterval(id);
-          setTimeout(function(){
-            document.getElementById('loading').classList.add('fade');
-            document.body.classList.remove('ds');
-          },600);
-        } else {
-          p++; 
-          $('.progress-view').text(p+'%');
-        }
+      loaded = true;
+
+      if(p >= 100) {
+        clearInterval(id);
+        setTimeout(function(){
+          document.getElementById('loading').classList.add('fade');
+          document.body.classList.remove('ds');
+        },400);
       }
-      frame();
     })
     .catch(function (err) {
       console.error('One or more images have failed to load :(');
@@ -136,27 +149,40 @@ class Page extends Component {
     document.body.classList.add('ds');
     document.getElementById('loading').classList.remove('fade');
 
-    var data = pageEvent_data[$t.state.id];
+    var data = pageEvent_data[this.state.id];
     var images  = [data.code];
+    var loaded = false;
+    var p = 0;
+    var id = setInterval(frame, 10);
+    
+    function frame() {
+      console.log(loaded)
+      if (p >= 100) {
+        if(loaded) {
+          setTimeout(function(){
+            document.getElementById('loading').classList.add('fade');
+            document.body.classList.remove('ds');
+          },400);
+          clearInterval(id);
+        }
+      } else {
+        p++; 
+        $('.progress-view').text(p+'%');
+      }
+    }
     // var images  = [];
     loadImage(images)
     .then(function (allImgs) {
       console.log(allImgs.length, 'images loaded!', allImgs);
-      var p = 0;
-      var id = setInterval(frame, 10);
-      function frame() {
-        if (p >= 100) {
-          clearInterval(id);
-          setTimeout(function(){
-            document.getElementById('loading').classList.add('fade');
-            document.body.classList.remove('ds');
-          },600);
-        } else {
-          p++; 
-          $('.progress-view').text(p+'%');
-        }
+      loaded = true;
+
+      if(p >= 100) {
+        clearInterval(id);
+        setTimeout(function(){
+          document.getElementById('loading').classList.add('fade');
+          document.body.classList.remove('ds');
+        },400);
       }
-      frame();
     })
     .catch(function (err) {
       console.error('One or more images have failed to load :(');
@@ -165,7 +191,6 @@ class Page extends Component {
       console.info(err.loaded);
     });
 
-    $(document).ready(function(){
       // $('.video-content').each( function(i){
       //   var $this = $(this);
       //   $this.find('video').get(0).pause()
@@ -195,7 +220,8 @@ class Page extends Component {
       //   }
       // });
 
-      
+      $(document).ready(function(){
+
       // Autoscroll
       var scroll = 0;
       var add = 0;
@@ -304,26 +330,6 @@ class Page extends Component {
         });
         
         }
-        $('.video-content').each( function(i){
-          var top_of_object = $(this).offset().top;
-          var bottom_of_object = $(this).offset().top + $(this).height();
-          
-          var $this = $(this);
-          if( center_of_window >= top_of_object && center_of_window <= bottom_of_object ){
-            if($this.find('video').get(0).paused) {
-              if($this.find('video').hasClass('clicked')) ;
-              else {
-                $this.find('video').get(0).play();
-                $this.find('.play').removeClass('pause');
-              }
-            }
-          } else {
-            if(!$this.find('video').get(0).paused) {
-              $this.find('video').get(0).pause();
-              $this.find('.play').addClass('pause');
-            }
-          }
-        });
       });
     })
   }
@@ -1154,12 +1160,35 @@ class Video extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: true
+      active: false
     };
   }
+
+  componentDidMount(){
+    var $this = this;
+    $(window).scroll(function(){
+      var $t = $('#'+$this.props.id);
+      var top_of_object = $t.offset().top;
+      var bottom_of_object = $t.offset().top + $t.height();
+      var top_of_window = $(window).scrollTop(); 
+      var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
+        
+      if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
+        if(!$this.state.active) {
+          $this.setState({active:true});
+        }
+      } else {
+        if($this.state.active) {
+          $this.setState({active:false});
+        }
+      }
+    });
+  }
+
   render() {
+    var $this = this;
     function playVideo(e) {
-      var $video = $('#video'+this.props.videoID);
+      var $video = $('#video'+$this.props.videoID);
       if(e.target.classList.contains('pause')) {
         e.target.classList.remove('pause');
         $video.get(0).play();
@@ -1172,7 +1201,7 @@ class Video extends Component {
       }
     }
     function soundVideo(e) {
-      var $video = $('#video'+this.props.videoID);
+      var $video = $('#video'+$this.props.videoID);
       if(e.target.classList.contains('unmute')) {
         e.target.classList.remove('unmute');
         $video.prop('muted', true);
@@ -1230,23 +1259,29 @@ class Video extends Component {
     
     var unmuteTag = "";
     var $video = $('#video'+this.props.videoID);
-    var video = (
+    var video = this.state.active ? (
       <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
         <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
+      </video>
+    ) : (
+      <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
       </video>
     )
     if(this.props.sound) {
       unmuteTag = "unmute";
-      var video = (
-        <video id={'video'+this.props.videoID} loop playsInline>
+      var video = this.state.active ? (
+        <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto">
           <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
+        </video>
+      ) : (
+        <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto">
         </video>
       )
     }
 
     var playButton = this.props.playing ? (<div className="fixed play cp z10" onClick={(e) => playVideo(e)}></div>) : null
 
-    var video_content = this.state.active ? (
+    var video_content = (
         <div className="w-100 h-100 absolute top-left clipping">
           {playButton}
           <div className={unmuteTag+" fixed sound cp z10"} onClick={(e) => soundVideo(e)}></div>
@@ -1256,7 +1291,7 @@ class Video extends Component {
             </div>
           </div>
         </div>
-    ) : null;
+    )
 
     var text_content = (
         <div className="mw80 center ph4-ns ph3 w-100 z4 pre-wrap">
@@ -1277,7 +1312,14 @@ class Video extends Component {
             </video>
           </div>
         </div>
-      ) : null;
+      ) : (
+        <div className={"cf flex aic jcc w-100" + mb4}>
+          <div className="center relative">
+            <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+            </video>
+          </div>
+        </div>
+      );
     }
 
     return (
@@ -1294,12 +1336,34 @@ class SmallVideo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: true
+      active: false
     };
   }
+
+  componentDidMount(){
+    var $this = this;
+    $(window).scroll(function(){
+      var $t = $('#'+$this.props.id);
+      var top_of_object = $t.offset().top;
+      var bottom_of_object = $t.offset().top + $t.height();
+      var top_of_window = $(window).scrollTop(); 
+      var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
+        
+      if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
+        if(!$this.state.active) {
+          $this.setState({active:true});
+        }
+      } else {
+        if($this.state.active) {
+          $this.setState({active:false});
+        }
+      }
+    });
+  }
   render(){
+    var $this = this;
     function playVideo(e) {
-      var $video = $('#video'+this.props.videoID);
+      var $video = $('#video'+$this.props.videoID);
       if(e.target.classList.contains('pause')) {
         e.target.classList.remove('pause');
         $video.get(0).play();
@@ -1312,7 +1376,7 @@ class SmallVideo extends Component {
       }
     }
     function soundVideo(e) {
-      var $video = $('#video'+this.props.videoID);
+      var $video = $('#video'+$this.props.videoID);
       if(e.target.classList.contains('unmute')) {
         e.target.classList.remove('unmute');
         $video.prop('muted', true);
@@ -1327,7 +1391,10 @@ class SmallVideo extends Component {
       <video id={'video'+this.props.videoID} className="w-100" controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
         <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
       </video>
-    ) : null;
+    ) : (
+      <video id={'video'+this.props.videoID} className="w-100" controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+      </video>
+    );
 
     return (
       <section id={this.props.id} className={"flex aic relative pv6-l pv5 video-content smallVideo "+this.props.bg}>
@@ -1351,12 +1418,34 @@ class CenterVideo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: true
+      active: false
     };
   }
+
+  componentDidMount(){
+    var $this = this;
+    $(window).scroll(function(){
+      var $t = $('#'+$this.props.id);
+      var top_of_object = $t.offset().top;
+      var bottom_of_object = $t.offset().top + $t.height();
+      var top_of_window = $(window).scrollTop(); 
+      var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
+        
+      if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
+        if(!$this.state.active) {
+          $this.setState({active:true});
+        }
+      } else {
+        if($this.state.active) {
+          $this.setState({active:false});
+        }
+      }
+    });
+  }
   render(){
+    var $this = this;
     function playVideo(e) {
-      var $video = $('#video'+this.props.videoID);
+      var $video = $('#video'+$this.props.videoID);
       if(e.target.classList.contains('pause')) {
         e.target.classList.remove('pause');
         $video.get(0).play();
@@ -1369,7 +1458,7 @@ class CenterVideo extends Component {
       }
     }
     function soundVideo(e) {
-      var $video = $('#video'+this.props.videoID);
+      var $video = $('#video'+$this.props.videoID);
       if(e.target.classList.contains('unmute')) {
         e.target.classList.remove('unmute');
         $video.prop('muted', true);
@@ -1397,14 +1486,20 @@ class CenterVideo extends Component {
       <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
         <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
       </video>
-    ) : null;
+    ) : (
+      <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+      </video>
+    );
     if(this.props.sound) {
       unmuteTag = "unmute";
       video = this.state.active ? (
-        <video id={'video'+this.props.videoID} loop playsInline>
+        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
           <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
         </video>
-      ) : null;
+      ) : (
+        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+        </video>
+      );
     }
 
     return (
@@ -1437,12 +1532,34 @@ class CenterSmallVideo extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: true
+      active: false
     };
   }
+
+  componentDidMount(){
+    var $this = this;
+    $(window).scroll(function(){
+      var $t = $('#'+$this.props.id);
+      var top_of_object = $t.offset().top;
+      var bottom_of_object = $t.offset().top + $t.height();
+      var top_of_window = $(window).scrollTop(); 
+      var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
+        
+      if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
+        if(!$this.state.active) {
+          $this.setState({active:true});
+        }
+      } else {
+        if($this.state.active) {
+          $this.setState({active:false});
+        }
+      }
+    });
+  }
   render(){
+    var $this = this;
     function playVideo(e) {
-      var $video = $('#video'+this.props.videoID);
+      var $video = $('#video'+$this.props.videoID);
       if(e.target.classList.contains('pause')) {
         e.target.classList.remove('pause');
         $video.get(0).play();
@@ -1455,7 +1572,7 @@ class CenterSmallVideo extends Component {
       }
     }
     function soundVideo(e) {
-      var $video = $('#video'+this.props.videoID);
+      var $video = $('#video'+$this.props.videoID);
       if(e.target.classList.contains('unmute')) {
         e.target.classList.remove('unmute');
         $video.prop('muted', true);
@@ -1489,7 +1606,10 @@ class CenterSmallVideo extends Component {
       <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay style={max} data-autoplay-fallback="muted" preload="auto">
         <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
       </video>
-    ) : null;
+    ) : (
+      <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay style={max} data-autoplay-fallback="muted" preload="auto">
+      </video>
+    )
 
     return (
       <section id={this.props.id} className={"flex aic relative pv6-l pv5 video-content "+color}>
@@ -2338,6 +2458,12 @@ class Event01 extends Component {
     image: "",
     description: ""
   }
+  componentDidMount(){
+    console.log("event01");
+  }
+  componentDidUpdate(){
+    console.log("event01_update");
+  }
  
   onOpenModal = (img, des) => {
     this.setState({ open: true, image: img, description: des});
@@ -2518,6 +2644,13 @@ class Event02 extends Component {
     open: false,
     image: "",
     description: ""
+  }
+
+  componentDidMount(){
+    console.log("event02");
+  }
+  componentDidUpdate(){
+    console.log("event02_update");
   }
  
   onOpenModal = (img, des) => {
