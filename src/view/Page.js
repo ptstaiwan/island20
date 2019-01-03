@@ -1170,29 +1170,31 @@ class Video extends Component {
     var $this = this;
     $(window).scroll(function(){
       var $t = $('#'+$this.props.id);
-      var top_of_object = $t.offset().top;
-      var bottom_of_object = $t.offset().top + $t.height();
-      var top_of_window = $(window).scrollTop(); 
-      var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
-        
-      if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
-        if(!$this.state.active) {
-          $this.setState({active:true});
-        }
-        if($t.find('video').get(0).paused) {
-          if($t.find('video').hasClass('clicked')) ;
-          else {
-            $t.find('video').get(0).play();
-            $t.find('.play').removeClass('pause');
+      if($t.length !== 0) {
+        var top_of_object = $t.offset().top;
+        var bottom_of_object = $t.offset().top + $t.height();
+        var top_of_window = $(window).scrollTop(); 
+        var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
+          
+        if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
+          if(!$this.state.active) {
+            $this.setState({active:true});
           }
-        }
-      } else {
-        if($this.state.active) {
-          $this.setState({active:false});
-        }
-        if(!$t.find('video').get(0).paused) {
-          $t.find('video').get(0).pause();
-          $t.find('.play').addClass('pause');
+          if($t.find('video').get(0).paused) {
+            if($t.find('video').hasClass('clicked')) ;
+            else {
+              $t.find('video').get(0).play();
+              $t.find('.play').removeClass('pause');
+            }
+          }
+        } else {
+          if($this.state.active) {
+            $this.setState({active:false});
+          }
+          if(!$t.find('video').get(0).paused) {
+            $t.find('video').get(0).pause();
+            $t.find('.play').addClass('pause');
+          }
         }
       }
     });
@@ -1374,29 +1376,31 @@ class SmallVideo extends Component {
     var $this = this;
     $(window).scroll(function(){
       var $t = $('#'+$this.props.id);
-      var top_of_object = $t.offset().top;
-      var bottom_of_object = $t.offset().top + $t.height();
-      var top_of_window = $(window).scrollTop(); 
-      var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
-        
-      if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
-        if(!$this.state.active) {
-          $this.setState({active:true});
-        }
-        if($t.find('video').get(0).paused) {
-          if($t.find('video').hasClass('clicked')) ;
-          else {
-            $t.find('video').get(0).play();
-            $t.find('.play').removeClass('pause');
+      if($t.length !== 0) {
+        var top_of_object = $t.offset().top;
+        var bottom_of_object = $t.offset().top + $t.height();
+        var top_of_window = $(window).scrollTop(); 
+        var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
+          
+        if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
+          if(!$this.state.active) {
+            $this.setState({active:true});
           }
-        }
-      } else {
-        if($this.state.active) {
-          $this.setState({active:false});
-        }
-        if(!$t.find('video').get(0).paused) {
-          $t.find('video').get(0).pause();
-          $t.find('.play').addClass('pause');
+          if($t.find('video').get(0).paused) {
+            if($t.find('video').hasClass('clicked')) ;
+            else {
+              $t.find('video').get(0).play();
+              $t.find('.play').removeClass('pause');
+            }
+          }
+        } else {
+          if($this.state.active) {
+            $this.setState({active:false});
+          }
+          if(!$t.find('video').get(0).paused) {
+            $t.find('video').get(0).pause();
+            $t.find('.play').addClass('pause');
+          }
         }
       }
     });
@@ -1467,29 +1471,31 @@ class CenterVideo extends Component {
     var $this = this;
     $(window).scroll(function(){
       var $t = $('#'+$this.props.id);
-      var top_of_object = $t.offset().top;
-      var bottom_of_object = $t.offset().top + $t.height();
-      var top_of_window = $(window).scrollTop(); 
-      var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
-        
-      if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
-        if(!$this.state.active) {
-          $this.setState({active:true});
-        }
-        if($t.find('video').get(0).paused) {
-          if($t.find('video').hasClass('clicked')) ;
-          else {
-            $t.find('video').get(0).play();
-            $t.find('.play').removeClass('pause');
+      if($t.length !== 0) {
+        var top_of_object = $t.offset().top;
+        var bottom_of_object = $t.offset().top + $t.height();
+        var top_of_window = $(window).scrollTop(); 
+        var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
+          
+        if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
+          if(!$this.state.active) {
+            $this.setState({active:true});
           }
-        }
-      } else {
-        if($this.state.active) {
-          $this.setState({active:false});
-        }
-        if(!$t.find('video').get(0).paused) {
-          $t.find('video').get(0).pause();
-          $t.find('.play').addClass('pause');
+          if($t.find('video').get(0).paused) {
+            if($t.find('video').hasClass('clicked')) ;
+            else {
+              $t.find('video').get(0).play();
+              $t.find('.play').removeClass('pause');
+            }
+          }
+        } else {
+          if($this.state.active) {
+            $this.setState({active:false});
+          }
+          if(!$t.find('video').get(0).paused) {
+            $t.find('video').get(0).pause();
+            $t.find('.play').addClass('pause');
+          }
         }
       }
     });
@@ -1609,29 +1615,31 @@ class CenterSmallVideo extends Component {
     var $this = this;
     $(window).scroll(function(){
       var $t = $('#'+$this.props.id);
-      var top_of_object = $t.offset().top;
-      var bottom_of_object = $t.offset().top + $t.height();
-      var top_of_window = $(window).scrollTop(); 
-      var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
-        
-      if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
-        if(!$this.state.active) {
-          $this.setState({active:true});
-        }
-        if($t.find('video').get(0).paused) {
-          if($t.find('video').hasClass('clicked')) ;
-          else {
-            $t.find('video').get(0).play();
-            $t.find('.play').removeClass('pause');
+      if($t.length !== 0) {
+        var top_of_object = $t.offset().top;
+        var bottom_of_object = $t.offset().top + $t.height();
+        var top_of_window = $(window).scrollTop(); 
+        var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
+          
+        if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
+          if(!$this.state.active) {
+            $this.setState({active:true});
           }
-        }
-      } else {
-        if($this.state.active) {
-          $this.setState({active:false});
-        }
-        if(!$t.find('video').get(0).paused) {
-          $t.find('video').get(0).pause();
-          $t.find('.play').addClass('pause');
+          if($t.find('video').get(0).paused) {
+            if($t.find('video').hasClass('clicked')) ;
+            else {
+              $t.find('video').get(0).play();
+              $t.find('.play').removeClass('pause');
+            }
+          }
+        } else {
+          if($this.state.active) {
+            $this.setState({active:false});
+          }
+          if(!$t.find('video').get(0).paused) {
+            $t.find('video').get(0).pause();
+            $t.find('.play').addClass('pause');
+          }
         }
       }
     });
@@ -1696,7 +1704,7 @@ class CenterSmallVideo extends Component {
         <div className="w-100 center ph4-ns ph3 z4 relative">
           {text}
           <div className="cf flex aic jcc w-100 pv3">
-            <div className="center relative">
+            <div className="center relative w-100 tc">
               {video_content}
             </div>
           </div>
