@@ -288,9 +288,9 @@ class Page extends Component {
         var center_of_window = $(window).scrollTop()+ $(window).height()/2; 
 
         if ($(window).width() <= 959) {
-          $('.timeChange .time-clipping').removeClass('fade');
+          $('.timeChange-text .time-clipping').removeClass('fade');
         } else {
-          $('.timeChange').each(function(){
+          $('.timeChange-text').each(function(){
             var top_of_object = $(this).offset().top;
             var bottom_of_object = $(this).offset().top + $(this).height();
             if( top_of_window > top_of_object && top_of_window < bottom_of_object){
@@ -300,6 +300,16 @@ class Page extends Component {
             }
           });
         }
+
+        $('.timeChange').each(function(){
+          var top_of_object = $(this).offset().top;
+          var bottom_of_object = $(this).offset().top + $(this).height();
+          if( top_of_window > top_of_object && top_of_window < bottom_of_object){
+            $(this).find('.time-clipping').removeClass('fade');
+          } else {
+            $(this).find('.time-clipping').addClass('fade');
+          }
+        });
 
         // $('.dragscroll-content').each(function(){
         //   var top_of_object = $(this).offset().top;
@@ -491,8 +501,8 @@ function Taiwan(props) {
         </div>
       </div>
       <div className="pt4 pa5-ns w-100 w-50-ns">
-        <h2 className="mh4-l f6 fw7 lh-copy mt0">{props.text1}</h2>
-        <p className="mh4-l f5-ns f6 lh-copy mv0">{props.text2}</p>
+        <h2 className="mh4-l f4-ns f5 fw7 lh-copy mt0">{props.text1}</h2>
+        <p className="mh4-l f5-ns f6 lh-copy mv0 mw500">{props.text2}</p>
       </div>
       {/* <GoogleEarthLogo text={"The image is from 2018/Google Earth  Data SIO,NOAA,U.S. Navy,NGA,GEBCO Image Landsat/Copemicus"} /> */}
     </section>
@@ -1184,29 +1194,31 @@ class Video extends Component {
     var $this = this;
     $(window).scroll(function(){
       var $t = $('#'+$this.props.id);
-      var top_of_object = $t.offset().top;
-      var bottom_of_object = $t.offset().top + $t.height();
-      var top_of_window = $(window).scrollTop(); 
-      var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
-        
-      if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
-        if(!$this.state.active) {
-          $this.setState({active:true});
-        }
-        if($t.find('video').get(0).paused) {
-          if($t.find('video').hasClass('clicked')) ;
-          else {
-            $t.find('video').get(0).play();
-            $t.find('.play').removeClass('pause');
+      if($t.length !== 0) {
+        var top_of_object = $t.offset().top;
+        var bottom_of_object = $t.offset().top + $t.height();
+        var top_of_window = $(window).scrollTop(); 
+        var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
+          
+        if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
+          if(!$this.state.active) {
+            $this.setState({active:true});
           }
-        }
-      } else {
-        if($this.state.active) {
-          $this.setState({active:false});
-        }
-        if(!$t.find('video').get(0).paused) {
-          $t.find('video').get(0).pause();
-          $t.find('.play').addClass('pause');
+          if($t.find('video').get(0).paused) {
+            if($t.find('video').hasClass('clicked')) ;
+            else {
+              $t.find('video').get(0).play();
+              $t.find('.play').removeClass('pause');
+            }
+          }
+        } else {
+          if($this.state.active) {
+            $this.setState({active:false});
+          }
+          if(!$t.find('video').get(0).paused) {
+            $t.find('video').get(0).pause();
+            $t.find('.play').addClass('pause');
+          }
         }
       }
     });
@@ -1388,29 +1400,31 @@ class SmallVideo extends Component {
     var $this = this;
     $(window).scroll(function(){
       var $t = $('#'+$this.props.id);
-      var top_of_object = $t.offset().top;
-      var bottom_of_object = $t.offset().top + $t.height();
-      var top_of_window = $(window).scrollTop(); 
-      var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
-        
-      if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
-        if(!$this.state.active) {
-          $this.setState({active:true});
-        }
-        if($t.find('video').get(0).paused) {
-          if($t.find('video').hasClass('clicked')) ;
-          else {
-            $t.find('video').get(0).play();
-            $t.find('.play').removeClass('pause');
+      if($t.length !== 0) {
+        var top_of_object = $t.offset().top;
+        var bottom_of_object = $t.offset().top + $t.height();
+        var top_of_window = $(window).scrollTop(); 
+        var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
+          
+        if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
+          if(!$this.state.active) {
+            $this.setState({active:true});
           }
-        }
-      } else {
-        if($this.state.active) {
-          $this.setState({active:false});
-        }
-        if(!$t.find('video').get(0).paused) {
-          $t.find('video').get(0).pause();
-          $t.find('.play').addClass('pause');
+          if($t.find('video').get(0).paused) {
+            if($t.find('video').hasClass('clicked')) ;
+            else {
+              $t.find('video').get(0).play();
+              $t.find('.play').removeClass('pause');
+            }
+          }
+        } else {
+          if($this.state.active) {
+            $this.setState({active:false});
+          }
+          if(!$t.find('video').get(0).paused) {
+            $t.find('video').get(0).pause();
+            $t.find('.play').addClass('pause');
+          }
         }
       }
     });
@@ -1481,29 +1495,31 @@ class CenterVideo extends Component {
     var $this = this;
     $(window).scroll(function(){
       var $t = $('#'+$this.props.id);
-      var top_of_object = $t.offset().top;
-      var bottom_of_object = $t.offset().top + $t.height();
-      var top_of_window = $(window).scrollTop(); 
-      var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
-        
-      if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
-        if(!$this.state.active) {
-          $this.setState({active:true});
-        }
-        if($t.find('video').get(0).paused) {
-          if($t.find('video').hasClass('clicked')) ;
-          else {
-            $t.find('video').get(0).play();
-            $t.find('.play').removeClass('pause');
+      if($t.length !== 0) {
+        var top_of_object = $t.offset().top;
+        var bottom_of_object = $t.offset().top + $t.height();
+        var top_of_window = $(window).scrollTop(); 
+        var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
+          
+        if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
+          if(!$this.state.active) {
+            $this.setState({active:true});
           }
-        }
-      } else {
-        if($this.state.active) {
-          $this.setState({active:false});
-        }
-        if(!$t.find('video').get(0).paused) {
-          $t.find('video').get(0).pause();
-          $t.find('.play').addClass('pause');
+          if($t.find('video').get(0).paused) {
+            if($t.find('video').hasClass('clicked')) ;
+            else {
+              $t.find('video').get(0).play();
+              $t.find('.play').removeClass('pause');
+            }
+          }
+        } else {
+          if($this.state.active) {
+            $this.setState({active:false});
+          }
+          if(!$t.find('video').get(0).paused) {
+            $t.find('video').get(0).pause();
+            $t.find('.play').addClass('pause');
+          }
         }
       }
     });
@@ -1623,29 +1639,31 @@ class CenterSmallVideo extends Component {
     var $this = this;
     $(window).scroll(function(){
       var $t = $('#'+$this.props.id);
-      var top_of_object = $t.offset().top;
-      var bottom_of_object = $t.offset().top + $t.height();
-      var top_of_window = $(window).scrollTop(); 
-      var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
-        
-      if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
-        if(!$this.state.active) {
-          $this.setState({active:true});
-        }
-        if($t.find('video').get(0).paused) {
-          if($t.find('video').hasClass('clicked')) ;
-          else {
-            $t.find('video').get(0).play();
-            $t.find('.play').removeClass('pause');
+      if($t.length !== 0) {
+        var top_of_object = $t.offset().top;
+        var bottom_of_object = $t.offset().top + $t.height();
+        var top_of_window = $(window).scrollTop(); 
+        var bottom_of_window = $(window).scrollTop()+ $(window).height(); 
+          
+        if(bottom_of_window > top_of_object && top_of_window < bottom_of_object ){
+          if(!$this.state.active) {
+            $this.setState({active:true});
           }
-        }
-      } else {
-        if($this.state.active) {
-          $this.setState({active:false});
-        }
-        if(!$t.find('video').get(0).paused) {
-          $t.find('video').get(0).pause();
-          $t.find('.play').addClass('pause');
+          if($t.find('video').get(0).paused) {
+            if($t.find('video').hasClass('clicked')) ;
+            else {
+              $t.find('video').get(0).play();
+              $t.find('.play').removeClass('pause');
+            }
+          }
+        } else {
+          if($this.state.active) {
+            $this.setState({active:false});
+          }
+          if(!$t.find('video').get(0).paused) {
+            $t.find('video').get(0).pause();
+            $t.find('.play').addClass('pause');
+          }
         }
       }
     });
@@ -2107,12 +2125,15 @@ function Bullets(props) {
 }
 
 function TimeChange(props) {
+
+  var mobile = $(window).width() <= 959 ? true : false;
   var z = "";
-  var h = "min-vh-180"
-  if(props.last && $(window).width() > 959) {
+  var h = mobile ? "min-vh-150" : "min-vh-180";
+  if(props.last && !mobile) {
     z = "z-1";
     h = "min-vh-200"
   }
+
   var label = {
     bottom: "0px",
     right: "0px",
@@ -2127,12 +2148,12 @@ function TimeChange(props) {
     lineHeight: 1.5
   }
   return (
-    <section id={props.id} className={h+" flex aic relative timeChange bg-white "+z}>
+    <section id={props.id} className={h+" flex aic relative timeChange-text bg-white "+z}>
       <div className="w-100 h-100 absolute top-left time-clipping fade">
         <div className="bg-white w-100 h-100-m h-100-l fixed-ns fixed-content pn flex aic">
           <div className="center w-100 z4 pre-wrap">
-            <div className="mw7 mv3 mv0-ns center w-100 pt4 ph3 h5-ns">
-              <p className="lh-copy mv0 dark-gray" dangerouslySetInnerHTML={{__html:props.text1}}></p>
+            <div className="mw7 mv3 mv0-ns center w-100 pt0-ns pt5 ph3 h5-ns">
+              <p className="lh-copy mv0 dark-gray ph3 ph0-ns" dangerouslySetInnerHTML={{__html:props.text1}}></p>
             </div>
             <figure className="w-100 flex flex-wrap flex-nowrap-ns ma0">
               <div className="relative mr2-ns">
@@ -2209,7 +2230,7 @@ function TimeChangeFull(props) {
   return (
     <section id={props.id} className={h+" flex aic relative bg-black timeChange "+z}>
       <div className="w-100 h-100 absolute top-left time-clipping fade">
-        <div className="bg-white w-100 h-100 fixed-ns fixed-content-ns pn flex aic">
+        <div className="bg-white w-100 h-100 fixed fixed-content pn flex aic">
           <figure className="w-100 ma0">
             <img className="w-100" style={fullImage} src={props.image} alt="background"/>
           </figure>
