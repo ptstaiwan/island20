@@ -100,7 +100,8 @@ class Page extends Component {
 
   componentDidUpdate() {
     var data = pageEvent_data[this.state.id];
-    var images  = [data.code];
+    // var images  = [data.code];
+    var images  = [];
     var loaded = false;
     var p = 0;
     var id = setInterval(frame, 10);
@@ -150,7 +151,8 @@ class Page extends Component {
     document.getElementById('loading').classList.remove('fade');
 
     var data = pageEvent_data[this.state.id];
-    var images  = [data.code];
+    // var images  = [data.code];
+    var images  = [];
     var loaded = false;
     var p = 0;
     var id = setInterval(frame, 10);
@@ -1267,26 +1269,45 @@ class Video extends Component {
         </div>
       )
     }
+
+    var loadingStyle = {
+      textAlign: "center",
+      position: "absolute",
+      left: 0,
+      right: 0,
+      top: "20%",
+      margin: "auto"
+    }
     
     var unmuteTag = "";
     var $video = $('#video'+this.props.videoID);
     var video = this.state.active ? (
-      <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
-        <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
-      </video>
+      <div className="videoBg">
+        <p className="white" style={loadingStyle}>Loading...</p>
+        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+          <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
+        </video>
+      </div>
     ) : (
-      <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
-      </video>
+      <div className="videoBg">
+        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+        </video>
+      </div>
     )
     if(this.props.sound) {
       unmuteTag = "unmute";
       var video = this.state.active ? (
-        <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto">
-          <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
-        </video>
+        <div className="videoBg">
+          <p className="white" style={loadingStyle}>Loading...</p>
+          <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto">
+            <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
+          </video>
+        </div>
       ) : (
-        <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto">
-        </video>
+        <div className="videoBg">
+          <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto">
+          </video>
+        </div>
       )
     }
 
@@ -1297,9 +1318,7 @@ class Video extends Component {
           {playButton}
           <div className={unmuteTag+" fixed sound cp z10"} onClick={(e) => soundVideo(e)}></div>
           <div className="w-100 h-100 fixed fixed-content pn">
-            <div className="videoBg">
-              {video}
-            </div>
+            {video}
           </div>
         </div>
     )
@@ -1513,25 +1532,44 @@ class CenterVideo extends Component {
       mask = "";
     }
 
+    var loadingStyle = {
+      textAlign: "center",
+      position: "absolute",
+      left: 0,
+      right: 0,
+      top: "20%",
+      margin: "auto"
+    }
+
     var unmuteTag = "";
     var $video = $('#video'+this.props.videoID);
     var video = this.state.active ? (
-      <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
-        <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
-      </video>
+      <div className="videoBg">
+        <p className="white" style={loadingStyle}>Loading...</p>
+        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+          <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
+        </video>
+      </div>
     ) : (
-      <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
-      </video>
+      <div className="videoBg">
+        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+        </video>
+      </div>
     );
     if(this.props.sound) {
       unmuteTag = "unmute";
       video = this.state.active ? (
-        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
-          <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
-        </video>
+        <div className="videoBg">
+          <p className="white" style={loadingStyle}>Loading...</p>
+          <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+            <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
+          </video>
+        </div>
       ) : (
-        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
-        </video>
+        <div className="videoBg">
+          <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+          </video>
+        </div>
       );
     }
 
@@ -1542,9 +1580,7 @@ class CenterVideo extends Component {
           {/*<div className="fixed play cp z10" onClick={(e) => playVideo(e)}></div>*/}
           <div className={unmuteTag+" fixed sound cp z10"} onClick={(e) => soundVideo(e)}></div>
           <div className="w-100 h-100 fixed fixed-content pn">
-            <div className="videoBg">
-              {video}
-            </div>
+            {video}
           </div>
         </div>
         <div className="w-100 center ph4-ns ph3 z4 relative">
