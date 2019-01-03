@@ -19,26 +19,40 @@ class Home extends Component {
     document.body.classList.add('ds');
     document.getElementById('loading').classList.remove('fade');
 
-    var images  = [];
-    // var images  = ["/island20/images/1-1_A22.jpg","/island20/images/1-2_B6.jpg","/island20/images/1-3_C1.jpg","/island20/images/1-4_D32.jpg","/island20/images/1-5_E7.jpg"];
-    loadImage(images)
-    .then(function (allImgs) {
-      console.log(allImgs.length, 'images loaded!', allImgs);
-      var p = 0;
-      var id = setInterval(frame, 10);
-      function frame() {
-        if (p >= 100) {
-          clearInterval(id);
+    // var images  = [];
+    var images  = ["/island20/images/1-1_A22.jpg","/island20/images/1-2_B6.jpg","/island20/images/1-3_C1.jpg","/island20/images/1-4_D32.jpg","/island20/images/1-5_E7.jpg"];
+    var loaded = false;
+    var p = 0;
+    var id = setInterval(frame, 10);
+    
+    function frame() {
+      console.log(loaded)
+      if (p >= 100) {
+        if(loaded) {
           setTimeout(function(){
             document.getElementById('loading').classList.add('fade');
             document.body.classList.remove('ds');
-          },600);
-        } else {
-          p++; 
-          $('.progress-view').text(p+'%');
+          },400);
+          clearInterval(id);
         }
+      } else {
+        p++; 
+        $('.progress-view').text(p+'%');
       }
-      frame();
+    }
+    // var images  = [];
+    loadImage(images)
+    .then(function (allImgs) {
+      console.log(allImgs.length, 'images loaded!', allImgs);
+      loaded = true;
+
+      if(p >= 100) {
+        clearInterval(id);
+        setTimeout(function(){
+          document.getElementById('loading').classList.add('fade');
+          document.body.classList.remove('ds');
+        },400);
+      }
     })
     .catch(function (err) {
       console.error('One or more images have failed to load :(');
@@ -46,7 +60,6 @@ class Home extends Component {
       console.info('But these loaded fine:');
       console.info(err.loaded);
     });
-
       
     $(document).ready(function(){
       // function setHeight() {
