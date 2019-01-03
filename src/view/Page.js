@@ -1177,9 +1177,20 @@ class Video extends Component {
         if(!$this.state.active) {
           $this.setState({active:true});
         }
+        if($t.find('video').get(0).paused) {
+          if($t.find('video').hasClass('clicked')) ;
+          else {
+            $t.find('video').get(0).play();
+            $t.find('.play').removeClass('pause');
+          }
+        }
       } else {
         if($this.state.active) {
           $this.setState({active:false});
+        }
+        if(!$t.find('video').get(0).paused) {
+          $t.find('video').get(0).pause();
+          $t.find('.play').addClass('pause');
         }
       }
     });
@@ -1353,9 +1364,20 @@ class SmallVideo extends Component {
         if(!$this.state.active) {
           $this.setState({active:true});
         }
+        if($t.find('video').get(0).paused) {
+          if($t.find('video').hasClass('clicked')) ;
+          else {
+            $t.find('video').get(0).play();
+            $t.find('.play').removeClass('pause');
+          }
+        }
       } else {
         if($this.state.active) {
           $this.setState({active:false});
+        }
+        if(!$t.find('video').get(0).paused) {
+          $t.find('video').get(0).pause();
+          $t.find('.play').addClass('pause');
         }
       }
     });
@@ -1435,9 +1457,20 @@ class CenterVideo extends Component {
         if(!$this.state.active) {
           $this.setState({active:true});
         }
+        if($t.find('video').get(0).paused) {
+          if($t.find('video').hasClass('clicked')) ;
+          else {
+            $t.find('video').get(0).play();
+            $t.find('.play').removeClass('pause');
+          }
+        }
       } else {
         if($this.state.active) {
           $this.setState({active:false});
+        }
+        if(!$t.find('video').get(0).paused) {
+          $t.find('video').get(0).pause();
+          $t.find('.play').addClass('pause');
         }
       }
     });
@@ -1549,9 +1582,20 @@ class CenterSmallVideo extends Component {
         if(!$this.state.active) {
           $this.setState({active:true});
         }
+        if($t.find('video').get(0).paused) {
+          if($t.find('video').hasClass('clicked')) ;
+          else {
+            $t.find('video').get(0).play();
+            $t.find('.play').removeClass('pause');
+          }
+        }
       } else {
         if($this.state.active) {
           $this.setState({active:false});
+        }
+        if(!$t.find('video').get(0).paused) {
+          $t.find('video').get(0).pause();
+          $t.find('.play').addClass('pause');
         }
       }
     });
