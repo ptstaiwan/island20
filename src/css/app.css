@@ -1599,7 +1599,7 @@ ul.none {
     object-fit: cover;
     width: 100%; }
   .image-gallery-slide .image-gallery-description {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.6);
     bottom: 40px;
     color: #fff;
     right: 0;

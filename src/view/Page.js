@@ -1059,7 +1059,7 @@ function PhotoSwitch(props) {
     )
   }
   return (
-    <section id={props.id} className={h+" flex aic w-100 relative bvh bg-black"}>
+    <section id={props.id} className={h+" flex aic w-100 relative bvh"}>
       <div className="w-100 h-100 absolute top-left clipping">
         <div className="w-100 h-100 fixed fixed-content">
           <ImageGallery items={images} showFullscreenButton={false} showThumbnails={false} showPlayButton={false} autoPlay={true} showBullets={true} slideInterval={7000}/>
@@ -1879,17 +1879,24 @@ function Timeline(props) {
 
   var mobile = $(window).width() <= 959 ? true : false;
   var w = ""
-  if(!special) w = "480px"
-  else {
+  var h = ""
+  if (!special) {
+    if(mobile) {
+      w = "90vw";
+      h = "60vw";
+    } else {
+      w = "480px";
+      h = "320px";
+    }
+  } else {
     if(mobile) w = "320px"
     else w = "360px"
   }
 
-
   for (var i = 0; i < props.images.length; i++){
     var photoGridStyle = {
       width: w,
-      height: special ? "560px" : "320px",
+      height: special ? "560px" : h,
       backgroundImage: "url("+props.images[i]+")",
       backgroundSize: special ? "contain" : "cover",
       backgroundRepeat: "no-repeat",
@@ -1922,8 +1929,6 @@ function Timeline(props) {
     grid.push(photos);
   }
 
-  
-
   var container = {
     gridTemplateColumns: columns,
     gridGap: "10px",
@@ -1932,13 +1937,14 @@ function Timeline(props) {
   }
 
   var line = special ? null : {
-    top: "376px",
+    top: mobile ? "60vw": "376px",
     left: 0,
     width: "100%",
     height: "2px",
     backgroundColor: "rgb(0, 0, 0)",
     opacity: 0.1,
-    zIndex: 1
+    zIndex: 1,
+    transform: mobile ? "translateY(54px)" : ""
   }
 
   var max = {
@@ -2233,7 +2239,7 @@ function TimeChangeFull(props) {
   var earth = props.earth ? <GoogleEarthLogo text={props.earthText} /> : null;
 
   return (
-    <section id={props.id} className={h+" flex aic relative bg-black timeChange "+z}>
+    <section id={props.id} className={h+" flex aic relative timeChange "+z}>
       <div className="w-100 h-100 absolute top-left time-clipping fade">
         <div className="bg-white w-100 h-100 fixed fixed-content pn flex aic">
           <figure className="w-100 ma0">
@@ -2813,7 +2819,7 @@ class Event02 extends Component {
 
         <Timeline
           id={"5-timeline"} 
-          content={"<p class='f3 fw7 tracked mb0 lh-normal'>長達三十年，二仁溪還是無法擺脫廢五金陰影。</p>"}
+          content={"<p class='f3-ns f5 fw7 tracked mb0 lh-normal'>長達三十年，二仁溪還是無法擺脫廢五金陰影。</p>"}
           text={this.props.data.timelineText}
           year={this.props.data.timelineYear}
           images={this.props.data.timelineImage}
