@@ -442,10 +442,10 @@ function CoverVideo(props) {
         </div>
       </div>
       </div>
-      <div className="mw80 center ph4-ns ph3 w-100 z4 tc relative" style={top}>
+      <div className="mw80 center ph4 w-100 z4 tc relative" style={top}>
         <img src={props.title} className="center mb3" height="150" alt={props.name} />
         <div className="cf white w-80-ns w-100 center ph-ns">
-          <h3 className="f3-ns f4 coverVideo-tag fw4 lh-copy mb0 pre-wrap text-shadow" dangerouslySetInnerHTML={{__html:props.content}}></h3>
+          <h3 className="f3-ns f6 coverVideo-tag fw4 lh-copy mb0 pre-wrap text-shadow" dangerouslySetInnerHTML={{__html:props.content}}></h3>
         </div>
       </div>
       {phone}
@@ -676,7 +676,7 @@ function PhotoTextFull(props) {
   if(mobile && props.switch) h = "";
 
   return (
-    <section id={props.id} className={h+" flex aic relative bg-black pv6-l pv5"}>
+    <section id={props.id} className={h+" flex aic relative pv6-l pv5"}>
       <div className="w-100 h-100 absolute top-left clipping">
         <div className="bg-white w-100 h-100 fixed fixed-content pn flex aic">
           {image_content}
@@ -1764,10 +1764,10 @@ function EndingVideo(props) {
   return (
     <section id={props.id} className="flex aic relative bg-white pv6-l pv5 overflow-y-hidden">
       <div className="center ph3-ns ph0 z4 relative mb6 mb5-l">
-        <div className="cf tc black w-60-l w-80-m w-100 center pv2 ph4 bg-white mb2">
+        <div className="f7 f6-ns cf tc black w-60-l w-80-m w-100 center pv2 ph4 bg-white mb2">
           <h3>{props.text}</h3>
         </div>
-        <div className="bg-white pa5-ns pa0 pb6-ns pb0" style={bgTV}>
+        <div className="bg-white pa5-ns pa0 pb6-ns pb4" style={bgTV}>
           <iframe className="iframe" title="playlist" width="100%" height="315" src={props.link} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
         </div>
       </div>
@@ -2128,7 +2128,7 @@ function TimeChange(props) {
 
   var mobile = $(window).width() <= 959 ? true : false;
   var z = "";
-  var h = mobile ? "min-vh-150" : "min-vh-180";
+  var h = "min-vh-180";
   if(props.last && !mobile) {
     z = "z-1";
     h = "min-vh-200"
@@ -2147,12 +2147,17 @@ function TimeChange(props) {
     textAlign: "center",
     lineHeight: 1.5
   }
+
+  if (mobile) {
+    label.fontSize = ".625em"
+  }
+
   return (
     <section id={props.id} className={h+" flex aic relative timeChange-text bg-white "+z}>
       <div className="w-100 h-100 absolute top-left time-clipping fade">
         <div className="bg-white w-100 h-100-m h-100-l fixed-ns fixed-content pn flex aic">
           <div className="center w-100 z4 pre-wrap">
-            <div className="mw7 mv3 mv0-ns center w-100 pt0-ns pt5 ph3 h5-ns">
+            <div className="mw7 mv3 mv0-ns center w-100 pt0-ns pt4 ph3 h5-ns">
               <p className="lh-copy mv0 dark-gray ph3 ph0-ns" dangerouslySetInnerHTML={{__html:props.text1}}></p>
             </div>
             <figure className="w-100 flex flex-wrap flex-nowrap-ns ma0">
