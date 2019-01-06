@@ -348,7 +348,7 @@ nav .btn {
 }
 
 .bg-blue p {
-  font-size: 1.375rem !important;
+  /* font-size: 1.375rem !important; */
 }
 
 .bg-blue p:before {
@@ -375,8 +375,21 @@ nav .btn {
 @media screen and (max-width: 30em) {
 
   .bg-blue p {
-    font-size: 1.2rem !important;
+    /* font-size: 1.2rem !important; */
   }
+
+  .bg-blue p:before {
+    transform: translate3d(0, 0, 0) scale(.8);
+    left: 0px;
+    top: 0px;
+  }
+
+  .bg-blue p:after {
+    transform: translate3d(0, 0, 0) scale(.8);
+    right: 0px;
+    bottom: 0px;
+  }
+
 }
 
 .flex {
@@ -452,7 +465,8 @@ nav .btn {
 .transitionTitle {
   position: relative;
   left: 0px;
-  border-top: 1px #eee solid;
+  /* border-top: 1px #eee solid; */
+  border-top: 4px dotted #eee;
 }
 
 .transitionTitle + section:not(.full-video) {
@@ -465,8 +479,12 @@ nav .btn {
 }
 
 @media screen and (min-width: 60em) {
-  .transitionTitle {
-    left: -100px;
+  .transitionTitle div {
+    transform: translateX(-100px);
+  }
+
+  .transitionTitle p {
+    transform: translateX(-100px);
   }
 }
 

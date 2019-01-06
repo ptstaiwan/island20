@@ -1080,7 +1080,7 @@ function PhotoMultiple(props) {
   let grid = [];
   var columns = "";
   var mobile = $(window).width() <= 959 ? true : false;
-  var hint = mobile ? (<p className='f6 o-50 tc mt4'>{"<<往左滑看更多"}</p>) : null;
+  var hint = mobile ? (<p className='f6 o-50 tc mt4'>{"◂◂ 往左滑看更多"}</p>) : null;
 
   var height = {
     height: mobile ? "466px" : "640px"
@@ -1707,7 +1707,7 @@ class CenterSmallVideo extends Component {
     if(this.props.text !== "") {
       text = (
         <div className="mw80 center black mb5-ns mb4 pre-wrap">
-          <div className="mw7 w-100 center ph3 pv3">
+          <div className="mw7 w-100 center ph4 ph3-ns pv3">
             <p className={"f5-ns f6 lh-copy mv0 "+this.props.align}>{this.props.text}</p>
           </div>
         </div>
@@ -1725,7 +1725,7 @@ class CenterSmallVideo extends Component {
 
     return (
       <section id={this.props.id} className={"flex aic relative pv6-l pv5 video-content "+color}>
-        <div className="w-100 center ph4-ns ph3 z4 relative">
+        <div className="w-100 center ph4-ns ph0 ph3-ns z4 relative">
           {text}
           <div className="cf flex aic jcc w-100 pv3">
             <div className="center relative">
@@ -1872,12 +1872,14 @@ function Timeline(props) {
   var special = props.special;
   let grid = [];
   var columns = "";
-  
-  var height = {
-    height: "560px"
-  }
-
   var mobile = $(window).width() <= 959 ? true : false;
+
+  var scrollingAreaStyle = {
+    height: (special&&mobile) ? "158vw" : "560px",
+    backgroundColor: (special) ? "#F4F4F4" : "#FFFFFF",
+    borderTop: (special) ? "#F4F4F4 20px solid" : "none",
+    borderBottom: (special) ? "#F4F4F4 20px solid" : "none"
+  }
   var w = ""
   var h = ""
   if (!special) {
@@ -1889,14 +1891,19 @@ function Timeline(props) {
       h = "320px";
     }
   } else {
-    if(mobile) w = "320px"
-    else w = "360px"
+    if(mobile) {
+      w = "90vw";
+      h = "158vw";
+    } else {
+      w = "320px";
+      h = "560px";
+    }
   }
 
   for (var i = 0; i < props.images.length; i++){
     var photoGridStyle = {
       width: w,
-      height: special ? "560px" : h,
+      height: h,
       backgroundImage: "url("+props.images[i]+")",
       backgroundSize: special ? "contain" : "cover",
       backgroundRepeat: "no-repeat",
@@ -1932,8 +1939,8 @@ function Timeline(props) {
   var container = {
     gridTemplateColumns: columns,
     gridGap: "10px",
-    height: "600px",
-    paddingBottom: "40px"
+    height: (special&&mobile) ? "158vw" : "600px",
+    paddingBottom: (special&&mobile) ? "0" : "40px"
   }
 
   var line = special ? null : {
@@ -1963,8 +1970,8 @@ function Timeline(props) {
       <div className="ma0 ph3">
         {content}
       </div>
-      <p className='f6 o-50 tc mb4'>{"<<往左滑看更多"}</p>
-      <div className="w-100 overflow-hidden relative" style={height}>
+      <p className='f6 o-50 tc mb4'>{"◂◂ 往左滑看更多"}</p>
+      <div className={"w-100 overflow-hidden relative"} style={scrollingAreaStyle}>
         <div className="absolute line" style={line}></div>
         <div className="grid-container nowrap dragscroll relative ph5-l ph0" style={container}>
           {grid}
@@ -2054,7 +2061,7 @@ function Transition(props) {
     fontSize = "f2rem fw7 tracked mv0";
   }
   return (
-    <section id={props.id} className={props.title+" banner pv5-ns pv4 flex aic jcc flex-column-s ph4-ns ph3 z4 "+props.bg}>
+    <section id={props.id} className={props.title+" relative banner pv5-ns pv4 flex aic jcc flex-column-s ph4-ns ph3 z4 "+props.bg}>
       {img}
       <p className={"dib mw7 lh-copy pre-wrap ph4-ns ph3 "+fontSize} dangerouslySetInnerHTML={{__html:props.text}}></p>
     </section>
@@ -2355,7 +2362,7 @@ function Blog(props) {
   }
 
   var mobile = $(window).width() <= 959 ? true : false;
-  var hint = mobile ? null : (<p className='f6 o-50 tc mt4'>{"<<往左滑看更多"}</p>)
+  var hint = mobile ? null : (<p className='f6 o-50 tc mt4'>{"◂◂ 往左滑看更多"}</p>)
 
   let grid = [];
   var columns = "";
@@ -3188,7 +3195,7 @@ class Event03 extends Component {
           label = {this.props.data.photoFullTextLabel[1]}
           bg={false}
         />
-        <p className="w-100 tr f6 pa3 mv0 o-50 lh-normal">諮詢顧問及影像提供：劉烘昌</p>
+        <p className="w-100 tc f6 pa3 mv0 o-50 lh-normal">諮詢顧問及影像提供：劉烘昌</p>
         <EndingVideo id={"37-endingVideo"} text={"一起來守護陸蟹"} link={"https://youtube.com/embed/KyG4mEAyv8E?rel=0"}/>
         <More id={"38-more"} link={this.props.data.moreLink} title={this.props.data.moreTitle}/>
         <CTA id={"39-cta"} switchView={this.props.switchView} next={"dawu-fishing-port"} nextN={"漁港的黑色幽默"}/>
