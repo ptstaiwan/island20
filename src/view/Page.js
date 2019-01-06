@@ -1729,7 +1729,7 @@ class CenterSmallVideo extends Component {
         <div className="w-100 center ph4-ns ph0 ph3-ns z4 relative">
           {text}
           <div className="cf flex aic jcc w-100 pv3">
-            <div className="center relative">
+            <div className="center relative w-100 tc">
               {video_content}
             </div>
           </div>
