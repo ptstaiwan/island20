@@ -1379,7 +1379,7 @@ class Video extends Component {
     }
 
     return (
-      <section id={this.props.id} className={h+" flex aic flex-column-s relative video-content full-video bg-black"} data-active="false">
+      <section id={this.props.id} className={h+" flex aic flex-column-s relative video-content full-video"} data-active="false">
         {video_content}
         {text_content}
       </section>
@@ -1568,7 +1568,8 @@ class CenterVideo extends Component {
       left: 0,
       right: 0,
       top: "20%",
-      margin: "auto"
+      margin: "auto",
+      color: "#F4F4F4"
     }
 
     var unmuteTag = "";
@@ -1604,7 +1605,7 @@ class CenterVideo extends Component {
     }
 
     return (
-      <section id={this.props.id} className="min-vh-150 flex aic relative pv6-l pv5 video-content bg-black z4">
+      <section id={this.props.id} className="min-vh-150 flex aic relative pv6-l pv5 video-content z4">
         <div className="w-100 h-100 absolute top-left clipping">
           <div className={mask+" w-100 h-100 absolute pn top-left z4"}/>
           {/*<div className="fixed play cp z10" onClick={(e) => playVideo(e)}></div>*/}
