@@ -470,8 +470,8 @@ function Taiwan(props) {
     bgStyle.backgroundImage = "url("+kinmenMap+")";
   }
   var position = {
-    left: props.shipPosition.l,
-    top: props.shipPosition.t,
+    left: props.shipPositionL,
+    top: props.shipPositionT,
     margin: 0,
     width: "15%",
     height: "15%"
@@ -2605,7 +2605,8 @@ class Event01 extends Component {
           text2={this.props.data.taiwanText[1]}
           illustration = {this.props.data.taiwan}     
           primaryColor = {"#399DBB"}
-          shipPosition = {{l: "51%", t:"-8%"}}
+          shipPositionL = "51%"
+          shipPositionT = "-8%"
         />
         <Illustration
           id={"3-illustration"}
@@ -2793,7 +2794,8 @@ class Event02 extends Component {
           text2={this.props.data.taiwanText[1]}
           illustration = {this.props.data.taiwan}
           primaryColor = {"#399DBB"}
-          shipPosition = {{l: "35%", t:"47%"}}
+          shipPositionL = "35%"
+          shipPositionT = "47%"
         />
 
         <Illustration
@@ -2918,7 +2920,8 @@ class Event03 extends Component {
           text2={this.props.data.taiwanText[1]}
           illustration = {this.props.data.taiwan}
           primaryColor = {"#399DBB"}
-          shipPosition = {{l: "42%", t:"65%"}}
+          shipPositionL = "42%"
+          shipPositionT = "65%"
         />
 
         <Illustration
@@ -3275,7 +3278,8 @@ class Event04 extends Component {
           text2={this.props.data.taiwanText[1]}
           illustration = {this.props.data.taiwan}
           primaryColor = {"#399DBB"}
-          shipPosition = {{l: "44%", t:"58%"}}
+          shipPositionL = "44%"
+          shipPositionT = "58%"
         />
 
         <Illustration
@@ -3554,7 +3558,8 @@ class Event05 extends Component {
           illustration = {this.props.data.taiwan}
           kinmen = {true}
           primaryColor = {"#399DBB"}
-          shipPosition = {{l: "32%", t:"47%"}}
+          shipPositionL = "32%"
+          shipPositionT = "47%"
         />
 
         <Illustration
@@ -3745,7 +3750,8 @@ class Event06 extends Component {
           text2={this.props.data.taiwanText[1]}
           illustration = {this.props.data.taiwan}
           
-          shipPosition = {{l: "0%", t:"0%"}}
+          shipPositionL = "0%"
+          shipPositionT = "0%"
         />
 
         <Illustration
@@ -3958,7 +3964,8 @@ class Event09 extends Component {
           text2={this.props.data.taiwanText[1]}
           illustration = {this.props.data.taiwan}
           
-          shipPosition = {{l: "0%", t:"0%"}}
+          shipPositionL = "0%"
+          shipPositionT = "0%"
         />
 
         <Illustration
@@ -4058,7 +4065,8 @@ class Event12 extends Component {
           text2={this.props.data.taiwanText[1]}
           illustration = {this.props.data.taiwan}
           
-          shipPosition = {{l: "0%", t:"0%"}}
+          shipPositionL = "0%"
+          shipPositionT = "0%"
         />
 
         <Illustration
