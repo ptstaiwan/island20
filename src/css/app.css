@@ -493,7 +493,22 @@ nav .btn {
 }
 
 #cover, #timeline {
-	min-height: 650px;
+	min-height: 550px;
+}
+
+#timeMachine {
+  left: 50%;
+  transform: translateX(-50%) scale3d(.8,.8,.8);
+  transform-origin: bottom;
+  margin: 0 auto;
+  bottom: 0;
+  width: 450px; 
+}
+
+@media screen and (min-width: 30em) {
+  #timeMachine {
+    transform: translateX(-50%);
+  }
 }
 
 #phone {
@@ -915,7 +930,7 @@ ul.none {
 }
 
 .f2rem {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 .f3 {
@@ -929,17 +944,20 @@ ul.none {
 }
 
 @media screen and (min-width: 30em) {
+  .f2rem {
+    font-size: 1.75rem;
+  }
   .f5-ns {
     font-size: 1.125rem;
     letter-spacing: .4px;
   }
   .f6-ns {
-    font-size: 1rem;
+    font-size: .95rem;
   }
 }
 
 .f6 {
-  font-size: 1rem;
+  font-size: .95rem;
 }
 
 .f7 {
@@ -1412,6 +1430,10 @@ ul.none {
  .overflow-y-hidden-l { overflow-y: hidden; }
  .overflow-y-scroll-l { overflow-y: scroll; }
  .overflow-y-auto-l { overflow-y: auto; }
+}
+
+.mb5rem {
+  margin-bottom: 5rem;
 }
 
 /* Image Gallery */

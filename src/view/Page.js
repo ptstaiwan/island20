@@ -100,8 +100,8 @@ class Page extends Component {
 
   componentDidUpdate() {
     var data = pageEvent_data[this.state.id];
-    // var images  = [data.code];
-    var images  = [];
+    var images  = [data.code];
+    // var images  = [];
     var loaded = false;
     var p = 0;
     var id = setInterval(frame, 10);
@@ -151,8 +151,8 @@ class Page extends Component {
     document.getElementById('loading').classList.remove('fade');
 
     var data = pageEvent_data[this.state.id];
-    // var images  = [data.code];
-    var images  = [];
+    var images  = [data.code];
+    // var images  = [];
     var loaded = false;
     var p = 0;
     var id = setInterval(frame, 10);
@@ -445,7 +445,7 @@ function CoverVideo(props) {
       <div className="mw80 center ph4 w-100 z4 tc relative" style={top}>
         <img src={props.title} className="center mb3" height="150" alt={props.name} />
         <div className="cf white w-80-ns w-100 center ph-ns">
-          <h3 className="f3-ns f6 coverVideo-tag fw4 lh-copy mb0 pre-wrap text-shadow" dangerouslySetInnerHTML={{__html:props.content}}></h3>
+          <h3 className="f3-ns f5 coverVideo-tag fw4 lh-copy mb0 pre-wrap text-shadow" dangerouslySetInnerHTML={{__html:props.content}}></h3>
         </div>
       </div>
       {phone}
@@ -1764,7 +1764,7 @@ function EndingVideo(props) {
 
   return (
     <section id={props.id} className="flex aic relative bg-white pv6-l pv5 overflow-y-hidden">
-      <div className="center ph3-ns ph0 z4 relative mb6 mb5-l">
+      <div className="center ph3-ns ph0 z4 relative mb5rem">
         <div className="f7 f6-ns cf tc black w-60-l w-80-m w-100 center pv2 ph4 bg-white mb2">
           <h3>{props.text}</h3>
         </div>
@@ -2163,7 +2163,7 @@ function TimeChange(props) {
   }
 
   if (mobile) {
-    label.fontSize = ".625em"
+    label.fontSize = ".7em"
   }
 
   return (
@@ -2529,7 +2529,7 @@ function CTA(props) {
             <div className="fl w-third-l w-100 pa2 cp">
               <Link to="/island20">
                 <div className="pv3 pa4 tc ctaBox bg-white">
-                  <figure className="w5 h5 center mv0 flex aic jcc">
+                  <figure className="w-100 h5 center mv0 flex aic jcc">
                     <img src={ctap1} width="210" height="210" alt="回首頁"/>
                   </figure>
                   <p className="f3-ns f4 fw5 mt0 mb2">回首頁</p>
@@ -2540,7 +2540,7 @@ function CTA(props) {
             <div className="fl w-third-l w-100 pa2 cp">
               <Link to={"../"+props.next+"/"}> 
                 <div className="pv3 pa4 tc ctaBox bg-white" onClick={() => props.switchView(props.next)}>
-                  <figure className="w5 h5 center mv0 flex aic jcc">
+                  <figure className="w-100 h5 center mv0 flex aic jcc">
                     <img src={ctap2} width="210" height="210" alt="下一篇"/>
                   </figure>
                   <p className="f3-ns f4 fw5 mt0 mb2">下一篇</p>
@@ -2551,7 +2551,7 @@ function CTA(props) {
             <div className="fl w-third-l w-100 pa2 cp">
               <a href="https://ourisland.pts.org.tw/" target="_blank" rel="noopener noreferrer">
                 <div className="pv3 pa4 tc ctaBox bg-white">
-                  <figure className="w5 h5 center mv0 flex aic jcc">
+                  <figure className="w-100 h5 center mv0 flex aic jcc">
                     <img src={cta3} width="210" height="210" alt="大事記"/>
                   </figure>
                   <p className="f3-ns f4 fw5 mt0 mb2">島官網</p>
