@@ -1120,12 +1120,12 @@ function PhotoMultiple(props) {
     height: mobile ? "440px" : "680px",
     paddingBottom: "40px"
   }
-
-  var auto = mobile ? "":"auto-scroll"
-  auto = props.second === "auto-scroll-2" ? "" : "auto-scroll" 
+  
+  var auto = props.second === "auto-scroll-2" ? props.second : "auto-scroll" 
+  if(mobile) auto = "";
 
   return (
-    <section id={props.id} className={props.second+" flex aic relative bg-white flex-column pt6-l pt5 "+auto}>      
+    <section id={props.id} className={"flex aic relative bg-white flex-column pt6-l pt5 "+auto}>      
       <div className="mw80 center cf black mb5 ph4-ns ph3 w-100">
         <div className="mw7 w-100 center bg-white pre-wrap">
           <p className="f5-ns f6 lh-copy mv0 ph4-ns ph3" dangerouslySetInnerHTML={{__html:props.text}}></p>
@@ -1212,9 +1212,6 @@ class Video extends Component {
             }
           }
         } else {
-          if($this.state.active) {
-            $this.setState({active:false});
-          }
           if(!$t.find('video').get(0).paused) {
             $t.find('video').get(0).pause();
             $t.find('.play').addClass('pause');
@@ -1302,14 +1299,33 @@ class Video extends Component {
       left: 0,
       right: 0,
       top: "20%",
-      margin: "auto"
+      margin: "auto",
+      width: "200px",
+      color: "#f4f4f4"
+    }
+
+    var ship = {
+      backgroundImage: "url("+scrollship+")",
+      backgroundSize: "contain",
+      backgroundRepeat: "no-repeat",
+      height: "60px",
+      width: "60px",
+      position: "absolute",
+      left: 0,
+      right: 0,
+      marginLeft: "0"
     }
     
     var unmuteTag = "";
     var $video = $('#video'+this.props.videoID);
     var video = this.state.active ? (
       <div className="videoBg">
-        <p className="white" style={loadingStyle}>Loading...</p>
+        <div style={loadingStyle}>
+          <div className="dib floatship" style={ship}></div>
+          <p className="dib white ml4">
+            Loading...
+          </p>
+        </div>
         <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
           <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
         </video>
@@ -1324,7 +1340,12 @@ class Video extends Component {
       unmuteTag = "unmute";
       var video = this.state.active ? (
         <div className="videoBg">
-          <p className="white" style={loadingStyle}>Loading...</p>
+          <div style={loadingStyle}>
+            <div className="dib floatship" style={ship}></div>
+            <p className="dib white ml4">
+              Loading...
+            </p>
+          </div>
           <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto">
             <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
           </video>
@@ -1379,7 +1400,7 @@ class Video extends Component {
     }
 
     return (
-      <section id={this.props.id} className={h+" flex aic flex-column-s relative video-content full-video"} data-active="false">
+      <section id={this.props.id} className={h+" flex aic flex-column-s relative video-content full-video bg-black"} data-active="false">
         {video_content}
         {text_content}
       </section>
@@ -1418,9 +1439,6 @@ class SmallVideo extends Component {
             }
           }
         } else {
-          if($this.state.active) {
-            $this.setState({active:false});
-          }
           if(!$t.find('video').get(0).paused) {
             $t.find('video').get(0).pause();
             $t.find('.play').addClass('pause');
@@ -1513,9 +1531,6 @@ class CenterVideo extends Component {
             }
           }
         } else {
-          if($this.state.active) {
-            $this.setState({active:false});
-          }
           if(!$t.find('video').get(0).paused) {
             $t.find('video').get(0).pause();
             $t.find('.play').addClass('pause');
@@ -1569,14 +1584,32 @@ class CenterVideo extends Component {
       right: 0,
       top: "20%",
       margin: "auto",
-      color: "#F4F4F4"
+      width: "200px",
+      color: "#f4f4f4"
+    }
+
+    var ship = {
+      backgroundImage: "url("+scrollship+")",
+      backgroundSize: "contain",
+      backgroundRepeat: "no-repeat",
+      height: "60px",
+      width: "60px",
+      position: "absolute",
+      left: 0,
+      right: 0,
+      marginLeft: "0"
     }
 
     var unmuteTag = "";
     var $video = $('#video'+this.props.videoID);
     var video = this.state.active ? (
       <div className="videoBg">
-        <p className="white" style={loadingStyle}>Loading...</p>
+        <div style={loadingStyle}>
+          <div className="dib floatship" style={ship}></div>
+          <p className="dib white ml4">
+            Loading...
+          </p>
+        </div>
         <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
           <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
         </video>
@@ -1591,21 +1624,26 @@ class CenterVideo extends Component {
       unmuteTag = "unmute";
       video = this.state.active ? (
         <div className="videoBg">
-          <p className="white" style={loadingStyle}>Loading...</p>
-          <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+          <div style={loadingStyle}>
+            <div className="dib floatship" style={ship}></div>
+            <p className="dib white ml4">
+              Loading...
+            </p>
+          </div>
+          <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto">
             <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
           </video>
         </div>
       ) : (
         <div className="videoBg">
-          <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+          <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto">
           </video>
         </div>
       );
     }
 
     return (
-      <section id={this.props.id} className="min-vh-150 flex aic relative pv6-l pv5 video-content z4">
+      <section id={this.props.id} className="min-vh-150 flex aic relative pv6-l pv5 video-content z4 bg-black">
         <div className="w-100 h-100 absolute top-left clipping">
           <div className={mask+" w-100 h-100 absolute pn top-left z4"}/>
           {/*<div className="fixed play cp z10" onClick={(e) => playVideo(e)}></div>*/}
@@ -1658,9 +1696,6 @@ class CenterSmallVideo extends Component {
             }
           }
         } else {
-          if($this.state.active) {
-            $this.setState({active:false});
-          }
           if(!$t.find('video').get(0).paused) {
             $t.find('video').get(0).pause();
             $t.find('.play').addClass('pause');
@@ -1873,6 +1908,7 @@ function Timeline(props) {
   var special = props.special;
   let grid = [];
   var columns = "";
+  var crab = special ? "crab" : "";
   var mobile = $(window).width() <= 959 ? true : false;
 
   var scrollingAreaStyle = {
@@ -1974,7 +2010,7 @@ function Timeline(props) {
       <p className='f6 o-50 tc mb4'>{"◂◂ 往左滑看更多"}</p>
       <div className={"w-100 overflow-hidden relative"} style={scrollingAreaStyle}>
         <div className="absolute line" style={line}></div>
-        <div className="grid-container nowrap dragscroll relative ph5-l ph0" style={container}>
+        <div className={"grid-container nowrap dragscroll relative ph5-l ph0 "+crab} style={container}>
           {grid}
         </div> 
       </div>

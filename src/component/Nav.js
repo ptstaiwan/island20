@@ -1,3 +1,4 @@
+/*global FB*/
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Modal from 'react-responsive-modal';
@@ -34,6 +35,15 @@ class Nav extends Component {
       copyButton.innerHTML = "Copy Link";
     }, 1200);
     return false;
+  }
+
+  socialShare = () => {
+    if (typeof FB !== 'undefined') {
+      FB.ui({
+        method: 'share',
+        href: window.location.href
+      }, function(response){});
+    }
   }
 
   render() {
@@ -76,14 +86,14 @@ class Nav extends Component {
               帶著訊息前往新的地方⋯⋯
             </div>
             <div className="w-100 flex sharing">
-              <div style={{margin: "0 auto"}}>
-                <img src={facebookLogo} height="60px" alt="分享至 Facebook"/>
-                <img src={lineLogo} height="60px" alt="分享至 Line"/>
+              <div className="pn" style={{margin: "0 auto"}}>
+                <img className="pauto mh2 br2 cp" src={facebookLogo} height="60px" alt="分享至 Facebook" onClick={this.socialShare}/>
+                <img className="pauto mh2 br2 cp" src={lineLogo} height="60px" alt="分享至 Line"/>
               </div>
             </div>
             <form className="pt4 share-form flex aic jcc">
               <input className="pv2 mr1 bn f7" type="text" value={link} />
-              <button className="dib w4 bg-near-white bn pv2 f7" type="button" onClick={(e) => this.copyLink(e)}>Copy Link</button>
+              <button className="dib w4 bg-near-white bn pv2 f7 br2" type="button" onClick={(e) => this.copyLink(e)}>複製連結</button>
             </form>
           </div>
         </Modal>

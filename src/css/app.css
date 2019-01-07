@@ -560,6 +560,11 @@ nav .btn {
 .pn {
   pointer-events: none;
 }
+
+.pauto {
+  pointer-events: auto;
+}
+
 .w150 {
   width: 150px;
 }
@@ -918,6 +923,16 @@ ul.none {
   justify-content: start;
 }
 
+@media screen and (min-width: 1660px) {
+  .crab {
+    justify-content: center !important;
+  }
+}
+
+.crab {
+  justify-content: start;
+}
+
 .grid-more:before {
   content:'<< 往左滑看更多';
   display: block;
@@ -1167,6 +1182,10 @@ ul.none {
 
 .scrollship {
   animation: float 2s infinite ease-in-out;
+}
+
+.floatship {
+  animation: float 2s infinite ease-in-out; 
 }
 
 @keyframes float {
