@@ -1,6 +1,4 @@
 @import "tachyons";
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
-@import url("https://fonts.googleapis.com/css?family=Noto+Serif");
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 
 html {
@@ -931,6 +929,12 @@ ul.none {
 
 .crab {
   justify-content: start;
+}
+
+@media screen and (min-width: 60em) {
+  .pl25-l {
+      padding-left: 2.5rem;
+  }
 }
 
 .grid-more:before {

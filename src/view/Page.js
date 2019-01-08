@@ -1487,7 +1487,7 @@ class SmallVideo extends Component {
       <section id={this.props.id} className={"flex aic relative pv6-l pv5 video-content smallVideo "+this.props.bg}>
         <div className="mw80 w-100 center z4 relative">
           <div className="cf flex aic flex-column-s">
-            <div className="fl-l w-100 w-50-l ph2-l pv3 relative">
+            <div className="fl-l w-100 w-50-l pl25-l pv3 relative">
               {video_content}
             </div>
             <div className="fr-l w-100 w-50-l mw500 center ml5-l ph4-ns ph3 pv3">
@@ -2996,6 +2996,7 @@ class Event03 extends Component {
 
         <Transition
           id={"5-transition"} 
+          bg={"bg-white"}
           text={this.props.data.videoText[1]}
         />
 
@@ -3159,6 +3160,7 @@ class Event03 extends Component {
 
         <Transition
           id={"25-transition"} 
+          bg={"bg-white"}
           text={this.props.data.videoText[7]}
         />
         <Video 
@@ -3207,6 +3209,7 @@ class Event03 extends Component {
 
         <Transition
           id={"32-transition"} 
+          bg={"bg-white"}
           text={this.props.data.transitionText[2]}
         />
 
@@ -3375,6 +3378,7 @@ class Event04 extends Component {
         <Transition
           id={"6-transition"} 
           text={this.props.data.panoramaText}
+          bg={"bg-white"}
         />
         <Panorama
           id={"7-panorama"} 
@@ -3419,6 +3423,7 @@ class Event04 extends Component {
 
         <Transition
           id={"14-transition"}
+          bg={"bg-white"}
           text={this.props.data.photoFullText[1]}
         />
         <Video 
@@ -3634,6 +3639,7 @@ class Event05 extends Component {
 
         <Transition
           id={"5-transition"}
+          bg={"bg-white"}
           text={this.props.data.transitionText}
         />
 
@@ -3858,7 +3864,7 @@ class Event06 extends Component {
           text1={this.props.data.videoText[3]}
         />
 
-        <Transition text={this.props.data.videoText[4]}/>
+        <Transition text={this.props.data.videoText[4]} bg={"bg-white"}/>
         <Video 
           videoID="04"
           link={this.props.data.video[3]}
@@ -3946,7 +3952,7 @@ class Event07 extends Component {
           text1={this.props.data.videoText[1]}
         />
 
-        <Transition text={this.props.data.photoSlideText}/>
+        <Transition text={this.props.data.photoSlideText} bg={"bg-white"}/>
         <PhotoSlide
           text={this.props.data.photoSlideLabel}
           images={this.props.data.photoSlidePhoto}
@@ -3979,7 +3985,7 @@ class Event07 extends Component {
           image = {this.props.data.photoFull[1]}
           label = {this.props.data.photoFullTextLabel[1]}
         />        
-        <Transition text={this.props.data.videoText[3]}/>
+        <Transition text={this.props.data.videoText[3]} bg={"bg-white"}/>
         <Video 
           videoID="04"
           link={this.props.data.video[3]}
@@ -4028,7 +4034,7 @@ class Event09 extends Component {
           illustration = {this.props.data.illustration}
         />
 
-        <Transition text={this.props.data.transitionText[0]} />
+        <Transition text={this.props.data.transitionText[0]} bg={"bg-white"}/>
         <Video 
           videoID="01"
           link={this.props.data.video[0]}
@@ -4049,14 +4055,14 @@ class Event09 extends Component {
           link={this.props.data.video[1]}
         />
 
-        <Transition text={this.props.data.transitionText[1]} />
+        <Transition text={this.props.data.transitionText[1]} bg={"bg-white"}/>
         <Video 
           videoID="03"
           link={this.props.data.video[2]}
           text1=""
         />
 
-        <Transition text={this.props.data.transitionText[2]} />
+        <Transition text={this.props.data.transitionText[2]} bg={"bg-white"}/>
         <PhotoSwitch 
           position={"fl-l"}
           images={this.props.data.photoswitch1} 
@@ -4128,7 +4134,7 @@ class Event12 extends Component {
           text1={this.props.data.illustrationText[0]}
           illustration = {this.props.data.illustration}
         />
-        <Transition text={this.props.data.transitionText[0]} />
+        <Transition text={this.props.data.transitionText[0]} bg={"bg-white"}/>
         <PhotoTextFull
           text1=""
           image = {this.props.data.photoFull[0]}
@@ -4161,7 +4167,7 @@ class Event12 extends Component {
           text1={this.props.data.videoText[1]}
         />
 
-        <Transition text={this.props.data.transitionText[1]} />
+        <Transition text={this.props.data.transitionText[1]} bg={"bg-white"}/>
         <Video 
           videoID="03"
           link={this.props.data.video[2]}
@@ -4194,7 +4200,7 @@ class Event12 extends Component {
           top={false}
         /> {/*提告*/}
 
-        <Transition text={this.props.data.transitionText[2]} />
+        <Transition text={this.props.data.transitionText[2]} bg={"bg-white"}/>
         <EndingVideo text={"想知道台鹼安順廠更多故事...."} link={"https://youtube.com/embed/6CwZYq6vt0k?rel=0"}/>
       </div>
     );
