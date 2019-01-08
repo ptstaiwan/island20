@@ -1157,7 +1157,7 @@ function PhotoContrast(props) {
   let label = null
   if(props.label !== "") {
     label = (
-      <label className="f7 mt3 o-50 lh-normal" >{props.label}</label>
+      <label className="f7-ns f8 mt3 o-50 lh-normal mh2" >{props.label}</label>
     )
   }
   return (
@@ -2340,7 +2340,7 @@ function TimeChangeSide(props) {
   var content = null;
   if(props.text1 !== "") {
     content = (
-      <div className="fl-l w-50-l w-100 pre-wrap">
+      <div className="fl-l w-50-l w-100 pre-wrap mt4">
         <div className="mw500 center ml5-l ph3 pv3">
           <div className="w-100 h-100 absolute pn top-left" />
           <p className="pre-wrap f5-ns f6 lh-copy mv0 z4 relative black mt0-ns mt4 ph3" dangerouslySetInnerHTML={{__html:props.text1}}></p>
@@ -2350,8 +2350,8 @@ function TimeChangeSide(props) {
   } else {
     content = (
       <figure className="fr-l w-50-l w-100 h-100-l h-50 relative tc flex jcc flex-column" style={mb}>
+        <label className="f5-ns f6 mb3 tl w-90-l w-100 lh-normal" >{props.label}</label>
         <img style={halfImageCover} src={props.image[1]} width="90%" alt="background"/>
-        <label className="f7 mt3 o-50 w-90-l w-100 mb4 lh-normal" >{props.label}</label>
       </figure>
     )
   }
@@ -2488,7 +2488,7 @@ function Blog(props) {
           <img className="mb3" src={props.image[0]} alt={props.label[0]}/>
           <label className="f7 mt2 o-50 lh-normal" >{props.label[0]}</label>
         </div>
-        <div className="fr-l w-100 w-50-l relative tc mb5 mb0-ns">
+        <div className="fr-l w-100 w-50-l relative tc mb0">
           <img className="mb3" src={props.image[1]} alt={props.label[1]}/>
           <label className="f7 mt2 o-50 lh-normal" >{props.label[1]}</label>
         </div>
@@ -2528,13 +2528,17 @@ function More(props) {
     borderTop: "1px #eee solid"
   }
 
+  var borderLink = {
+    borderColor: props.color
+  }
+
   var len = props.link.length;
   var links = [];
   for(var i = 0; i < len; i++) {
     var link = (
       <div className="fl w-100 w-50-ns pa2" key={i}>
         <div className="bg-white pv2 f4-ns f5 fw5">
-          <a className="bb bw2 b--blue" href={props.link[i]} target="_blank">
+          <a className="bb bw1" href={props.link[i]} target="_blank" style={borderLink}>
             {props.title[i]}
           </a>
         </div>
@@ -2803,7 +2807,7 @@ class Event01 extends Component {
 
         <EndingVideo id={"20-endingVideo"} text="來收看，淡水河20年來的故事..." link={"https://www.youtube.com/embed/pJcFZSLkelU?rel=0"}/>
         {/*<Next switchView={this.props.switchView} next={"reborn-erren-river"} prev={"reborn-erren-river"}/>*/}
-        <More id={"21-more"} link={this.props.data.moreLink} title={this.props.data.moreTitle}/>
+        <More id={"21-more"} link={this.props.data.moreLink} title={this.props.data.moreTitle} color={"#3A85A6"}/>
         <CTA id={"22-cta"} switchView={this.props.switchView} next={"reborn-erren-river"} nextN={"重生 二仁溪"}/>
       </div>
     );
@@ -2931,7 +2935,7 @@ class Event02 extends Component {
         </Modal>
 
         <EndingVideo id={"13-endingVideo"} text={"來看二仁溪，二十年來承受了什麼..."} link={"https://youtube.com/embed/gfI8M0LGMss?rel=0"}/>
-        <More id={"14-more"} link={this.props.data.moreLink} title={this.props.data.moreTitle}/>
+        <More id={"14-more"} link={this.props.data.moreLink} title={this.props.data.moreTitle} color={"#3A85A6"}/>
         <CTA id={"15-cta"} switchView={this.props.switchView} next={"land-crabs-survival"}  nextN={"陸蟹闖天關"}/>
       </div>
     );
@@ -3237,7 +3241,7 @@ class Event03 extends Component {
         />
         <p className="w-100 tc f6 pa3 mv0 o-50 lh-normal">諮詢顧問及影像提供：劉烘昌</p>
         <EndingVideo id={"37-endingVideo"} text={"一起來守護陸蟹"} link={"https://youtube.com/embed/KyG4mEAyv8E?rel=0"}/>
-        <More id={"38-more"} link={this.props.data.moreLink} title={this.props.data.moreTitle}/>
+        <More id={"38-more"} link={this.props.data.moreLink} title={this.props.data.moreTitle} color={"#3A85A6"}/>
         <CTA id={"39-cta"} switchView={this.props.switchView} next={"dawu-fishing-port"} nextN={"漁港的黑色幽默"}/>
       </div>
     );
@@ -3573,7 +3577,7 @@ class Event04 extends Component {
           label = {this.props.data.photoFullTextLabel[3]}
         />
         <EndingVideo id={"36-endingVideo"} text="一起來關心我們的海岸" link={"https://www.youtube.com/embed/C-Au_8Y6tCc?rel=0"}/>
-        <More id={"37-more"} link={this.props.data.moreLink} title={this.props.data.moreTitle}/>
+        <More id={"37-more"} link={this.props.data.moreLink} title={this.props.data.moreTitle} color={"#3A85A6"}/>
         <CTA id={"38-cta"} switchView={this.props.switchView} next={"kinmen-Hou-feng-kang"} nextN={"不靠海的金門後豐港"}/>
       </div>
     );
@@ -3782,7 +3786,7 @@ class Event05 extends Component {
         />
 
         <EndingVideo id={"21-endingVideo"} text={"了解更多，關於金門鱟..."} link={"https://youtube.com/embed/nlWGkBTafkc?start=716&rel=0"}/>
-        <More id={"21-more"} link={this.props.data.moreLink} title={this.props.data.moreTitle}/>
+        <More id={"21-more"} link={this.props.data.moreLink} title={this.props.data.moreTitle} color={"#3A85A6"}/>
         <CTA id={"23-cta"} switchView={this.props.switchView} next={"changing-tamsui-river"} nextN={"變遷 淡水河"}/>
       </div>
     );
