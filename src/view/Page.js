@@ -547,7 +547,7 @@ function GoogleEarthLogo(props) {
 /*03*/
 function Illustration(props) {
   var text2 = null;
-  var mobile = $(window).width() <= 959 ? true : false;
+  var mobile = $(window).width() > 959 ? false : true;
 
   var h = "min-vh-150"
   var mt50vh = "mt50vh"
@@ -604,7 +604,7 @@ function Illustration(props) {
 
 /*04*/
 function PhotoTextFull(props) {
-  var mobile = $(window).width() <= 959 ? true : false;
+  var mobile = $(window).width() > 959 ? false : true;
 
   var fullImage = {
     height: mobile && props.switch ? "auto" : "100vh",
@@ -694,7 +694,7 @@ function PhotoTextFull(props) {
 }
 
 function PhotoCenterTextFull(props) {
-  var mobile = $(window).width() <= 959 ? true : false;
+  var mobile = $(window).width() > 959 ? false : true;
   var fullImage = {
     height: "100vh",
     objectFit: "cover",
@@ -743,7 +743,7 @@ function PhotoCenterTextFull(props) {
 
 /*05*/
 function PhotoText(props) {
-  var mobile = $(window).width() <= 959 ? true : false;
+  var mobile = $(window).width() > 959 ? false : true;
   var photo, text = "";
   var color1 = "bg-white"
   var color2 = "bg-near-white";
@@ -1080,7 +1080,7 @@ function PhotoSwitch(props) {
 function PhotoMultiple(props) {
   let grid = [];
   var columns = "";
-  var mobile = $(window).width() <= 959 ? true : false;
+  var mobile = $(window).width() > 959 ? false : true;
   var hint = mobile ? (<p className='f6 o-50 tc mt4'>{"◂◂ 往左滑看更多"}</p>) : null;
 
   var height = {
@@ -1910,7 +1910,7 @@ function Timeline(props) {
   let grid = [];
   var columns = "";
   var crab = special ? "crab" : "";
-  var mobile = $(window).width() <= 959 ? true : false;
+  var mobile = $(window).width() > 959 ? false : true;
 
   var scrollingAreaStyle = {
     height: (special&&mobile) ? "158vw" : "560px",
@@ -2177,7 +2177,7 @@ function Bullets(props) {
 
 function TimeChange(props) {
 
-  var mobile = $(window).width() <= 959 ? true : false;
+  var mobile = $(window).width() > 959 ? false : true;
   var z = "";
   var h = "min-vh-180";
   if(props.last && !mobile) {
@@ -2233,7 +2233,7 @@ function TimeChange(props) {
 }
 
 function TimeChangeFull(props) {
-  var mobile = $(window).width() <= 959 ? true : false;
+  var mobile = $(window).width() > 959 ? false : true;
   var z = "";
   var h = "min-vh-150"
 
@@ -2311,7 +2311,7 @@ function TimeChangeSide(props) {
     z = "z-1";
     h = "min-vh-200"
   }
-  var mobile = $(window).width() <= 959 ? true : false;
+  var mobile = $(window).width() > 959 ? false : true;
 
   var imgH = "100%";
   if(!props.cover) {
@@ -2399,7 +2399,7 @@ function Blog(props) {
     b = "order-1"
   }
 
-  var mobile = $(window).width() <= 959 ? true : false;
+  var mobile = $(window).width() > 959 ? false : true;
   var hint = mobile ? null : (<p className='f6 o-50 tc mt4'>{"◂◂ 往左滑看更多"}</p>)
 
   let grid = [];
