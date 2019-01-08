@@ -224,6 +224,7 @@ class Page extends Component {
 
       $(document).ready(function(){
 
+
       // Autoscroll
       var scroll = 0;
       var add = 0;
@@ -490,8 +491,8 @@ function Taiwan(props) {
     display: "inline-block"
   }
   return (
-    <section id={props.id} className="flex aic bg-near-white pv5 pv6-ns ph4 ph0-ns flex-wrap">
-      <div className="bg-near-white w-100 w-50-ns">
+    <section id={props.id} className="flex aic bg-near-white pv5 pv6-l ph4 ph0-l flex-wrap">
+      <div className="bg-near-white w-100 w-50-l">
         <div className="relative" style={bgStyle}>
           <Overlay overlayColor={props.primaryColor} />
           <figure className="absolute floatship" style={position}>
@@ -500,7 +501,7 @@ function Taiwan(props) {
           </figure>
         </div>
       </div>
-      <div className="pt4 pa5-ns w-100 w-50-ns">
+      <div className="pt4 pa5-l w-100 w-50-l">
         <h2 className="mh4-l f4-ns f5 fw7 lh-copy mt0">{props.text1}</h2>
         <p className="mh4-l f5-ns f6 lh-copy mv0 mw500">{props.text2}</p>
       </div>
@@ -2205,17 +2206,17 @@ function TimeChange(props) {
   return (
     <section id={props.id} className={h+" flex aic relative timeChange-text bg-white "+z}>
       <div className="w-100 h-100 absolute top-left time-clipping fade">
-        <div className="bg-white w-100 h-100-m h-100-l fixed-ns fixed-content pn flex aic">
+        <div className="bg-white w-100 h-100-m h-100-l fixed-l fixed-content pn flex aic">
           <div className="center w-100 z4 pre-wrap">
-            <div className="mw7 mv3 mv0-ns center w-100 pt0-ns pt4 ph3 h5-ns">
-              <p className="lh-copy mv0 dark-gray ph3 ph0-ns" dangerouslySetInnerHTML={{__html:props.text1}}></p>
+            <div className="mw7 mv3 mv0-l center w-100 pt0-l pt4 ph3 h5-l">
+              <p className="lh-copy mv0 dark-gray ph3 ph0-l" dangerouslySetInnerHTML={{__html:props.text1}}></p>
             </div>
-            <figure className="w-100 flex flex-wrap flex-nowrap-ns ma0">
-              <div className="relative mr2-ns">
+            <figure className="w-100 flex flex-wrap flex-nowrap-l ma0">
+              <div className="relative mr2-l">
                 <img src={props.image[0]} alt="description"/>
                 <label style={label}>{props.labels[0]}</label>
               </div>
-              <div className="relative mr2-ns">
+              <div className="relative mr2-l">
                 <img src={props.image[1]} alt="description"/>
                 <label style={label}>{props.labels[1]}</label>
               </div>
@@ -2538,7 +2539,7 @@ function More(props) {
     var link = (
       <div className="fl w-100 w-50-ns pa2" key={i}>
         <div className="bg-white pv2 f4-ns f5 fw5">
-          <a className="bb bw1" href={props.link[i]} target="_blank" style={borderLink}>
+          <a className="bb bw1" href={props.link[i]} target="_blank" style={borderLink} rel="noopener noreferrer">
             {props.title[i]}
           </a>
         </div>
