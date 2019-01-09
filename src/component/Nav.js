@@ -58,6 +58,7 @@ class Nav extends Component {
       backgroundPosition: "15px center",
       width: "100px"
     }
+    var url = "http://line.naver.jp/R/msg/text/?穿梭島嶼時光機 - 我們的島二十週年"+"%0D%0A"+link;
     // if(this.props.timeline) timeline = (<a href="/ourisland/timeline/" target="_blank"><button className="btn cp h2 ph3">前往大紀事</button></a>);
     return (
       <div>
@@ -88,7 +89,9 @@ class Nav extends Component {
             <div className="w-100 flex sharing">
               <div className="pn" style={{margin: "0 auto"}}>
                 <img className="pauto mh2 br2 cp" src={facebookLogo} height="60px" alt="分享至 Facebook" onClick={this.socialShare}/>
-                <img className="pauto mh2 br2 cp" src={lineLogo} height="60px" alt="分享至 Line"/>
+                <a href={url} target="_blank" rel="noopener noreferrer">
+                  <img className="pauto mh2 br2 cp" src={lineLogo} height="60px" alt="分享至 Line"/>
+                </a>
               </div>
             </div>
             <form className="pt4 share-form flex aic jcc">
