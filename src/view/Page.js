@@ -28,6 +28,7 @@ import googleEarthLogo from '../assets/images/google_earth.svg';
 import tvLine from '../assets/images/tvline-4.png';
 import ship from '../assets/images/machinemap.svg'; // eslint-disable-line no-unused-vars
 import scrollship from '../assets/images/時光機.svg';
+import placeholder from '../assets/images/placeholder.jpg';
 
 import fish1 from '../assets/images/fish-1.svg';
 import fish2 from '../assets/images/fish-2.svg';
@@ -718,7 +719,7 @@ function PhotoCenterTextFull(props) {
     objectPosition: props.objectP
   }
   var bottomRight = {
-    bottom: "0px",
+    bottom: mobile ? "45px": "0",
     right: "0px",
     background: "rgba(0,0,0,.2)",
     padding: mobile ? "10px" : "20px"
@@ -1345,13 +1346,13 @@ class Video extends Component {
             Loading...
           </p>
         </div>
-        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
           <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
         </video>
       </div>
     ) : (
       <div className="videoBg">
-        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
         </video>
       </div>
     )
@@ -1365,13 +1366,13 @@ class Video extends Component {
               Loading...
             </p>
           </div>
-          <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto">
+          <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
             <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
           </video>
         </div>
       ) : (
         <div className="videoBg">
-          <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto">
+          <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
           </video>
         </div>
       )
@@ -1403,7 +1404,7 @@ class Video extends Component {
       video_content = this.state.active ? (
         <div className={"cf flex aic jcc w-100" + mb4}>
           <div className="center relative">
-            <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+            <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
               <source src={this.props.link} type="video/mp4"/>
             </video>
           </div>
@@ -1411,7 +1412,7 @@ class Video extends Component {
       ) : (
         <div className={"cf flex aic jcc w-100" + mb4}>
           <div className="center relative">
-            <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+            <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
             </video>
           </div>
         </div>
@@ -1494,11 +1495,11 @@ class SmallVideo extends Component {
     }
 
     var video_content = this.state.active ? (
-      <video id={'video'+this.props.videoID} className="w-100" controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+      <video id={'video'+this.props.videoID} className="w-100" controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
         <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
       </video>
     ) : (
-      <video id={'video'+this.props.videoID} className="w-100" controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+      <video id={'video'+this.props.videoID} className="w-100" controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
       </video>
     );
 
@@ -1629,13 +1630,13 @@ class CenterVideo extends Component {
             Loading...
           </p>
         </div>
-        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
           <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
         </video>
       </div>
     ) : (
       <div className="videoBg">
-        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto">
+        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
         </video>
       </div>
     );
@@ -1649,13 +1650,13 @@ class CenterVideo extends Component {
               Loading...
             </p>
           </div>
-          <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto">
+          <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
             <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
           </video>
         </div>
       ) : (
         <div className="videoBg">
-          <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto">
+          <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
           </video>
         </div>
       );
@@ -1770,11 +1771,11 @@ class CenterSmallVideo extends Component {
     }
 
     var video_content = this.state.active ? (
-      <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay style={max} data-autoplay-fallback="muted" preload="auto">
+      <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay style={max} data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
         <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
       </video>
     ) : (
-      <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay style={max} data-autoplay-fallback="muted" preload="auto">
+      <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay style={max} data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
       </video>
     )
 
@@ -1932,7 +1933,7 @@ function Timeline(props) {
   var mobile = $(window).width() > 959 ? false : true;
 
   var ths = "560px";
-  if(mobile) ths = "460px";
+  if(mobile) ths = "480px";
 
   var scrollingAreaStyle = {
     height: (special&&mobile) ? "158vw" : ths,
@@ -1997,13 +1998,14 @@ function Timeline(props) {
   }
 
   var th = "600px";
-  if(mobile) th = "500px";
+  if(mobile) th = "520px";
 
   var container = {
     gridTemplateColumns: columns,
     gridGap: "10px",
     height: (special&&mobile) ? "158vw" : th,
-    paddingBottom: (special&&mobile) ? "0" : "40px"
+    paddingBottom: (special&&mobile) ? "0" : "40px",
+    overflowY: "hidden"
   }
 
   var line = special ? null : {
@@ -2270,7 +2272,7 @@ function TimeChangeFull(props) {
     width: "100%"
   }
   var bottomRight = {
-    bottom: "40px",
+    bottom: mobile ? "45px": "0",
     right: "0px",
     background: "rgba(0,0,0,.2)",
     padding: mobile ? "10px" : "20px"
@@ -2356,7 +2358,7 @@ function TimeChangeSide(props) {
   }
 
   var bottomRight = {
-    bottom: "0px",
+    bottom: mobile ? "45px": "0",
     right: "0px",
     background: "rgba(0,0,0,.2)",
     padding: mobile ? "10px" : "20px"
@@ -3589,6 +3591,7 @@ class Event04 extends Component {
         <Blog
           id={"33-blog"}
           number={2}
+          bg={"bg-white"}
           text={this.props.data.blogText[1]}
           image={this.props.data.blogImage[1]}
           label={this.props.data.blogLabel[1]}
