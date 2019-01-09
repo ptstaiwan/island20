@@ -134,15 +134,7 @@ class Events extends Component {
 
   event = (content, i) => {
     var mobile = $(window).width() > 480 ? false : true;
-    var event_content = mobile ? (
-      <div>
-        <figure className="eventFigure circle-10 br-100 ma3 bg-white flex aic jcc">
-          <img src={content.icon} width="120" height="120" alt={content.name} />
-        </figure>
-        <p className="f5 fw7 mv0 tracked">{content.name.split('@')[0]}</p>
-        <p className="f6 o-50 fw4 mv2">{content.name.split('@')[1]}</p>
-      </div>
-      ) : (
+    var event_content = (
       <Link to={"/island20/"+content.url+"/"} target="_blank">
         <figure className="eventFigure circle-10 br-100 ma3 bg-white flex aic jcc">
           <img src={content.icon} width="120" height="120" alt={content.name} />

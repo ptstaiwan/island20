@@ -42,6 +42,11 @@ import cta3 from '../assets/images/CTA-Icons-3.svg';
 import ctap2 from '../assets/images/pageCTA-1.svg';
 import ctap1 from '../assets/images/pageCTA-2.svg';
 
+import success from '../assets/images/我們的島cover-08.svg';
+import successTitle from '../assets/images/我們的島cover-09.svg';
+import successBg1 from '../assets/images/我們的島cover-10.svg';
+import successBg2 from '../assets/images/我們的島cover-11.svg';
+
 // import mousewheel from 'jquery-mousewheel';
 // import {TweenMax} from "gsap/all";
 
@@ -58,8 +63,7 @@ class Page extends Component {
       drag: false,
       interval: null,
       interval2: null,
-      scrollprogress: null,
-      chatbot: props.location.hash.indexOf('chatbot') > -1 ? true : false
+      scrollprogress: null
     };
 
     
@@ -102,8 +106,8 @@ class Page extends Component {
 
   componentDidUpdate() {
     var data = pageEvent_data[this.state.id];
-    var images  = [data.code];
-    // var images  = [];
+    // var images  = [data.code];
+    var images  = [];
     var loaded = false;
     var p = 0;
     var id = setInterval(frame, 10);
@@ -162,8 +166,8 @@ class Page extends Component {
     document.getElementById('loading').classList.remove('fade');
 
     var data = pageEvent_data[this.state.id];
-    var images  = [data.code];
-    // var images  = [];
+    // var images  = [data.code];
+    var images  = [];
     var loaded = false;
     var p = 0;
     var id = setInterval(frame, 10);
@@ -420,6 +424,39 @@ export default Page;
 
 /* Components */
 
+function ChatBot(props) {
+  var chatbot = {
+    backgroundColor: "#cddbdd"
+  }
+  var successStyle = {
+    width: "40vw",
+    maxWidth: "300px"
+  }
+  var successBg = {
+    backgroundImage: "url("+successBg1+")",
+    backgroundSize: "contain",
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center",
+    maxWidth: "220px"
+  }
+  return (
+    <section id={props.id} className="pv5-l pv4 flex aic relative" style={chatbot}>
+      <div className="mw8 center ph3 w-100">
+        <div className="cf">
+          <div className="fl w-50 pa2 tc">
+            <img src={success} style={successStyle}/>
+          </div>
+          <div className="fl w-50 pa2 tc mw500">
+            <img src={successTitle} width="100%"/>
+            <p className="f3-ns f6 fw5 mt2 mb3 pa0 lh-copy nowrap">快，回去找9526吧！</p>
+            <div style={successBg} className="w-50-l w-90 h4-ns h3 db center cp"/>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+
 /*01*/
 function CoverVideo(props) {
   var gradient = {
@@ -476,13 +513,15 @@ function CoverVideo(props) {
 
 /*02*/
 function Taiwan(props) {
+  var mobile = $(window).width() > 959 ? false : true;
   var bgStyle = {
     backgroundImage: "url("+taiwanMap+")",
     backgroundSize: "cover",
     width: "100%",
     padding: "28.125% 0",
     borderTop: props.primaryColor+ " .25rem solid",
-    borderBottom: props.primaryColor+ " .25rem solid"
+    borderBottom: props.primaryColor+ " .25rem solid",
+    marginLeft: mobile ? "0" : "2.5rem"
   }
   if (props.kinmen === true) {
     bgStyle.backgroundImage = "url("+kinmenMap+")";
@@ -509,7 +548,7 @@ function Taiwan(props) {
   }
   return (
     <section id={props.id} className="flex aic bg-near-white pv5 pv6-l ph4 ph0-l flex-wrap">
-      <div className="bg-near-white w-100 w-50-l">
+      <div className="bg-near-white w-100 w-50-ns">
         <div className="relative" style={bgStyle}>
           <Overlay overlayColor={props.primaryColor} />
           <figure className="absolute floatship" style={position}>
@@ -1799,7 +1838,7 @@ function EndingVideo(props) {
   var mobile = $(window).width() > 480 ? false : true;
 
   var machineStyle = {
-    bottom: "-28px",
+    bottom: "0",
     width: mobile ? "270px": "90vw",
     maxWidth: "400px",
     zIndex: 10
@@ -1930,10 +1969,11 @@ function Timeline(props) {
   let grid = [];
   var columns = "";
   var crab = special ? "crab" : "";
-  var mobile = $(window).width() > 959 ? false : true;
+  var mobile = $(window).width() > 480 ? false : true;
 
   var ths = "560px";
   if(mobile) ths = "480px";
+  if(special) ths = "600px";
 
   var scrollingAreaStyle = {
     height: (special&&mobile) ? "158vw" : ths,
@@ -2656,10 +2696,14 @@ function CTA(props) {
 
 
 class Event01 extends Component {
-  state = {
-    open: false,
-    image: "",
-    description: ""
+  constructor(props) {
+    super(props);
+    this.state = {
+      open: false,
+      image: "",
+      description: "",
+      chatbot: window.location.href.indexOf('chatbot') > -1 ? true : false
+    }
   }
   componentDidMount(){
     console.log("event01");
@@ -2678,6 +2722,7 @@ class Event01 extends Component {
   };
   render() {
     const { open } = this.state;
+    var chatbot_content = this.state.chatbot ? (<ChatBot id={"chatbot-content"}/>) : null;
     return (
       <div>
         <CoverVideo id={"1-coverVideo"} code={this.props.data.code} name={this.props.data.title} title={this.props.data.coverTitle} content={this.props.data.coverDescription} link={this.props.data.coverVideo}/>
@@ -2833,9 +2878,9 @@ class Event01 extends Component {
           text1={this.props.data.videoText[2]}
           bg={false}
         />
-
+  
         <EndingVideo id={"20-endingVideo"} text="來收看，淡水河20年來的故事..." link={"https://www.youtube.com/embed/pJcFZSLkelU?rel=0"}/>
-        {/*<Next switchView={this.props.switchView} next={"reborn-erren-river"} prev={"reborn-erren-river"}/>*/}
+        {chatbot_content}
         <More id={"21-more"} link={this.props.data.moreLink} title={this.props.data.moreTitle} color={"#3A85A6"}/>
         <CTA id={"22-cta"} switchView={this.props.switchView} next={"reborn-erren-river"} nextN={"重生 二仁溪"}/>
       </div>
@@ -3073,7 +3118,7 @@ class Event03 extends Component {
         />
         <Transition
           id={"11-transition"} 
-          title={"transitionTitle"}
+          title={"transitionTitle bn"}
           bg={"bg-white black tc"}
           illustration={this.props.data.illustrationCrab[0]}
           text={"弱肉強食 生死關"}
