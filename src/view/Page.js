@@ -21,6 +21,7 @@ import endingV from '../assets/images/endingVideo.png';
 import messengerIcon from '../assets/images/messenger.png';
 import hand from '../assets/images/hand.svg';
 import timemachine from '../assets/images/timemachine.svg';
+import timemachinehand from '../assets/images/timemachinehand.svg';
 import taiwanMap from '../assets/images/taiwan-static.png';
 import kinmenMap from '../assets/images/kinmen-static.png';
 import googleEarthLogo from '../assets/images/google_earth.svg';
@@ -141,6 +142,15 @@ class Page extends Component {
       console.info('But these loaded fine:');
       console.info(err.loaded);
     });
+    $(document).ready(function(){
+      let vh = window.innerHeight * 0.01;
+      $('.vh-100').css('height', 100 * vh+'px');
+      $('.min-vh-100').css('min-height', 100 * vh+'px');
+      $('.min-vh-150').css('min-height', 150 * vh+'px');
+      $('.min-vh-180').css('min-height', 180 * vh+'px');
+      $('.min-vh-200').css('min-height', 240 * vh+'px');
+      $('.min-vh-300').css('min-height', 340 * vh+'px');
+    });
   }
 
   componentDidMount(){
@@ -223,7 +233,13 @@ class Page extends Component {
       // });
 
       $(document).ready(function(){
-
+        let vh = window.innerHeight * 0.01;
+        $('.vh-100').css('height', 100 * vh+'px');
+        $('.min-vh-100').css('min-height', 100 * vh+'px');
+        $('.min-vh-150').css('min-height', 150 * vh+'px');
+        $('.min-vh-180').css('min-height', 180 * vh+'px');
+        $('.min-vh-200').css('min-height', 240 * vh+'px');
+        $('.min-vh-300').css('min-height', 340 * vh+'px');
 
       // Autoscroll
       var scroll = 0;
@@ -550,15 +566,15 @@ function Illustration(props) {
   var mobile = $(window).width() > 959 ? false : true;
 
   var h = "min-vh-150"
-  var mt50vh = "mt50vh"
+  var mt50vh = "cf mt50vh"
   if(props.number === 2) {
     h = "min-vh-200"
     if(mobile) {
       h = "";
-      mt50vh = "mt3"
+      mt50vh = "mt0"
     }
     text2 = (
-      <div className={"cf black "+mt50vh}>
+      <div className={"black "+mt50vh}>
         <div className="w-50-l mw500 mh3-l center w-100 fr-l pa4-l pa3 bg-white">
           <p className="f5-ns f6 lh-copy mv0">{props.text2}</p>
         </div>
@@ -613,8 +629,8 @@ function PhotoTextFull(props) {
     objectPosition: mobile && props.switch ? "center center" : props.objectP
   }
   var bottomRight = {
-    bottom: "0px",
-    right: "0px",
+    bottom: mobile ? "45px": "0",
+    right: "0",
     background: "rgba(0,0,0,.2)",
     padding: mobile ? "10px" : "20px"
   }
@@ -774,7 +790,7 @@ function PhotoText(props) {
         <Controller>
           <Scene
             triggerElement="#triggerText"
-            duration={1000}
+            duration={1600}
             pin={false}
           >
           {(progress) => (
@@ -802,21 +818,21 @@ function PhotoText(props) {
           </Scene>
           <Scene
             triggerElement="#triggerText"
-            duration={1200}
+            duration={1800}
             pin={false}
           >
           {(progress) => (
             <Tween
               from={{
                 css: {
-                  top: '-100px',
+                  top: '0px',
                   left: '100vw',
                   rotation: -10,
                 }
               }}
               to={{
                 css: {
-                  top: '0px',
+                  top: '100px',
                   left: '-500px',
                   rotation: 10,
                 }
@@ -922,13 +938,13 @@ function PhotoText(props) {
   }
 
   var photo_content_1 = mobile ? null : (
-    <figure className="center mw70 w-100">
+    <figure className="center mw70 w-100 o-90 o-100-ns">
       <img className={"w-50-l w-100 "+photo} src={props.image} alt="description"/>
       {info}
     </figure>
   )
   var photo_content_2 = mobile ? (
-    <figure className="center mw70 w-100 bg-white pa3">
+    <figure className="center mw70 w-100 bg-white pa3 o-90">
       <img className={"w-50-l w-100 "+photo} src={props.image} alt="description"/>
       {info}
     </figure>
@@ -947,7 +963,7 @@ function PhotoText(props) {
       <div className="mw70 center ph4-ns ph3 w-100 z4 pre-wrap" id="triggerText">
         <div className="cf black">
           {photo_content_2}
-          <div className={"w-50-l mw500 mh3-l center w-100 pa4-l pa3 "+color2+" "+text}>
+          <div className={"w-50-l mw500 mh3-l center w-100 o-90 pa4-l pa3 "+color2+" "+text}>
             <p className="f5-ns f6 lh-copy mv0" dangerouslySetInnerHTML={{__html:props.text}}></p>
           </div>
         </div>
@@ -1213,9 +1229,11 @@ class Video extends Component {
             }
           }
         } else {
-          if(!$t.find('video').get(0).paused) {
-            $t.find('video').get(0).pause();
-            $t.find('.play').addClass('pause');
+          if($t.find('video').get(0) !== undefined) {
+            if(!$t.find('video').get(0).paused) {
+              $t.find('video').get(0).pause();
+              $t.find('.play').addClass('pause');
+            }
           }
         }
       }
@@ -1777,9 +1795,11 @@ class CenterSmallVideo extends Component {
 
 /*10*/
 function EndingVideo(props) {
+  var mobile = $(window).width() > 480 ? false : true;
+
   var machineStyle = {
     bottom: "-28px",
-    width: "90vw",
+    width: mobile ? "270px": "90vw",
     maxWidth: "400px",
     zIndex: 10
   }
@@ -1801,15 +1821,14 @@ function EndingVideo(props) {
   return (
     <section id={props.id} className="flex aic relative bg-white pv6-l pv5 overflow-y-hidden">
       <div className="center ph3-ns ph0 z4 relative mb5rem">
-        <div className="f7 f6-ns cf tc black w-60-l w-80-m w-100 center pv2 ph4 bg-white mb2">
+        <div className="f7 f6-ns cf tc black w-60-l w-80-m w-100 center pv2 ph2 ph4-ns bg-white mb2">
           <h3>{props.text}</h3>
         </div>
         <div className="bg-white pa5-ns pa0 pb6-ns pb4" style={bgTV}>
           <iframe className="iframe" title="playlist" width="100%" height="315" src={props.link} frameBorder="0" allow="autoplay; encrypted-media" allowFullScreen></iframe>
         </div>
       </div>
-      <img className="absolute absolute-center" style={machineStyle} width="400px" src={timemachine} alt="timemachine"/>
-      <img className="absolute absolute-center" style={handStyle} width="135px" src={hand} alt="hand"/>
+      <img className="absolute absolute-center" style={machineStyle} width="400px" src={timemachinehand} alt="timemachine"/>
     </section>
   )
 }
@@ -1912,8 +1931,11 @@ function Timeline(props) {
   var crab = special ? "crab" : "";
   var mobile = $(window).width() > 959 ? false : true;
 
+  var ths = "560px";
+  if(mobile) ths = "460px";
+
   var scrollingAreaStyle = {
-    height: (special&&mobile) ? "158vw" : "560px",
+    height: (special&&mobile) ? "158vw" : ths,
     backgroundColor: (special) ? "#F4F4F4" : "#FFFFFF",
     borderTop: (special) ? "#F4F4F4 20px solid" : "none",
     borderBottom: (special) ? "#F4F4F4 20px solid" : "none"
@@ -1974,10 +1996,13 @@ function Timeline(props) {
     grid.push(photos);
   }
 
+  var th = "600px";
+  if(mobile) th = "500px";
+
   var container = {
     gridTemplateColumns: columns,
     gridGap: "10px",
-    height: (special&&mobile) ? "158vw" : "600px",
+    height: (special&&mobile) ? "158vw" : th,
     paddingBottom: (special&&mobile) ? "0" : "40px"
   }
 
@@ -1998,7 +2023,8 @@ function Timeline(props) {
   var content = null
 
   if(props.content !== null) {
-    content = (<p className="lh-copy f5-ns f6 center pre-wrap ph4-ns ph3 mb5" style={max} dangerouslySetInnerHTML={{__html:props.content}}></p>);
+    content = props.contentTitle ? (<p class='f3-ns f5 fw7 tracked mb5-ns mb3 lh-normal' style={max} dangerouslySetInnerHTML={{__html:props.content}}></p>) :
+    (<p className="lh-copy f5-ns f6 center pre-wrap ph4-ns ph3 mb5" style={max} dangerouslySetInnerHTML={{__html:props.content}}></p>);
   }
 
   var padding = special ? "pt6-l pt5" : "pv6-l pv5 min-vh-100"; 
@@ -2099,9 +2125,9 @@ function Transition(props) {
     fontSize = "f2rem fw7 tracked mv0";
   }
   return (
-    <section id={props.id} className={props.title+" relative banner pv5-ns pv4 flex aic jcc flex-column-s ph4-ns ph3 z4 "+props.bg}>
+    <section id={props.id} className={props.title+" relative banner pv5 flex aic jcc flex-column-s ph4-ns ph3 z4 "+props.bg}>
       {img}
-      <p className={"dib mw7 lh-copy pre-wrap ph4-ns ph3 "+fontSize} dangerouslySetInnerHTML={{__html:props.text}}></p>
+      <p className={"dib mw7 mv0 lh-copy pre-wrap ph4-ns ph3 "+fontSize} dangerouslySetInnerHTML={{__html:props.text}}></p>
     </section>
   )
 }
@@ -2351,7 +2377,7 @@ function TimeChangeSide(props) {
   } else {
     content = (
       <figure className="fr-l w-50-l w-100 h-100-l h-50 relative tc flex jcc flex-column" style={mb}>
-        <label className="f5-ns f6 mb3 tl w-90-l w-100 lh-normal" >{props.label}</label>
+        <label className="f5-ns f7 mb3 tl w-90-l w-100 lh-normal ph3 ph0-ns" >{props.label}</label>
         <img style={halfImageCover} src={props.image[1]} width="90%" alt="background"/>
       </figure>
     )
@@ -2464,14 +2490,14 @@ function Blog(props) {
   }
   else {
     text = (
-      <div className="mw7 center w-100 pa4-l pa3 mb4">
+      <div className="mw7 center w-100 ph4-l ph3 mb4">
         <p className="pre-wrap f5-ns f6 lh-copy mv0 z4 relative black">{props.text}</p>
       </div>
     );
   }
   if(props.number === 1) {
     img = (
-      <div className={a+" w-100 w-50-l pv3 relative tc mb0"}>
+      <div className={a+" w-100 w-50-l pv3 relative tc-ns tl mb0"}>
         <img className="mb3" src={props.image[0]} alt={props.label[0]}/>
         <label className="f7 mt2 o-50 lh-normal" >{props.label[0]}</label>
       </div>
@@ -2499,7 +2525,7 @@ function Blog(props) {
     column = "";
     mw = "";
     text = (
-      <div className="mw7 center w-100 pa4-l pa3 mb4">
+      <div className="mw7 center w-100 ph4-l ph3 mb4">
         <p className="pre-wrap f5-ns f6 lh-copy mv0 z4 relative black ph0-ns ph3">{props.text}</p>
       </div>
     );
@@ -2759,7 +2785,7 @@ class Event01 extends Component {
 
         <Modal open={open} onClose={this.onCloseModal} center classNames={{modal: "modalImg", closeButton: "closeButton-circle"}}>
           <img src={this.state.image} alt="modal"/>
-          <p className="tc mb0 lh-normal pn">{this.state.description}</p>
+          <p className="f6-ns f8 tc mb0 lh-normal pn">{this.state.description}</p>
         </Modal>
 
         <TimeChangeFull
@@ -2870,7 +2896,8 @@ class Event02 extends Component {
 
         <Timeline
           id={"5-timeline"} 
-          content={"<p class='f3-ns f5 fw7 tracked mb0 lh-normal'>長達三十年，二仁溪還是無法擺脫廢五金陰影。</p>"}
+          contentTitle={true}
+          content={"長達三十年，二仁溪還是無法擺脫廢五金陰影。"}
           text={this.props.data.timelineText}
           year={this.props.data.timelineYear}
           images={this.props.data.timelineImage}
@@ -2932,7 +2959,7 @@ class Event02 extends Component {
 
         <Modal open={open} onClose={this.onCloseModal} center classNames={{modal: "modalImg", closeButton: "closeButton-circle"}}>
           <img src={this.state.image} alt="modal"/>
-          <p className="tc mb0 lh-normal pn">{this.state.description}</p>
+          <p className="f6-ns f8 tc mb0 lh-normal pn">{this.state.description}</p>
         </Modal>
 
         <EndingVideo id={"13-endingVideo"} text={"來看二仁溪，二十年來承受了什麼..."} link={"https://youtube.com/embed/gfI8M0LGMss?rel=0"}/>
@@ -3019,7 +3046,7 @@ class Event03 extends Component {
 
         <Modal open={open} onClose={this.onCloseModal} center classNames={{modal: "modalImg", closeButton: "closeButton-circle"}}>
           <img src={this.state.image} alt="modal"/>
-          <p className="tc mb0 lh-normal pn">{this.state.description}</p>
+          <p className="f6-ns f8 tc mb0 lh-normal pn">{this.state.description}</p>
         </Modal>
 
         <Timeline
@@ -3373,7 +3400,7 @@ class Event04 extends Component {
 
           <Modal open={open} onClose={this.onCloseModal} center classNames={{modal: "modalImg", closeButton: "closeButton-circle"}}>
           <img src={this.state.image} alt="modal"/>
-          <p className="tc mb0 lh-normal pn">{this.state.description}</p>
+          <p className="f6-ns f8 tc mb0 lh-normal pn">{this.state.description}</p>
         </Modal>
 
         <Transition
@@ -3715,7 +3742,7 @@ class Event05 extends Component {
 
         <Modal open={open} onClose={this.onCloseModal} center classNames={{modal: "modalImg", closeButton: "closeButton-circle"}}>
           <img src={this.state.image} alt="modal"/>
-          <p className="tc mb0 lh-normal pn">{this.state.description}</p>
+          <p className="f6-ns f8 tc mb0 lh-normal pn">{this.state.description}</p>
         </Modal>
 
         <Video

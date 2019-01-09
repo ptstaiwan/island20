@@ -23,14 +23,6 @@ if ('serviceWorker' in navigator) {
 
 $(document).ready(function(){
 
-  let vh = window.innerHeight * 0.01;
-  $('.vh-100').css('height', 100 * vh+'px');
-  $('.min-vh-100').css('min-height', 100 * vh+'px');
-  $('.min-vh-150').css('min-height', 150 * vh+'px');
-  $('.min-vh-180').css('min-height', 180 * vh+'px');
-  $('.min-vh-200').css('min-height', 240 * vh+'px');
-  $('.min-vh-300').css('min-height', 340 * vh+'px');
-
 	// $(window).click(function(e) {
 	//     console.log(e.target.className);
 	// });

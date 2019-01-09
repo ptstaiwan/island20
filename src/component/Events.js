@@ -133,15 +133,28 @@ class Events extends Component {
   }
 
   event = (content, i) => {
-    return (
-      <li className="eventItem item dib center tc" key={i} onMouseEnter={() => this.handleMouseEnter(content.id)}>
-        <Link to={"/island20/"+content.url+"/"} target="_blank">
+    var mobile = $(window).width() > 480 ? false : true;
+    var event_content = mobile ? (
+      <div>
         <figure className="eventFigure circle-10 br-100 ma3 bg-white flex aic jcc">
           <img src={content.icon} width="120" height="120" alt={content.name} />
         </figure>
         <p className="f5 fw7 mv0 tracked">{content.name.split('@')[0]}</p>
         <p className="f6 o-50 fw4 mv2">{content.name.split('@')[1]}</p>
-        </Link>
+      </div>
+      ) : (
+      <Link to={"/island20/"+content.url+"/"} target="_blank">
+        <figure className="eventFigure circle-10 br-100 ma3 bg-white flex aic jcc">
+          <img src={content.icon} width="120" height="120" alt={content.name} />
+        </figure>
+        <p className="f5 fw7 mv0 tracked">{content.name.split('@')[0]}</p>
+        <p className="f6 o-50 fw4 mv2">{content.name.split('@')[1]}</p>
+      </Link>
+    )
+
+    return (
+      <li className="eventItem item dib center tc" key={i} onMouseEnter={() => this.handleMouseEnter(content.id)}>
+        {event_content}
       </li>
     )
   }
@@ -277,8 +290,8 @@ class Events extends Component {
               <img src={loading} width="124" alt="時光機" />
             </figure>
             <div className="hide ma0 pa0">
-              <h3 className="ph2 fw4 f4-ns f5 mb0 mt3 mw7 lh-copy o-80 tc-ns tl">還記得二十年前，你是什麼模樣嗎？走出家門口，熟悉的街頭巷尾改變了多少？<br className="dn db-l"/>想要知道這二十年來，台灣環境經歷了什麼樣的變遷？</h3>
-              <h3 className="ph2 fw4 f4-ns f5 mt0 mb3 mw7 lh-copy o-80 tc-ns tl"><br/>現在就坐上小島號，和「我們的島」一起搭乘時光機，穿梭時空，<br className="dn db-l"/>回顧河流、海洋、山林以及污染開發現場。</h3>
+              <h3 className="ph2 fw4 f4-ns f5 mb0 mt3 mw7 lh-copy o-90 tc-ns tl">還記得二十年前，你是什麼模樣嗎？走出家門口，熟悉的街頭巷尾改變了多少？<br className="dn db-l"/>想要知道這二十年來，台灣環境經歷了什麼樣的變遷？</h3>
+              <h3 className="ph2 fw4 f4-ns f5 mt0 mb3 mw7 lh-copy o-90 tc-ns tl"><br/>現在就坐上小島號，和「我們的島」一起搭乘時光機，穿梭時空，<br className="dn db-l"/>回顧河流、海洋、山林以及污染開發現場。</h3>
             </div>
           </div>
         </div>
