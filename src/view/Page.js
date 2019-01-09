@@ -449,7 +449,7 @@ function CoverVideo(props) {
 
 
   return (
-    <section id={props.id} className="vh-100 flex aic relative video-content relative">
+    <section id={props.id} className="vh-100 flex aic relative">
       <div className="w-100 h-100 absolute z4 pn" style={gradient}/>
       <div className="w-100 h-100 absolute top-left clipping">
       <div className="w-100 h-100 fixed fixed-content pn">
@@ -1988,7 +1988,7 @@ function Timeline(props) {
     )
 
     var photos = (
-      <div className="grid-item bg-white relative" key={i}>
+      <div className="grid-item relative z4" key={i}>
         <div style={photoGridStyle}></div>
         {text_content}
       </div>
@@ -2015,7 +2015,7 @@ function Timeline(props) {
     height: "2px",
     backgroundColor: "rgb(0, 0, 0)",
     opacity: 0.1,
-    zIndex: 1,
+    zIndex: 0,
     transform: mobile ? "translateY(54px)" : ""
   }
 
@@ -2913,7 +2913,6 @@ class Event02 extends Component {
         <Video 
           id={"7-video"} 
           videoID="02"
-          position="fr-l"
           link={this.props.data.video[1]}
           text1=""
           playing={true}
