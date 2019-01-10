@@ -278,8 +278,16 @@ nav .btn {
 }
 
 .mw500 {
-  max-width: 450px;
+  max-width: auto;
 }
+
+@media screen and (min-width: 60em) {
+  .mw500 {
+    max-width: 450px;
+  }
+}
+
+
 
 
 .mt50vh {

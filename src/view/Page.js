@@ -449,7 +449,7 @@ function ChatBot(props) {
           <div className="fl w-50 pa2 tc mw500">
             <img src={successTitle} width="100%"/>
             <p className="f3-ns f6 fw5 mt2 mb3 pa0 lh-copy nowrap">快，回去找9526吧！</p>
-            <div style={successBg} className="w-50-l w-90 h4-ns h3 db center cp"/>
+            <div style={successBg} className="w-50-l w-90 h4-ns h3 db center cp"></div>
           </div>
         </div>
       </div>
@@ -547,8 +547,8 @@ function Taiwan(props) {
     display: "inline-block"
   }
   return (
-    <section id={props.id} className="flex aic bg-near-white pv5 pv6-l ph4 ph0-l flex-wrap">
-      <div className="bg-near-white w-100 w-50-ns">
+    <section id={props.id} className="flex aic bg-near-white pv5 pv6-l ph4-ns ph3 ph0-l flex-wrap">
+      <div className="bg-near-white w-100 w-50-l">
         <div className="relative" style={bgStyle}>
           <Overlay overlayColor={props.primaryColor} />
           <figure className="absolute floatship" style={position}>
@@ -557,7 +557,7 @@ function Taiwan(props) {
           </figure>
         </div>
       </div>
-      <div className="pt4 pa5-l w-100 w-50-l">
+      <div className="pt4 pa4-l pa3 w-100 w-40-l ml4-l">
         <h2 className="mh4-l f4-ns f5 fw7 lh-copy mt0">{props.text1}</h2>
         <p className="mh4-l f5-ns f6 lh-copy mv0 mw500">{props.text2}</p>
       </div>
@@ -1160,7 +1160,7 @@ function PhotoMultiple(props) {
       padding: mobile ? "10px" :" 20px"
     }
     
-    var label_content = (<label className="white absolute lh-normal z10 f6-ns f8 pn" style={bottomRight}>{props.label[i]}</label>);
+    var label_content = (<label className="white absolute lh-normal z10 f6-l f8 pn" style={bottomRight}>{props.label[i]}</label>);
 
 
     var photos = (
@@ -1185,7 +1185,7 @@ function PhotoMultiple(props) {
     <section id={props.id} className={"flex aic relative bg-white flex-column pt6-l pt5 "+auto}>      
       <div className="mw80 center cf black mb5 ph4-ns ph3 w-100">
         <div className="mw7 w-100 center bg-white pre-wrap">
-          <p className="f5-ns f6 lh-copy mv0 ph4-ns ph3" dangerouslySetInnerHTML={{__html:props.text}}></p>
+          <p className="f5-ns f6 lh-copy mv0 ph4-l ph3" dangerouslySetInnerHTML={{__html:props.text}}></p>
         </div>
       </div>
       <div className="w-100 overflow-hidden" style={height}>
@@ -1206,7 +1206,7 @@ function PhotoContrast(props) {
     text = (
       <div className="mw80 center cf black mb5 ph4-ns ph3 ">
         <div className="mw7 w-100 center pre-wrap">
-          <p className="f5-ns f6 lh-copy mv0 ph4-ns ph3">{props.text}</p>
+          <p className="f5-ns f6 lh-copy mv0 ph4-l ph3">{props.text}</p>
         </div>
       </div>
     )
@@ -1549,8 +1549,8 @@ class SmallVideo extends Component {
             <div className="fl-l w-100 w-50-l pl25-l pv3 relative">
               {video_content}
             </div>
-            <div className="fr-l w-100 w-50-l mw500 center ml5-l ph4-ns ph3 pv3">
-              <p className="pre-wrap f5-ns f6 lh-copy mv0 z4 relative black mt0-ns mt4 ph0-ns ph3">{this.props.text}</p>
+            <div className="fr-l w-100 w-50-l ml5-l ph4-ns ph3 pv3">
+              <p className="center pre-wrap f5-ns f6 lh-copy mv0 z4 relative black mt0-ns mt4 ph4-l ph3">{this.props.text}</p>
             </div>
           </div>
         </div>
@@ -1801,8 +1801,8 @@ class CenterSmallVideo extends Component {
     let text = null;
     if(this.props.text !== "") {
       text = (
-        <div className="mw80 center black mb5-ns mb4 pre-wrap">
-          <div className="mw7 w-100 center ph4 ph3-ns pv3">
+        <div className="mw80 center black mb5-ns mb4 pre-wrap ph4-ns ph3">
+          <div className="mw7 w-100 center ph4-l ph3 pv3">
             <p className={"f5-ns f6 lh-copy mv0 "+this.props.align}>{this.props.text}</p>
           </div>
         </div>
@@ -1820,7 +1820,7 @@ class CenterSmallVideo extends Component {
 
     return (
       <section id={this.props.id} className={"flex aic relative pv6-l pv5 video-content "+color}>
-        <div className="w-100 center ph4-ns ph0 ph3-ns z4 relative">
+        <div className="w-100 center z4 relative">
           {text}
           <div className="cf flex aic jcc w-100 pv3">
             <div className="center relative w-100 tc">
@@ -2169,7 +2169,7 @@ function Transition(props) {
   return (
     <section id={props.id} className={props.title+" relative banner pv5 flex aic jcc flex-column-s ph4-ns ph3 z4 "+props.bg}>
       {img}
-      <p className={"dib mw7 mv0 lh-copy pre-wrap ph4-ns ph3 "+fontSize} dangerouslySetInnerHTML={{__html:props.text}}></p>
+      <p className={"dib mw7 mv0 lh-copy pre-wrap ph4-l ph3 "+fontSize} dangerouslySetInnerHTML={{__html:props.text}}></p>
     </section>
   )
 }
@@ -2458,7 +2458,7 @@ function TvLine(props) {
 function Blog(props) {
   var img = null;
   var text = null;
-  var mw = "mw80 ph3";
+  var mw = "mw80 ph3 ph4-ns";
   var column = "flex aic flex-column-s";
   var a = "order-1";
   var b = "order-0";
@@ -2467,7 +2467,7 @@ function Blog(props) {
     b = "order-1"
   }
 
-  var mobile = $(window).width() > 959 ? false : true;
+  var mobile = $(window).width() > 479 ? false : true;
   var hint = mobile ? null : (<p className='f6 o-50 tc mt4'>{"◂◂ 往左滑看更多"}</p>)
 
   let grid = [];
@@ -2532,8 +2532,8 @@ function Blog(props) {
   }
   else {
     text = (
-      <div className="mw7 center w-100 ph4-l ph3 mb4">
-        <p className="pre-wrap f5-ns f6 lh-copy mv0 z4 relative black">{props.text}</p>
+      <div className="w-100 ph4-l ph3 mb4">
+        <p className="mw7 center pre-wrap f5-ns f6 lh-copy mv0 z4 relative black">{props.text}</p>
       </div>
     );
   }
@@ -2545,15 +2545,15 @@ function Blog(props) {
       </div>
     );
     text = (
-      <div className="mw500 center w-100 w-50-l ph3 pv3 mb4">
-        <p className="pre-wrap f5-ns f6 lh-copy mv0 z4 relative black">{props.text}</p>
+      <div className="w-100 w-50-l pv3 mb4">
+        <p className="mw500 center pre-wrap f5-ns f6 lh-copy mv0 z4 relative black ph4-l ph3">{props.text}</p>
       </div>
     );
   } else if(props.number === 2) {
     column = "";
     img = (
       <div className="w-100">
-        <div className="fl-l w-100 w-50-l relative tc mb5 mb0-ns">
+        <div className="fl-l w-100 w-50-l relative tc mb4 mb0-l">
           <img className="mb3" src={props.image[0]} alt={props.label[0]}/>
           <label className="f7 mt2 o-50 lh-normal" >{props.label[0]}</label>
         </div>
@@ -2567,8 +2567,8 @@ function Blog(props) {
     column = "";
     mw = "";
     text = (
-      <div className="mw7 center w-100 ph4-l ph3 mb4">
-        <p className="pre-wrap f5-ns f6 lh-copy mv0 z4 relative black ph0-ns ph3">{props.text}</p>
+      <div className="w-100 ph4-ns ph3 mb4">
+        <p className="mw7 center pre-wrap f5-ns f6 lh-copy mv0 z4 relative black ph4-l ph3">{props.text}</p>
       </div>
     );
     img = (
@@ -2722,7 +2722,7 @@ class Event01 extends Component {
   };
   render() {
     const { open } = this.state;
-    var chatbot_content = this.state.chatbot ? (<ChatBot id={"chatbot-content"}/>) : null;
+    var chatbot_content = this.state.chatbot ? (<ChatBot id={"chatbot"}/>) : null;
     return (
       <div>
         <CoverVideo id={"1-coverVideo"} code={this.props.data.code} name={this.props.data.title} title={this.props.data.coverTitle} content={this.props.data.coverDescription} link={this.props.data.coverVideo}/>
@@ -2870,7 +2870,7 @@ class Event01 extends Component {
           year={this.props.data.photocontrastYear2}
           label=""
         />
-
+        {chatbot_content}
         <CenterVideo 
           id={"19-centerVideo"} 
           videoID="04"
@@ -2878,11 +2878,13 @@ class Event01 extends Component {
           text1={this.props.data.videoText[2]}
           bg={false}
         />
-  
+        {chatbot_content}
         <EndingVideo id={"20-endingVideo"} text="來收看，淡水河20年來的故事..." link={"https://www.youtube.com/embed/pJcFZSLkelU?rel=0"}/>
         {chatbot_content}
         <More id={"21-more"} link={this.props.data.moreLink} title={this.props.data.moreTitle} color={"#3A85A6"}/>
+        {chatbot_content}
         <CTA id={"22-cta"} switchView={this.props.switchView} next={"reborn-erren-river"} nextN={"重生 二仁溪"}/>
+        {chatbot_content}
       </div>
     );
   }
@@ -3207,12 +3209,12 @@ class Event03 extends Component {
         />
         
 
-        <section id={"22-transition"}  style={max} className="pv6-ns pv5 ph3 center">
+        <section id={"22-transition"}  style={max} className="pv6-ns pv5 ph4-ns ph3 center">
           <img src={this.props.data.illustrationCrab[6]} className="w-25-ns w-50" alt="illustration" />
           <img src={this.props.data.illustrationCrab[7]} className="w-25-ns w-50" alt="illustration" />
           <img src={this.props.data.illustrationCrab[8]} className="w-25-ns w-50" alt="illustration" />
           <img src={this.props.data.illustrationCrab[9]} className="w-25-ns w-50" alt="illustration" />
-          <p className="lh-copy pre-wrap f5-ns f6 mt5 ph3">{this.props.data.videoText[6]}</p>
+          <p className="lh-copy pre-wrap f5-ns f6 mt5 ph4-l ph3">{this.props.data.videoText[6]}</p>
         </section>
 
         <Video 
