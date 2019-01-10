@@ -8,4 +8,4 @@
 
 Cross-browser Testing Platform and Open Source ♥ Provided by [Sauce Labs](https://saucelabs.com).
 
-[![Sauce Labs logo](./Powered-by-Sauce-Labs-badges-white.svg)](https://saucelabs.com)
+[![Sauce Labs logo](./sauce-labs-logo.svg)](https://saucelabs.com)
