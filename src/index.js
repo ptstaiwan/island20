@@ -7,6 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 import $ from 'jquery';
 import {TweenMax} from "gsap/all";
 import ScrollMagic from 'scrollmagic'; // eslint-disable-line no-unused-vars
+import Cookies from 'universal-cookie';
 
 render((
 <BrowserRouter basename="island20">
@@ -16,6 +17,13 @@ document.getElementById('root'));
 registerServiceWorker();
 
 $(document).ready(function(){
+  // Cookies
+  // const cookies = new Cookies();
+  // if(cookies.get('firstVisit') === undefined) {
+  //   cookies.set('firstVisit', true, { path: '/' });
+  //   window.location.reload();
+  // }
+
 	// $(window).click(function(e) {
 	//     console.log(e.target.className);
 	// });

@@ -15,7 +15,6 @@ import ImageGallery from 'react-image-gallery';
 import Nav from '../component/Nav'
 import Phone from '../component/Phone'
 import Modal from 'react-responsive-modal';
-import Cookies from 'universal-cookie';
 
 import endingV from '../assets/images/endingVideo.png';
 import messengerIcon from '../assets/images/messenger.png';
@@ -159,13 +158,6 @@ class Page extends Component {
   }
 
   componentDidMount(){
-    // Cookies
-    const cookies = new Cookies();
-    if(cookies.get('firstVisit') === undefined) {
-      cookies.set('firstVisit', true, { path: '/' });
-      window.location.reload();
-    }
-
     var $t = this;
     
     $(document).scrollTop(0);
@@ -1185,7 +1177,7 @@ function PhotoMultiple(props) {
 
   return (
     <section id={props.id} className={"flex aic relative bg-white flex-column pt6-l pt5 "+auto}>      
-      <div className="mw80 center cf black mb5 ph4-ns ph3 w-100">
+      <div className="mw80 center cf black mb5-ns mb3 ph4-ns ph3 w-100">
         <div className="mw7 w-100 center bg-white pre-wrap">
           <p className="f5-ns f6 lh-copy mv0 ph4-l ph3" dangerouslySetInnerHTML={{__html:props.text}}></p>
         </div>
@@ -1544,17 +1536,30 @@ class SmallVideo extends Component {
       </video>
     );
 
+    var content_all = this.props.reverse ?  (
+      <div className="cf flex aic flex-column-s">
+        <div className="fl-l w-100 w-50-l ml5-l ph4-ns ph3 pv3">
+          <p className="center pre-wrap f5-ns f6 lh-copy mv0 z4 relative black mt0-ns mt4 ph4-l ph3">{this.props.text}</p>
+        </div>
+        <div className="fr-l w-100 w-50-l pl25-l pv3 relative">
+          {video_content}
+        </div>
+      </div>
+    ) : (
+      <div className="cf flex aic flex-column-s">
+        <div className="fl-l w-100 w-50-l pl25-l pv3 relative">
+          {video_content}
+        </div>
+        <div className="fr-l w-100 w-50-l ml5-l ph4-ns ph3 pv3">
+          <p className="center pre-wrap f5-ns f6 lh-copy mv0 z4 relative black mt0-ns mt4 ph4-l ph3">{this.props.text}</p>
+        </div>
+      </div>
+    )
+
     return (
       <section id={this.props.id} className={"flex aic relative pv6-l pv5 video-content smallVideo "+this.props.bg}>
         <div className="mw80 w-100 center z4 relative">
-          <div className="cf flex aic flex-column-s">
-            <div className="fl-l w-100 w-50-l pl25-l pv3 relative">
-              {video_content}
-            </div>
-            <div className="fr-l w-100 w-50-l ml5-l ph4-ns ph3 pv3">
-              <p className="center pre-wrap f5-ns f6 lh-copy mv0 z4 relative black mt0-ns mt4 ph4-l ph3">{this.props.text}</p>
-            </div>
-          </div>
+          {content_all}
         </div>
       </section>
     )
@@ -1973,8 +1978,10 @@ function Timeline(props) {
   var crab = special ? "crab" : "";
   var mobile = $(window).width() > 480 ? false : true;
 
-  var ths = "560px";
-  if(mobile) ths = "480px";
+  var thisH = props.height; //560
+
+  var ths = thisH+"px";
+  if(mobile) ths = (thisH-80)+"px";
   if(special) ths = "600px";
 
   var scrollingAreaStyle = {
@@ -2013,7 +2020,7 @@ function Timeline(props) {
       backgroundPosition: "center center"
     }
     var textGridStyle = {
-      height: "240px",
+      height: (thisH-320)+"px",
       maxWidth: "440px",
       whiteSpace: "normal"
     }
@@ -2039,8 +2046,8 @@ function Timeline(props) {
     grid.push(photos);
   }
 
-  var th = "600px";
-  if(mobile) th = "520px";
+  var th = (thisH+40)+"px";
+  if(mobile) th = (thisH-40)+"px";
 
   var container = {
     gridTemplateColumns: columns,
@@ -2067,8 +2074,8 @@ function Timeline(props) {
   var content = null
 
   if(props.content !== null) {
-    content = props.contentTitle ? (<p className='f3-ns f5 fw7 tracked mb5-ns mb3 lh-normal' style={max} dangerouslySetInnerHTML={{__html:props.content}}></p>) :
-    (<p className="lh-copy f5-ns f6 center pre-wrap ph4-ns ph3 mb5" style={max} dangerouslySetInnerHTML={{__html:props.content}}></p>);
+    content = props.contentTitle ? (<p className='f3-ns f5 fw7 ph3 tracked mb5-ns mb3 lh-normal' style={max} dangerouslySetInnerHTML={{__html:props.content}}></p>) :
+    (<p className="lh-copy f5-ns f6 center pre-wrap ph4-ns ph3 mb5-ns mb3" style={max} dangerouslySetInnerHTML={{__html:props.content}}></p>);
   }
 
   var padding = special ? "pt6-l pt5" : "pv6-l pv5 min-vh-100"; 
@@ -2231,8 +2238,8 @@ function Bullets(props) {
   var buttons = [];
   for (var i = 0; i < total; i++) {
     var temp = null;
-    if(i === active - 1) temp = (<button type="button" className="active image-gallery-bullet side" aria-pressed="false" aria-label="Go to Slide 1"></button>)
-    else temp = (<button type="button" className="image-gallery-bullet side" aria-pressed="false" aria-label="Go to Slide 1"></button>)
+    if(i === active - 1) temp = (<button type="button" className="active image-gallery-bullet side" aria-pressed="false" aria-label="Go to Slide 1" key={i}></button>)
+    else temp = (<button type="button" className="image-gallery-bullet side" aria-pressed="false" aria-label="Go to Slide 1" key={i}></button>)
     buttons.push(temp);
   }
 
@@ -2607,7 +2614,7 @@ function More(props) {
   var morelinks = [];
   for(var i = 0; i < len; i++) {
     var morelink = (
-      <div className="fl w-100 w-50-ns pa2">
+      <div className="fl w-100 w-50-ns pa2" key={i}>
         <div className="bg-white pv2 f4-ns f5 fw5">
           <a className="bb bw1" href={props.link[i]} target="_blank" style={borderLink} rel="noopener noreferrer">
             {props.title[i]}
@@ -2752,6 +2759,8 @@ class Event01 extends Component {
           text2={this.props.data.photoswitchText2}
           label={this.props.data.photoswitchLabel}
         />
+
+        <p className="nextp dib mw7 pt5 ma0 w-100 bg-near-white lh-copy pre-wrap ph3 tc dn-l">來看看淡水河如何從垃圾山變身為河濱公園…</p>
 
         <Video 
           id={"5-video"}
@@ -2954,7 +2963,8 @@ class Event02 extends Component {
         />
 
         <Timeline
-          id={"5-timeline"} 
+          id={"5-timeline"}
+          height="560"
           contentTitle={true}
           content={"長達三十年，二仁溪還是無法擺脫廢五金陰影。"}
           text={this.props.data.timelineText}
@@ -3073,7 +3083,7 @@ class Event03 extends Component {
 
         <CenterVideo
           id={"4-centerVideo"} 
-          sound={true}
+          sound={false}
           videoID="01"
           link={this.props.data.video[0]}
           text1={this.props.data.videoText[0]}
@@ -3311,6 +3321,7 @@ class Event03 extends Component {
           id={"34-smallVideo"}  
           videoID="11"
           bg={"bg-near-white"}
+          reverse={true}
           text={this.props.data.blogText[2]}
           link={this.props.data.video[11]}
         />
@@ -3501,7 +3512,7 @@ class Event04 extends Component {
         <CenterVideo 
           id={"13-centerVideo"}
           videoID="06"
-          sound={true}
+          sound={false}
           link={this.props.data.video[5]}
           text1={this.props.data.videoText[5]}
           bg={true}
@@ -3509,7 +3520,7 @@ class Event04 extends Component {
 
         <Transition
           id={"14-transition"}
-          bg={"bg-white"}
+          bg={"bg-near-white"}
           text={this.props.data.photoFullText[1]}
         />
         <Video 
@@ -3523,6 +3534,7 @@ class Event04 extends Component {
   
         <Timeline
           id={"16-timeline"}
+          height={500}
           text={this.props.data.timelineText}
           year={this.props.data.timelineYear}
           images={this.props.data.timelineImage}
@@ -3857,6 +3869,7 @@ class Event05 extends Component {
 
         <Timeline
           id={"18-timeline"}
+          height={480}
           text={this.props.data.timelineText}
           year={this.props.data.timelineYear}
           images={this.props.data.timelineImage}
