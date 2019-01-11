@@ -58,7 +58,7 @@ class Nav extends Component {
       backgroundPosition: "15px center",
       width: "100px"
     }
-    var url = "http://line.naver.jp/R/msg/text/?穿梭島嶼時光機 - 我們的島二十週年"+"%0D%0A"+link;
+    var url = "http://line.naver.jp/R/msg/text/?穿梭島嶼時光機 - 我們的島二十週年%0D%0A"+link;
     // if(this.props.timeline) timeline = (<a href="/ourisland/timeline/" target="_blank"><button className="btn cp h2 ph3">前往大紀事</button></a>);
     return (
       <div>

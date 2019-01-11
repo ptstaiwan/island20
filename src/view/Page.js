@@ -1243,8 +1243,9 @@ class Video extends Component {
 
   componentDidMount(){
     var $this = this;
+    var $t = $('#'+$this.props.id);
+
     $(window).scroll(function(){
-      var $t = $('#'+$this.props.id);
       if($t.length !== 0) {
         var top_of_object = $t.offset().top;
         var bottom_of_object = $t.offset().top + $t.height();
@@ -1263,7 +1264,8 @@ class Video extends Component {
             }
           }
         } else {
-          if($t.find('video').get(0) !== undefined) {
+          var vid = document.getElementById('video'+$this.props.videoID);
+          if(vid.readyState === 4 ) {
             if(!$t.find('video').get(0).paused) {
               $t.find('video').get(0).pause();
               $t.find('.play').addClass('pause');
@@ -1385,7 +1387,7 @@ class Video extends Component {
       </div>
     ) : (
       <div className="videoBg">
-        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
+        <video className="emptyVideo" id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
         </video>
       </div>
     )
@@ -1405,7 +1407,7 @@ class Video extends Component {
         </div>
       ) : (
         <div className="videoBg">
-          <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
+          <video className="emptyVideo" id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
           </video>
         </div>
       )
@@ -1445,7 +1447,7 @@ class Video extends Component {
       ) : (
         <div className={"cf flex aic jcc w-100 flex-column " + mb4}>
           <div className="center relative">
-            <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
+            <video className="w-100 emptyVideo" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
             </video>
           </div>
         </div>
@@ -1472,8 +1474,9 @@ class SmallVideo extends Component {
 
   componentDidMount(){
     var $this = this;
+    var $t = $('#'+$this.props.id);
+
     $(window).scroll(function(){
-      var $t = $('#'+$this.props.id);
       if($t.length !== 0) {
         var top_of_object = $t.offset().top;
         var bottom_of_object = $t.offset().top + $t.height();
@@ -1492,14 +1495,18 @@ class SmallVideo extends Component {
             }
           }
         } else {
-          if(!$t.find('video').get(0).paused) {
-            $t.find('video').get(0).pause();
-            $t.find('.play').addClass('pause');
+          var vid = document.getElementById('video'+$this.props.videoID);
+          if(vid.readyState === 4 ) {
+            if(!$t.find('video').get(0).paused) {
+              $t.find('video').get(0).pause();
+              $t.find('.play').addClass('pause');
+            }
           }
         }
       }
     });
   }
+
   render(){
     var $this = this;
     function playVideo(e) {
@@ -1532,7 +1539,7 @@ class SmallVideo extends Component {
         <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
       </video>
     ) : (
-      <video id={'video'+this.props.videoID} className="w-100" controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
+      <video className="emptyVideo" id={'video'+this.props.videoID} className="w-100" controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
       </video>
     );
 
@@ -1577,8 +1584,9 @@ class CenterVideo extends Component {
 
   componentDidMount(){
     var $this = this;
+    var $t = $('#'+$this.props.id);
+
     $(window).scroll(function(){
-      var $t = $('#'+$this.props.id);
       if($t.length !== 0) {
         var top_of_object = $t.offset().top;
         var bottom_of_object = $t.offset().top + $t.height();
@@ -1597,14 +1605,18 @@ class CenterVideo extends Component {
             }
           }
         } else {
-          if(!$t.find('video').get(0).paused) {
-            $t.find('video').get(0).pause();
-            $t.find('.play').addClass('pause');
+          var vid = document.getElementById('video'+$this.props.videoID);
+          if(vid.readyState === 4 ) {
+            if(!$t.find('video').get(0).paused) {
+              $t.find('video').get(0).pause();
+              $t.find('.play').addClass('pause');
+            }
           }
         }
       }
     });
   }
+
   render(){
     var $this = this;
     function playVideo(e) {
@@ -1682,7 +1694,7 @@ class CenterVideo extends Component {
       </div>
     ) : (
       <div className="videoBg">
-        <video id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
+        <video className="emptyVideo" id={'video'+this.props.videoID} loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
         </video>
       </div>
     );
@@ -1702,7 +1714,7 @@ class CenterVideo extends Component {
         </div>
       ) : (
         <div className="videoBg">
-          <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
+          <video className="emptyVideo" id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
           </video>
         </div>
       );
@@ -1742,8 +1754,9 @@ class CenterSmallVideo extends Component {
 
   componentDidMount(){
     var $this = this;
+    var $t = $('#'+$this.props.id);
+
     $(window).scroll(function(){
-      var $t = $('#'+$this.props.id);
       if($t.length !== 0) {
         var top_of_object = $t.offset().top;
         var bottom_of_object = $t.offset().top + $t.height();
@@ -1762,14 +1775,18 @@ class CenterSmallVideo extends Component {
             }
           }
         } else {
-          if(!$t.find('video').get(0).paused) {
-            $t.find('video').get(0).pause();
-            $t.find('.play').addClass('pause');
+          var vid = document.getElementById('video'+$this.props.videoID);
+          if(vid.readyState === 4 ) {
+            if(!$t.find('video').get(0).paused) {
+              $t.find('video').get(0).pause();
+              $t.find('.play').addClass('pause');
+            }
           }
         }
       }
     });
   }
+
   render(){
     var $this = this;
     function playVideo(e) {
@@ -1821,7 +1838,7 @@ class CenterSmallVideo extends Component {
         <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
       </video>
     ) : (
-      <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay style={max} data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
+      <video className="w-100 emptyVideo" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay style={max} data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
       </video>
     )
 

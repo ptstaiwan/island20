@@ -1858,6 +1858,7 @@ ul.none {
 
 .image-gallery-bullets.side {
   top: 50%;
+  transform: translateY(-50%);
   margin: auto;
   right: 0;
   left: auto;
