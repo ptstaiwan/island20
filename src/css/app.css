@@ -753,15 +753,15 @@ nav .btn {
 
 @media screen and (max-width: 30em) {
   .circle-10 {
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 30vw;
+    height: 30vw;
   }
   .event {
     height: 220px;
   }
   .circle-10 img{
-    width: 100px !important;
-    height: 100px !important;
+    width: 25vw !important;
+    height: 25vw !important;
   }
 }
 
@@ -1855,3 +1855,22 @@ ul.none {
       padding: 5px 10px; } }
 
 
+
+.image-gallery-bullets.side {
+  top: 50%;
+  margin: auto;
+  right: 0;
+  left: auto;
+  width: 40px;
+}
+
+@media (max-width: 768px) {
+  .image-gallery-bullets.side {
+    width: 19px;
+  }
+}
+
+.image-gallery-bullet.side {
+  display: block;
+  margin: 7px !important;
+}

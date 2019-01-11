@@ -106,8 +106,8 @@ class Page extends Component {
 
   componentDidUpdate() {
     var data = pageEvent_data[this.state.id];
-    // var images  = [data.code];
-    var images  = [];
+    var images  = [data.code];
+    // var images  = [];
     var loaded = false;
     var p = 0;
     var id = setInterval(frame, 10);
@@ -159,6 +159,13 @@ class Page extends Component {
   }
 
   componentDidMount(){
+    // Cookies
+    const cookies = new Cookies();
+    if(cookies.get('firstVisit') === undefined) {
+      cookies.set('firstVisit', true, { path: '/' });
+      window.location.reload();
+    }
+
     var $t = this;
     
     $(document).scrollTop(0);
@@ -166,8 +173,8 @@ class Page extends Component {
     document.getElementById('loading').classList.remove('fade');
 
     var data = pageEvent_data[this.state.id];
-    // var images  = [data.code];
-    var images  = [];
+    var images  = [data.code];
+    // var images  = [];
     var loaded = false;
     var p = 0;
     var id = setInterval(frame, 10);
@@ -439,8 +446,12 @@ function ChatBot(props) {
     backgroundPosition: "center",
     maxWidth: "220px"
   }
+
+  var dn = "dn";
+  if(props.display) dn = "flex aic";
+
   return (
-    <section id={props.id} className="pv5-l pv4 flex aic relative" style={chatbot}>
+    <section id={props.id} className={"pv5-l pv4 relative "+dn} style={chatbot}>
       <div className="mw8 center ph3 w-100">
         <div className="cf">
           <div className="fl w-50 pa2 tc">
@@ -462,20 +473,11 @@ function CoverVideo(props) {
   var gradient = {
     background: "linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.25) 60%, rgba(0,0,0,0.45) 100%)"
   }
-  // Cookies
-  const cookies = new Cookies();
+  
   var phone = null;
   var top = {
     top: '-45px'
   }
-  // var h = (1000 - $(window).height()) / 4
-  // if(cookies.get('firstVisit') === undefined) {
-  //   cookies.set('firstVisit', true, { path: '/' });
-  //   phone = (<Phone/>);
-  //   top = {
-  //     top: '-'+h+'px'
-  //   }
-  // }
 
   var ship = {
     left: 0,
@@ -487,7 +489,7 @@ function CoverVideo(props) {
 
   return (
     <section id={props.id} className="vh-100 flex aic relative">
-      <div className="w-100 h-100 absolute z4 pn" style={gradient}/>
+      <div className="w-100 h-100 absolute z4 pn" style={gradient}></div>
       <div className="w-100 h-100 absolute top-left clipping">
       <div className="w-100 h-100 fixed fixed-content pn">
         <div className="videoBg">
@@ -697,7 +699,7 @@ function PhotoTextFull(props) {
     text1 = (
       <div className="cf">
         <div className={props.position+" w-50-l mw500 mh3-l center w-100 pa4-l pa3 relative"}>
-          <div className={bgcolor+" w-100 h-100 absolute pn top-left"}/>
+          <div className={bgcolor+" w-100 h-100 absolute pn top-left"}></div>
           <p className={"f5-ns f6 lh-copy mv0 z4 relative "+textcolor} dangerouslySetInnerHTML={{__html:props.text1}}></p>
         </div>
       </div>
@@ -723,7 +725,7 @@ function PhotoTextFull(props) {
     text2 = (
       <div className="cf mt50vh">
         <div className={props.position+" w-50-l mw500 mh3-l center w-100 pa4-l pa3 relative"}>
-          <div className={bgcolor+" w-100 h-100 absolute pn top-left"}/>
+          <div className={bgcolor+" w-100 h-100 absolute pn top-left"}></div>
           <p className={"f5-ns f6 lh-copy mv0 z4 relative "+textcolor} dangerouslySetInnerHTML={{__html:props.text2}}></p>
         </div>
       </div>
@@ -781,14 +783,14 @@ function PhotoCenterTextFull(props) {
           <figure className="w-100 ma0">
             <img className="w-100" style={fullImage} src={props.image} alt="background"/>
           </figure>
-          <div className={mask+" w-100 h-100 absolute pn top-left z4"}/>
+          <div className={mask+" w-100 h-100 absolute pn top-left z4"}></div>
           <label className="white absolute lh-normal z10 f6-ns f8 pn" style={bottomRight}>{props.label}</label>
         </div>
       </div>
       <div className="w-100 center ph4-ns ph3 z4 relative">
         <div className="cf flex aic">
           <div className="w-100 w-50-l center pa4-l pa3 relative" style={max}>
-            <div className={bgColor+" w-100 h-100 absolute pn top-left"}/>
+            <div className={bgColor+" w-100 h-100 absolute pn top-left"}></div>
             <p className={"pre-wrap lh-copy mv0 z4 relative white "+textShadow}>{props.text1}</p>
           </div>
         </div>
@@ -1327,7 +1329,7 @@ class Video extends Component {
       text1 = (
           <div className="">
             <div className={this.props.position+" w-50-l mw500 mh3-l mh3-l center w-100 pa4-l relative mt0-l mt4"}>
-              <div className={bgcolor+" w-100 h-100 absolute pn top-left"}/>
+              <div className={bgcolor+" w-100 h-100 absolute pn top-left"}></div>
               <p className={"pre-wrap f5-ns f6 lh-copy mv0 z4 relative ph0-l ph3 "+textcolor}>{this.props.text1}</p>
             </div>
           </div>
@@ -1345,7 +1347,7 @@ class Video extends Component {
       text2 = (
         <div className="mt50vh">
           <div className={this.props.position+" w-50-l mw500 mh3-l center w-100 pa4-l relative mt0-l mt4"}>
-            <div className={bgcolor+" w-100 h-100 absolute pn top-left"}/>
+            <div className={bgcolor+" w-100 h-100 absolute pn top-left"}></div>
             <p className={"pre-wrap f5-ns f6 lh-copy mv0 z4 relative ph0-l ph3 "+textcolor}>{this.props.text2}</p>
           </div>
         </div>
@@ -1441,7 +1443,7 @@ class Video extends Component {
       var mb4 = ""
       if(this.props.text1 !== "") mb4 = "mb4"
       video_content = this.state.active ? (
-        <div className={"cf flex aic jcc w-100" + mb4}>
+        <div className={"cf flex aic jcc w-100 flex-column " + mb4}>
           <div className="center relative">
             <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
               <source src={this.props.link} type="video/mp4"/>
@@ -1449,7 +1451,7 @@ class Video extends Component {
           </div>
         </div>
       ) : (
-        <div className={"cf flex aic jcc w-100" + mb4}>
+        <div className={"cf flex aic jcc w-100 flex-column " + mb4}>
           <div className="center relative">
             <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
             </video>
@@ -1704,7 +1706,7 @@ class CenterVideo extends Component {
     return (
       <section id={this.props.id} className="min-vh-150 flex aic relative pv6-l pv5 video-content z4 bg-black">
         <div className="w-100 h-100 absolute top-left clipping">
-          <div className={mask+" w-100 h-100 absolute pn top-left z4"}/>
+          <div className={mask+" w-100 h-100 absolute pn top-left z4"}></div>
           {/*<div className="fixed play cp z10" onClick={(e) => playVideo(e)}></div>*/}
           <div className={unmuteTag+" fixed sound cp z10"} onClick={(e) => soundVideo(e)}></div>
           <div className="w-100 h-100 fixed fixed-content pn">
@@ -1714,7 +1716,7 @@ class CenterVideo extends Component {
         <div className="w-100 center ph4-ns ph3 z4 relative">
           <div className="cf flex aic">
             <div className="w-100 w-50-l center pa4-l pa3 relative" style={max}>
-              <div className={bgColor+" w-100 h-100 absolute pn top-left"}/>
+              <div className={bgColor+" w-100 h-100 absolute pn top-left"}></div>
               <p className={"pre-wrap f4 lh-copy mv0 z4 relative white "+textShadow}>{this.props.text1}</p>
             </div>
           </div>
@@ -1822,7 +1824,7 @@ class CenterSmallVideo extends Component {
       <section id={this.props.id} className={"flex aic relative pv6-l pv5 video-content "+color}>
         <div className="w-100 center z4 relative">
           {text}
-          <div className="cf flex aic jcc w-100 pv3">
+          <div className="cf flex aic jcc w-100 flex-column pv3">
             <div className="center relative w-100 tc">
               {video_content}
             </div>
@@ -1976,7 +1978,7 @@ function Timeline(props) {
   if(special) ths = "600px";
 
   var scrollingAreaStyle = {
-    height: (special&&mobile) ? "158vw" : ths,
+    height: (special&&mobile) ? "170vw" : ths,
     backgroundColor: (special) ? "#F4F4F4" : "#FFFFFF",
     borderTop: (special) ? "#F4F4F4 20px solid" : "none",
     borderBottom: (special) ? "#F4F4F4 20px solid" : "none"
@@ -2065,7 +2067,7 @@ function Timeline(props) {
   var content = null
 
   if(props.content !== null) {
-    content = props.contentTitle ? (<p class='f3-ns f5 fw7 tracked mb5-ns mb3 lh-normal' style={max} dangerouslySetInnerHTML={{__html:props.content}}></p>) :
+    content = props.contentTitle ? (<p className='f3-ns f5 fw7 tracked mb5-ns mb3 lh-normal' style={max} dangerouslySetInnerHTML={{__html:props.content}}></p>) :
     (<p className="lh-copy f5-ns f6 center pre-wrap ph4-ns ph3 mb5" style={max} dangerouslySetInnerHTML={{__html:props.content}}></p>);
   }
 
@@ -2229,13 +2231,13 @@ function Bullets(props) {
   var buttons = [];
   for (var i = 0; i < total; i++) {
     var temp = null;
-    if(i === active - 1) temp = (<button type="button" className="active image-gallery-bullet" aria-pressed="false" aria-label="Go to Slide 1"></button>)
-    else temp = (<button type="button" className="image-gallery-bullet" aria-pressed="false" aria-label="Go to Slide 1"></button>)
+    if(i === active - 1) temp = (<button type="button" className="active image-gallery-bullet side" aria-pressed="false" aria-label="Go to Slide 1"></button>)
+    else temp = (<button type="button" className="image-gallery-bullet side" aria-pressed="false" aria-label="Go to Slide 1"></button>)
     buttons.push(temp);
   }
 
   return (
-    <div className="image-gallery-bullets">
+    <div className="image-gallery-bullets side">
       <div className="image-gallery-bullets-container" role="navigation" aria-label="Bullet Navigation">
         {buttons}
       </div>
@@ -2336,7 +2338,7 @@ function TimeChangeFull(props) {
     text1 = (
       <div className="cf">
         <div className={props.position+" mw500 mh3-l center pa4-l pa3 relative"}>
-          <div className={bgcolor+" w-100 h-100 absolute pn top-left"}/>
+          <div className={bgcolor+" w-100 h-100 absolute pn top-left"}></div>
           <p className={"f5-ns f6 lh-copy mv0 z4 relative "+textcolor} dangerouslySetInnerHTML={{__html:props.text1}}></p>
         </div>
       </div>
@@ -2602,10 +2604,10 @@ function More(props) {
   }
 
   var len = props.link.length;
-  var links = [];
+  var morelinks = [];
   for(var i = 0; i < len; i++) {
-    var link = (
-      <div className="fl w-100 w-50-ns pa2" key={i}>
+    var morelink = (
+      <div className="fl w-100 w-50-ns pa2">
         <div className="bg-white pv2 f4-ns f5 fw5">
           <a className="bb bw1" href={props.link[i]} target="_blank" style={borderLink} rel="noopener noreferrer">
             {props.title[i]}
@@ -2613,7 +2615,7 @@ function More(props) {
         </div>
       </div>
     )
-    links.push(link);
+    morelinks.push(morelink);
   }
 
 
@@ -2622,7 +2624,7 @@ function More(props) {
       <div className="mw8 center ph3">
         <div className="cf ph2-ns tc">
           <h1 className="ph2 fw7 tracked mb5-l mb4 f2rem">同場加映</h1>
-          {links}
+          {morelinks}
         </div>
       </div>
     </section>
@@ -2701,8 +2703,7 @@ class Event01 extends Component {
     this.state = {
       open: false,
       image: "",
-      description: "",
-      chatbot: window.location.href.indexOf('chatbot') > -1 ? true : false
+      description: ""
     }
   }
   componentDidMount(){
@@ -2722,7 +2723,6 @@ class Event01 extends Component {
   };
   render() {
     const { open } = this.state;
-    var chatbot_content = this.state.chatbot ? (<ChatBot id={"chatbot"}/>) : null;
     return (
       <div>
         <CoverVideo id={"1-coverVideo"} code={this.props.data.code} name={this.props.data.title} title={this.props.data.coverTitle} content={this.props.data.coverDescription} link={this.props.data.coverVideo}/>
@@ -2870,7 +2870,7 @@ class Event01 extends Component {
           year={this.props.data.photocontrastYear2}
           label=""
         />
-        {chatbot_content}
+        
         <CenterVideo 
           id={"19-centerVideo"} 
           videoID="04"
@@ -2878,13 +2878,23 @@ class Event01 extends Component {
           text1={this.props.data.videoText[2]}
           bg={false}
         />
-        {chatbot_content}
-        <EndingVideo id={"20-endingVideo"} text="來收看，淡水河20年來的故事..." link={"https://www.youtube.com/embed/pJcFZSLkelU?rel=0"}/>
-        {chatbot_content}
-        <More id={"21-more"} link={this.props.data.moreLink} title={this.props.data.moreTitle} color={"#3A85A6"}/>
-        {chatbot_content}
+
+        <EndingVideo 
+          id={"20-endingVideo"} 
+          text="來收看，淡水河20年來的故事..." 
+          link={"https://www.youtube.com/embed/pJcFZSLkelU?rel=0"}
+        />
+
+        <ChatBot id={"chatbot"} display={true}/>
+
+        <More 
+          id={"21-more"} 
+          link={this.props.data.moreLink} 
+          title={this.props.data.moreTitle} 
+          color={"#3A85A6"}
+        />
+
         <CTA id={"22-cta"} switchView={this.props.switchView} next={"reborn-erren-river"} nextN={"重生 二仁溪"}/>
-        {chatbot_content}
       </div>
     );
   }

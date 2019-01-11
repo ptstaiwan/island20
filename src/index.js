@@ -15,14 +15,7 @@ render((
 document.getElementById('root'));
 registerServiceWorker();
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('/service-worker.js');
-  });
-}
-
 $(document).ready(function(){
-
 	// $(window).click(function(e) {
 	//     console.log(e.target.className);
 	// });
