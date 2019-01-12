@@ -3,10 +3,12 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import {Helmet} from "react-helmet";
 import loadImage from 'image-promise';
+import canAutoPlay from 'can-autoplay';
 import data from '../data/data.js';
 import $ from 'jquery';
 import BeforeAfterSlider from 'react-before-after-slider'; // eslint-disable-line no-unused-vars
 import ReactCompareImage from 'react-compare-image';
+import Cookies from 'universal-cookie';
 
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween } from "react-gsap";
@@ -158,7 +160,9 @@ class Page extends Component {
   }
 
   componentDidMount(){
+
     var $t = this;
+    const cookies = new Cookies();
     
     $(document).scrollTop(0);
     document.body.classList.add('ds');
@@ -175,6 +179,10 @@ class Page extends Component {
       //console.log(loaded)
       if (p >= 100) {
         if(loaded) {
+          if(cookies.get('firstVisit') === undefined) {
+            cookies.set('firstVisit', true, { path: '/' });
+            window.location.reload();
+          }
           setTimeout(function(){
             document.getElementById('loading').classList.add('fade');
             document.body.classList.remove('ds');
@@ -194,6 +202,10 @@ class Page extends Component {
 
       if(p >= 100) {
         clearInterval(id);
+        if(cookies.get('firstVisit') === undefined) {
+          cookies.set('firstVisit', true, { path: '/' });
+          window.location.reload();
+        }
         setTimeout(function(){
           document.getElementById('loading').classList.add('fade');
           document.body.classList.remove('ds');
@@ -1401,7 +1413,7 @@ class Video extends Component {
     )
     if(this.props.sound) {
       unmuteTag = "unmute";
-      var video = this.state.active ? (
+      video = this.state.active ? (
         <div className="videoBg">
           <div style={loadingStyle}>
             <div className="dib floatship" style={ship}></div>
@@ -1410,7 +1422,7 @@ class Video extends Component {
             </p>
           </div>
           <video id={'video'+this.props.videoID} loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
-            <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
+            <source src={this.props.link} type="video/mp4"/>
           </video>
         </div>
       ) : (
@@ -1520,39 +1532,26 @@ class SmallVideo extends Component {
 
   render(){
     var $this = this;
-    function playVideo(e) {
-      var $video = $('#video'+$this.props.videoID);
-      if(e.target.classList.contains('pause')) {
-        e.target.classList.remove('pause');
-        $video.get(0).play();
-        $video.removeClass('clicked');
-      }
-      else {
-        e.target.classList.add('pause');
-        $video.get(0).pause();
-        $video.addClass('clicked');
-      }
-    }
-    function soundVideo(e) {
-      var $video = $('#video'+$this.props.videoID);
-      if(e.target.classList.contains('unmute')) {
-        e.target.classList.remove('unmute');
-        $video.prop('muted', true);
-      }
-      else {
-        e.target.classList.add('unmute');
-        $video.prop('muted', false);
-      }
-    }
+    var video_content = null;
 
-    var video_content = this.state.active ? (
-      <video id={'video'+this.props.videoID} className="w-100" controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
-        <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
-      </video>
-    ) : (
-      <video className="emptyVideo" id={'video'+this.props.videoID} className="w-100" controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
-      </video>
-    );
+    if(this.state.active) {
+      video_content = this.state.sound ? (
+        <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
+          <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
+        </video>
+      ) : (
+        <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
+          <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
+        </video>
+      )
+      
+    }
+    else {
+      video_content = (
+        <video className="w-100 emptyVideo" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
+        </video>
+      )
+    }
 
     var content_all = this.props.reverse ?  (
       <div className="cf flex aic flex-column-s">
@@ -1592,7 +1591,6 @@ class CenterVideo extends Component {
       active: false
     };
   }
-
   componentDidMount(){
     var $this = this;
     var $t = $('#'+$this.props.id);
@@ -1806,30 +1804,6 @@ class CenterSmallVideo extends Component {
 
   render(){
     var $this = this;
-    function playVideo(e) {
-      var $video = $('#video'+$this.props.videoID);
-      if(e.target.classList.contains('pause')) {
-        e.target.classList.remove('pause');
-        $video.get(0).play();
-        $video.removeClass('clicked');
-      }
-      else {
-        e.target.classList.add('pause');
-        $video.get(0).pause();
-        $video.addClass('clicked');
-      }
-    }
-    function soundVideo(e) {
-      var $video = $('#video'+$this.props.videoID);
-      if(e.target.classList.contains('unmute')) {
-        e.target.classList.remove('unmute');
-        $video.prop('muted', true);
-      }
-      else {
-        e.target.classList.add('unmute');
-        $video.prop('muted', false);
-      }
-    }
     var max = {
       maxWidth: "800px"
     }
@@ -1850,14 +1824,26 @@ class CenterSmallVideo extends Component {
       )
     }
 
-    var video_content = this.state.active ? (
-      <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay style={max} data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
-        <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
-      </video>
-    ) : (
-      <video className="w-100 emptyVideo" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay style={max} data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
-      </video>
-    )
+    var video_content = null;
+
+    if(this.state.active) {
+      video_content = this.state.sound ? (
+        <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline autoPlay style={max} data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
+          <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
+        </video>
+      ) : (
+        <video className="w-100" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay style={max} data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
+          <source src={this.props.link+'#t=0.1'} type="video/mp4"/>
+        </video>
+      )
+      
+    }
+    else {
+      video_content = (
+        <video className="w-100 emptyVideo" id={'video'+this.props.videoID} controls controlsList="nodownload" loop playsInline muted autoPlay style={max} data-autoplay-fallback="muted" preload="auto" poster={placeholder}>
+        </video>
+      )
+    }
 
     return (
       <section id={this.props.id} className={"flex aic relative pv6-l pv5 video-content "+color}>
@@ -2255,7 +2241,7 @@ function Panorama(props) {
     padding: "20px"
   }
   return (
-    <section id={props.id} className="panorama-container relative">
+    <section id={props.id} className="panorama-container relative vh-100">
       <p className="tc f3-ns f5 fw7 ph3 tracked mt0 mb4-ns mb3 lh-normal">{props.label}</p>
       <figure className="panorama">
         <img src={props.image} height="100%" alt="panorama" />
@@ -2470,6 +2456,12 @@ function TimeChangeSide(props) {
     margin: "0 auto"
   }
 
+  if(props.small) {
+    topImg = {
+      maxWidth: mobile ? "100vw" : "auto",
+    }
+  }
+
   var jcc = "jcc"
 
   if(props.text1 !== "") {
@@ -2479,8 +2471,9 @@ function TimeChangeSide(props) {
     content = (
       <div className="fl-l w-50-l w-100 pre-wrap mt4-ns pr4-l">
         <div className="mw500 center ml4-l ph3 pv3">
-          <div className="w-100 h-100 absolute pn top-left" />
-          <p className="pre-wrap f5-ns f6 lh-copy mv0 z4 relative black mt0-ns mt4 ph3" dangerouslySetInnerHTML={{__html:props.text1}}></p>
+          <div className="w-100 h-100 absolute pn top-left"></div>
+          <p className='f3-ns f4 fw7 ph3 mb2 tracked'>{props.title}</p>
+          <p className="pre-wrap f5-ns f6 lh-copy mv0 z4 relative black mt0-ns mt4 ph3">{props.text1}</p>
         </div>
       </div>
     )
@@ -2852,6 +2845,7 @@ class Event01 extends Component {
           link={this.props.data.video[0]}
           text1=""
           playing={true}
+          sound={false}
         />
 
         <PhotoTextFull
@@ -2895,6 +2889,7 @@ class Event01 extends Component {
           link={this.props.data.video[1]}
           text1={this.props.data.videoText[0]}
           playing={true}
+          sound={false}
         />
 
         <Transition id={"11-transition"} bg={"bg-white"} text={this.props.data.videoText[1]} />
@@ -2903,6 +2898,8 @@ class Event01 extends Component {
           videoID="03"
           link={this.props.data.video[2]}
           text1=""
+          playing={true}
+          sound={false}
         />
 
         <PhotoTextFull
@@ -2971,6 +2968,8 @@ class Event01 extends Component {
           link={this.props.data.video[3]}
           text1={this.props.data.videoText[2]}
           bg={false}
+          playing={false}
+          sound={false}
         />
 
         <EndingVideo 
@@ -3045,6 +3044,7 @@ class Event02 extends Component {
           bg={"bg-near-white"}
           link={this.props.data.video[0]}
           text={this.props.data.videoText[0]}
+          sound={false}
         />
 
         <Timeline
@@ -3068,6 +3068,7 @@ class Event02 extends Component {
           link={this.props.data.video[1]}
           text1=""
           playing={true}
+          sound={false}
         />
 
         <Blog
@@ -3100,6 +3101,7 @@ class Event02 extends Component {
           link={this.props.data.video[2]}
           text1=""
           playing={true}
+          sound={false}
         />
 
         <PhotoMultiple
@@ -3168,11 +3170,12 @@ class Event03 extends Component {
 
         <CenterVideo
           id={"4-centerVideo"} 
-          sound={false}
           videoID="01"
           link={this.props.data.video[0]}
           text1={this.props.data.videoText[0]}
           bg={false}
+          sound={false}
+          playing={false}
         />
 
         <Transition
@@ -3186,6 +3189,8 @@ class Event03 extends Component {
           videoID="02"
           link={this.props.data.video[1]}
           text1=""
+          playing={true}
+          sound={false}
         />
 
         <PhotoMultiple
@@ -3213,9 +3218,10 @@ class Event03 extends Component {
 
         <CenterSmallVideo
           id={"9-centerSmallVideo"}  
-          videoID="13"
+          videoID="03"
           text={this.props.data.videoText[12]}
           link={this.props.data.video[12]}
+          sound={false}
         />
 
         <Transition
@@ -3233,9 +3239,10 @@ class Event03 extends Component {
         
         <CenterSmallVideo
           id={"12-centerSmallVideo"}  
-          videoID="03"
+          videoID="04"
           text={this.props.data.videoText[2]}
           link={this.props.data.video[2]}
+          sound={false}
         />
 
         <Transition
@@ -3265,11 +3272,12 @@ class Event03 extends Component {
 
         <Video 
           id={"16-video"} 
-          videoID="04"
+          videoID="05"
           color={"dark"}
           text1={this.props.data.videoText[3]}
           link={this.props.data.video[3]}
-          playing={true}
+          playing={false}
+          sound={false}
         />
 
         <Blog
@@ -3292,9 +3300,10 @@ class Event03 extends Component {
         <CenterSmallVideo
           id={"19-centerSmallVideo"} 
           color={"invert"}
-          videoID="05"
+          videoID="06"
           text={this.props.data.videoText[4]}
           link={this.props.data.video[4]}
+          sound={false}
         />
 
         <Transition
@@ -3306,11 +3315,12 @@ class Event03 extends Component {
         />
         <Video 
           id={"21-transition"} 
-          sound={true}
-          videoID="06"
+          sound={false}
+          videoID="07"
           text1={this.props.data.videoText[5]}
           link={this.props.data.video[5]}
-          playing={true}
+          playing={false}
+          sound={false}
         />
         
 
@@ -3324,11 +3334,12 @@ class Event03 extends Component {
 
         <Video 
           id={"23-video"} 
-          videoID="07"
+          videoID="08"
           position={"fr-l"}
           text1={this.props.data.videoText[11]}
           link={this.props.data.video[6]}
           playing={true}
+          sound={false}
         />
 
         <Transition
@@ -3346,10 +3357,11 @@ class Event03 extends Component {
         />
         <Video 
           id={"26-video"} 
-          videoID="08"
+          videoID="09"
           text1=""
           link={this.props.data.video[7]}
           playing={true}
+          sound={false}
         />
         <Blog
           id={"27-blog"} 
@@ -3362,9 +3374,10 @@ class Event03 extends Component {
         <SmallVideo
           id={"28-smallVideo"} 
           bg={"bg-near-white"}
-          videoID="09"
+          videoID="10"
           link={this.props.data.video[8]}
           text={this.props.data.videoText[9]}
+          sound={false}
         />
 
         <section id={"29-illustration"} className="ma0 flex jcc aic">
@@ -3396,10 +3409,11 @@ class Event03 extends Component {
 
         <Video 
           id={"33-video"} 
-          videoID="12"
+          videoID="11"
           text1=""
           link={this.props.data.video[10]}
           playing={true}
+          sound={false}
         />
 
         <SmallVideo
@@ -3409,13 +3423,15 @@ class Event03 extends Component {
           reverse={true}
           text={this.props.data.blogText[2]}
           link={this.props.data.video[11]}
+          sound={false}
         />
 
         <CenterSmallVideo 
           id={"35-centerSmallVideo"} 
-          videoID="10"
+          videoID="12"
           text={this.props.data.videoText[10]}
           link={this.props.data.video[9]}
+          sound={false}
         />
         <PhotoCenterTextFull
           id={"36-photoCenterTextFull"} 
@@ -3534,6 +3550,7 @@ class Event04 extends Component {
           bg={"bg-near-white"}
           link={this.props.data.video[0]}
           text={this.props.data.videoText[0]}
+          sound={false}
         />
         {/*
         <PhotoSwitch 
@@ -3550,6 +3567,7 @@ class Event04 extends Component {
           link={this.props.data.video[1]}
           text1=""
           playing={true}
+          sound={false}
         />
 
           <Modal open={open} onClose={this.onCloseModal} center classNames={{modal: "modalImg", closeButton: "closeButton-circle"}}>
@@ -3573,6 +3591,7 @@ class Event04 extends Component {
           id={"9-timeChangeSide"} 
           cover={true}
           text1={this.props.data.photoSlideLabel[0]}
+          title={this.props.data.photoSlideTitle[0]}
           image = {this.props.data.photoSlidePhoto[0]}
           label = "2013年 大武漁港"
           count="1-3"
@@ -3582,6 +3601,7 @@ class Event04 extends Component {
           id={"10-timeChangeSide"}
           cover={true}
           text1={this.props.data.photoSlideLabel[1]}
+          title={this.props.data.photoSlideTitle[1]}
           image = {this.props.data.photoSlidePhoto[1]}
           label = "2016年 大武漁港"
           count="2-3"
@@ -3590,6 +3610,7 @@ class Event04 extends Component {
           id={"11-timeChangeSide"}
           cover={true}
           text1={this.props.data.photoSlideLabel[2]}
+          title={this.props.data.photoSlideTitle[2]}
           last={true}
           image = {this.props.data.photoSlidePhoto[2]}
           label = "2018年 大武漁港"
@@ -3602,6 +3623,7 @@ class Event04 extends Component {
           id={"13-centerVideo"}
           videoID="06"
           sound={false}
+          playing={false}
           link={this.props.data.video[5]}
           text1={this.props.data.videoText[5]}
           bg={true}
@@ -3618,6 +3640,7 @@ class Event04 extends Component {
           link={this.props.data.video[4]}
           text1=""
           playing={false}
+          sound={false}
         />
   
         <Timeline
@@ -3634,6 +3657,7 @@ class Event04 extends Component {
           id={"17-timeChangeSide"}
           count="1-2"
           text1={this.props.data.photoText[0]}
+          title={this.props.data.photoTitle[0]}
           image = {this.props.data.photoImage[0]}
           first={true}
         />
@@ -3642,6 +3666,7 @@ class Event04 extends Component {
           count="2-2"
           last={true}
           text1={this.props.data.photoText[0]}
+          title={this.props.data.photoTitle[0]}
           image = {this.props.data.photoImage[1]}
         />
 
@@ -3651,6 +3676,7 @@ class Event04 extends Component {
           videoID="03"
           link={this.props.data.video[2]}
           text={this.props.data.videoText[2]}
+          sound={false}
         />
 
         <PhotoContrast 
@@ -3670,6 +3696,7 @@ class Event04 extends Component {
         <TimeChangeSide
           id={"22-timeChangeSide"}
           text1=""
+          title=""
           image = {this.props.data.timeChangeSidePhotos[0]}
           label = {this.props.data.timeChangeSideLabels[0]}
           count="1-4"
@@ -3678,6 +3705,7 @@ class Event04 extends Component {
         <TimeChangeSide
           id={"23-timeChangeSide"}
           text1=""
+          title=""
           image = {this.props.data.timeChangeSidePhotos[1]}
           label = {this.props.data.timeChangeSideLabels[1]}
           count="2-4"
@@ -3685,6 +3713,7 @@ class Event04 extends Component {
         <TimeChangeSide
           id={"24-timeChangeSide"}
           text1=""
+          title=""
           image = {this.props.data.timeChangeSidePhotos[2]}
           label = {this.props.data.timeChangeSideLabels[2]}
           count="3-4"
@@ -3692,6 +3721,7 @@ class Event04 extends Component {
         <TimeChangeSide
           id={"25-timeChangeSide"}
           text1=""
+          title=""
           last={true}
           image = {this.props.data.timeChangeSidePhotos[3]}
           label = {this.props.data.timeChangeSideLabels[3]}
@@ -3739,6 +3769,8 @@ class Event04 extends Component {
           videoID="07"
           link={this.props.data.video[6]}
           text1=""
+          playing={true}
+          sound={false}
         />
 
         <Transition
@@ -3753,6 +3785,7 @@ class Event04 extends Component {
           videoID="04"
           link={this.props.data.video[3]}
           text1={this.props.data.videoText[3]}
+          sound={false}
         />
         <Blog
           id={"33-blog"}
@@ -3901,6 +3934,7 @@ class Event05 extends Component {
           videoID="01"
           link={this.props.data.video[0]}
           text={this.props.data.videoText[0]}
+          sound={false}
         />
 
         <Blog
@@ -3923,7 +3957,7 @@ class Event05 extends Component {
           id={"12-video"} 
           videoID="02"
           color="dark"
-          sound={true}
+          sound={false}
           link={this.props.data.video[1]}
           text1={this.props.data.videoText[1]}
         />
@@ -3933,6 +3967,7 @@ class Event05 extends Component {
           videoID="03"
           link={this.props.data.video[2]}
           text={this.props.data.videoText[2]}
+          sound={false}
         />
 
         <PhotoTextFull
@@ -3949,11 +3984,13 @@ class Event05 extends Component {
           link={this.props.data.video[3]}
           text1=""
           playing={true}
+          sound={false}
         />
 
         <TimeChangeSide
           id={"16-timeChangeSide"}
           text1={this.props.data.photoText}
+          title=""
           image = {this.props.data.photoImage[0]}
           count="1-2"
           first={true}
@@ -3962,6 +3999,7 @@ class Event05 extends Component {
         <TimeChangeSide
           id={"17-timeChangeSide"}
           last={true}
+          title=""
           text1={this.props.data.photoText}
           image = {this.props.data.photoImage[1]}
           count="2-2"
@@ -3991,6 +4029,7 @@ class Event05 extends Component {
           link={this.props.data.video[4]}
           text1={this.props.data.videoText[4]}
           playing={true}
+          sound={false}
         />
 
         <PhotoCenterTextFull

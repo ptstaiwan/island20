@@ -7,7 +7,6 @@ import registerServiceWorker from './registerServiceWorker';
 import $ from 'jquery';
 import {TweenMax} from "gsap/all";
 import ScrollMagic from 'scrollmagic'; // eslint-disable-line no-unused-vars
-import Cookies from 'universal-cookie';
 
 render((
 <BrowserRouter basename="island20">
