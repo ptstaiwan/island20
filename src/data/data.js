@@ -682,7 +682,7 @@ var data = {
           "/events/dawu-fishing-port/videos/D52大武清淤短片2018(有上字).mp4",
           "/events/dawu-fishing-port/videos/D65鹽寮船長變遷.mp4",
           "/events/dawu-fishing-port/videos/D51-廢港底圖影音.mp4",
-          "/events/dawu-fishing-port/videos/D49-2018.07花蓮鹽寮空拍2.mp4",
+          "/events/dawu-fishing-port/videos/D49-201807花蓮鹽寮空拍2.mp4",
           "/events/dawu-fishing-port/videos/D53大武海岸消波塊短片.mp4",
           "/events/dawu-fishing-port/videos/D66-五甲漁港淤港.mp4"
       ],
@@ -700,7 +700,7 @@ var data = {
 
       // PhotoText
       "photoText": [
-          "<p class='f3 fw7 tracked mb0'>你知道什麼是突堤效應嗎?<p>突出海岸的人工結構物，會阻擋原本沿岸流及漂沙的路徑，造成上游那一側的海岸淤沙堆積，下游側的海岸，因為沙源減少，逐漸出現侵蝕現象。"
+          "<p class='f3-ns f4 fw7 tracked mv0'>你知道什麼是突堤效應嗎?<p>突出海岸的人工結構物，會阻擋原本沿岸流及漂沙的路徑，造成上游那一側的海岸淤沙堆積，下游側的海岸，因為沙源減少，逐漸出現侵蝕現象。"
       ],
       "photoImage": [
           ["/events/dawu-fishing-port/illustrations/突1.svg"],
@@ -1001,7 +1001,10 @@ var data = {
 
     "transitionText": "漁業曾經造就後豐港的繁榮，聚落前原本有片天然的灣澳，只要走出家門口，魚蝦貝類滿滿是，當地居民還會捉沙蟲、蝦子當作捕魚的餌料，這片潮間帶是他們世代傳承的豐饒之地，是重要的生計來源。\n\n不過，政府看中了小三通帶來的前景，進行水頭商港的擴建開發，大規模填海造陸，水頭到後豐港的這片自然海灣被填平，計畫作為商城和遊憩區使用，後豐港從此成為不靠海的漁村。",
     "photoText": "由於小三通的觀光人數，不如預期，填海至今，原本預計2016年執行完成的發展計劃，目前仍是荒廢一片，諷刺著招商美夢。",
-    "photoImage": "/events/kinmen-Hou-feng-kang/illustrations/電腦版.svg",
+    "photoImage": [
+      ["/events/kinmen-Hou-feng-kang/illustrations/電腦版.svg"], 
+      ["/events/kinmen-Hou-feng-kang/E9E_side.jpg"]
+    ],
 
     // BlogPost (部落格 x 2)
     "blogText": [

@@ -31,6 +31,10 @@ body {
   z-index: -1;
 }
 
+.tracked {
+  letter-spacing: .1em !important;
+}
+
 .water-blue {
   color: rgb(54, 158, 187);
 }
@@ -161,6 +165,9 @@ img {
 
 .z-1 {
   z-index: -1;
+}
+.z-2 {
+  z-index: -2;
 }
 
 button {
@@ -1858,11 +1865,19 @@ ul.none {
 
 .image-gallery-bullets.side {
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-8%);
   margin: auto;
   right: 0;
   left: auto;
   width: 40px;
+}
+
+.image-gallery-bullet.dark{
+  border-color: #aaa;
+  box-shadow: none;
+}
+.image-gallery-bullet.dark.active{
+  background: #aaa;
 }
 
 @media (max-width: 768px) {
