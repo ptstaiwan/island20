@@ -851,7 +851,13 @@ var data = {
           "2004年 海岸巡禮",
           "2008年 台灣海岸十年",
           "2013年 陷落的海岸線"
-        ]
+        ],
+        "timeChangeSideImage": [
+          "/island20/events/dawu-fishing-port/illustrations/公視圖檔-22.png",
+          "/island20/events/dawu-fishing-port/illustrations/公視圖檔-23.png",
+          "/island20/events/dawu-fishing-port/illustrations/公視圖檔-24.png",
+          "/island20/events/dawu-fishing-port/illustrations/公視圖檔-25.png",
+        ],
     },
 // ****************************************************************** E ******************************************************************
     "kinmen-Hou-feng-kang": {

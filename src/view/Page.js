@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import {Helmet} from "react-helmet";
 import loadImage from 'image-promise';
-import canAutoPlay from 'can-autoplay';
+import canAutoPlay from 'can-autoplay'; // eslint-disable-line no-unused-vars
 import data from '../data/data.js';
 import $ from 'jquery';
 import BeforeAfterSlider from 'react-before-after-slider'; // eslint-disable-line no-unused-vars
@@ -15,13 +15,11 @@ import { Tween } from "react-gsap";
 
 import ImageGallery from 'react-image-gallery';
 import Nav from '../component/Nav'
-import Phone from '../component/Phone'
+import Phone from '../component/Phone' // eslint-disable-line no-unused-vars
 import Modal from 'react-responsive-modal';
 
 import endingV from '../assets/images/endingVideo.png';
 import messengerIcon from '../assets/images/messenger.png';
-import hand from '../assets/images/hand.svg';
-import timemachine from '../assets/images/timemachine.svg';
 import timemachinehand from '../assets/images/timemachinehand.svg';
 import taiwanMap from '../assets/images/taiwan-static.png';
 import kinmenMap from '../assets/images/kinmen-static.png';
@@ -37,8 +35,8 @@ import fish3 from '../assets/images/fish-3.svg';
 import fish4 from '../assets/images/fish-4.svg';
 import fish5 from '../assets/images/fish-5.svg';
 
-import cta1 from '../assets/images/CTA-Icons-1.svg';
-import cta2 from '../assets/images/CTA-Icons-2.svg';
+import cta1 from '../assets/images/CTA-Icons-1.svg'; // eslint-disable-line no-unused-vars
+import cta2 from '../assets/images/CTA-Icons-2.svg'; // eslint-disable-line no-unused-vars
 import cta3 from '../assets/images/CTA-Icons-3.svg';
 import ctap2 from '../assets/images/pageCTA-1.svg';
 import ctap1 from '../assets/images/pageCTA-2.svg';
@@ -46,7 +44,7 @@ import ctap1 from '../assets/images/pageCTA-2.svg';
 import success from '../assets/images/我們的島cover-08.svg';
 import successTitle from '../assets/images/我們的島cover-09.svg';
 import successBg1 from '../assets/images/我們的島cover-10.svg';
-import successBg2 from '../assets/images/我們的島cover-11.svg';
+import successBg2 from '../assets/images/我們的島cover-11.svg'; // eslint-disable-line no-unused-vars
 
 // import mousewheel from 'jquery-mousewheel';
 // import {TweenMax} from "gsap/all";
@@ -464,10 +462,10 @@ function ChatBot(props) {
       <div className="mw8 center ph3 w-100">
         <div className="cf">
           <div className="fl w-50 pa2 tc">
-            <img src={success} style={successStyle}/>
+            <img src={success} style={successStyle} alt="Success"/>
           </div>
           <div className="fl w-50 pa2 tc mw500">
-            <img src={successTitle} width="100%"/>
+            <img src={successTitle} width="100%" alt="任務完成"/>
             <p className="f3-ns f6 fw5 mt2 mb3 pa0 lh-copy nowrap">快，回去找9526吧！</p>
             <div style={successBg} className="w-50-l w-90 h4-ns h3 db center cp"></div>
           </div>
@@ -2096,18 +2094,21 @@ function Timeline(props) {
   var content = null
 
   if(props.content !== null) {
-    content = props.contentTitle ? (<p className='f3-ns f5 fw7 ph3 tracked mb5-ns mb3 lh-normal' style={max} dangerouslySetInnerHTML={{__html:props.content}}></p>) :
+    if(props.content === "") content = null;
+    else content = props.contentTitle ? (<p className='f3-ns f5 fw7 ph3 tracked mb5-ns mb3 lh-normal' style={max} dangerouslySetInnerHTML={{__html:props.content}}></p>) :
     (<p className="lh-copy f5-ns f6 center pre-wrap ph4-ns ph3 mb5-ns mb3" style={max} dangerouslySetInnerHTML={{__html:props.content}}></p>);
   }
 
-  var padding = special ? "pt6-l pt5" : "pv6-l pv5 min-vh-100"; 
+  var padding = special ? "pt6-l pt5" : "pv6-l pv5 min-vh-100";
+  var scrollLeft = (<p className='f6 o-50 tc mt4'>{"◂◂ 往左滑看更多"}</p>)
+  if(!mobile && props.images.length < 5) scrollLeft = null;
 
   return (
     <section id={props.id} className={bgColor+" flex aic relative flex-column "+padding}>      
       <div className="ma0 ph3">
         {content}
       </div>
-      <p className='f6 o-50 tc mb4'>{"◂◂ 往左滑看更多"}</p>
+      {scrollLeft}
       <div className={"w-100 overflow-hidden relative"} style={scrollingAreaStyle}>
         <div className="absolute line" style={line}></div>
         <div className={"grid-container nowrap dragscroll relative ph5-l ph0 "+crab} style={container}>
@@ -3687,12 +3688,12 @@ class Event04 extends Component {
           year={this.props.data.photocontrastYear}
           label={this.props.data.photocontrastLabel}
         />
+        {/*
         <Transition
           id={"21-transition"}
           bg={"bg-near-white"}
           text={this.props.data.photoFullText[4]}
         />
-
         <TimeChangeSide
           id={"22-timeChangeSide"}
           text1=""
@@ -3727,11 +3728,21 @@ class Event04 extends Component {
           label = {this.props.data.timeChangeSideLabels[3]}
           count="4-4"
         />
+        */}
+        <Timeline
+          id={"22-timeline"}
+          special={true}
+          bg={"bg-near-white"}
+          content={this.props.data.photoFullText[4]}
+          text=""
+          year=""
+          images={this.props.data.timeChangeSideImage}
+        />
         
         <Blog
-          id={"26-blog"}
+          id={"23-blog"}
           number={2}
-          bg={"bg-near-white z4"}
+          bg={"bg-white z4"}
           text={this.props.data.blogText[0]}
           image={this.props.data.blogImage[0]}
           label={this.props.data.blogLabel[0]}
@@ -3739,7 +3750,7 @@ class Event04 extends Component {
         />
 
         <TimeChangeFull
-          id={"27-timeChangeFull"}
+          id={"24-timeChangeFull"}
           position={"fl-l"}
           text1={this.props.data.videoText[6]}
           image={this.props.data.blogImage[3][0]}
@@ -3748,7 +3759,7 @@ class Event04 extends Component {
           first={true}
         />
         <TimeChangeFull
-          id={"28-timeChangeFull"}
+          id={"25-timeChangeFull"}
           position={"fl-l"}
           last={true}
           text1={this.props.data.videoText[6]}
@@ -3758,13 +3769,13 @@ class Event04 extends Component {
         />
 
         <Transition
-          id={"29-transition"}
+          id={"26-transition"}
           bg={"bg-white tc z4"}
           text={this.props.data.videoText[7]}
         />
 
         <Video
-          id={"30-video"}
+          id={"27-video"}
           position={"fr-l"}
           videoID="07"
           link={this.props.data.video[6]}
@@ -3774,13 +3785,13 @@ class Event04 extends Component {
         />
 
         <Transition
-          id={"31-transition"}
+          id={"28-transition"}
           bg={"bg-blue white tc"}
           text={"你知道台灣有多少座漁港嗎？"}
         />
 
         <Video
-          id={"32-video"}
+          id={"29-video"}
           position={"fr-l"}
           videoID="04"
           link={this.props.data.video[3]}
@@ -3788,7 +3799,7 @@ class Event04 extends Component {
           sound={false}
         />
         <Blog
-          id={"33-blog"}
+          id={"30-blog"}
           number={2}
           bg={"bg-white"}
           text={this.props.data.blogText[1]}
@@ -3797,7 +3808,7 @@ class Event04 extends Component {
           onOpenModal={this.onOpenModal.bind(this)}
         />
         <Blog
-          id={"34-blog"}
+          id={"31-blog"}
           number={2}
           bg={"bg-near-white"}
           text={this.props.data.blogText[2]}
@@ -3806,14 +3817,14 @@ class Event04 extends Component {
           onOpenModal={this.onOpenModal.bind(this)}
         />
         <PhotoCenterTextFull
-          id={"35-photoCenterTextFull"}
+          id={"32-photoCenterTextFull"}
           text1={this.props.data.photoFullText[3]}
           image = {this.props.data.photoFull[3]}
           label = {this.props.data.photoFullTextLabel[3]}
         />
-        <EndingVideo id={"36-endingVideo"} text="一起來關心我們的海岸" link={"https://www.youtube.com/embed/C-Au_8Y6tCc?rel=0"}/>
-        <More id={"37-more"} link={this.props.data.moreLink} title={this.props.data.moreTitle} color={"#3A85A6"}/>
-        <CTA id={"38-cta"} switchView={this.props.switchView} next={"kinmen-Hou-feng-kang"} nextN={"不靠海的金門後豐港"}/>
+        <EndingVideo id={"33-endingVideo"} text="一起來關心我們的海岸" link={"https://www.youtube.com/embed/C-Au_8Y6tCc?rel=0"}/>
+        <More id={"34-more"} link={this.props.data.moreLink} title={this.props.data.moreTitle} color={"#3A85A6"}/>
+        <CTA id={"35-cta"} switchView={this.props.switchView} next={"kinmen-Hou-feng-kang"} nextN={"不靠海的金門後豐港"}/>
       </div>
     );
   }
