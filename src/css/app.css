@@ -507,6 +507,7 @@ nav .btn {
 
 .photoContrast > div {
   margin-bottom: 1rem;
+  display: block !important;
 }
 
 #cover, #timeline {

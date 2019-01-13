@@ -467,7 +467,7 @@ function ChatBot(props) {
           <div className="fl w-50 pa2 tc mw500">
             <img src={successTitle} width="100%" alt="任務完成"/>
             <p className="f3-ns f6 fw5 mt2 mb3 pa0 lh-copy nowrap">快，回去找9526吧！</p>
-            <div style={successBg} className="w-50-l w-90 h4-ns h3 db center cp"></div>
+            <a href="https://m.me/742639746135059" rel="noopener noreferrer"><div style={successBg} className="w-50-l w-90 h4-ns h3 db center cp"></div></a>
           </div>
         </div>
       </div>
@@ -1226,16 +1226,21 @@ function PhotoContrast(props) {
       <label className="f7-ns f8 mt3 o-50 lh-normal mh2" >{props.label}</label>
     )
   }
+  var contrastStyle = {
+    maxWidth: '1024px', 
+    margin: '0 auto'
+  }
   return (
     <section id={props.id} className={"flex aic relative flex-column pv6-l pv5 "+props.bg}>
         <div className="w-100 z4">
           {text}
-          <div className="photoContrast relative tc" style={{ maxWidth: '1024px', margin: '0 auto' }}>
+          <div className="photoContrast relative tc" style={contrastStyle}>
             <ReactCompareImage
               leftImage={props.images[0]}
               rightImage={props.images[1]}
               sliderLineWidth={2}
               handleSize={40}
+              autoReloadSpan={100}
               sliderPositionPercentage={0.8}
             />
             {label}
@@ -2788,11 +2793,18 @@ class Event01 extends Component {
     this.state = {
       open: false,
       image: "",
-      description: ""
+      description: "",
+      chat: false
     }
   }
   componentDidMount(){
+    var $this = this;
     console.log("event01");
+    window.onload = function() {
+      if(window.location.href.indexOf('chatbot') > -1) {
+        $this.setState({chat: true});
+      }
+    }
   }
   componentDidUpdate(){
     console.log("event01_update");
@@ -2979,7 +2991,7 @@ class Event01 extends Component {
           link={"https://www.youtube.com/embed/pJcFZSLkelU?rel=0"}
         />
 
-        <ChatBot id={"chatbot"} display={true}/>
+        <ChatBot id={"chatbot"} display={this.state.chat}/>
 
         <More 
           id={"21-more"} 
