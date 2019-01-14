@@ -2642,7 +2642,7 @@ class TimeChange extends Component {
     if(this.state.mini) {
       h = "";
       dH = {
-        minHeight: "calc(215vw + 20rem)"
+        minHeight: "calc(223vw + 20rem)"
       }
     }
 
