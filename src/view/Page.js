@@ -2612,13 +2612,15 @@ class TimeChange extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      mobile: false
+      mobile: false,
+      mini: false,
     };
   }
   componentDidMount(){
     var $this = this;
     $(document).ready(function(){
       if($(window).width() <= 959) $this.setState({mobile:true});
+      if($(window).width() <= 665) $this.setState({mini:true});
     });
   }
   
@@ -2628,6 +2630,20 @@ class TimeChange extends Component {
     if(this.props.last && !this.state.mobile) {
       z = "z-1";
       h = "min-vh-200"
+    }
+    var dH = null
+
+    if(this.state.mobile) {
+      h = "";
+      dH = {
+        minHeight: "calc(1413px + 18rem)"
+      }
+    }
+    if(this.state.mini) {
+      h = "";
+      dH = {
+        minHeight: "calc(215vw + 20rem)"
+      }
     }
 
     var label = {
@@ -2648,25 +2664,37 @@ class TimeChange extends Component {
       label.fontSize = ".7em"
     }
 
+    var max = {
+      maxHeight: "471px",
+      width: "100%",
+      objectFit: "cover"
+    }
+
+    var top = this.state.mobile ? null : {
+      marginTop: "66px"
+    }
+
+    
+
     return (
-      <section id={this.props.id} className={h+" flex aic relative timeChange-text bg-white "+z}>
+      <section id={this.props.id} className={h+" flex aic relative timeChange-text bg-white "+z} style={dH}>
         <div className="w-100 h-100 absolute top-left time-clipping fade">
           <div className="bg-white w-100 h-100-m h-100-l fixed-l fixed-content pn flex aic">
-            <div className="center w-100 z4 pre-wrap">
-              <div className="mw7 mv3 mv0-l center w-100 pt0-l pt4 ph3 h5-l">
+            <div className="center w-100 z4 pre-wrap" style={top}>
+              <div className="mw7 mv3 mv0-l center w-100 pt0-l pt5 ph3 h5-ns h6">
                 <p className="lh-copy mv0 dark-gray ph3 ph0-l" dangerouslySetInnerHTML={{__html:this.props.text1}}></p>
               </div>
               <figure className="w-100 flex flex-wrap flex-nowrap-l ma0">
                 <div className="relative mr2-l">
-                  <img src={this.props.image[0]} alt="description"/>
+                  <img src={this.props.image[0]} alt="description" style={max}/>
                   <label style={label}>{this.props.labels[0]}</label>
                 </div>
                 <div className="relative mr2-l">
-                  <img src={this.props.image[1]} alt="description"/>
+                  <img src={this.props.image[1]} alt="description" style={max}/>
                   <label style={label}>{this.props.labels[1]}</label>
                 </div>
                 <div className="relative">
-                  <img src={this.props.image[2]} alt="description"/>
+                  <img src={this.props.image[2]} alt="description" style={max}/>
                   <label style={label}>{this.props.labels[2]}</label>
                 </div>
               </figure>
