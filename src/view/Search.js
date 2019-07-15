@@ -61,7 +61,7 @@ class Search extends Component {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         }
-      }) 
+      })
     })
   };
 
@@ -85,14 +85,14 @@ class Search extends Component {
       var windowHeight = $(window).height(),
         $block = $('#timeline');
         if(windowHeight > 550) { // 550px is your css min-height for this block
-          $block.css('min-height', windowHeight + 'px') 
+          $block.css('min-height', windowHeight + 'px')
         } else {
-          $block.css('min-height': '') 
+          $block.css('min-height', '')
         }
     }
     setHeight();
     $(window).on('resize orientationchange', setHeight);
-    
+
     // Init Page
     const cookies = new Cookies();
     var $t = this;
@@ -104,7 +104,7 @@ class Search extends Component {
     var loaded = false;
     var p = 0;
     var id = setInterval(frame, 10);
-    
+
     function frame() {
       //console.log(loaded)
       if (p >= 100) {
@@ -120,7 +120,7 @@ class Search extends Component {
           clearInterval(id);
         }
       } else {
-        p++; 
+        p++;
         $('.progress-view').text(p+'%');
       }
     }
@@ -153,7 +153,7 @@ class Search extends Component {
     var $this = this;
     $(document).ready(function(){
       var scroll = document.getElementById("scrollRange");
-      var panel = document.getElementById("storyBox");    
+      var panel = document.getElementById("storyBox");
       scroll.oninput = function (el) {
         var total = panel.scrollWidth - panel.offsetWidth;
         var percentage = total*(this.value/100);
@@ -251,21 +251,21 @@ class Search extends Component {
         </div>
       </li>
     );
-  } 
+  }
 
   // Story Component
   storyList = () => {
-    let filteredStories = story_data.filter((s) => { 
+    let filteredStories = story_data.filter((s) => {
       return s.keywords.indexOf(this.state.search) !== -1 && s.keywords.indexOf(this.state.area) !== -1;
     });
-    return (<ul id="storyBox" className="storyBox tc pa0 nowrap list overflow-x-scroll dragscroll">{filteredStories.map((s, i) => { 
+    return (<ul id="storyBox" className="storyBox tc pa0 nowrap list overflow-x-scroll dragscroll">{filteredStories.map((s, i) => {
       return this.stories(s, i);
     })}</ul>);
   }
 
   // Topic Component
   topicList = () => {
-    return (<ul className="topicBox mw8-ns center list flex space-between pa0 ph2-ns nowrap list overflow-x-scroll dragscroll">{topic_data.map((t, i) => { 
+    return (<ul className="topicBox mw8-ns center list flex space-between pa0 ph2-ns nowrap list overflow-x-scroll dragscroll">{topic_data.map((t, i) => {
       let highlight = '';
       let img = (<img src={t.icon} width="36" height="36" className="pr2" alt={t.title}/>);
       if(t.title === '全部事件') {
@@ -292,12 +292,12 @@ class Search extends Component {
     let disable = ''
     if(this.state.search !== '') disable = 'none';
 
-    return (<ul className={"list pa0 mb0 "+disable}>{date_data.map((d, i) => { 
+    return (<ul className={"list pa0 mb0 "+disable}>{date_data.map((d, i) => {
       let highlight = '';
       if(d === '1970') highlight = 'active';
       return (
         <li className={"w-20 tc dib pa2 bg-white cp ba bw1 b--white " + highlight} key={i} onClick={this.scrollDate.bind(this)}>{d}</li>
-      ); 
+      );
     })}</ul>)
   }
 
@@ -313,7 +313,7 @@ class Search extends Component {
       tween.eventCallback("onComplete", function(){
         TweenMax.to($('.storyBox'), .4, {opacity: 1});
       });
-      
+
       $this.setState({
         search: key.substr(0,20),
         area: key_area,
@@ -428,7 +428,7 @@ class Search extends Component {
       backgroundPosition: 'center center'
     }
 
-    
+
 
     return (
       <section id="timeline" className="min-vh-100 bg-white pv5-l pv4">
