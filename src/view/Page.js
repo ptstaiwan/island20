@@ -181,7 +181,7 @@ class Page extends Component {
       //   $this.find('video').get(0).pause()
       // });
 
-      var scrolling = false;
+      var scrolling = false; // eslint-disable-line no-unused-vars
       $t.state.scrollprogress = setInterval(function(){
         if(!$('.progress.active').hasClass('scrolling')) {
           $('.progress.active').addClass('scrolling');
@@ -414,7 +414,7 @@ class Page extends Component {
       //   $this.find('video').get(0).pause()
       // });
 
-      var scrolling = false;
+      var scrolling = false; // eslint-disable-line no-unused-vars
       $t.state.scrollprogress = setInterval(function(){
         if(!$('.progress.active').hasClass('scrolling')) {
           $('.progress.active').addClass('scrolling');
@@ -755,7 +755,7 @@ class Taiwan extends Component {
     }
     var l = this.props.text1.split("的")[0];
     var r = (l.length-2) * 15 + 60 + "px";
-    var label = {
+    var label = { 
       background: "#222222",
       color: "white",
       padding: "10px 12px",
@@ -1069,7 +1069,7 @@ class PhotoCenterTextFull extends Component {
       mask = "";
     }
 
-    var label = this.props.label == "" ? null : (
+    var label = this.props.label === "" ? null : (
       <label className="white absolute lh-normal z10 f6-ns f8 pn" style={bottomRight}>{this.props.label}</label>
     )
     return (
@@ -1356,7 +1356,7 @@ class PhotoText extends Component {
       }
     }
 
-    var photo_text = this.props.text == undefined ? null : (
+    var photo_text = this.props.text === undefined ? null : (
             <div className={"w-50-l mw500 mh3-l center w-100 o-90 pa4-l pa3 bg-white "+text}>
               <p className="f5-ns f6 lh-copy mv0" dangerouslySetInnerHTML={{__html:this.props.text}}></p>
             </div>

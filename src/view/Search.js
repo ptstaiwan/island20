@@ -212,8 +212,12 @@ class Search extends Component {
     // Topic Cards
     let style = " bg-white dark-gray w6-ns w5 card";
     let image = " db";
+    let pa = "pa3";
+    let tscale = "";
     var icon = "";
     if(s.time === "") {
+      pa = "pa4";
+      tscale = "scaleup";
       style = " bg-white dark-gray w7-ns w5 pa3";
       image = " dn";
       if(this.state.topic <= 5) icon = (<img src={topic_data[this.state.topic].icon} width="44" height="44" className="pr3 icon" alt={topic_data[this.state.topic].title}/>);
@@ -244,8 +248,8 @@ class Search extends Component {
               alt="story"
             />
           </figure>
-          <div className="pa3 tl">
-            <h3 className="ma0 f4-ns f5 initial lh-copy flex aic">{icon}{s.name}</h3>
+          <div className={pa+" tl"}>
+            <h3 className={"ma0 f4-ns f5 initial lh-copy flex aic "+tscale}>{icon}{s.name}</h3>
             <p className="mv2 f5-ns f6">{s.time}</p>
           </div>
         </div>
@@ -377,7 +381,7 @@ class Search extends Component {
 
     if(imageLength > 1) {
       for(var i = 0; i < imageLength; i++) {
-        label = this.state.content.labels == undefined ? null : this.state.content.labels[i];
+        label = this.state.content.labels === undefined ? null : this.state.content.labels[i];
         var slides = (
           <div className="swiper-slide" key={i}>
             <figure className="mh0 mv4 modalImg">
@@ -399,7 +403,7 @@ class Search extends Component {
         </div>
       )
     } else {
-      label = this.state.content.labels == undefined ? null : this.state.content.labels[0];
+      label = this.state.content.labels === undefined ? null : this.state.content.labels[0];
       all_content = (
         <div className="image">
           <figure className="mh0 mv4 modalImg">
@@ -438,7 +442,7 @@ class Search extends Component {
         <Nav timeline={false} notfix={true} show={true}/>
         <div className="mw8-ns center ph3-ns mb4-ns pt4-l pt5">
           <div className="cf mb3-ns mb2">
-            <div className="fl w-100 w-20-l flex aic mb3 mb0-l ph0-ns ph3">
+            <div className="fl w-100 w-20-l flex aic mb3 mb0-l ph0-ns ph3 patitle">
               <h2 className="ma0 nowrap">大事紀標題</h2>
             </div>
             <div className="fl w-100 w-80-l">
@@ -455,7 +459,7 @@ class Search extends Component {
                   <option value="area7">金馬澎蘭嶼</option>
                   <option value="others">不分區及其他</option>
                 </select>
-                <input type="submit" className="ph2 tc cp w4" value="搜尋" />
+                <input type="submit" className="ph2 tc cp w4" id="searchButton" value="搜尋" />
               </form>
             </div>
           </div>
