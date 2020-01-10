@@ -514,6 +514,10 @@ nav .btn {
   max-width: 36rem;
 }
 
+.mw400 {
+  max-width: 400px;
+}
+
 /*@media screen and (min-width: 60em) {
   .transitionTitle div {
     transform: translateX(-100px);
