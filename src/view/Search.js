@@ -258,7 +258,7 @@ class Search extends Component {
     let filteredStories = story_data.filter((s) => {
       return s.keywords.indexOf(this.state.search) !== -1 && s.keywords.indexOf(this.state.area) !== -1;
     });
-    return (<ul id="storyBox" className="storyBox tc pa0 nowrap list overflow-x-scroll dragscroll">{filteredStories.map((s, i) => {
+    return (<ul id="storyBox" className="storyBox tc pa0 nowrap list overflow-x-scroll dragscroll z4 relative">{filteredStories.map((s, i) => {
       return this.stories(s, i);
     })}</ul>);
   }
@@ -463,7 +463,8 @@ class Search extends Component {
         <div className="topicContainer pv3 bg-light-gray">
           {this.topicList()}
         </div>
-        <div className="storyContainer" style={storyBg}>
+        <div className="storyContainer relative" style={storyBg}>
+          <div className="absolute w-100 h-100 top-left bg-black o-30"></div>
           {this.storyList()}
         </div>
         <div className="mw8 center ph3-ns mt4">
