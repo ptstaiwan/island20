@@ -442,10 +442,10 @@ class Search extends Component {
         <Nav timeline={false} notfix={true} show={true}/>
         <div className="mw8-ns center ph3-ns mb4-ns pt4-l pt5">
           <div className="cf mb3-ns mb2">
-            <div className="fl w-100 w-20-l flex aic mb3 mb0-l ph0-ns ph3 patitle">
+            <div className="fl w-100 w-30-l flex aic mb3 mb0-l ph0-ns ph3 patitle">
               <h2 className="ma0 nowrap">大事紀標題</h2>
             </div>
-            <div className="fl w-100 w-80-l">
+            <div className="fl w-100 w-60-l">
               <form className="flex space-between aic" style={form} onSubmit={this.updateSearch.bind(this)}>
                 <input id="search_input" className="w-100 ph2" type="text" ref="keyword" placeholder="搜尋紀事"/>
                 <select name="areas" ref="areas" className="w150">
