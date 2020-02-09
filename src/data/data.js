@@ -6,40 +6,40 @@ var data = {
                 "id": "1-1",
                 "num": "01",
                 "name": "變遷 淡水河@台北／新北",
-                "image": "/island20/images/1-1_A22.jpg",
-                "icon": "/island20/images/icons/1-1淡水河.png",
+                "image": "/images/1-1_A22.jpg",
+                "icon": "/images/icons/1-1淡水河.png",
                 "description": "台北人熟悉的淡水河，也曾經堆滿了垃圾？一起乘著島嶼時光機，回首垃圾山，臭氣憶當年。",
                 "url": "changing-tamsui-river"
             }, {
                 "id": "1-2",
                 "num": "02",
                 "name": "重生 二仁溪@台南／高雄",
-                "image": "/island20/images/1-2_B6.jpg",
-                "icon": "/island20/images/icons/1-2二仁溪.png",
+                "image": "/images/1-2_B6.jpg",
+                "icon": "/images/icons/1-2二仁溪.png",
                 "description": "靠著廢五金致富，卻留下污染，造就黑龍江。得花多少時間與金錢，才能換回二仁溪的重生？",
                 "url": "reborn-erren-river"
             }, {
                 "id": "1-3",
                 "num": "03",
                 "name": "陸蟹闖天關@屏東 恆春",
-                "image": "/island20/images/1-3_C1.jpg",
-                "icon": "/island20/images/icons/1-3陸蟹.png",
+                "image": "/images/1-3_C1.jpg",
+                "icon": "/images/icons/1-3陸蟹.png",
                 "description": "從誕生的那一刻起，牠們必須勇敢的一關闖過一關。陸蟹的一生，就是一場實境版的生存遊戲。",
                 "url": "land-crabs-survival"
             }, {
                 "id": "1-4",
                 "num": "04",
                 "name": "漁港的黑色幽默@台東 大武",
-                "image": "/island20/images/1-4_D32.jpg",
-                "icon": "/island20/images/icons/1-4港口淤積.png",
+                "image": "/images/1-4_D32.jpg",
+                "icon": "/images/icons/1-4港口淤積.png",
                 "description": "漁港變成砂石場，怪手挖不完，漁船出不了海。蓋了快七十年，還沒有完工的永續工程。",
                 "url": "dawu-fishing-port"
             }, {
                 "id": "1-5",
                 "num": "05",
                 "name": "不靠海的金門後豐港@金門 金城",
-                "image": "/island20/images/1-5_E7.jpg",
-                "icon": "/island20/images/icons/1-5鱟.png",
+                "image": "/images/1-5_E7.jpg",
+                "icon": "/images/icons/1-5鱟.png",
                 "description": "一個名稱有港，卻無法出港的地方。一個以海維生的百年漁村聚落，卻再也不能輕易地親近海。",
                 "url": "kinmen-Hou-feng-kang"
             }]
@@ -50,32 +50,32 @@ var data = {
                 "id": "2-1",
                 "num": "06",
                 "name": "咬一口高山青翠@台中 梨山",
-                "image": "/island20/images/2-1.jpg",
-                "icon": "/island20/images/icons/2-1梨山.png",
+                "image": "/images/2-1.jpg",
+                "icon": "/images/icons/2-1梨山.png",
                 "description": "這裡曾經林木蒼鬱， 如今滿山瘡痍。光禿的山頭、崩落的土石，見證的是人的意志還是大地的嗚咽。",
                 "url": "lishan-high-mountain-farms"
             }, {
                 "id": "2-2",
                 "num": "07",
                 "name": "冒險 泡湯去@南投 廬山",
-                "image": "/island20/images/2-2.jpg",
-                "icon": "/island20/images/icons/2-2廬山.png",
+                "image": "/images/2-2.jpg",
+                "icon": "/images/icons/2-2廬山.png",
                 "description": "號稱天下第一泉的廬山溫泉，泉質優良，一度熙熙攘攘。十年前，暴洪沖走繁華，人聲鼎沸的山城，只剩空蕩。",
                 "url": "lushan-hotspring-risk"
             }, {
                 "id": "2-3",
                 "num": "08",
                 "name": "攔住水又失去水@雲林 湖山水庫",
-                "image": "/island20/images/2-3.jpg",
-                "icon": "/island20/images/icons/2-3湖山水庫.png",
+                "image": "/images/2-3.jpg",
+                "icon": "/images/icons/2-3湖山水庫.png",
                 "description": "為了攔住水，毀壞一片森林。眾多爭議中，艱難誕生的湖山水庫，是否成為減緩地層下陷的解藥？",
                 "url": "hushan-reservoir-lost-water"
             }, {
                 "id": "2-4",
                 "num": "09",
                 "name": "挖山取石的代價@花蓮 亞泥",
-                "image": "/island20/images/2-4.jpg",
-                "icon": "/island20/images/icons/2-4亞泥.png",
+                "image": "/images/2-4.jpg",
+                "icon": "/images/icons/2-4亞泥.png",
                 "description": "火藥炸裂她的心臟，怪手挖開她的背脊。輸送帶忙碌地準備打包整座山頭，太魯閣年輕族人問： 山去了哪裡？",
                 "url": "asia-cement-cost"
             }]
@@ -86,32 +86,32 @@ var data = {
                 "id": "3-1",
                 "num": "10",
                 "name": "無土時代@彰化 中科四期",
-                "image": "/island20/images/3-1.jpg",
-                "icon": "/island20/images/icons/3-1中科四期.png",
+                "image": "/images/3-1.jpg",
+                "icon": "/images/icons/3-1中科四期.png",
                 "description": "相思寮，見證台灣農業史的小村莊，居民在此，安身立命。當農地變成工業區腹地，老聚落從此變貌。",
                 "url": "science-park-landuse"
             }, {
                 "id": "3-2",
                 "num": "11",
                 "name": "海上的石化王國@雲林 麥寮六輕",
-                "image": "/island20/images/3-2.jpg",
-                "icon": "/island20/images/icons/3-2六輕.png",
+                "image": "/images/3-2.jpg",
+                "icon": "/images/icons/3-2六輕.png",
                 "description": "1998年雲林麥寮沿海，一座石化工業區誕生，從此以後，海風吹來的不再只是鹹鹹的滋味。",
                 "url": "petrochemical-kingdom"
             }, {
                 "id": "3-3",
                 "num": "12",
                 "name": "焦土@台南 台鹼安順廠",
-                "image": "/island20/images/3-3.jpg",
-                "icon": "/island20/images/icons/3-3台鹼.png",
+                "image": "/images/3-3.jpg",
+                "icon": "/images/icons/3-3台鹼.png",
                 "description": "一座化學工廠，為台南的濱海小鎮帶來短暫繁華，卻在人與土地上，留下漫長的毒害和夢魘。",
                 "url": "soil-pollution-tainan"
             }, {
                 "id": "3-4",
                 "num": "13",
                 "name": "無人知曉的未爆彈@屏東 赤山巖",
-                "image": "/island20/images/3-4.jpg",
-                "icon": "/island20/images/icons/3-4汞污泥.png",
+                "image": "/images/3-4.jpg",
+                "icon": "/images/icons/3-4汞污泥.png",
                 "description": "20年前，屏東赤山巖農地，被濫倒有毒汞污泥及各式廢棄物。20年後，受難的土地恢復了嗎？台灣還有多少未爆彈？",
                 "url": "mercury-sludge-volcano"
             }]
@@ -126,14 +126,14 @@ var data = {
 
             "title": "變遷 淡水河",
             "description": "台北人熟悉的淡水河，也曾經堆滿了垃圾？一起乘著島嶼時光機，回首垃圾山，臭氣憶當年。",
-            "thumbnail": "/island20/events/changing-tamsui-river/thumbnailA.jpg",
+            "thumbnail": "/events/changing-tamsui-river/thumbnailA.jpg",
             "id": "事件1",
-            "code": "/island20/events/changing-tamsui-river/videos/coverA.png",
+            "code": "/events/changing-tamsui-river/videos/coverA.png",
 
             // CoverVideo
-            "coverTitle": "/island20/images/titles/01.svg",
+            "coverTitle": "/images/titles/01.svg",
             "coverDescription": "台北人熟悉的淡水河，也曾經堆滿了垃圾？<br class='db-ns dn'/>一起乘著島嶼時光機，回首垃圾山，臭氣憶當年。",
-            "coverVideo": "/island20/events/changing-tamsui-river/videos/A18(底圖動態02).mp4",
+            "coverVideo": "/events/changing-tamsui-river/videos/A18(底圖動態02).mp4",
 
             // Taiwan
             "taiwanText": [
@@ -146,15 +146,15 @@ var data = {
                 "總是人潮絡繹不絕的淡水河，是城市人們的出口，人們的生活和淡水河流域緊密相依。\n\n現在的你很難想像，1993年的淡水河畔，是滿天的垃圾和惡臭味，讓人想快速離開。",
                 "讓我們乘坐時光機，回到三十年前的淡水河。\n\n一啟航，迎面而來是陣陣臭氣，沿著大漢溪而上，岸邊竟有著一座又一座的「垃圾山」，沒處理的污水直接排放，河面處處漂浮垃圾。不要說什麼河岸景觀第一排，就算是在這待一分鐘，也待不下去。"
             ],
-            "illustration": "/island20/events/changing-tamsui-river/illustrations/illustrationA.svg",
+            "illustration": "/events/changing-tamsui-river/illustrations/illustrationA.svg",
 
             // Photo Switch
             "photoswitch": [
-                "/island20/events/changing-tamsui-river/A8.jpg",
-                "/island20/events/changing-tamsui-river/A4.jpg",
-                "/island20/events/changing-tamsui-river/A6.jpg",
-                "/island20/events/changing-tamsui-river/A2.jpg",
-                "/island20/events/changing-tamsui-river/A7.jpg"
+                "/events/changing-tamsui-river/A8.jpg",
+                "/events/changing-tamsui-river/A4.jpg",
+                "/events/changing-tamsui-river/A6.jpg",
+                "/events/changing-tamsui-river/A2.jpg",
+                "/events/changing-tamsui-river/A7.jpg"
             ],
 
             "photoswitchLabel": [
@@ -176,8 +176,8 @@ var data = {
             ],
 
             "timeChangePhotos": [
-                ["/island20/events/changing-tamsui-river/A28.jpg", "/island20/events/changing-tamsui-river/A29.jpg", "/island20/events/changing-tamsui-river/A30.jpg"],
-                ["/island20/events/changing-tamsui-river/A31.jpg", "/island20/events/changing-tamsui-river/A32.jpg", "/island20/events/changing-tamsui-river/A48-2018五股二重疏洪道旁鐵皮工廠.jpg"]
+                ["/events/changing-tamsui-river/A28.jpg", "/events/changing-tamsui-river/A29.jpg", "/events/changing-tamsui-river/A30.jpg"],
+                ["/events/changing-tamsui-river/A31.jpg", "/events/changing-tamsui-river/A32.jpg", "/events/changing-tamsui-river/A48-2018五股二重疏洪道旁鐵皮工廠.jpg"]
             ],
 
             "timeChangeLabels": [
@@ -187,10 +187,10 @@ var data = {
 
             // Video
             "video": [
-                "/island20/events/changing-tamsui-river/videos/A42-1陳建志談變遷調整字幕.mp4",
-                "/island20/events/changing-tamsui-river/videos/A41-1陳建志變遷-調整字幕往上.mp4",
-                "/island20/events/changing-tamsui-river/videos/A14-1捕鰻苗-調整字幕往上.mp4",
-                "/island20/events/changing-tamsui-river/videos/A47淡水河(底圖20181114).mp4"
+                "/events/changing-tamsui-river/videos/A42-1陳建志談變遷調整字幕.mp4",
+                "/events/changing-tamsui-river/videos/A41-1陳建志變遷-調整字幕往上.mp4",
+                "/events/changing-tamsui-river/videos/A14-1捕鰻苗-調整字幕往上.mp4",
+                "/events/changing-tamsui-river/videos/A47淡水河(底圖20181114).mp4"
             ],
 
             "videoText": [
@@ -203,11 +203,11 @@ var data = {
 
             // PhotoTextFull
             "photoFull": [
-                "/island20/events/changing-tamsui-river/A38.jpg",
-                "/island20/events/changing-tamsui-river/A19.jpg",
-                "/island20/events/changing-tamsui-river/A35.jpg",
-                "/island20/events/changing-tamsui-river/A17.jpg",
-                "/island20/events/changing-tamsui-river/A19.jpg",
+                "/events/changing-tamsui-river/A38.jpg",
+                "/events/changing-tamsui-river/A19.jpg",
+                "/events/changing-tamsui-river/A35.jpg",
+                "/events/changing-tamsui-river/A17.jpg",
+                "/events/changing-tamsui-river/A19.jpg",
             ],
 
             "photoFullTextLabel": [
@@ -240,13 +240,13 @@ var data = {
             "photoTextLabel": [],
 
             "photoImage": [
-                "/island20/events/changing-tamsui-river/illustrations/chart.svg",
+                "/events/changing-tamsui-river/illustrations/chart.svg",
             ],
 
             // PhotoContrast
             "photocontrast": [
-                "/island20/events/changing-tamsui-river/A11(1998.10八里海岸-扒文蛤).jpg",
-                "/island20/events/changing-tamsui-river/A13(2017.09八里海岸文蛤淤積).jpg"
+                "/events/changing-tamsui-river/A11(1998.10八里海岸-扒文蛤).jpg",
+                "/events/changing-tamsui-river/A13(2017.09八里海岸文蛤淤積).jpg"
             ],
 
             "photocontrastYear": ["1998", "2017"],
@@ -254,8 +254,8 @@ var data = {
             "photocontrastText": "1998年的淡水河口，在退潮期間，還可以見到當地居民在灘地上耙文蛤的景象，不過在台北港興建之後，海岸地形改變，河口逐漸淤積，海中拾穗的場景，已不復見。",
 
             "photocontrast2": [
-                "/island20/events/changing-tamsui-river/A3(1995八里淡水河岸垃圾場).jpg",
-                "/island20/events/changing-tamsui-river/A37-2018年八里海岸的垃圾場已經變身為自行車道.jpg"
+                "/events/changing-tamsui-river/A3(1995八里淡水河岸垃圾場).jpg",
+                "/events/changing-tamsui-river/A37-2018年八里海岸的垃圾場已經變身為自行車道.jpg"
             ],
 
             "photocontrastYear2": ["1995", "2018"],
@@ -267,7 +267,7 @@ var data = {
                 "輸沙減少，讓淡水河南岸的海岸線嚴重侵蝕，1990年代可見到沙洲上的碉堡砲台沒入海中，連當地居民祖先的墳墓都失守。\n\n不過在台北港興建之後，突出海岸的堤防，改變漂沙流向，讓這片海岸出現劇烈變化，由侵蝕轉變為淤積。雖然看似多了一塊地，但是天下沒有白吃的午餐，現在換成台北港南側海岸失去沙源，日益侵蝕，甚至危及海岸公路。",
             ],
             "blogImage": [
-                ["/island20/events/changing-tamsui-river/A26.jpg", "/island20/events/changing-tamsui-river/A25.jpg", "/island20/events/changing-tamsui-river/A24.jpg"],
+                ["/events/changing-tamsui-river/A26.jpg", "/events/changing-tamsui-river/A25.jpg", "/events/changing-tamsui-river/A24.jpg"],
             ],
             "blogLabel": [
                 ["1993年 新北市八里海岸嚴重侵蝕-碉堡傾倒", "1993年 新北市八里海岸嚴重侵蝕-碉堡沒入海中", "2008年 新北市八里海岸淤沙堆積-深達碉堡頂部"],
@@ -296,14 +296,14 @@ var data = {
         "reborn-erren-river": {
             "title": "重生 二仁溪",
             "description": "靠著廢五金致富，卻留下污染，造就黑龍江。得花多少時間與金錢，才能換回二仁溪的重生？",
-            "thumbnail": "/island20/events/reborn-erren-river/thumbnailB.jpg",
+            "thumbnail": "/events/reborn-erren-river/thumbnailB.jpg",
             "id": "事件2",
-            "code": "/island20/events/reborn-erren-river/videos/coverB.png",
+            "code": "/events/reborn-erren-river/videos/coverB.png",
 
             // CoverVideo
-            "coverTitle": "/island20/images/titles/02.svg",
+            "coverTitle": "/images/titles/02.svg",
             "coverDescription": "靠著廢五金致富，卻留下污染，造就黑龍江。<br class='db-ns dn'/>得花多少時間與金錢，才能換回二仁溪的重生？",
-            "coverVideo": "/island20/events/reborn-erren-river/videos/B55-2018年二仁溪底圖.mp4",
+            "coverVideo": "/events/reborn-erren-river/videos/B55-2018年二仁溪底圖.mp4",
 
             // Taiwan
             "taiwanText": [
@@ -315,13 +315,13 @@ var data = {
             "illustrationText": [
                 "如果要說全台灣命運最悲慘的河流，很多人腦海裡浮現的很可能是二仁溪。\n\n二仁溪中下游地區曾經是廢五金與熔煉業的大本營，尤其是北岸的台南灣裡，六零年代，家家戶戶幾乎都在從事拆解廢五金的行業，空氣中總是瀰漫著酸臭煙霧。"
             ],
-            "illustration": "/island20/events/reborn-erren-river/illustrations/illustrationB.svg",
+            "illustration": "/events/reborn-erren-river/illustrations/illustrationB.svg",
 
             // Videos
             "video": [
-                "/island20/events/reborn-erren-river/videos/B47灣裡歷史短影音.mp4",
-                "/island20/events/reborn-erren-river/videos/B16-1二仁溪水比對-調整字幕往上.mp4",
-                "/island20/events/reborn-erren-river/videos/B54-1蘇水龍黃煥彰感言-調整字幕往上.mp4"
+                "/events/reborn-erren-river/videos/B47灣裡歷史短影音.mp4",
+                "/events/reborn-erren-river/videos/B16-1二仁溪水比對-調整字幕往上.mp4",
+                "/events/reborn-erren-river/videos/B54-1蘇水龍黃煥彰感言-調整字幕往上.mp4"
             ],
 
             "videoText": [
@@ -333,11 +333,11 @@ var data = {
 
             // PhotoSwitch
             "photoswitch": [
-                "/island20/events/reborn-erren-river/B49.jpg",
-                "/island20/events/reborn-erren-river/B50.jpg",
-                "/island20/events/reborn-erren-river/B51.jpg",
-                "/island20/events/reborn-erren-river/B62.jpg",
-                "/island20/events/reborn-erren-river/B53.jpg"
+                "/events/reborn-erren-river/B49.jpg",
+                "/events/reborn-erren-river/B50.jpg",
+                "/events/reborn-erren-river/B51.jpg",
+                "/events/reborn-erren-river/B62.jpg",
+                "/events/reborn-erren-river/B53.jpg"
             ],
 
             "photoswitchLabel": [
@@ -356,16 +356,16 @@ var data = {
             "photoMultipleText": "不只二仁溪，根據環保署2017年的環保統計年報，台灣至今還有30多條以上河川遭到中重度污染，像是長年受到工業廢水排放的桃園黃墘溪、和石化區緊鄰的高雄後勁溪或是飽受中華紙漿廢水排放的花蓮溪等等，這些多年來承受污染威脅的河川，到現在還在等待清澈的一天。",
 
             "photoMultiple": [
-                "/island20/events/reborn-erren-river/B9_1280p.jpg",
-                "/island20/events/reborn-erren-river/B63_1280p.jpg",
-                "/island20/events/reborn-erren-river/B31_1280p.jpg",
-                "/island20/events/reborn-erren-river/B60_1280p.jpg",
-                "/island20/events/reborn-erren-river/B61_1280p.jpg",
-                "/island20/events/reborn-erren-river/B42_1280p.jpg",
-                "/island20/events/reborn-erren-river/B33_1280p.jpg",
-                "/island20/events/reborn-erren-river/B36_1280p.jpg",
-                "/island20/events/reborn-erren-river/B43_1280p.jpg",
-                "/island20/events/reborn-erren-river/B10_1280p.jpg",
+                "/events/reborn-erren-river/B9_1280p.jpg",
+                "/events/reborn-erren-river/B63_1280p.jpg",
+                "/events/reborn-erren-river/B31_1280p.jpg",
+                "/events/reborn-erren-river/B60_1280p.jpg",
+                "/events/reborn-erren-river/B61_1280p.jpg",
+                "/events/reborn-erren-river/B42_1280p.jpg",
+                "/events/reborn-erren-river/B33_1280p.jpg",
+                "/events/reborn-erren-river/B36_1280p.jpg",
+                "/events/reborn-erren-river/B43_1280p.jpg",
+                "/events/reborn-erren-river/B10_1280p.jpg",
             ],
 
             "photoMultipleLabel": [
@@ -400,12 +400,12 @@ var data = {
 
             ],
             "timelineImage": [
-                "/island20/events/reborn-erren-river/B40-1壓上蘇水龍提供的照片.jpg",
-                "/island20/events/reborn-erren-river/B2.jpg",
-                "/island20/events/reborn-erren-river/B7.jpg",
-                "/island20/events/reborn-erren-river/B18.jpg",
-                "/island20/events/reborn-erren-river/B27.jpg",
-                "/island20/events/reborn-erren-river/B48.jpg",
+                "/events/reborn-erren-river/B40-1壓上蘇水龍提供的照片.jpg",
+                "/events/reborn-erren-river/B2.jpg",
+                "/events/reborn-erren-river/B7.jpg",
+                "/events/reborn-erren-river/B18.jpg",
+                "/events/reborn-erren-river/B27.jpg",
+                "/events/reborn-erren-river/B48.jpg",
             ],
 
             // Blog
@@ -413,7 +413,7 @@ var data = {
                 "政府用加強取締畜牧廢水、設置示範型豬舍，以及多次稽查電鍍工廠排放等手段，減少二仁溪污染量，主管單位也持續投入經費作改善，二仁溪水質從2000年的100%污染，近兩年嚴重污染河段在20％左右，成功復育了白砂崙溼地，彈塗魚、招潮蟹等生物再度現身，二仁溪河口溼地並紀錄到十多種魚類，六十多種鳥類。",
             ],
             "blogImage": [
-                ["/island20/events/reborn-erren-river/B46.jpg", "/island20/events/reborn-erren-river/B28.jpg", "/island20/events/reborn-erren-river/B24.jpg", "/island20/events/reborn-erren-river/B29.jpg"],
+                ["/events/reborn-erren-river/B46.jpg", "/events/reborn-erren-river/B28.jpg", "/events/reborn-erren-river/B24.jpg", "/events/reborn-erren-river/B29.jpg"],
             ],
             "blogLabel": [
                 ["2012年 白砂崙溼地逐漸恢復生機", "2012年 溼地上常見彈塗魚等生物", "2012年 白砂崙溼地成為環境教育的基地", "2017年 蘇水龍示範消失的四手網捕魚法"],
@@ -441,14 +441,14 @@ var data = {
         "land-crabs-survival": {
             "title": "陸蟹闖天關",
             "description": "從誕生的那一刻起，牠們必須勇敢的一關闖過一關。陸蟹的一生，就是一場實境版的生存遊戲。",
-            "thumbnail": "/island20/events/land-crabs-survival/thumbnailC.jpg",
+            "thumbnail": "/events/land-crabs-survival/thumbnailC.jpg",
             "id": "事件3",
-            "code": "/island20/events/land-crabs-survival/videos/coverC.png",
+            "code": "/events/land-crabs-survival/videos/coverC.png",
 
             // CoverVideo
-            "coverTitle": "/island20/images/titles/03.svg",
+            "coverTitle": "/images/titles/03.svg",
             "coverDescription": "從誕生的那一刻起，牠們必須勇敢的一關闖過一關。<br class='db-ns dn'/>陸蟹的一生，就是一場實境版的生存遊戲。",
-            "coverVideo": "/island20/events/land-crabs-survival/videos/C2陸蟹首圖.mp4",
+            "coverVideo": "/events/land-crabs-survival/videos/C2陸蟹首圖.mp4",
 
             // Taiwan
             "taiwanText": [
@@ -460,23 +460,23 @@ var data = {
             "illustrationText": [
                 "恆春半島是陸蟹的天堂，然而觀光開發、道路、水泥化工程以及人為捕捉，各種危險一步一步進逼，現在又遇上外來種黃瘋蟻的問題，陸蟹快要走投無路了。"
             ],
-            "illustration": "/island20/events/land-crabs-survival/illustrations/illustrationC.svg",
+            "illustration": "/events/land-crabs-survival/illustrations/illustrationC.svg",
 
             "illustrationCrab": [
-                "/island20/events/land-crabs-survival/illustrations/陸蟹關卡標題1216-01.svg",
-                "/island20/events/land-crabs-survival/illustrations/陸蟹關卡標題1216-02.svg",
-                "/island20/events/land-crabs-survival/illustrations/陸蟹關卡標題1216-03.svg",
-                "/island20/events/land-crabs-survival/illustrations/陸蟹關卡標題1216-04.svg",
-                "/island20/events/land-crabs-survival/illustrations/陸蟹關卡標題1216-05.svg",
-                "/island20/events/land-crabs-survival/illustrations/蟹謝讓路過場svg-01.svg",
-                "/island20/events/land-crabs-survival/illustrations/Crabs die-01.svg",
-                "/island20/events/land-crabs-survival/illustrations/Crabs die-02.svg",
-                "/island20/events/land-crabs-survival/illustrations/Crabs die-03.svg",
-                "/island20/events/land-crabs-survival/illustrations/Crabs die-04.svg",
+                "/events/land-crabs-survival/illustrations/陸蟹關卡標題1216-01.svg",
+                "/events/land-crabs-survival/illustrations/陸蟹關卡標題1216-02.svg",
+                "/events/land-crabs-survival/illustrations/陸蟹關卡標題1216-03.svg",
+                "/events/land-crabs-survival/illustrations/陸蟹關卡標題1216-04.svg",
+                "/events/land-crabs-survival/illustrations/陸蟹關卡標題1216-05.svg",
+                "/events/land-crabs-survival/illustrations/蟹謝讓路過場svg-01.svg",
+                "/events/land-crabs-survival/illustrations/Crabs die-01.svg",
+                "/events/land-crabs-survival/illustrations/Crabs die-02.svg",
+                "/events/land-crabs-survival/illustrations/Crabs die-03.svg",
+                "/events/land-crabs-survival/illustrations/Crabs die-04.svg",
             ],
 
             // PhotoFullText
-            "photoFull": ["/island20/events/land-crabs-survival/C74-2017社區護蟹.jpg", "/island20/events/land-crabs-survival/C18-(劉烘昌提供).jpg"],
+            "photoFull": ["/events/land-crabs-survival/C74-2017社區護蟹.jpg", "/events/land-crabs-survival/C18-(劉烘昌提供).jpg"],
             "photoFullText": [
                 "消失在即，當地居民開始注意到，兒時的情景只能留在記憶中，為了保住陸蟹，各界紛紛展開不同的守護行動。例如:在陸蟹降海釋幼的高峰期進行交通管制，幫陸蟹過馬路，並嘗試建立生態廊道，降低路殺風險，平日也會定期巡守，避免遊客干擾或捕捉陸蟹，甚至透過長期的調查來找出路殺熱點，希望幫陸蟹謀求一條生路。",
                 "估計一隻大型的陸蟹，最老可以活到50歲，如果牠每年順利生產一到兩次，一輩子可能會產下千萬隻小寶寶，只要其中有兩個孩子能夠好好長大，陸蟹的族群就有機會順利延續，然而現在連千萬分之二的機會都不到。\n\n在恆春半島人們與生物都在進行，最後一絲奮戰，不願牠們的故事，從恆春半島謝幕，想要扭轉頹勢找回那消失的身影。\n\n陸蟹牠們靠著極低的食物需求，極高的適應韌性，從海洋到陸地求生，對於這群伴隨地球成長的生物，是否該保留更多的尊重與生存空間，也讓大自然有更寬廣的未來。"
@@ -485,19 +485,19 @@ var data = {
 
             // Video
             "video": [
-                "/island20/events/land-crabs-survival/videos/C3.mp4",
-                "/island20/events/land-crabs-survival/videos/C15.mp4",
-                "/island20/events/land-crabs-survival/videos/C40-陸蟹幼體生態史動畫.mp4",
-                "/island20/events/land-crabs-survival/videos/C55-墾丁人潮.mp4",
-                "/island20/events/land-crabs-survival/videos/C6.mp4",
-                "/island20/events/land-crabs-survival/videos/C76.mp4",
-                "/island20/events/land-crabs-survival/videos/C94-陸蟹走各種人工設施(修改版).mp4",
-                "/island20/events/land-crabs-survival/videos/C93陸蟹過馬路及路殺.mp4",
-                "/island20/events/land-crabs-survival/videos/C70-黃瘋蟻攻擊陸蟹.mp4",
-                "/island20/events/land-crabs-survival/videos/C75字紋弓蟹短片.mp4",
-                "/island20/events/land-crabs-survival/videos/C100.mp4",
-                "/island20/events/land-crabs-survival/videos/C73-後灣棲地搶救短片.mp4",
-                "/island20/events/land-crabs-survival/videos/C101陸蟹生態史-修改字體.mp4",
+                "/events/land-crabs-survival/videos/C3.mp4",
+                "/events/land-crabs-survival/videos/C15.mp4",
+                "/events/land-crabs-survival/videos/C40-陸蟹幼體生態史動畫.mp4",
+                "/events/land-crabs-survival/videos/C55-墾丁人潮.mp4",
+                "/events/land-crabs-survival/videos/C6.mp4",
+                "/events/land-crabs-survival/videos/C76.mp4",
+                "/events/land-crabs-survival/videos/C94-陸蟹走各種人工設施(修改版).mp4",
+                "/events/land-crabs-survival/videos/C93陸蟹過馬路及路殺.mp4",
+                "/events/land-crabs-survival/videos/C70-黃瘋蟻攻擊陸蟹.mp4",
+                "/events/land-crabs-survival/videos/C75字紋弓蟹短片.mp4",
+                "/events/land-crabs-survival/videos/C100.mp4",
+                "/events/land-crabs-survival/videos/C73-後灣棲地搶救短片.mp4",
+                "/events/land-crabs-survival/videos/C101陸蟹生態史-修改字體.mp4",
             ],
 
             "videoText": [
@@ -524,16 +524,16 @@ var data = {
 
             // Photo Multiple
             "photoMultiple": [
-                "/island20/events/land-crabs-survival/C32.jpg",
-                "/island20/events/land-crabs-survival/C95.jpg",
-                "/island20/events/land-crabs-survival/C97.jpg",
-                "/island20/events/land-crabs-survival/C98.jpg",
-                "/island20/events/land-crabs-survival/C26.jpg",
-                "/island20/events/land-crabs-survival/C23.jpg",
-                "/island20/events/land-crabs-survival/C29.jpg",
-                "/island20/events/land-crabs-survival/C25.jpg",
-                "/island20/events/land-crabs-survival/C30A.jpg",
-                "/island20/events/land-crabs-survival/C96.jpg",
+                "/events/land-crabs-survival/C32.jpg",
+                "/events/land-crabs-survival/C95.jpg",
+                "/events/land-crabs-survival/C97.jpg",
+                "/events/land-crabs-survival/C98.jpg",
+                "/events/land-crabs-survival/C26.jpg",
+                "/events/land-crabs-survival/C23.jpg",
+                "/events/land-crabs-survival/C29.jpg",
+                "/events/land-crabs-survival/C25.jpg",
+                "/events/land-crabs-survival/C30A.jpg",
+                "/events/land-crabs-survival/C96.jpg",
             ],
 
             "photoMultipleText": "廣義的陸蟹包含在潮間帶、淡水水域及陸地上棲息的蟹類，而目前普遍探討的陸蟹，是指真正居住在陸地上，日常活動不受到潮汐影響的種類。\n\n全台灣陸蟹種類最多的地方，就在恆春半島的香蕉灣海岸林，超過30種，歧異度之高排名世界第一，而屏東滿州的港口溪一帶，更是中型仿相手蟹全世界最大族群量的所在地。\n\n為什麼恆春半島會成為陸蟹的天堂，主要是棲地多樣性高，熱帶海岸林茂密，有些地方還有湧泉，陰涼潮濕，食物充足，外加有著完整的珊瑚礁生態系，因而成為陸蟹最喜歡的棲息環境，也是許多海洋生物的天堂。",
@@ -552,16 +552,16 @@ var data = {
             ],
 
             "photoMultiple2": [
-                "/island20/events/land-crabs-survival/C56.jpg",
-                "/island20/events/land-crabs-survival/C57.jpg",
-                "/island20/events/land-crabs-survival/C100.jpg",
-                "/island20/events/land-crabs-survival/C80.jpg",
-                "/island20/events/land-crabs-survival/C99.jpg",
-                "/island20/events/land-crabs-survival/C101.jpg",
-                "/island20/events/land-crabs-survival/C81-塑膠寄居蟹DSCF0201.jpg",
-                "/island20/events/land-crabs-survival/C82-寄居蟹背瓶蓋垃圾-攝影劉烘昌.jpg",
-                "/island20/events/land-crabs-survival/C58.jpg",
-                "/island20/events/land-crabs-survival/C65a.jpg",
+                "/events/land-crabs-survival/C56.jpg",
+                "/events/land-crabs-survival/C57.jpg",
+                "/events/land-crabs-survival/C100.jpg",
+                "/events/land-crabs-survival/C80.jpg",
+                "/events/land-crabs-survival/C99.jpg",
+                "/events/land-crabs-survival/C101.jpg",
+                "/events/land-crabs-survival/C81-塑膠寄居蟹DSCF0201.jpg",
+                "/events/land-crabs-survival/C82-寄居蟹背瓶蓋垃圾-攝影劉烘昌.jpg",
+                "/events/land-crabs-survival/C58.jpg",
+                "/events/land-crabs-survival/C65a.jpg",
             ],
 
             "photoMultipleText2": "行動也帶來一些改變，陸蟹家族中的成員陸寄居蟹，就是黑暗中的那點微光。\n\n以前在恆春半島，常可見到許多背著塑膠容器殼或玻璃容器的寄居蟹。即使背著貝殼，貝殼不是太小，要不就是殘破損壞，無法提供寄居蟹良好的保護。",
@@ -587,16 +587,16 @@ var data = {
                 "墾丁國家公園從2008年到2017年，進行砂島到香蕉灣近三公里路段的路殺調查，以大型陸蟹毛足圓軸蟹為例，平均路殺率為11.3%，其中有八成以上都是抱卵母蟹。\n\n另外，像是保育類的椰子蟹，野外數量已經相當稀少，很難見到牠們的蹤跡，2018年路殺調查志工在短短九天，就紀錄到三隻椰子蟹被輾斃。"
             ],
             "blogImage": [
-                ["/island20/events/land-crabs-survival/C99-陳淯茜提供的中型仿相手蟹販售照片.jpg"],
-                ["/island20/events/land-crabs-survival/C11.jpg", "/island20/events/land-crabs-survival/C41.jpg", "/island20/events/land-crabs-survival/C42-水泥溝開發.jpg", "/island20/events/land-crabs-survival/C43-野溪整治.jpg", "/island20/events/land-crabs-survival/C45-邊坡破壞.jpg"],
-                ["/island20/events/land-crabs-survival/C73-20150216保育團體搶救陸蟹.jpg"],
-                ["/island20/events/land-crabs-survival/C11.jpg", "/island20/events/land-crabs-survival/C41.jpg", "/island20/events/land-crabs-survival/C42-水泥溝開發.jpg", "/island20/events/land-crabs-survival/C43-野溪整治.jpg", "/island20/events/land-crabs-survival/C45-邊坡破壞.jpg"],
+                ["/events/land-crabs-survival/C99-陳淯茜提供的中型仿相手蟹販售照片.jpg"],
+                ["/events/land-crabs-survival/C11.jpg", "/events/land-crabs-survival/C41.jpg", "/events/land-crabs-survival/C42-水泥溝開發.jpg", "/events/land-crabs-survival/C43-野溪整治.jpg", "/events/land-crabs-survival/C45-邊坡破壞.jpg"],
+                ["/events/land-crabs-survival/C73-20150216保育團體搶救陸蟹.jpg"],
+                ["/events/land-crabs-survival/C11.jpg", "/events/land-crabs-survival/C41.jpg", "/events/land-crabs-survival/C42-水泥溝開發.jpg", "/events/land-crabs-survival/C43-野溪整治.jpg", "/events/land-crabs-survival/C45-邊坡破壞.jpg"],
                 [
-                    "/island20/events/land-crabs-survival/C42.jpg",
-                    "/island20/events/land-crabs-survival/C91.jpg",
-                    "/island20/events/land-crabs-survival/C87橙螯隱蟹.jpg",
-                    "/island20/events/land-crabs-survival/C68-2013.08陸蟹死亡-柯.jpg",
-                    "/island20/events/land-crabs-survival/C69.jpg"
+                    "/events/land-crabs-survival/C42.jpg",
+                    "/events/land-crabs-survival/C91.jpg",
+                    "/events/land-crabs-survival/C87橙螯隱蟹.jpg",
+                    "/events/land-crabs-survival/C68-2013.08陸蟹死亡-柯.jpg",
+                    "/events/land-crabs-survival/C69.jpg"
                 ],
             ],
             "blogLabel": [
@@ -622,11 +622,11 @@ var data = {
                 ""
             ],
             "timelineImage": [
-                "/island20/events/land-crabs-survival/illustrations/蟹圖005.png",
-                "/island20/events/land-crabs-survival/illustrations/蟹圖004.png",
-                "/island20/events/land-crabs-survival/illustrations/蟹圖003.png",
-                "/island20/events/land-crabs-survival/illustrations/蟹圖002.png",
-                "/island20/events/land-crabs-survival/illustrations/蟹圖001.png",
+                "/events/land-crabs-survival/illustrations/蟹圖005.png",
+                "/events/land-crabs-survival/illustrations/蟹圖004.png",
+                "/events/land-crabs-survival/illustrations/蟹圖003.png",
+                "/events/land-crabs-survival/illustrations/蟹圖002.png",
+                "/events/land-crabs-survival/illustrations/蟹圖001.png",
             ],
 
 
@@ -653,14 +653,14 @@ var data = {
         "dawu-fishing-port": {
             "title": "漁港的黑色幽默",
             "description": "漁港變成砂石場，怪手挖不完，漁船出不了海。蓋了快七十年，還沒有完工的永續工程。",
-            "thumbnail": "/island20/events/dawu-fishing-port/thumbnailD.jpg",
+            "thumbnail": "/events/dawu-fishing-port/thumbnailD.jpg",
             "id": "事件4",
-            "code": "/island20/events/dawu-fishing-port/videos/coverD.png",
+            "code": "/events/dawu-fishing-port/videos/coverD.png",
 
             //CoverVideo
-            "coverTitle": "/island20/images/titles/04.svg",
+            "coverTitle": "/images/titles/04.svg",
             "coverDescription": "漁港變成砂石場，怪手挖不完，漁船出不了海。<br class='db-ns dn'/>蓋了快七十年，還沒有完工的永續工程。",
-            "coverVideo": "/island20/events/dawu-fishing-port/videos/D33-新拍2018大武漁港空拍修.mp4",
+            "coverVideo": "/events/dawu-fishing-port/videos/D33-新拍2018大武漁港空拍修.mp4",
 
             // Taiwan
             "taiwanText": [
@@ -672,17 +672,17 @@ var data = {
             "illustrationText": [
                 "來到台東大武漁港，看到的不是漁船穿梭的熱鬧景象，而是卡車來回、怪手火力全開，拼命趕工的狀況，眼前的砂石似乎怎麼都挖不完，如果不說還以為這座漁港還在蓋。\n\n漁民開船出海捕魚，進港停靠，這是各漁港時時刻刻上演的場景，但是有些港口，要順利進出港，不只要看潮汐，還要靠運氣。"
             ],
-            "illustration": "/island20/events/dawu-fishing-port/illustrations/illustrationD.svg",
+            "illustration": "/events/dawu-fishing-port/illustrations/illustrationD.svg",
 
             // Video
             "video": [
-                "/island20/events/dawu-fishing-port/videos/D64大武漁港.mp4",
-                "/island20/events/dawu-fishing-port/videos/D52大武清淤短片2018(有上字).mp4",
-                "/island20/events/dawu-fishing-port/videos/D65鹽寮船長變遷.mp4",
-                "/island20/events/dawu-fishing-port/videos/D51-廢港底圖影音.mp4",
-                "/island20/events/dawu-fishing-port/videos/D49-201807花蓮鹽寮空拍2.mp4",
-                "/island20/events/dawu-fishing-port/videos/D53大武海岸消波塊短片.mp4",
-                "/island20/events/dawu-fishing-port/videos/D66-五甲漁港淤港.mp4"
+                "/events/dawu-fishing-port/videos/D64大武漁港.mp4",
+                "/events/dawu-fishing-port/videos/D52大武清淤短片2018(有上字).mp4",
+                "/events/dawu-fishing-port/videos/D65鹽寮船長變遷.mp4",
+                "/events/dawu-fishing-port/videos/D51-廢港底圖影音.mp4",
+                "/events/dawu-fishing-port/videos/D49-201807花蓮鹽寮空拍2.mp4",
+                "/events/dawu-fishing-port/videos/D53大武海岸消波塊短片.mp4",
+                "/events/dawu-fishing-port/videos/D66-五甲漁港淤港.mp4"
             ],
 
             "videoText": [
@@ -704,15 +704,15 @@ var data = {
                 "你知道什麼是突堤效應嗎？"
             ],
             "photoImage": [
-                ["/island20/events/dawu-fishing-port/illustrations/突1.svg"],
-                ["/island20/events/dawu-fishing-port/illustrations/突2.svg"],
+                ["/events/dawu-fishing-port/illustrations/突1.svg"],
+                ["/events/dawu-fishing-port/illustrations/突2.svg"],
             ],
 
             "timeChangeSidePhotos": [
-                ["/island20/events/dawu-fishing-port/illustrations/和美1.svg", "/island20/events/dawu-fishing-port/D19.jpg"],
-                ["/island20/events/dawu-fishing-port/illustrations/和美2.svg", "/island20/events/dawu-fishing-port/D18.jpg"],
-                ["/island20/events/dawu-fishing-port/illustrations/和美3.svg", "/island20/events/dawu-fishing-port/D15.jpg"],
-                ["/island20/events/dawu-fishing-port/illustrations/和美4.svg", "/island20/events/dawu-fishing-port/D16.jpg"],
+                ["/events/dawu-fishing-port/illustrations/和美1.svg", "/events/dawu-fishing-port/D19.jpg"],
+                ["/events/dawu-fishing-port/illustrations/和美2.svg", "/events/dawu-fishing-port/D18.jpg"],
+                ["/events/dawu-fishing-port/illustrations/和美3.svg", "/events/dawu-fishing-port/D15.jpg"],
+                ["/events/dawu-fishing-port/illustrations/和美4.svg", "/events/dawu-fishing-port/D16.jpg"],
             ],
             "timeChangeSideLabels": [
                 "1993年 和美漁港被沙淤滿，金沙灣沙灘消失",
@@ -723,10 +723,10 @@ var data = {
 
             // PhotoSwitch
             "photoswitch": [
-                "/island20/events/dawu-fishing-port/D5-2008.07台東大武漁港清淤.jpg",
-                "/island20/events/dawu-fishing-port/D6-2016.02.21大武漁港清淤.jpg",
-                "/island20/events/dawu-fishing-port/D7-2017.02大武漁港清淤.jpg",
-                "/island20/events/dawu-fishing-port/D8-2018.07.12大武漁港清淤.JPG",
+                "/events/dawu-fishing-port/D5-2008.07台東大武漁港清淤.jpg",
+                "/events/dawu-fishing-port/D6-2016.02.21大武漁港清淤.jpg",
+                "/events/dawu-fishing-port/D7-2017.02大武漁港清淤.jpg",
+                "/events/dawu-fishing-port/D8-2018.07.12大武漁港清淤.JPG",
             ],
 
             "photoswitchText": "",
@@ -739,7 +739,7 @@ var data = {
             ],
 
             // Panorama
-            "panoramaImage": "/island20/events/dawu-fishing-port/D9-2017.02.10大武漁港淤塞全景.jpg",
+            "panoramaImage": "/events/dawu-fishing-port/D9-2017.02.10大武漁港淤塞全景.jpg",
             "panoramaLabel": "2017.02.10 大武漁港淤塞全景",
             "panoramaText": "大武漁港的所在地，早期是天然的海灘，當時政府為了安置大陳義胞，讓捕魚維生的居民有一個生存的基地，1950年代開始興建大武漁港，不過因為沒有詳細考慮先天地形、海象與海流的自然條件，讓這座漁港註定了波折的命運。",
 
@@ -759,17 +759,17 @@ var data = {
                 "2018年"
             ],
             "photoSlidePhoto": [
-                ["/island20/events/dawu-fishing-port/D40-2013年大武漁港.jpg"],
-                ["/island20/events/dawu-fishing-port/D42-2016年大武漁港.jpg"],
-                ["/island20/events/dawu-fishing-port/D43-2018年大武漁港.jpg"],
+                ["/events/dawu-fishing-port/D40-2013年大武漁港.jpg"],
+                ["/events/dawu-fishing-port/D42-2016年大武漁港.jpg"],
+                ["/events/dawu-fishing-port/D43-2018年大武漁港.jpg"],
             ],
 
             // PhotoFullText
             "photoFull": [
-                "/island20/events/dawu-fishing-port/D38-2017.11.12大武海岸.JPG",
-                "/island20/events/dawu-fishing-port/D10-2018 .07花蓮鹽寮漁港-3.JPG",
-                "/island20/events/dawu-fishing-port/D45-2018.08.02新北市永興漁港拆除之後4A.JPG",
-                "/island20/events/dawu-fishing-port/D32-2012.05高雄旗津海岸工程-母子與消波塊.jpg"
+                "/events/dawu-fishing-port/D38-2017.11.12大武海岸.JPG",
+                "/events/dawu-fishing-port/D10-2018 .07花蓮鹽寮漁港-3.JPG",
+                "/events/dawu-fishing-port/D45-2018.08.02新北市永興漁港拆除之後4A.JPG",
+                "/events/dawu-fishing-port/D32-2012.05高雄旗津海岸工程-母子與消波塊.jpg"
             ],
             "photoFullText": ["在大武漁港南岸，一排排綿延的消波塊堆滿岸邊，這天因為颱風過境，受到外圍環流影響，海邊掀起長浪，大浪不斷沖擊消波塊產生大量的鹽霧，公路一片霧茫茫，為了行車安全，工程人員緊急擺放三角錐，預防性縮減一個車道，禁止臨岸通行。\n\n南興路段是南迴公路最危險的路段，海岸嚴重侵蝕逼近路基，而大武漁港往外延伸的防波堤，是加速了這段海岸的退縮，讓路基淘刷更加嚴重的主要原因之一。\n\n為了保住這條公路，公路單位祭出各種海岸工法，大型消波塊當然不能少，離岸堤和突堤養灘也得試，最後再把港口疏濬及工程土方，運來填海護路，多管齊下全力搶救，四、五公里的海岸已經砸下十幾億，可說是名副其實的黃金公路。",
                 "一座漁港蓋了快七十年，要放手或是繼續拚搏呢？這樣的無奈，大武漁港不是唯一。\n\n來到花蓮鹽寮灣，原本為漁船擋風避浪的港口，已被海浪吞噬，成為浪花的舞台，早期這裡是礫石與細沙構成的天然灣澳，漁民利用先天地形建造簡易船澳，龍蝦是當地主要的漁獲。後來政府承諾打造一座兼具觀光與漁業的綜合港，鹽寮居民曾經滿心期待。",
@@ -781,8 +781,8 @@ var data = {
 
             // Photo Contrast
             "photocontrast": [
-                "/island20/events/dawu-fishing-port/D13-1993年新北市和美漁港淤積.jpg",
-                "/island20/events/dawu-fishing-port/D14-2004年新北市和美漁港進行抽砂工程回填到金沙灣.jpg",
+                "/events/dawu-fishing-port/D13-1993年新北市和美漁港淤積.jpg",
+                "/events/dawu-fishing-port/D14-2004年新北市和美漁港進行抽砂工程回填到金沙灣.jpg",
             ],
 
             "photocontrastText": "蓋一座不太好用的港，毀掉一個自然海灣，新北市的和美漁港就是最經典的案例。\n\n1990年代初期，和美漁港擴建的防波堤，阻斷了漂沙的動態平衡，導致港口南岸金沙灣海水浴場的沙子，不斷往港口漂移，沙子只進不出，堆得比泊船的碼頭還高。和美漁港還沒啟用，就淤滿成為沙港，而金沙灣美麗的沙灘卻消失了，變成了石頭灘。",
@@ -803,7 +803,7 @@ var data = {
                 "2015年",
                 "2018年",
             ],
-            "timelineImage": ["/island20/events/dawu-fishing-port/D62-1997花蓮鹽寮漁港.jpg", "/island20/events/dawu-fishing-port/D54-2008.07花蓮海岸-鹽寮漁港17.jpg", "/island20/events/dawu-fishing-port/D63-2015.08.18花蓮鹽寮漁港-蘇迪勒颱風後.jpg", "/island20/events/dawu-fishing-port/D69-2018鹽寮漁港被浪移平.jpg"],
+            "timelineImage": ["/events/dawu-fishing-port/D62-1997花蓮鹽寮漁港.jpg", "/events/dawu-fishing-port/D54-2008.07花蓮海岸-鹽寮漁港17.jpg", "/events/dawu-fishing-port/D63-2015.08.18花蓮鹽寮漁港-蘇迪勒颱風後.jpg", "/events/dawu-fishing-port/D69-2018鹽寮漁港被浪移平.jpg"],
 
 
             // Blog
@@ -814,11 +814,11 @@ var data = {
                 "鹽寮漁港從1991年開始興建，受到地形與海流的影響，漁港工程難以克服，遲遲無法完工，但人工結構物帶來的突堤效應，已擾動了海流，海岸逐漸變貌。\n\n港口南岸日漸侵蝕，並危及台11線的路基，公路旁堆起消波塊長龍；而北岸的沙灘則是越積越高。涼亭等遊憩觀光設施，先是被沙埋，再被強浪打壞，整座港區被一粒一粒的沙石摧毀。"
             ],
             "blogImage": [
-                ["/island20/events/dawu-fishing-port/D50-和美漁港釣客.jpg", "/island20/events/dawu-fishing-port/D21-2012.06新北市和美漁港公告可釣魚的告示牌.jpg"],
-                ["/island20/events/dawu-fishing-port/D25(拆除前)1997.12.26新北市永興漁港.jpg", "/island20/events/dawu-fishing-port/D26(拆除後)2018.08.02新北市永興漁港.JPG"],
-                ["/island20/events/dawu-fishing-port/D27(拆除前)2005.08新北市中角漁港.jpg", "/island20/events/dawu-fishing-port/D28(拆除後)2018.08新北市中角漁港.JPG"],
-                ["/island20/events/dawu-fishing-port/D59.jpg", "/island20/events/dawu-fishing-port/D60.jpg"],
-                ["/island20/events/dawu-fishing-port/D62.jpg", "/island20/events/dawu-fishing-port/D54.jpg", "/island20/events/dawu-fishing-port/D63.jpg", "/island20/events/dawu-fishing-port/D69.jpg"]
+                ["/events/dawu-fishing-port/D50-和美漁港釣客.jpg", "/events/dawu-fishing-port/D21-2012.06新北市和美漁港公告可釣魚的告示牌.jpg"],
+                ["/events/dawu-fishing-port/D25(拆除前)1997.12.26新北市永興漁港.jpg", "/events/dawu-fishing-port/D26(拆除後)2018.08.02新北市永興漁港.JPG"],
+                ["/events/dawu-fishing-port/D27(拆除前)2005.08新北市中角漁港.jpg", "/events/dawu-fishing-port/D28(拆除後)2018.08新北市中角漁港.JPG"],
+                ["/events/dawu-fishing-port/D59.jpg", "/events/dawu-fishing-port/D60.jpg"],
+                ["/events/dawu-fishing-port/D62.jpg", "/events/dawu-fishing-port/D54.jpg", "/events/dawu-fishing-port/D63.jpg", "/events/dawu-fishing-port/D69.jpg"]
             ],
             "blogLabel": [
                 ["2012年 和美漁港成為人工海釣場", "2012年 碼頭上可見開放垂釣的告示牌"],
@@ -851,24 +851,24 @@ var data = {
                 "2013年 陷落的海岸線"
             ],
             "timeChangeSideImage": [
-                "/island20/events/dawu-fishing-port/illustrations/公視圖檔-22.png",
-                "/island20/events/dawu-fishing-port/illustrations/公視圖檔-23.png",
-                "/island20/events/dawu-fishing-port/illustrations/公視圖檔-24.png",
-                "/island20/events/dawu-fishing-port/illustrations/公視圖檔-25.png",
+                "/events/dawu-fishing-port/illustrations/公視圖檔-22.png",
+                "/events/dawu-fishing-port/illustrations/公視圖檔-23.png",
+                "/events/dawu-fishing-port/illustrations/公視圖檔-24.png",
+                "/events/dawu-fishing-port/illustrations/公視圖檔-25.png",
             ],
         },
         // ****************************************************************** E ******************************************************************
         "kinmen-Hou-feng-kang": {
             "title": "不靠海的金門後豐港",
             "description": "一個名稱有港，卻無法出港的地方。一個以海維生的百年漁村聚落，卻再也不能輕易地親近海。",
-            "thumbnail": "/island20/events/kinmen-Hou-feng-kang/thumbnailE.jpg",
+            "thumbnail": "/events/kinmen-Hou-feng-kang/thumbnailE.jpg",
             "id": "事件5",
-            "code": "/island20/events/kinmen-Hou-feng-kang/videos/coverE.png",
+            "code": "/events/kinmen-Hou-feng-kang/videos/coverE.png",
 
             //CoverVideo
-            "coverTitle": "/island20/images/titles/05.svg",
+            "coverTitle": "/images/titles/05.svg",
             "coverDescription": "一個名稱有港，卻無法出港的地方。<br class='db-ns dn'/>一個以海維生的百年漁村聚落，卻再也不能輕易地親近海。",
-            "coverVideo": "/island20/events/kinmen-Hou-feng-kang/videos/E12(金門後豐港填港空拍).mp4",
+            "coverVideo": "/events/kinmen-Hou-feng-kang/videos/E12(金門後豐港填港空拍).mp4",
 
             // Taiwan
             "taiwanText": [
@@ -880,7 +880,7 @@ var data = {
             "illustrationText": [
                 "金門，曾經是戰地的最前線，是不能失守的第一道防線，解除軍事管制之後，2001年開放小三通，金門成為台灣、中國兩岸進出的重要門戶，只要四十分鐘的船程，就能往返金門與廈門，小三通帶來了便利與商機，也讓自然海岸生態以及古老生物「鱟」，因開發漸漸失守。"
             ],
-            "illustration": "/island20/events/kinmen-Hou-feng-kang/illustrations/illustrationE.svg",
+            "illustration": "/events/kinmen-Hou-feng-kang/illustrations/illustrationE.svg",
 
             // Photo Full
             "photoFullText": [
@@ -892,9 +892,9 @@ var data = {
             ],
 
             "photoFull": [
-                "/island20/events/kinmen-Hou-feng-kang/E14後豐港聚落.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E20-後豐港灣被填平.JPG",
-                "/island20/events/kinmen-Hou-feng-kang/E39-2015.06.30金門海岸32鱟.JPG"
+                "/events/kinmen-Hou-feng-kang/E14後豐港聚落.jpg",
+                "/events/kinmen-Hou-feng-kang/E20-後豐港灣被填平.JPG",
+                "/events/kinmen-Hou-feng-kang/E39-2015.06.30金門海岸32鱟.JPG"
             ],
 
             "photoFullTextLabel": ["", "", ""],
@@ -910,10 +910,10 @@ var data = {
             ],
 
             "timeChangePhotos": [
-                "/island20/events/kinmen-Hou-feng-kang/E9A.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E9B.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E9C.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E9E.jpg"
+                "/events/kinmen-Hou-feng-kang/E9A.jpg",
+                "/events/kinmen-Hou-feng-kang/E9B.jpg",
+                "/events/kinmen-Hou-feng-kang/E9C.jpg",
+                "/events/kinmen-Hou-feng-kang/E9E.jpg"
             ],
 
             "timeChangeLabels": [
@@ -925,11 +925,11 @@ var data = {
 
             // Video
             "video": [
-                "/island20/events/kinmen-Hou-feng-kang/videos/E41拜海儀式(已上字).mp4",
-                "/island20/events/kinmen-Hou-feng-kang/videos/E9修-1225鱟爬行(拿掉旁白).mp4",
-                "/island20/events/kinmen-Hou-feng-kang/videos/E13鱟生活史動畫(已上字).mp4",
-                "/island20/events/kinmen-Hou-feng-kang/videos/E67洪德舜談鱟的變遷(已上好字).mp4",
-                "/island20/events/kinmen-Hou-feng-kang/videos/E71金門結語.mp4"
+                "/events/kinmen-Hou-feng-kang/videos/E41拜海儀式(已上字).mp4",
+                "/events/kinmen-Hou-feng-kang/videos/E9修-1225鱟爬行(拿掉旁白).mp4",
+                "/events/kinmen-Hou-feng-kang/videos/E13鱟生活史動畫(已上字).mp4",
+                "/events/kinmen-Hou-feng-kang/videos/E67洪德舜談鱟的變遷(已上好字).mp4",
+                "/events/kinmen-Hou-feng-kang/videos/E71金門結語.mp4"
             ],
 
             "videoText": [
@@ -946,18 +946,18 @@ var data = {
 
             // Photo Multiple
             "timelineImage": [
-                "/island20/events/kinmen-Hou-feng-kang/E52.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E18.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E30.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E31.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E60.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E42.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E68.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E70.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E73.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E56.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E50.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E59.jpg",
+                "/events/kinmen-Hou-feng-kang/E52.jpg",
+                "/events/kinmen-Hou-feng-kang/E18.jpg",
+                "/events/kinmen-Hou-feng-kang/E30.jpg",
+                "/events/kinmen-Hou-feng-kang/E31.jpg",
+                "/events/kinmen-Hou-feng-kang/E60.jpg",
+                "/events/kinmen-Hou-feng-kang/E42.jpg",
+                "/events/kinmen-Hou-feng-kang/E68.jpg",
+                "/events/kinmen-Hou-feng-kang/E70.jpg",
+                "/events/kinmen-Hou-feng-kang/E73.jpg",
+                "/events/kinmen-Hou-feng-kang/E56.jpg",
+                "/events/kinmen-Hou-feng-kang/E50.jpg",
+                "/events/kinmen-Hou-feng-kang/E59.jpg",
             ],
 
             "timelineContent": "而金門人又想要什麼樣的生活呢？\n\n1950年代兩岸情勢緊張，金門居民在砲火下求生，生活困苦發展也停滯，解除軍管之後，金門正急促的加緊腳步，想要趕上進度，然而島嶼資源有限，先天缺水，土地較貧瘠，在快速開發之下，如何留下最珍貴的事物，而不是複製以往的發展模式，找到屬於金門自己的未來呢？",
@@ -994,11 +994,11 @@ var data = {
 
             // PhotoSwitch
             "photoswitch": [
-                "/island20/events/kinmen-Hou-feng-kang/E66-閩式聚落.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E62-栗喉蜂虎.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E32-2011.06金門.jpg",
-                "/island20/events/kinmen-Hou-feng-kang/E65-2004.11.14金門高粱田.JPG",
-                "/island20/events/kinmen-Hou-feng-kang/E72-2011.06金門.jpg",
+                "/events/kinmen-Hou-feng-kang/E66-閩式聚落.jpg",
+                "/events/kinmen-Hou-feng-kang/E62-栗喉蜂虎.jpg",
+                "/events/kinmen-Hou-feng-kang/E32-2011.06金門.jpg",
+                "/events/kinmen-Hou-feng-kang/E65-2004.11.14金門高粱田.JPG",
+                "/events/kinmen-Hou-feng-kang/E72-2011.06金門.jpg",
             ],
 
             "photoswitchText": "想一想，金門有什麼樣的魅力吸引觀光客呢？\n\n坑道、碉堡，隨處可見的戰地色彩；古厝、洋樓，保留完整的傳統聚落；鸕鶿、栗喉蜂虎，豐富的自然生態；風獅爺、高粱田，數不清的人文風情；這是金門獨有的特色。",
@@ -1014,8 +1014,8 @@ var data = {
             "transitionText": "漁業曾經造就後豐港的繁榮，聚落前原本有片天然的灣澳，只要走出家門口，魚蝦貝類滿滿是，當地居民還會捉沙蟲、蝦子當作捕魚的餌料，這片潮間帶是他們世代傳承的豐饒之地，是重要的生計來源。\n\n不過，政府看中了小三通帶來的前景，進行水頭商港的擴建開發，大規模填海造陸，水頭到後豐港的這片自然海灣被填平，計畫作為商城和遊憩區使用，後豐港從此成為不靠海的漁村。",
             "photoText": "由於小三通的觀光人數，不如預期，填海至今，原本預計2016年執行完成的發展計劃，目前仍是荒廢一片，諷刺著招商美夢。",
             "photoImage": [
-                ["/island20/events/kinmen-Hou-feng-kang/illustrations/電腦版.svg"],
-                ["/island20/events/kinmen-Hou-feng-kang/E9E_side.jpg"]
+                ["/events/kinmen-Hou-feng-kang/illustrations/電腦版.svg"],
+                ["/events/kinmen-Hou-feng-kang/E9E_side.jpg"]
             ],
 
             // BlogPost (部落格 x 2)
@@ -1023,7 +1023,7 @@ var data = {
                 "仰賴這片海灣的，不只後豐港人，還有一種被稱為活化石的遠古生物-鱟。金門當地流傳一句諺語：「水頭鱟、古崗臭..」，因為金門水頭到夏墅的這片海灣風浪平緩，又擁有沙岸、泥灘地等得天獨厚的海洋環境，因此以前是金門地區，鱟上岸產卵數量最多的地方。\n\n對後豐港居民來說，鱟曾經是食物，也是孩子的玩伴，就連牠的硬殼，都可以拿來當作鍋勺或避邪物，顯示鱟跟當地居民生活相當密切。",
             ],
             "blogImage": [
-                ["/island20/events/kinmen-Hou-feng-kang/E29-金門鱟保護區.jpg", "/island20/events/kinmen-Hou-feng-kang/E36-2015.07.01金門海岸160.JPG", "/island20/events/kinmen-Hou-feng-kang/E34-2015.06.30金門人與鱟.JPG", "/island20/events/kinmen-Hou-feng-kang/E16-2011.06許多金門人的成長記憶裡都有鱟的存在.jpg"],
+                ["/events/kinmen-Hou-feng-kang/E29-金門鱟保護區.jpg", "/events/kinmen-Hou-feng-kang/E36-2015.07.01金門海岸160.JPG", "/events/kinmen-Hou-feng-kang/E34-2015.06.30金門人與鱟.JPG", "/events/kinmen-Hou-feng-kang/E16-2011.06許多金門人的成長記憶裡都有鱟的存在.jpg"],
             ],
             "blogLabel": [
                 ["不少金門人成長記憶裡都有鱟的存在", "金門人與鱟共同仰賴這片潮間帶生活", "金門人將鱟殼彩繪成虎頭來鎮煞避邪", "金門店家保留鱟的殼進行展示"],
@@ -1051,14 +1051,14 @@ var data = {
         "lishan-high-mountain-farms": {
             "title": "咬一口高山青翠",
             "description": "這裡曾經林木蒼鬱， 如今滿山瘡痍。光禿的山頭、崩落的土石，見證的是人的意志還是大地的嗚咽。",
-            "thumbnail": "/island20/events/lishan-high-mountain-farms/thumbnailF.jpg",
+            "thumbnail": "/events/lishan-high-mountain-farms/thumbnailF.jpg",
             "id": "事件6",
-            "code": "/island20/events/lishan-high-mountain-farms/videos/coverF.png",
+            "code": "/events/lishan-high-mountain-farms/videos/coverF.png",
 
             //CoverVideo
-            "coverTitle": "/island20/images/titles/06.svg",
+            "coverTitle": "/images/titles/06.svg",
             "coverDescription": "這裡曾經林木蒼鬱， 如今滿山瘡痍。\n光禿的山頭、崩落的土石，見證的是人的意志還是大地的嗚咽。",
-            "coverVideo": "/island20/events/lishan-high-mountain-farms/videos/F47梨山空拍1.mp4",
+            "coverVideo": "/events/lishan-high-mountain-farms/videos/F47梨山空拍1.mp4",
 
             // Taiwan
             "taiwanText": [
@@ -1070,7 +1070,7 @@ var data = {
             "illustrationText": [
                 "吃一口清脆的高麗菜，你可知道它來自哪裡嗎？\n\n半個世紀以來，梨山的歷史，可說是台灣高山農業發展的縮影。從五十年代種植蘋果，到後來的水梨、甜柿，近十多年來果樹利潤下降，取而代之的是茶樹、高麗菜地不斷擴張。高山農業支撐起許多人的生計，也滿足國人蔬果的需求，然而，犧牲了原始山林，付出的環境代價是什麼？高山農業只能是跟老天爺賭博的投機產業嗎？"
             ],
-            "illustration": "/island20/events/lishan-high-mountain-farms/illustrations/illustrationF.svg",
+            "illustration": "/events/lishan-high-mountain-farms/illustrations/illustrationF.svg",
 
             // PhotoFull
             "photoFullText": [
@@ -1088,7 +1088,7 @@ var data = {
             ],
 
             "photoFull": [
-                "/island20/events/lishan-high-mountain-farms/F46-梨山觀景台望出去.jpg", "/island20/events/lishan-high-mountain-farms/F29.jpg", "/island20/events/lishan-high-mountain-farms/F49.jpg", "/island20/events/lishan-high-mountain-farms/F48.jpg"
+                "/events/lishan-high-mountain-farms/F46-梨山觀景台望出去.jpg", "/events/lishan-high-mountain-farms/F29.jpg", "/events/lishan-high-mountain-farms/F49.jpg", "/events/lishan-high-mountain-farms/F48.jpg"
             ],
 
             "photoFullTextLabel": [
@@ -1099,11 +1099,11 @@ var data = {
             ],
             // Video
             "video": [
-                "/island20/events/lishan-high-mountain-farms/videos/F14-農業上山短片.mp4",
-                "/island20/events/lishan-high-mountain-farms/videos/F32-梨山排水隧道(空景當底圖影音).mp4",
-                "/island20/events/lishan-high-mountain-farms/videos/F33-梨山松茂部落地滑短片.mp4",
-                "/island20/events/lishan-high-mountain-farms/videos/F55-林務局收回林班地上的果樹.mp4",
-                "/island20/events/lishan-high-mountain-farms/videos/F57-梨山阿寶結語.mp4"
+                "/events/lishan-high-mountain-farms/videos/F14-農業上山短片.mp4",
+                "/events/lishan-high-mountain-farms/videos/F32-梨山排水隧道(空景當底圖影音).mp4",
+                "/events/lishan-high-mountain-farms/videos/F33-梨山松茂部落地滑短片.mp4",
+                "/events/lishan-high-mountain-farms/videos/F55-林務局收回林班地上的果樹.mp4",
+                "/events/lishan-high-mountain-farms/videos/F57-梨山阿寶結語.mp4"
             ],
 
             "videoText": [
@@ -1121,11 +1121,11 @@ var data = {
 
             // PhotoSwitch
             "photoswitch": [
-                "/island20/events/lishan-high-mountain-farms/F25.jpg",
-                "/island20/events/lishan-high-mountain-farms/F18.jpg",
-                "/island20/events/lishan-high-mountain-farms/F19.jpg",
-                "/island20/events/lishan-high-mountain-farms/F17.jpg",
-                "/island20/events/lishan-high-mountain-farms/F24.jpg",
+                "/events/lishan-high-mountain-farms/F25.jpg",
+                "/events/lishan-high-mountain-farms/F18.jpg",
+                "/events/lishan-high-mountain-farms/F19.jpg",
+                "/events/lishan-high-mountain-farms/F17.jpg",
+                "/events/lishan-high-mountain-farms/F24.jpg",
             ],
 
             "photoswitchText": "老一輩的台灣人或許都還記得，在1970年代，買一顆蘋果就是一天的工資，蘋果是奢侈品，只有生病時或長輩才能品嘗。那是梨山最風光的年代，許多平地人上山租地開墾，大學生也常利用暑假上山到果園打工。\n\n然而近二十年，隨著國外水果開放進口、台灣加入WTO(世界貿易組織)，蘋果、水梨等價格下跌，再加上暖化與極端氣候影響果樹生長，種果樹的利潤下滑、風險提高，許多果農將果樹砍除，改種風險較低的茶樹或高麗菜。茶與菜儼然成為梨山山頭的新霸主。",
@@ -1140,11 +1140,11 @@ var data = {
 
             // PhotoSwitch2
             "photoswitch2": [
-                "/island20/events/lishan-high-mountain-farms/F49.jpg",
-                "/island20/events/lishan-high-mountain-farms/F58-保留側枝的果樹.jpg",
-                "/island20/events/lishan-high-mountain-farms/F59-合法卻危險的菜田.jpg",
-                "/island20/events/lishan-high-mountain-farms/F65-2018年梨山空拍.jpg",
-                "/island20/events/lishan-high-mountain-farms/F67-2010.01.14空拍-德基水庫上游開發-梨山地區-福壽山農場6.jpg",
+                "/events/lishan-high-mountain-farms/F49.jpg",
+                "/events/lishan-high-mountain-farms/F58-保留側枝的果樹.jpg",
+                "/events/lishan-high-mountain-farms/F59-合法卻危險的菜田.jpg",
+                "/events/lishan-high-mountain-farms/F65-2018年梨山空拍.jpg",
+                "/events/lishan-high-mountain-farms/F67-2010.01.14空拍-德基水庫上游開發-梨山地區-福壽山農場6.jpg",
             ],
 
             "photoswitchText2": "收回過程除了遭受農民抗爭，林務局砍果樹種小樹的做法，也遭質疑對水土保持更為不利，林務局後續修正做法，改採保留部分側枝，讓果樹維持一定的水保功能。",
@@ -1163,8 +1163,8 @@ var data = {
 
             // Photo Contrast
             "photocontrast": [
-                "/island20/events/lishan-high-mountain-farms/F60-2010年收回林班地.jpg",
-                "/island20/events/lishan-high-mountain-farms/F61-2018年收回林班地現況.jpg",
+                "/events/lishan-high-mountain-farms/F60-2010年收回林班地.jpg",
+                "/events/lishan-high-mountain-farms/F61-2018年收回林班地現況.jpg",
             ],
 
             "photocontrastText": "這些土地在收回多年後，造林成效如何？我們回到南湖溪流域的林班地，2010年，這裡還是工寮與果園，如今草木茂盛，早已看不出果園痕跡。另外，在中橫公路旁，一處二十多年前被林務局收回的果園，現在已經長成一片樹林，可見大自然復原的力量驚人。",
@@ -1174,18 +1174,18 @@ var data = {
                 "梨山位於大甲溪上游德基水庫集水區，農業、道路等各種開發對水庫壽命造成威脅。德基水庫淤積量高達四成以上，水庫蓄水量從二億六千萬立方公尺，到目前剩下約一億五千萬立方公尺。農業生產使用的化肥、農藥對水庫水質也會產生影響。\n\n為了保護水庫集水區，政府在1993年公告「德基水庫集水區陡坡農用地(超限利用地)處理事宜」，計畫在四年內以補償方式，收回所有違規使用土地，然而該方案執行十多年成效不彰。直到2004年敏督利颱風重創大甲溪上游與梨山地區，在國土保育的強大呼聲下，林務局透過訴訟強制收回超限利用的林班地，至2018年9月已收回三百多筆，收回比率達九成六。",
             ],
             "blogImage": [
-                ["/island20/events/lishan-high-mountain-farms/F62-2004年敏督利颱風過境大量土石沖入德基水庫.jpg", "/island20/events/lishan-high-mountain-farms/F63-2009年10月德基水庫幾乎要被淤滿.jpg"],
+                ["/events/lishan-high-mountain-farms/F62-2004年敏督利颱風過境大量土石沖入德基水庫.jpg", "/events/lishan-high-mountain-farms/F63-2009年10月德基水庫幾乎要被淤滿.jpg"],
             ],
             "blogLabel": [
                 ["2004年 敏督利颱風來襲，大量土石沖入德基水庫", "2009年 德基水庫幾乎要被淤滿"],
             ],
 
             "timelineImage": [
-              "/island20/events/lishan-high-mountain-farms/illustrations/我們的島cover-25.jpg",
-              "/island20/events/lishan-high-mountain-farms/illustrations/我們的島cover-26.jpg",
-              "/island20/events/lishan-high-mountain-farms/illustrations/我們的島cover-27.jpg",
-              "/island20/events/lishan-high-mountain-farms/illustrations/我們的島cover-28.jpg",
-              "/island20/events/lishan-high-mountain-farms/illustrations/我們的島cover-29.jpg",
+              "/events/lishan-high-mountain-farms/illustrations/我們的島cover-25.jpg",
+              "/events/lishan-high-mountain-farms/illustrations/我們的島cover-26.jpg",
+              "/events/lishan-high-mountain-farms/illustrations/我們的島cover-27.jpg",
+              "/events/lishan-high-mountain-farms/illustrations/我們的島cover-28.jpg",
+              "/events/lishan-high-mountain-farms/illustrations/我們的島cover-29.jpg",
             ],
 
             // More
@@ -1210,14 +1210,14 @@ var data = {
         "lushan-hotspring-risk": {
             "title": "冒險 泡湯去",
             "description": "號稱天下第一泉的廬山溫泉，泉質優良，一度熙熙攘攘。十年前，暴洪沖走繁華，人聲鼎沸的山城，只剩空蕩。",
-            "thumbnail": "/island20/events/lushan-hotspring-risk/thumbnailG.jpg",
+            "thumbnail": "/events/lushan-hotspring-risk/thumbnailG.jpg",
             "id": "事件7",
-            "code": "/island20/events/lushan-hotspring-risk/videos/coverG.png",
+            "code": "/events/lushan-hotspring-risk/videos/coverG.png",
 
             //CoverVideo
-            "coverTitle": "/island20/images/titles/07.svg",
+            "coverTitle": "/images/titles/07.svg",
             "coverDescription": "號稱天下第一泉的廬山溫泉，泉質優良，一度熙熙攘攘。\n十年前，暴洪沖走繁華，人聲鼎沸的山城，只剩空蕩。",
-            "coverVideo": "/island20/events/lushan-hotspring-risk/videos/G13-塔羅灣溪滾滾洪流縮短版.mp4",
+            "coverVideo": "/events/lushan-hotspring-risk/videos/G13-塔羅灣溪滾滾洪流縮短版.mp4",
 
             // Taiwan
             "taiwanText": [
@@ -1229,7 +1229,7 @@ var data = {
             "illustrationText": [
                 "山明水秀，因水而起 - 廬山是歷史悠久的休閒聖地。\n\n然而，好景不常，風災暴洪加上大面積崩塌的雙重衝擊，現在的廬山早已不復當年。"
             ],
-            "illustration": "/island20/events/lushan-hotspring-risk/illustrations/illustrationG.svg",
+            "illustration": "/events/lushan-hotspring-risk/illustrations/illustrationG.svg",
 
             // Video
             "videoText": [
@@ -1247,13 +1247,13 @@ var data = {
             ],
 
             "video": [
-                "/island20/events/lushan-hotspring-risk/videos/G17-廬山泡溫泉景.mp4", 
-                "/island20/events/lushan-hotspring-risk/videos/G21-2008綺麗飯店倒塌.mp4", 
-                "/island20/events/lushan-hotspring-risk/videos/G15-2008.9.塔羅灣洪流沖入飯店門口(當底圖).mp4", 
-                "/island20/events/lushan-hotspring-risk/videos/G16-廬山業者2018.mp4", 
-                "/island20/events/lushan-hotspring-risk/videos/G20-廬山溫泉露頭.mp4",
-                "/island20/events/lushan-hotspring-risk/videos/G29-我們的島母安山崩落動畫.mp4",
-                "/island20/events/lushan-hotspring-risk/videos/G30-廬山剖面圖動畫修改.mp4",
+                "/events/lushan-hotspring-risk/videos/G17-廬山泡溫泉景.mp4", 
+                "/events/lushan-hotspring-risk/videos/G21-2008綺麗飯店倒塌.mp4", 
+                "/events/lushan-hotspring-risk/videos/G15-2008.9.塔羅灣洪流沖入飯店門口(當底圖).mp4", 
+                "/events/lushan-hotspring-risk/videos/G16-廬山業者2018.mp4", 
+                "/events/lushan-hotspring-risk/videos/G20-廬山溫泉露頭.mp4",
+                "/events/lushan-hotspring-risk/videos/G29-我們的島母安山崩落動畫.mp4",
+                "/events/lushan-hotspring-risk/videos/G30-廬山剖面圖動畫修改.mp4",
             ],
 
             // PhotoFull
@@ -1263,8 +1263,8 @@ var data = {
                 "廬山溫泉面對的自然風險，不只有風災與淹水，還有一項人力無法控制的威脅：\n潛在*大規模崩塌，目前已經引起多處道路邊坡、部份民宅以及廬山公有停車場產生裂隙，這些裂隙每年都在持續擴張。<p class='f7 o-60 mv0 db-ns dn'>\n<strong>＊什麼是大規模崩塌？</strong>\n大規模崩塌是深層崩塌，在山體深處有一個岩盤滑動面，在這個滑動面之上，有厚厚的崩積層或破碎岩體，一旦遇到大雨，地下水導致岩盤與崩積層之間的摩擦力減小，造成岩體向下滑動以及變形，最廣為人知的案例，就是2008年小林村滅村事件。</p>",
             ],
             "photoFull": [
-                "/island20/events/lushan-hotspring-risk/G23.jpg",
-                "/island20/events/lushan-hotspring-risk/G27-2008.09廬山-辛樂克颱風災害60.jpg"
+                "/events/lushan-hotspring-risk/G23.jpg",
+                "/events/lushan-hotspring-risk/G27-2008.09廬山-辛樂克颱風災害60.jpg"
             ],
 
             "photoFullTextLabel": [
@@ -1277,8 +1277,8 @@ var data = {
 
             // Photo Contrast
             "photocontrast": [
-                "/island20/events/lushan-hotspring-risk/G8(2007.11.15廬山吊橋上游溫泉飯店占用河道).jpg",
-                "/island20/events/lushan-hotspring-risk/G9(2008.辛樂克颱風過後廬山吊橋上游溫泉飯店).jpg"
+                "/events/lushan-hotspring-risk/G8(2007.11.15廬山吊橋上游溫泉飯店占用河道).jpg",
+                "/events/lushan-hotspring-risk/G9(2008.辛樂克颱風過後廬山吊橋上游溫泉飯店).jpg"
             ],
 
             "photocontrastText": "<p class='f3-ns f5 fw7 ph3 tracked mb0 tc lh-normal'>每逢颱風洪災，河水總是會要回自己的路。</p>",
@@ -1287,9 +1287,9 @@ var data = {
 
             // PhotoSwitch
             "photoswitch": [
-                "/island20/events/lushan-hotspring-risk/G23.jpg",
-                "/island20/events/lushan-hotspring-risk/G32-2018年廬山空拍02.jpg",
-                "/island20/events/lushan-hotspring-risk/GStill1217_00000.jpg",
+                "/events/lushan-hotspring-risk/G23.jpg",
+                "/events/lushan-hotspring-risk/G32-2018年廬山空拍02.jpg",
+                "/events/lushan-hotspring-risk/GStill1217_00000.jpg",
             ],
 
             "photoswitchLabel": [
@@ -1302,8 +1302,8 @@ var data = {
             "photoSlideText": "其實這樣的災難有跡可循，1994年已經有旅館蓋在高灘地上，占用了塔羅灣溪的行水區，當年道格颱風過境時，這些飯店就已經淹水。2008年辛樂克颱風過境，河川擋土牆原有一處破損，大水沿著破口淘刷綺麗飯店與公主小妹地基，造成倒塌。",
             "photoSlideLabel": ["1994年 道格颱風","2008年 辛樂克颱風"],
             "photoSlidePhoto": [
-                "/island20/events/lushan-hotspring-risk/G6.jpg",
-                "/island20/events/lushan-hotspring-risk/G7.jpg",
+                "/events/lushan-hotspring-risk/G6.jpg",
+                "/events/lushan-hotspring-risk/G7.jpg",
             ],
 
             // Timeline
@@ -1325,11 +1325,11 @@ var data = {
             ],
 
             "timelineImage": [
-                "/island20/events/lushan-hotspring-risk/G1.jpg",
-                "/island20/events/lushan-hotspring-risk/G2.jpg",
-                "/island20/events/lushan-hotspring-risk/G3.jpg",
-                "/island20/events/lushan-hotspring-risk/G4.jpg",
-                "/island20/events/lushan-hotspring-risk/G5.jpg",
+                "/events/lushan-hotspring-risk/G1.jpg",
+                "/events/lushan-hotspring-risk/G2.jpg",
+                "/events/lushan-hotspring-risk/G3.jpg",
+                "/events/lushan-hotspring-risk/G4.jpg",
+                "/events/lushan-hotspring-risk/G5.jpg",
             ],
 
             // BlogPost (部落格 x 2)
@@ -1338,13 +1338,13 @@ var data = {
                 "淹水與地滑雙重危機，廬山溫泉已經不適合繼續下去，南投縣政府提出產業遷建，計畫將業者遷往埔里的福興農場，目前陸續進行溫泉探勘與整地。2018年完成第一口溫泉井探勘，井深1244公尺，泉水溫度達到攝氏45度，水量充沛。預計挖掘4口溫泉井，目前正在進行第二口溫泉井的探勘。",
             ],
             "blogImage": [
-                ["/island20/events/lushan-hotspring-risk/G10.jpg",
-                    "/island20/events/lushan-hotspring-risk/G11.jpg",
-                    "/island20/events/lushan-hotspring-risk/G12.jpg"
+                ["/events/lushan-hotspring-risk/G10.jpg",
+                    "/events/lushan-hotspring-risk/G11.jpg",
+                    "/events/lushan-hotspring-risk/G12.jpg"
                 ],
-                ["/island20/events/lushan-hotspring-risk/G19.jpg",
-                    "/island20/events/lushan-hotspring-risk/G22.jpg",
-                    "/island20/events/lushan-hotspring-risk/G18.jpg"
+                ["/events/lushan-hotspring-risk/G19.jpg",
+                    "/events/lushan-hotspring-risk/G22.jpg",
+                    "/events/lushan-hotspring-risk/G18.jpg"
                 ],
             ],
             "blogLabel": [
@@ -1376,14 +1376,14 @@ var data = {
         "hushan-reservoir-lost-water": {
             "title": "攔住水又失去水",
             "description": "為了攔住水，毀壞一片森林。眾多爭議中，艱難誕生的湖山水庫，是否成為減緩地層下陷的解藥？",
-            "thumbnail": "/island20/events/hushan-reservoir-lost-water/thumbnailH.jpg",
+            "thumbnail": "/events/hushan-reservoir-lost-water/thumbnailH.jpg",
             "id": "事件8",
-            "code": "/island20/events/hushan-reservoir-lost-water/videos/coverH.png",
+            "code": "/events/hushan-reservoir-lost-water/videos/coverH.png",
 
             //CoverVideo
-            "coverTitle": "/island20/images/titles/08.svg",
+            "coverTitle": "/images/titles/08.svg",
             "coverDescription": "為了攔住水，毀壞一片森林。\n眾多爭議中，艱難誕生的湖山水庫，是否成為減緩地層下陷的解藥？",
-            "coverVideo": "/island20/events/hushan-reservoir-lost-water/videos/H1湖山水庫空拍1.mp4",
+            "coverVideo": "/events/hushan-reservoir-lost-water/videos/H1湖山水庫空拍1.mp4",
 
             // Taiwan
             "taiwanText": [
@@ -1395,18 +1395,18 @@ var data = {
             "illustrationText": [
                 "2016年4月啟用的湖山水庫，進入營運階段，水庫蓄水量達到總容量的50％，目前每日供水約16萬噸。\n\n為了讓它誕生，國際瀕危物種「八色鳥」，失去全台灣最好的一片繁殖地..."
             ],
-            "illustration": "/island20/events/hushan-reservoir-lost-water/illustrations/illustrationH.svg",
+            "illustration": "/events/hushan-reservoir-lost-water/illustrations/illustrationH.svg",
 
             "illustrationBird": [
-                "/island20/events/hushan-reservoir-lost-water/illustrations/waterdrops-01.svg",
-                "/island20/events/hushan-reservoir-lost-water/illustrations/waterdrops-02.svg",
-                "/island20/events/hushan-reservoir-lost-water/illustrations/waterdrops-03.svg",
+                "/events/hushan-reservoir-lost-water/illustrations/waterdrops-01.svg",
+                "/events/hushan-reservoir-lost-water/illustrations/waterdrops-02.svg",
+                "/events/hushan-reservoir-lost-water/illustrations/waterdrops-03.svg",
             ],
             "illustrationQ": [
-                "/island20/events/hushan-reservoir-lost-water/illustrations/湖山水庫Q1-Q5-01.svg",
-                "/island20/events/hushan-reservoir-lost-water/illustrations/湖山水庫Q1-Q5-02.svg",
-                "/island20/events/hushan-reservoir-lost-water/illustrations/湖山水庫Q1-Q5-03.svg",
-                "/island20/events/hushan-reservoir-lost-water/illustrations/湖山水庫Q1-Q5-04.svg",
+                "/events/hushan-reservoir-lost-water/illustrations/湖山水庫Q1-Q5-01.svg",
+                "/events/hushan-reservoir-lost-water/illustrations/湖山水庫Q1-Q5-02.svg",
+                "/events/hushan-reservoir-lost-water/illustrations/湖山水庫Q1-Q5-03.svg",
+                "/events/hushan-reservoir-lost-water/illustrations/湖山水庫Q1-Q5-04.svg",
                 "/eveFnts/hushan-reservoir-lost-water/illustrations/湖山水庫Q1-Q5-05.svg",
             ],
 
@@ -1426,14 +1426,14 @@ var data = {
 
             // Video
             "video": [
-                "/island20/events/hushan-reservoir-lost-water/videos/H27-八色鳥短片.mp4",
-                "/island20/events/hushan-reservoir-lost-water/videos/H25-抽地下水.mp4",
-                "/island20/events/hushan-reservoir-lost-water/videos/H4-溢洪道空拍.mp4",
-                "/island20/events/hushan-reservoir-lost-water/videos/H31-節水短片.mp4",
-                "/island20/events/hushan-reservoir-lost-water/videos/H26-陳清圳.mp4",
-                "/island20/events/hushan-reservoir-lost-water/videos/H28-八色鳥底圖.mp4",
-                "/island20/events/hushan-reservoir-lost-water/videos/H30食蛇龜.mp4",
-                "/island20/events/hushan-reservoir-lost-water/videos/H36-0219_湖山水庫(修改版).mp4",
+                "/events/hushan-reservoir-lost-water/videos/H27-八色鳥短片.mp4",
+                "/events/hushan-reservoir-lost-water/videos/H25-抽地下水.mp4",
+                "/events/hushan-reservoir-lost-water/videos/H4-溢洪道空拍.mp4",
+                "/events/hushan-reservoir-lost-water/videos/H31-節水短片.mp4",
+                "/events/hushan-reservoir-lost-water/videos/H26-陳清圳.mp4",
+                "/events/hushan-reservoir-lost-water/videos/H28-八色鳥底圖.mp4",
+                "/events/hushan-reservoir-lost-water/videos/H30食蛇龜.mp4",
+                "/events/hushan-reservoir-lost-water/videos/H36-0219_湖山水庫(修改版).mp4",
             ],
             "videoText": [
                 "",
@@ -1446,9 +1446,9 @@ var data = {
 
             // PhotoSwitch
             "photoswitch": [
-                "/island20/events/hushan-reservoir-lost-water/H6-1岩生秋海棠-陳清圳提供(壓字版).JPG",
-                "/island20/events/hushan-reservoir-lost-water/H7-食蛇龜.jpg",
-                "/island20/events/hushan-reservoir-lost-water/H8-寶哥拍圓葉布勒藤 (1).JPG",
+                "/events/hushan-reservoir-lost-water/H6-1岩生秋海棠-陳清圳提供(壓字版).JPG",
+                "/events/hushan-reservoir-lost-water/H7-食蛇龜.jpg",
+                "/events/hushan-reservoir-lost-water/H8-寶哥拍圓葉布勒藤 (1).JPG",
             ],
 
             "photoswitchText": "裡面住著316種植物，81種鳥類，22種哺乳動物，魚類與蛙類各有20多種，物種豐富。\n\n陡直的山壁上，長著台灣原生種植物-岩生秋海棠，以及非常珍貴稀有的圓葉布勒德藤。\n\n同時這裡也是珍貴稀有的二級保育類動物，食蛇龜的重要棲地。農委會2018年9月6日公告的「保育類野生動物名錄」修正草案中，食蛇龜由珍貴稀有調整為瀕臨滅絕。",
@@ -1461,9 +1461,9 @@ var data = {
 
             // PhotoFull
             "photoFull": [
-                "/island20/events/hushan-reservoir-lost-water/H15-2011年水庫施工(614遇見八色鳥).jpg",
-                "/island20/events/hushan-reservoir-lost-water/H4-入口意象.jpg",
-                "/island20/events/hushan-reservoir-lost-water/H17-集集攔河堰蓄水高的狀態.JPG",
+                "/events/hushan-reservoir-lost-water/H15-2011年水庫施工(614遇見八色鳥).jpg",
+                "/events/hushan-reservoir-lost-water/H4-入口意象.jpg",
+                "/events/hushan-reservoir-lost-water/H17-集集攔河堰蓄水高的狀態.JPG",
             ],
             "photoFullText": [
                 "然而，現在要看到牠們越來越難。\n\n雲林環盟理事長張子見說明，水庫興建範圍原本是全球已知八色鳥巢位最密集的地方，原本調查到六百多隻，水庫完工之後，只剩下二十幾隻，不只鄰近區域的八色鳥減少，其他物種也跟著消失。",
@@ -1483,9 +1483,9 @@ var data = {
                 "中水局說明，已經建立植物保存園區，將水庫淹沒區的植物移植，另外也建造溫室，將野外採集的圓葉布勒德藤與岩生秋海棠扦插分株，移植到水庫周圍的四個地區，進行移地復育，針對八色鳥也有持續進行監測。\n\n雲林縣樟湖國小校長陳清圳質疑，天文、地文、水文、生文交織的複雜體系，人要怎麼做出來？"
             ],
             "photoImage": [
-                "/island20/events/hushan-reservoir-lost-water/illustrations/page8.jpg",
-                "/island20/events/hushan-reservoir-lost-water/illustrations/page13.jpg",
-                "/island20/events/hushan-reservoir-lost-water/illustrations/page20.jpg",
+                "/events/hushan-reservoir-lost-water/illustrations/page8.jpg",
+                "/events/hushan-reservoir-lost-water/illustrations/page13.jpg",
+                "/events/hushan-reservoir-lost-water/illustrations/page20.jpg",
             ],
 
             // Timeline
@@ -1503,10 +1503,10 @@ var data = {
                 "2018年",
             ],
             "timelineImage": [
-                "/island20/events/hushan-reservoir-lost-water/H32.jpg",
-                "/island20/events/hushan-reservoir-lost-water/H11.jpg",
-                "/island20/events/hushan-reservoir-lost-water/H12.jpg",
-                "/island20/events/hushan-reservoir-lost-water/H14.jpg"
+                "/events/hushan-reservoir-lost-water/H32.jpg",
+                "/events/hushan-reservoir-lost-water/H11.jpg",
+                "/events/hushan-reservoir-lost-water/H12.jpg",
+                "/events/hushan-reservoir-lost-water/H14.jpg"
             ],
 
             "timelineContent2": "目前台灣水利單位還計畫在新北市坪林地區蓋平溪水庫、雙溪水庫以及苗栗蓋天花湖水庫等等，顯示水庫仍是台灣水資源開發的主軸。\n\n然而，蓋水庫對生態的破壞相當大，在美國憲法中已經明文規定，禁止興建水庫。歐美各國並開始進行拆壩運動，要如何取得水資源，又能讓生態保育與水資源開發，能夠取得雙贏，是我們未來水資源政策，必須要面對的課題。",
@@ -1525,11 +1525,11 @@ var data = {
                 "2018年",
             ],
             "timelineImage2": [
-                "/island20/events/hushan-reservoir-lost-water/H33.jpg",
-                "/island20/events/hushan-reservoir-lost-water/H34.jpg",
-                "/island20/events/hushan-reservoir-lost-water/H35.jpg",
-                "/island20/events/hushan-reservoir-lost-water/H23.jpg",
-                "/island20/events/hushan-reservoir-lost-water/H20.jpg"
+                "/events/hushan-reservoir-lost-water/H33.jpg",
+                "/events/hushan-reservoir-lost-water/H34.jpg",
+                "/events/hushan-reservoir-lost-water/H35.jpg",
+                "/events/hushan-reservoir-lost-water/H23.jpg",
+                "/events/hushan-reservoir-lost-water/H20.jpg"
             ],
 
             // TimeChangeFull
@@ -1551,8 +1551,8 @@ var data = {
                 "依據台水公司目前的減漏計畫，全國平均漏水率預計由2012年19.55%降至2022年14.25%，共計降低5.30%，合計每年約可節省1.7億立方公尺水量，相當於3座湖山水庫有效蓄水容量。\n\n漏水率難以降低，在於管線老舊、經費不足等問題。\n\n2017年時任行政院長賴清德力拼漏水率在2031年降到10％，預計將能省下更多水。"
             ],
             "blogImage": [
-                ["/island20/events/hushan-reservoir-lost-water/H19-裝上發報器的食蛇龜.jpg"],
-                ["/island20/events/hushan-reservoir-lost-water/H0.jpg"],
+                ["/events/hushan-reservoir-lost-water/H19-裝上發報器的食蛇龜.jpg"],
+                ["/events/hushan-reservoir-lost-water/H0.jpg"],
             ],
             "blogLabel": [
                 ["裝上發報器的食蛇龜，研究人員可用無線電接收訊號，得知牠們的所在位置。"],
@@ -1585,14 +1585,14 @@ var data = {
         "asia-cement-cost": {
             "title": "挖山取石的代價",
             "description": "火藥炸裂她的心臟，怪手挖開她的背脊。輸送帶忙碌地準備打包整座山頭，太魯閣年輕族人問： 山去了哪裡？",
-            "thumbnail": "/island20/events/asia-cement-cost/thumbnailI.jpg",
+            "thumbnail": "/events/asia-cement-cost/thumbnailI.jpg",
             "id": "事件9",
-            "code": "/island20/events/asia-cement-cost/videos/coverI.png",
+            "code": "/events/asia-cement-cost/videos/coverI.png",
 
             //CoverVideo
-            "coverTitle": "/island20/images/titles/09.svg",
+            "coverTitle": "/images/titles/09.svg",
             "coverDescription": "火藥炸裂她的心臟，怪手挖開她的背脊。\n輸送帶忙碌地準備打包整座山頭，太魯閣年輕族人問： 山去了哪裡？",
-            "coverVideo": "/island20/events/asia-cement-cost/videos/I1-亞泥空拍.mp4",
+            "coverVideo": "/events/asia-cement-cost/videos/I1-亞泥空拍.mp4",
 
             // Taiwan
             "taiwanText": [
@@ -1604,7 +1604,7 @@ var data = {
             "illustrationText": [
                 "想像一下住在礦場下，會是什麼生活?\n擔心落石隨時崩落，爆炸聲響起，房子開始震動，這是礦下居民的日常。"
             ],
-            "illustration": "/island20/events/asia-cement-cost/illustrations/illustrationI.svg",
+            "illustration": "/events/asia-cement-cost/illustrations/illustrationI.svg",
 
             // Transition
             "transitionText": [
@@ -1617,11 +1617,11 @@ var data = {
 
             // Video
             "video": [
-                "/island20/events/asia-cement-cost/videos/I44占原住民土地權狀.mp4",
-                "/island20/events/asia-cement-cost/videos/I9.mp4",
-                "/island20/events/asia-cement-cost/videos/I10.mp4",
-                "/island20/events/asia-cement-cost/videos/I46居民害怕的心聲.mp4",
-                "/island20/events/asia-cement-cost/videos/I45泥水流+居民房屋裂.mp4",
+                "/events/asia-cement-cost/videos/I44占原住民土地權狀.mp4",
+                "/events/asia-cement-cost/videos/I9.mp4",
+                "/events/asia-cement-cost/videos/I10.mp4",
+                "/events/asia-cement-cost/videos/I46居民害怕的心聲.mp4",
+                "/events/asia-cement-cost/videos/I45泥水流+居民房屋裂.mp4",
                 
             ],
 
@@ -1633,19 +1633,19 @@ var data = {
                 "礦場高度節節下降，距離下方部落不到300公尺，整個礦區像一個內凹的大碗，居民最擔心的是如果暴雨來襲，脆弱的邊坡是否能夠承受。"
             ],
             "photoImage": [
-                "/island20/events/asia-cement-cost/illustrations/illustrationTaiwan.svg",
+                "/events/asia-cement-cost/illustrations/illustrationTaiwan.svg",
                 "https://fakeimg.pl/600x480/?text=PhotoText&retina=1",
-                "/island20/events/asia-cement-cost/illustrations/page12.jpg",
+                "/events/asia-cement-cost/illustrations/page12.jpg",
             ],
 
             // PhotoFull
             "photoFull": [
-                "/island20/events/asia-cement-cost/原住民抗議.jpg",
-                "/island20/events/asia-cement-cost/I31-789-1-43.jpg",
-                "/island20/events/asia-cement-cost/illustrations/page5.jpg",
-                "/island20/events/asia-cement-cost/I42-權狀地籍列冊.jpg",
-                "/island20/events/asia-cement-cost/I41-2016.06.17花蓮亞泥07.jpg",
-                "/island20/events/asia-cement-cost/i58-田春綢.jpg",
+                "/events/asia-cement-cost/原住民抗議.jpg",
+                "/events/asia-cement-cost/I31-789-1-43.jpg",
+                "/events/asia-cement-cost/illustrations/page5.jpg",
+                "/events/asia-cement-cost/I42-權狀地籍列冊.jpg",
+                "/events/asia-cement-cost/I41-2016.06.17花蓮亞泥07.jpg",
+                "/events/asia-cement-cost/i58-田春綢.jpg",
             ],
             "photoFullText": [
                 "許多地主回憶，當年是被告知「租給亞泥使用20年就歸還」，但事實並非如此，於是1996年開始，田春綢與原住民地主組成「反亞泥還我土地」自救會，展開漫長的抗爭之路。",
@@ -1665,10 +1665,10 @@ var data = {
 
             // TimeChangeFull
             "timeChangePhoto": [
-                "/island20/events/asia-cement-cost/illustrations/page11-1.jpg",
-                "/island20/events/asia-cement-cost/illustrations/page11-2.jpg",
-                "/island20/events/asia-cement-cost/i23-花蓮新城山衛星圖.jpg",
-                "/island20/events/asia-cement-cost/illustrations/page14.jpg"
+                "/events/asia-cement-cost/illustrations/page11-1.jpg",
+                "/events/asia-cement-cost/illustrations/page11-2.jpg",
+                "/events/asia-cement-cost/i23-花蓮新城山衛星圖.jpg",
+                "/events/asia-cement-cost/illustrations/page14.jpg"
             ],
             "timeChangeText": [
                 "就算進去了，太魯閣人也已經認不出曾經的家園。經年累月的挖掘，原本的山頭已經整個消失不見。",
@@ -1684,11 +1684,11 @@ var data = {
 
             // Photo Switch
             "photoswitch1": [
-                "/island20/events/asia-cement-cost/I21-居民在亞泥礦場抗議.jpg",
-                "/island20/events/asia-cement-cost/I27-原住民封路抗議.jpg",
-                "/island20/events/asia-cement-cost/I28-20141213反亞泥，太魯閣路跑行動抗議.jpg",
-                "/island20/events/asia-cement-cost/I29-2017.06.25反亞泥02.JPG",
-                "/island20/events/asia-cement-cost/I30-反亞泥凱道前抗議.jpg",
+                "/events/asia-cement-cost/I21-居民在亞泥礦場抗議.jpg",
+                "/events/asia-cement-cost/I27-原住民封路抗議.jpg",
+                "/events/asia-cement-cost/I28-20141213反亞泥，太魯閣路跑行動抗議.jpg",
+                "/events/asia-cement-cost/I29-2017.06.25反亞泥02.JPG",
+                "/events/asia-cement-cost/I30-反亞泥凱道前抗議.jpg",
             ],
 
             "photoswitchLabel1": [
@@ -1701,11 +1701,11 @@ var data = {
 
             // Photo Switch
             "photoswitch2": [
-                "/island20/events/asia-cement-cost/I28.jpg",
-                "/island20/events/asia-cement-cost/I21.jpg",
-                "/island20/events/asia-cement-cost/I27.jpg",
-                "/island20/events/asia-cement-cost/I50.jpg",
-                "/island20/events/asia-cement-cost/I30.jpg"
+                "/events/asia-cement-cost/I28.jpg",
+                "/events/asia-cement-cost/I21.jpg",
+                "/events/asia-cement-cost/I27.jpg",
+                "/events/asia-cement-cost/I50.jpg",
+                "/events/asia-cement-cost/I30.jpg"
             ],
 
             "photoswitchLabel2": [
@@ -1726,17 +1726,17 @@ var data = {
                 "從還我土地運動，訴求原住民的土地正義，亞泥採礦的爭議擴大成為全國性的議題，也突顯了礦業法許多的不合理之處，在民間的強大壓力下，立法院也展開礦業法修法，包括刪除霸王條款，讓礦區不得再以合法之名，無限期的霸占山林，也讓亞泥等眾多老舊礦區，回歸環評審查機制，並取得原住民部落的諮商同意。直到2018年年底，礦業法修正草案仍然躺在立法院，遲遲無法通過。"
             ],
             "blogImage": [
-                ["/island20/events/asia-cement-cost/他人提供009.jpg",
-                    "/island20/events/asia-cement-cost/他人提供002.jpg",
-                    "/island20/events/asia-cement-cost/他人提供001.jpg"
+                ["/events/asia-cement-cost/他人提供009.jpg",
+                    "/events/asia-cement-cost/他人提供002.jpg",
+                    "/events/asia-cement-cost/他人提供001.jpg"
                 ],
-                ["/island20/events/asia-cement-cost/i52.jpg", "/island20/events/asia-cement-cost/i49.jpg"],
-                ["/island20/events/asia-cement-cost/I33.jpg",
-                    "/island20/events/asia-cement-cost/I32.jpg",
-                    "/island20/events/asia-cement-cost/i41-2012年台泥礦區空拍水保局提供.jpg",
-                    "/island20/events/asia-cement-cost/i54-和仁溪與和仁礦區.jpg"
+                ["/events/asia-cement-cost/i52.jpg", "/events/asia-cement-cost/i49.jpg"],
+                ["/events/asia-cement-cost/I33.jpg",
+                    "/events/asia-cement-cost/I32.jpg",
+                    "/events/asia-cement-cost/i41-2012年台泥礦區空拍水保局提供.jpg",
+                    "/events/asia-cement-cost/i54-和仁溪與和仁礦區.jpg"
                 ],
-                ["/island20/events/asia-cement-cost/I36-2017.06.25反亞泥.jpg"]
+                ["/events/asia-cement-cost/I36-2017.06.25反亞泥.jpg"]
             ],
             "blogLabel": [
                 ["1997年 太魯閣族人北上監察院陳情", "1997年 田春綢與太魯閣族人北上抗議", "1999年 亞泥地主與聲援團體在花蓮地方法院前抗議"],
@@ -1795,14 +1795,14 @@ var data = {
         "science-park-landuse": {
             "title": "無土時代",
             "description": "相思寮，見證台灣農業史的小村莊，居民在此，安身立命。當農地變成工業區腹地，老聚落從此變貌。",
-            "thumbnail": "/island20/events/science-park-landuse/thumbnailJ.jpg",
+            "thumbnail": "/events/science-park-landuse/thumbnailJ.jpg",
             "id": "事件10",
-            "code": "/island20/events/science-park-landuse/videos/coverJ.png",
+            "code": "/events/science-park-landuse/videos/coverJ.png",
 
             //CoverVideo
-            "coverTitle": "/island20/images/titles/10.svg",
+            "coverTitle": "/images/titles/10.svg",
             "coverDescription": "相思寮，見證台灣農業史的小村莊，居民在此，安身立命。\n當農地變成工業區腹地，老聚落從此變貌。",
-            "coverVideo": "/island20/events/science-park-landuse/videos/J1-中科四期空拍.mp4",
+            "coverVideo": "/events/science-park-landuse/videos/J1-中科四期空拍.mp4",
 
             // Taiwan
             "taiwanText": [
@@ -1814,21 +1814,21 @@ var data = {
             "illustrationText": [
                 "1980年代，台灣產業啟動轉型之路，決定以高科技代工作為主要發展政策。為了鼓勵人才回流，在新竹結合產官學，設立具有產業群聚型態的科學園區，政府認為是金雞母，能夠帶動地方發展。"
             ],
-            "illustration": "/island20/events/science-park-landuse/illustrations/illustrationJ.svg",
+            "illustration": "/events/science-park-landuse/illustrations/illustrationJ.svg",
             "illustrationMore":[
-            "/island20/events/science-park-landuse/illustrations/廢排-01.svg",
-            "/island20/events/science-park-landuse/illustrations/搶水-01.svg",
-            "/island20/events/science-park-landuse/illustrations/迫遷-01.svg",
+            "/events/science-park-landuse/illustrations/廢排-01.svg",
+            "/events/science-park-landuse/illustrations/搶水-01.svg",
+            "/events/science-park-landuse/illustrations/迫遷-01.svg",
             ],
 
             // PhotoFull
             "photoFull": [
-                "/island20/events/science-park-landuse/J51-筆直空曠的中科四期道路.JPG",
-                "/island20/events/science-park-landuse/J22-2009.11.22彰化二林相思寮聚落.jpg",
-                "/island20/events/science-park-landuse/J49-中科四期衛星圖.jpg",
-                "/island20/events/science-park-landuse/J29.jpg",
-                "/island20/events/science-park-landuse/J55-2013環保署前拍胡慕情.jpg",
-                "/island20/events/science-park-landuse/J41-中科四期施工.jpg",
+                "/events/science-park-landuse/J51-筆直空曠的中科四期道路.JPG",
+                "/events/science-park-landuse/J22-2009.11.22彰化二林相思寮聚落.jpg",
+                "/events/science-park-landuse/J49-中科四期衛星圖.jpg",
+                "/events/science-park-landuse/J29.jpg",
+                "/events/science-park-landuse/J55-2013環保署前拍胡慕情.jpg",
+                "/events/science-park-landuse/J41-中科四期施工.jpg",
                 
             ],
             "photoFullText": [
@@ -1858,14 +1858,14 @@ var data = {
 
             // Video
             "video": [
-              "/island20/events/science-park-landuse/videos/J45-相思寮早期生活B-(有OS).mp4",
-              "/island20/events/science-park-landuse/videos/J5-居民陳正宗祭祖.mp4",
-              "/island20/events/science-park-landuse/videos/J44-卓伯源說就業機會.mp4",
-              "/island20/events/science-park-landuse/videos/J47-相思寮救命-動土典禮抗議.mp4",
-              "/island20/events/science-park-landuse/videos/J61-大埔農地怪手.mp4",
-              "/island20/events/science-park-landuse/videos/J48-搶水短片.mp4",
-              "/island20/events/science-park-landuse/videos/J50-中科四期養殖漁民抗議.mp4",
-              "/island20/events/science-park-landuse/videos/J54-中科四期阿宗伯感嘆.mp4",
+              "/events/science-park-landuse/videos/J45-相思寮早期生活B-(有OS).mp4",
+              "/events/science-park-landuse/videos/J5-居民陳正宗祭祖.mp4",
+              "/events/science-park-landuse/videos/J44-卓伯源說就業機會.mp4",
+              "/events/science-park-landuse/videos/J47-相思寮救命-動土典禮抗議.mp4",
+              "/events/science-park-landuse/videos/J61-大埔農地怪手.mp4",
+              "/events/science-park-landuse/videos/J48-搶水短片.mp4",
+              "/events/science-park-landuse/videos/J50-中科四期養殖漁民抗議.mp4",
+              "/events/science-park-landuse/videos/J54-中科四期阿宗伯感嘆.mp4",
               
             ],
             "videoText":[
@@ -1881,11 +1881,11 @@ var data = {
 
             // Photo Switch
             "photoswitch": [
-                "/island20/events/science-park-landuse/J10.jpg",
-                "/island20/events/science-park-landuse/J21.jpg",
-                "/island20/events/science-park-landuse/J11.jpg",
-                "/island20/events/science-park-landuse/J19.jpg",
-                "/island20/events/science-park-landuse/J15.jpg",
+                "/events/science-park-landuse/J10.jpg",
+                "/events/science-park-landuse/J21.jpg",
+                "/events/science-park-landuse/J11.jpg",
+                "/events/science-park-landuse/J19.jpg",
+                "/events/science-park-landuse/J15.jpg",
             ],
 
             "photoswitchLabel": [
@@ -1905,14 +1905,14 @@ var data = {
             ],
             "blogImage": [
                 [
-                "/island20/events/science-park-landuse/J28-2009.10.29反對中科四期汙染.jpg", 
-                "/island20/events/science-park-landuse/J60-2009.10.29反對中科四期汙染.jpg",  
-                "/island20/events/science-park-landuse/J25-2009.11.19彰化二林相思寮路口.jpg", 
-                "/island20/events/science-park-landuse/J26-2009.11.22-反對二林中科四期開發21.jpg", 
-                "/island20/events/science-park-landuse/J27-2009.11.22-反對二林中科四期開發23.jpg", 
+                "/events/science-park-landuse/J28-2009.10.29反對中科四期汙染.jpg", 
+                "/events/science-park-landuse/J60-2009.10.29反對中科四期汙染.jpg",  
+                "/events/science-park-landuse/J25-2009.11.19彰化二林相思寮路口.jpg", 
+                "/events/science-park-landuse/J26-2009.11.22-反對二林中科四期開發21.jpg", 
+                "/events/science-park-landuse/J27-2009.11.22-反對二林中科四期開發23.jpg", 
                 ],
                 [
-                "/island20/events/science-park-landuse/J17-陳正宗是徵收後僅存的住家.JPG", 
+                "/events/science-park-landuse/J17-陳正宗是徵收後僅存的住家.JPG", 
                 ]
             ],
             "blogLabel": [
@@ -1947,12 +1947,12 @@ var data = {
 
             ],
             "timelineImage": [
-                "/island20/events/science-park-landuse/J58-中科四期.jpg",
-                "/island20/events/science-park-landuse/J59.jpg",
-                "/island20/events/science-park-landuse/j43.jpg",
-                "/island20/events/science-park-landuse/J56-二階環評說明會.JPG",
-                "/island20/events/science-park-landuse/J34-2012.04.12反中科搶水自救會-行政院前靜坐.jpg",
-                "/island20/events/science-park-landuse/J53-畫面提供彰化縣環境保護聯盟.jpg",
+                "/events/science-park-landuse/J58-中科四期.jpg",
+                "/events/science-park-landuse/J59.jpg",
+                "/events/science-park-landuse/j43.jpg",
+                "/events/science-park-landuse/J56-二階環評說明會.JPG",
+                "/events/science-park-landuse/J34-2012.04.12反中科搶水自救會-行政院前靜坐.jpg",
+                "/events/science-park-landuse/J53-畫面提供彰化縣環境保護聯盟.jpg",
             ],
 
             // More
@@ -1977,14 +1977,14 @@ var data = {
         "petrochemical-kingdom": {
             "title": "海上的石化王國",
             "description": "1998年雲林麥寮沿海，一座石化工業區誕生，從此以後，海風吹來的不再只是鹹鹹的滋味。",
-            "thumbnail": "/island20/events/petrochemical-kingdom/thumbnailK.jpg",
+            "thumbnail": "/events/petrochemical-kingdom/thumbnailK.jpg",
             "id": "事件11",
-            "code": "/island20/events/petrochemical-kingdom/videos/coverK.png",
+            "code": "/events/petrochemical-kingdom/videos/coverK.png",
 
             //CoverVideo
-            "coverTitle": "/island20/images/titles/11.svg",
+            "coverTitle": "/images/titles/11.svg",
             "coverDescription": "1998年雲林麥寮沿海，一座石化工業區誕生，\n從此以後，海風吹來的不再只是鹹鹹的滋味。",
-            "coverVideo": "/island20/events/petrochemical-kingdom/videos/K26-2018六輕空拍.mp4",
+            "coverVideo": "/events/petrochemical-kingdom/videos/K26-2018六輕空拍.mp4",
 
             // Taiwan
             "taiwanText": [
@@ -1996,16 +1996,16 @@ var data = {
             "illustrationText": [
                 "1986年，政府核准台塑石化興建第六輕油裂解廠，歷經宜蘭利澤、桃園觀音、嘉義東石，最後落腳雲林麥寮。\n\n在政府種種協助下取得水源，大規模填海造陸，並給予免稅優惠，忽略了環境衝擊和風險，造成日後環境危機。"
             ],
-            "illustration": "/island20/events/petrochemical-kingdom/illustrations/illustrationK.svg",
+            "illustration": "/events/petrochemical-kingdom/illustrations/illustrationK.svg",
 
             // Video
             "video": [
-            "/island20/events/petrochemical-kingdom/videos/K47-鄉土教育+萬人熱烈歡迎.mp4",
-            "/island20/events/petrochemical-kingdom/videos/K28-六輕填海工程及風沙短片.mp4",
-            "/island20/events/petrochemical-kingdom/videos/K49-分水池+工業幹管+搶水.mp4",
-            "/island20/events/petrochemical-kingdom/videos/K66-滾滾沙河.mp4",
-            "/island20/events/petrochemical-kingdom/videos/K29-六輕火災(道歉).mp4",
-            "/island20/events/petrochemical-kingdom/videos/K70-六輕受災文蛤鴨子死亡.mp4",
+            "/events/petrochemical-kingdom/videos/K47-鄉土教育+萬人熱烈歡迎.mp4",
+            "/events/petrochemical-kingdom/videos/K28-六輕填海工程及風沙短片.mp4",
+            "/events/petrochemical-kingdom/videos/K49-分水池+工業幹管+搶水.mp4",
+            "/events/petrochemical-kingdom/videos/K66-滾滾沙河.mp4",
+            "/events/petrochemical-kingdom/videos/K29-六輕火災(道歉).mp4",
+            "/events/petrochemical-kingdom/videos/K70-六輕受災文蛤鴨子死亡.mp4",
             ],
             "videoText" : [
             "時光回溯到1991年，六輕的進駐，對當年的雲林麥寮來說是門喜事，萬人舞龍舞獅熱烈歡迎，地方的鄉土教育也納入課程中，顯示地方期待發展的渴望。",
@@ -2018,10 +2018,10 @@ var data = {
 
             // PhotoTextFull
             "photoFull": [
-            "/island20/events/petrochemical-kingdom/K2-2010.01.14空拍-雲林麥寮台塑六輕工業區2.jpg",
-            "/island20/events/petrochemical-kingdom/K51-2010.07.25六輕大火.jpg",
-            "/island20/events/petrochemical-kingdom/K4-2010.01.14空拍-雲林麥寮台塑六輕工業區4.jpg",
-            "/island20/events/petrochemical-kingdom/K39-六輕煙囪(要找原檔).JPG",
+            "/events/petrochemical-kingdom/K2-2010.01.14空拍-雲林麥寮台塑六輕工業區2.jpg",
+            "/events/petrochemical-kingdom/K51-2010.07.25六輕大火.jpg",
+            "/events/petrochemical-kingdom/K4-2010.01.14空拍-雲林麥寮台塑六輕工業區4.jpg",
+            "/events/petrochemical-kingdom/K39-六輕煙囪(要找原檔).JPG",
             ],
             "photoFullText": [
             "六輕全名是第六座輕油裂解廠，在此之前中油已經依序興建了一至五座輕油裂解工廠。台塑申請打造第六座，也是全台唯一的民間石油煉製業者。\n\n一般人所稱的六輕，泛指整個離島石化工業區，也就是第六輕油裂解廠及上下游產業。",
@@ -2044,10 +2044,10 @@ var data = {
             "早在2008年起，雲林縣政府就委託詹長權教授團隊，進行六輕附近居民健康風險評估，發現越接近六輕的地區，居民癌症發生率明顯偏高，心血管和腎臟疾病的威脅也顯著增加。不過，台塑質疑未把居民個人因素納入考慮，罹癌不必然與六輕有關。\n\n2018年台大公衛學院再次發表報告，納入居民生活飲食習慣，並校正這些因子的影響，最後結論仍與過去一致：雲林縣台西鄉和麥寮鄉，癌症的發生率是雲林其他鄉鎮的1.29倍，女人與老人的風險更顯著。"
             ],
             "photoImage": [
-            "/island20/events/petrochemical-kingdom/illustrations/page-10.svg",
-            "/island20/events/petrochemical-kingdom/illustrations/page-12.jpg",
+            "/events/petrochemical-kingdom/illustrations/page-10.svg",
+            "/events/petrochemical-kingdom/illustrations/page-12.jpg",
             "https://fakeimg.pl/800x600/?text=image&retina=1",
-            "/island20/events/petrochemical-kingdom/illustrations/page-23.jpg",
+            "/events/petrochemical-kingdom/illustrations/page-23.jpg",
             ],
 
             "transitionText": [
@@ -2061,16 +2061,16 @@ var data = {
             "photoMultipleText": "其實石化產業跟你我都有關係，輕油裂解廠生產出乙烯、丙烯、芳香烴等各種石化原料，再結合其他化學物質，就可以製成日常生活裡食衣住行育樂的各種用品，舉凡衣服、尿布、奶瓶、輪胎、油漆，甚至洗潔劑都是石化產物。",
 
             "photoMultiple": [
-                "/island20/events/petrochemical-kingdom/K44-塑膠地板.jpg",
-                "/island20/events/petrochemical-kingdom/K45-尿布.JPG",
-                "/island20/events/petrochemical-kingdom/K46-奶瓶.JPG",
-                "/island20/events/petrochemical-kingdom/K60-玩具DSCF8312.JPG",
-                "/island20/events/petrochemical-kingdom/K61-DSCF8341.JPG",
-                "/island20/events/petrochemical-kingdom/K63-油漆.jpg",
-                "/island20/events/petrochemical-kingdom/K64-輪胎.jpg",
-                "/island20/events/petrochemical-kingdom/K65-DSCF8347.JPG",
-                "/island20/events/petrochemical-kingdom/k73.jpg",
-                "/island20/events/petrochemical-kingdom/K68-指甲油DSCF8318.JPG",
+                "/events/petrochemical-kingdom/K44-塑膠地板.jpg",
+                "/events/petrochemical-kingdom/K45-尿布.JPG",
+                "/events/petrochemical-kingdom/K46-奶瓶.JPG",
+                "/events/petrochemical-kingdom/K60-玩具DSCF8312.JPG",
+                "/events/petrochemical-kingdom/K61-DSCF8341.JPG",
+                "/events/petrochemical-kingdom/K63-油漆.jpg",
+                "/events/petrochemical-kingdom/K64-輪胎.jpg",
+                "/events/petrochemical-kingdom/K65-DSCF8347.JPG",
+                "/events/petrochemical-kingdom/k73.jpg",
+                "/events/petrochemical-kingdom/K68-指甲油DSCF8318.JPG",
             ],
 
             "photoMultipleLabel": [
@@ -2104,17 +2104,17 @@ var data = {
 
             ],
             "timelineImage": [
-                "/island20/events/petrochemical-kingdom/K13-1993.5麥寮六輕工業區預定填海地.jpg",
-                "/island20/events/petrochemical-kingdom/K15-1999.11麥寮六輕工業區大地改造.jpg",
-                "/island20/events/petrochemical-kingdom/K17-2009.9麥寮六輕工業區西海岸填海造陸.jpg",
-                "/island20/events/petrochemical-kingdom/K19-2010麥寮六輕工業區完工後沿海濕地消失.jpg",
-                "/island20/events/petrochemical-kingdom/K20-2017年麥寮六輕工業區儼然成為石化城.jpg",
+                "/events/petrochemical-kingdom/K13-1993.5麥寮六輕工業區預定填海地.jpg",
+                "/events/petrochemical-kingdom/K15-1999.11麥寮六輕工業區大地改造.jpg",
+                "/events/petrochemical-kingdom/K17-2009.9麥寮六輕工業區西海岸填海造陸.jpg",
+                "/events/petrochemical-kingdom/K19-2010麥寮六輕工業區完工後沿海濕地消失.jpg",
+                "/events/petrochemical-kingdom/K20-2017年麥寮六輕工業區儼然成為石化城.jpg",
             ],
 
             // PhotoContrast
             "photocontrast": [
-                "/island20/events/petrochemical-kingdom/K11-1991.07.15台塑受到雲林縣沿海鄉鎮麥寮台西等地區萬人歡迎.jpg",
-                "/island20/events/petrochemical-kingdom/K37-2010.08麥寮六輕工業區周邊居民圍廠抗議工安事故.jpg",
+                "/events/petrochemical-kingdom/K11-1991.07.15台塑受到雲林縣沿海鄉鎮麥寮台西等地區萬人歡迎.jpg",
+                "/events/petrochemical-kingdom/K37-2010.08麥寮六輕工業區周邊居民圍廠抗議工安事故.jpg",
             ],
             "photocontrastLabel": [
                 "1991年7月 雲林萬人歡迎放鞭炮的滿地炮屑",
@@ -2126,8 +2126,8 @@ var data = {
             "photocontrastText": "回首1991年，雲林民代主辦的萬人歡迎大會上，眾人歡天喜地迎接六輕，二十年後，鄰近六輕的漁民生計和學童健康成為經常躍上版面的話題。\n\n上位者執政往往不過是幾年歲月，但所做下的決定，牽動著當地一世命運。",
 
             "photocontrast2": [
-                "/island20/events/petrochemical-kingdom/K10-1991.07.15-雲林萬人歡迎台塑六輕設廠的盛況.jpg",
-                "/island20/events/petrochemical-kingdom/K38-2010.08麥寮六輕工業區周邊居民圍廠抗議工安事故2.jpg",
+                "/events/petrochemical-kingdom/K10-1991.07.15-雲林萬人歡迎台塑六輕設廠的盛況.jpg",
+                "/events/petrochemical-kingdom/K38-2010.08麥寮六輕工業區周邊居民圍廠抗議工安事故2.jpg",
             ],
 
             "photocontrastLabel2": [
@@ -2147,14 +2147,14 @@ var data = {
             ],
             "blogImage": [
                 [
-                "/island20/events/petrochemical-kingdom/K35-彰化大城台西村.jpg",
-                "/island20/events/petrochemical-kingdom/K34-彰化大城台西村.jpg",
-                "/island20/events/petrochemical-kingdom/K55-大城鄉魚塭.jpg",
-                "/island20/events/petrochemical-kingdom/K57-台塑大火大城鄉民抗議.jpg", 
-                "/island20/events/petrochemical-kingdom/K33-彰化大城台西村.jpg",
+                "/events/petrochemical-kingdom/K35-彰化大城台西村.jpg",
+                "/events/petrochemical-kingdom/K34-彰化大城台西村.jpg",
+                "/events/petrochemical-kingdom/K55-大城鄉魚塭.jpg",
+                "/events/petrochemical-kingdom/K57-台塑大火大城鄉民抗議.jpg", 
+                "/events/petrochemical-kingdom/K33-彰化大城台西村.jpg",
                 ],
                 [
-                "/island20/events/petrochemical-kingdom/K69-2018.8.31雲林地方法院開庭前記者會.jpg",
+                "/events/petrochemical-kingdom/K69-2018.8.31雲林地方法院開庭前記者會.jpg",
                 ]
                 
             ],
@@ -2175,14 +2175,14 @@ var data = {
             // Photo Audio
             "photoAudioContent": "依靠海洋生活的蚵農，也發現這片海變得不一樣了。雲林台西海域蚵苗豐富，是台灣最重要的蚵苗採集區，全台大約七到八成的蚵苗，都來自這裡。近年來，蚵苗狀況一年比一年差。",
             "photoAudioPhoto": [
-            "/island20/events/petrochemical-kingdom/K52-林進郎.jpg",
-            "/island20/events/petrochemical-kingdom/K53-劉莉蓮.jpg",
-            "/island20/events/petrochemical-kingdom/K54-翁義聰.jpg",
+            "/events/petrochemical-kingdom/K52-林進郎.jpg",
+            "/events/petrochemical-kingdom/K53-劉莉蓮.jpg",
+            "/events/petrochemical-kingdom/K54-翁義聰.jpg",
             ],
             "photoAudio": [
-            "/island20/events/petrochemical-kingdom/audios/K52-1聲音檔林進郎.mp3",
-            "/island20/events/petrochemical-kingdom/audios/K53-1劉莉蓮聲音檔.mp3",
-            "/island20/events/petrochemical-kingdom/audios/K54-1翁義聰聲音檔.mp3",
+            "/events/petrochemical-kingdom/audios/K52-1聲音檔林進郎.mp3",
+            "/events/petrochemical-kingdom/audios/K53-1劉莉蓮聲音檔.mp3",
+            "/events/petrochemical-kingdom/audios/K54-1翁義聰聲音檔.mp3",
             ],
             "photoAudioName": [
             "林進郎 養殖漁民",
@@ -2217,15 +2217,15 @@ var data = {
         "soil-pollution-tainan": {
             "title": "焦土",
             "description": "一座化學工廠，為台南的濱海小鎮帶來短暫繁華，卻在人與土地上，留下漫長的毒害和夢魘。",
-            "thumbnail": "/island20/events/soil-pollution-tainan/thumbnailL.jpg",
+            "thumbnail": "/events/soil-pollution-tainan/thumbnailL.jpg",
             "id": "事件12",
-            "code": "/island20/events/soil-pollution-tainan/videos/coverL.png",
+            "code": "/events/soil-pollution-tainan/videos/coverL.png",
 
 
             //CoverVideo
-            "coverTitle": "/island20/images/titles/12.svg",
+            "coverTitle": "/images/titles/12.svg",
             "coverDescription": "一座化學工廠，為台南的濱海小鎮帶來短暫繁華，\n卻在人與土地上，留下漫長的毒害和夢魘。",
-            "coverVideo": "/island20/events/soil-pollution-tainan/videos/L16-台鹼安順廠空拍1.mp4",
+            "coverVideo": "/events/soil-pollution-tainan/videos/L16-台鹼安順廠空拍1.mp4",
 
             // Taiwan
             "taiwanText": [
@@ -2237,7 +2237,7 @@ var data = {
             "illustrationText": [
                 "工廠旁的海水蓄水池，豐富的魚產，不是上天給海口人的恩賜，而是終身病痛與折磨的開端。"
             ],
-            "illustration": "/island20/events/soil-pollution-tainan/illustrations/illustrationL.svg",
+            "illustration": "/events/soil-pollution-tainan/illustrations/illustrationL.svg",
 
             // Transition
             "transitionText": [
@@ -2247,9 +2247,9 @@ var data = {
 
             // PhotoFull
             "photoFull": [
-                "/island20/events/soil-pollution-tainan/L2.jpg",
-                "/island20/events/soil-pollution-tainan/L29.jpg",
-                "/island20/events/soil-pollution-tainan/L31.jpg",
+                "/events/soil-pollution-tainan/L2.jpg",
+                "/events/soil-pollution-tainan/L29.jpg",
+                "/events/soil-pollution-tainan/L31.jpg",
             ],
             "photoFullTextLabel": [
                 "",
@@ -2269,10 +2269,10 @@ var data = {
                 "台鹼安順廠的前身，可回溯到1942年，當時日本鐘淵曹達株式會社強徵民地，成立工廠生產燒鹼、鹽酸和液氯，並為日本海軍製造毒氣。戰後，國民政府接收日產，更名為台灣鹼業公司安順廠。1960 年代，開始生產五氯酚，製造農藥，外銷日本，直到1982年關廠停產，隔年併入中國石油化學工業開發股份有限公司（簡稱中石化）。"
             ],
             "photoImage": [
-                "/island20/events/soil-pollution-tainan/illustrations/page-7.jpg?v=2019051001",
-                "/island20/events/soil-pollution-tainan/illustrations/page-19.png",
-                "/island20/events/soil-pollution-tainan/illustrations/page-4.png",
-                "/island20/events/soil-pollution-tainan/L13-日治時期的台鹼安順廠.jpg",
+                "/events/soil-pollution-tainan/illustrations/page-7.jpg?v=2019051001",
+                "/events/soil-pollution-tainan/illustrations/page-19.png",
+                "/events/soil-pollution-tainan/illustrations/page-4.png",
+                "/events/soil-pollution-tainan/L13-日治時期的台鹼安順廠.jpg",
             ],
             "photoLabel": [
                 "",
@@ -2291,9 +2291,9 @@ var data = {
 
             ],
             "timelineImage": [
-                "/island20/events/soil-pollution-tainan/L21.jpg",
-                "/island20/events/soil-pollution-tainan/L22.jpg",
-                "/island20/events/soil-pollution-tainan/L5.jpg",
+                "/events/soil-pollution-tainan/L21.jpg",
+                "/events/soil-pollution-tainan/L22.jpg",
+                "/events/soil-pollution-tainan/L5.jpg",
             ],
 
             // Timeline
@@ -2314,21 +2314,21 @@ var data = {
 
             ],
             "timelineImage1": [
-                "/island20/events/soil-pollution-tainan/L36.jpg",
-                "/island20/events/soil-pollution-tainan/L25.png",
-                "/island20/events/soil-pollution-tainan/L27.jpg",
-                "/island20/events/soil-pollution-tainan/L17.jpg",
-                "/island20/events/soil-pollution-tainan/L8.jpg",
+                "/events/soil-pollution-tainan/L36.jpg",
+                "/events/soil-pollution-tainan/L25.png",
+                "/events/soil-pollution-tainan/L27.jpg",
+                "/events/soil-pollution-tainan/L17.jpg",
+                "/events/soil-pollution-tainan/L8.jpg",
             ],
 
 
             // Video
             "video": [
-                "/island20/events/soil-pollution-tainan/videos/L14.mp4",
-                "/island20/events/soil-pollution-tainan/videos/L19-捕魚賣魚底圖影音.mp4",
-                "/island20/events/soil-pollution-tainan/videos/L34李俊璋訪問.mp4",
-                "/island20/events/soil-pollution-tainan/videos/L11-2008到2018台鹼土壤整治過程短片.mp4",
-                "/island20/events/soil-pollution-tainan/videos/L37-台鹼空拍石棺(配樂).mp4",
+                "/events/soil-pollution-tainan/videos/L14.mp4",
+                "/events/soil-pollution-tainan/videos/L19-捕魚賣魚底圖影音.mp4",
+                "/events/soil-pollution-tainan/videos/L34李俊璋訪問.mp4",
+                "/events/soil-pollution-tainan/videos/L11-2008到2018台鹼土壤整治過程短片.mp4",
+                "/events/soil-pollution-tainan/videos/L37-台鹼空拍石棺(配樂).mp4",
             ],
             "videoText": [
                 "",
@@ -2359,14 +2359,14 @@ var data = {
         "mercury-sludge-volcano": {
             "title": "無人知曉的未爆彈",
             "description": "20年前，屏東赤山巖農地，被濫倒有毒汞污泥及各式廢棄物。20年後，受難的土地恢復了嗎？台灣還有多少未爆彈？",
-            "thumbnail": "/island20/events/mercury-sludge-volcano/thumbnailM.jpg",
+            "thumbnail": "/events/mercury-sludge-volcano/thumbnailM.jpg",
             "id": "事件13",
-            "code": "/island20/events/mercury-sludge-volcano/videos/coverM.png",
+            "code": "/events/mercury-sludge-volcano/videos/coverM.png",
 
             //CoverVideo
-            "coverTitle": "/island20/images/titles/13.svg",
+            "coverTitle": "/images/titles/13.svg",
             "coverDescription": "20年前，屏東赤山巖農地，被濫倒有毒汞污泥及各式廢棄物。\n20年後，受難的土地恢復了嗎？台灣還有多少未爆彈？",
-            "coverVideo": "/island20/events/mercury-sludge-volcano/videos/M51赤山巖底圖封面影音.mp4",
+            "coverVideo": "/events/mercury-sludge-volcano/videos/M51赤山巖底圖封面影音.mp4",
 
             // Taiwan
             "taiwanText": [
@@ -2378,16 +2378,16 @@ var data = {
             "illustrationText": [
                 "1960、1970年代，工業發展，帶動台灣經濟起飛，卻伴隨諸多代價。工業煙囪燃燒下，農漁業資源與空氣品質，節節敗退。廢棄物毒埋土壤，地下水跟著遭到污染，人的健康也隨之犧牲。與毒共存的日子，有沒有終結的一天？"
             ],
-            "illustration": "/island20/events/mercury-sludge-volcano/illustrations/illustrationM.svg",
+            "illustration": "/events/mercury-sludge-volcano/illustrations/illustrationM.svg",
 
             // Video
             "video": [
-            "/island20/events/mercury-sludge-volcano/videos/M52赤山巖開挖檢察官到場.mp4",
-            "/island20/events/mercury-sludge-volcano/videos/M54柬埔寨居民逃亡.mp4",
-            "/island20/events/mercury-sludge-volcano/videos/M14修改台塑到柬埔寨.mp4",
-            "/island20/events/mercury-sludge-volcano/videos/M57地下水汙染.mp4",
-            "/island20/events/mercury-sludge-volcano/videos/M55對赤山巖整治各方意見.mp4",
-            "/island20/events/mercury-sludge-volcano/videos/M56赤山巖整治卡車載運當底圖(配樂版).mp4",
+            "/events/mercury-sludge-volcano/videos/M52赤山巖開挖檢察官到場.mp4",
+            "/events/mercury-sludge-volcano/videos/M54柬埔寨居民逃亡.mp4",
+            "/events/mercury-sludge-volcano/videos/M14修改台塑到柬埔寨.mp4",
+            "/events/mercury-sludge-volcano/videos/M57地下水汙染.mp4",
+            "/events/mercury-sludge-volcano/videos/M55對赤山巖整治各方意見.mp4",
+            "/events/mercury-sludge-volcano/videos/M56赤山巖整治卡車載運當底圖(配樂版).mp4",
             ],
             "videoText": [
             "",
@@ -2400,10 +2400,10 @@ var data = {
 
             // PhotoFull
             "photoFull": [
-                "/island20/events/mercury-sludge-volcano/M24.jpg",
-                "/island20/events/mercury-sludge-volcano/M63.jpg",
-                "/island20/events/mercury-sludge-volcano/M16-各色廢棄物DSCF3822.jpg",
-                "/island20/events/mercury-sludge-volcano/M43-2000年抗議台塑公司有害事業廢棄物汞汙泥污染屏東新園農地.jpg"
+                "/events/mercury-sludge-volcano/M24.jpg",
+                "/events/mercury-sludge-volcano/M63.jpg",
+                "/events/mercury-sludge-volcano/M16-各色廢棄物DSCF3822.jpg",
+                "/events/mercury-sludge-volcano/M43-2000年抗議台塑公司有害事業廢棄物汞汙泥污染屏東新園農地.jpg"
             ],
             "photoFullTextLabel": [
                 "",
@@ -2422,16 +2422,16 @@ var data = {
             "photoMultipleText": "自赤山巖事件以來，台灣的事業廢棄物問題，非但沒有獲得解決，甚至在同樣的地點，一再上演。這是因為，台灣可再利用廢棄物的去化用途過於重疊，沒有市場競爭力，導致廢棄物再利用難以真正落實。",
 
             "photoMultiple": [
-                "/island20/events/mercury-sludge-volcano/M37-台中清水焚化爐底渣.jpg",
-                "/island20/events/mercury-sludge-volcano/M49-2011年大肚溪畔遭棄置大量集塵灰.jpg",
-                "/island20/events/mercury-sludge-volcano/M40-2013-高雄旗山大林爐碴.jpg",
-                "/island20/events/mercury-sludge-volcano/M46-2013-嘉義水上-廢溶劑+廢酸鹼液.jpg",
-                "/island20/events/mercury-sludge-volcano/M48-2013-彰化埤頭甲苯有機溶劑B.jpg",
-                "/island20/events/mercury-sludge-volcano/M45-2013-彰化芳苑養殖區煤灰+爐碴.jpg",
-                "/island20/events/mercury-sludge-volcano/M50-2015-台中清水焚化爐底渣.jpg",
-                "/island20/events/mercury-sludge-volcano/M38-2016-台南安南區魚塭被回填焚化爐底渣B.jpg",
-                "/island20/events/mercury-sludge-volcano/M39-2017-新竹新豐海岸廢棄爐石.jpg",
-                "/island20/events/mercury-sludge-volcano/M35-2018-高雄大寮爐碴危及養鴨場食品安全.jpg",
+                "/events/mercury-sludge-volcano/M37-台中清水焚化爐底渣.jpg",
+                "/events/mercury-sludge-volcano/M49-2011年大肚溪畔遭棄置大量集塵灰.jpg",
+                "/events/mercury-sludge-volcano/M40-2013-高雄旗山大林爐碴.jpg",
+                "/events/mercury-sludge-volcano/M46-2013-嘉義水上-廢溶劑+廢酸鹼液.jpg",
+                "/events/mercury-sludge-volcano/M48-2013-彰化埤頭甲苯有機溶劑B.jpg",
+                "/events/mercury-sludge-volcano/M45-2013-彰化芳苑養殖區煤灰+爐碴.jpg",
+                "/events/mercury-sludge-volcano/M50-2015-台中清水焚化爐底渣.jpg",
+                "/events/mercury-sludge-volcano/M38-2016-台南安南區魚塭被回填焚化爐底渣B.jpg",
+                "/events/mercury-sludge-volcano/M39-2017-新竹新豐海岸廢棄爐石.jpg",
+                "/events/mercury-sludge-volcano/M35-2018-高雄大寮爐碴危及養鴨場食品安全.jpg",
             ],
 
             "photoMultipleLabel": [
@@ -2469,22 +2469,22 @@ var data = {
 
             ],
             "timelineImage": [
-                "/island20/events/mercury-sludge-volcano/M2-1999-屏東赤山巖汞污染影響周邊農作物的食品安全.jpg",
-                "/island20/events/mercury-sludge-volcano/M31-1999年新園居民抗議.jpg",
-                "/island20/events/mercury-sludge-volcano/M41-2003年鏽蝕的貨櫃.jpg",
-                "/island20/events/mercury-sludge-volcano/M30-DSCF3019.JPG",
-                "/island20/events/mercury-sludge-volcano/M32.jpg",
-                "/island20/events/mercury-sludge-volcano/M33-泥火山噴發.jpg",
-                "/island20/events/mercury-sludge-volcano/M61-2018年赤山巖整治.jpg",
+                "/events/mercury-sludge-volcano/M2-1999-屏東赤山巖汞污染影響周邊農作物的食品安全.jpg",
+                "/events/mercury-sludge-volcano/M31-1999年新園居民抗議.jpg",
+                "/events/mercury-sludge-volcano/M41-2003年鏽蝕的貨櫃.jpg",
+                "/events/mercury-sludge-volcano/M30-DSCF3019.JPG",
+                "/events/mercury-sludge-volcano/M32.jpg",
+                "/events/mercury-sludge-volcano/M33-泥火山噴發.jpg",
+                "/events/mercury-sludge-volcano/M61-2018年赤山巖整治.jpg",
             ],
 
 
             // Photo Switch
             "photoswitch": [
-                "/island20/events/mercury-sludge-volcano/M59-綠帆布貨櫃.JPG",
-                "/island20/events/mercury-sludge-volcano/M21.jpg",
-                "/island20/events/mercury-sludge-volcano/M22.jpg",
-                "/island20/events/mercury-sludge-volcano/M8-屏東新園赤山巖汞汙泥棄置現場.jpg",
+                "/events/mercury-sludge-volcano/M59-綠帆布貨櫃.JPG",
+                "/events/mercury-sludge-volcano/M21.jpg",
+                "/events/mercury-sludge-volcano/M22.jpg",
+                "/events/mercury-sludge-volcano/M8-屏東新園赤山巖汞汙泥棄置現場.jpg",
             ],
 
             "photoswitchLabel": [
@@ -2512,10 +2512,10 @@ var data = {
             ],
             "blogImage": [
                 [
-                "/island20/events/mercury-sludge-volcano/M28.jpg",
+                "/events/mercury-sludge-volcano/M28.jpg",
                 ],
                 [
-                "/island20/events/mercury-sludge-volcano/M58.jpg",
+                "/events/mercury-sludge-volcano/M58.jpg",
                 ]
             ],
             "blogLabel": [
@@ -2553,37 +2553,37 @@ var data = {
     "topics": [{
             "title": "全部事件",
             "keyword": "",
-            "background": "/island20/images/共用底圖.jpg"
+            "background": "/images/共用底圖.jpg"
         },
         {
             "title": "天災地變",
             "keyword": "天災地變",
-            "icon": "/island20/images/icons/5_icon_01天災.svg",
-            "background": "/island20/images/天災底圖.jpg"
+            "icon": "/images/icons/5_icon_01天災.svg",
+            "background": "/images/天災底圖.jpg"
         },
         {
             "title": "開發利用",
             "keyword": "開發利用",
-            "icon": "/island20/images/icons/5_icon_02開發.svg",
-            "background": "/island20/images/開發底圖.jpg"
+            "icon": "/images/icons/5_icon_02開發.svg",
+            "background": "/images/開發底圖.jpg"
         },
         {
             "title": "污染公害",
             "keyword": "污染公害",
-            "icon": "/island20/images/icons/5_icon_03汙染.svg",
-            "background": "/island20/images/公害底圖.jpg"
+            "icon": "/images/icons/5_icon_03汙染.svg",
+            "background": "/images/公害底圖.jpg"
         },
         {
             "title": "食在不安",
             "keyword": "食在不安",
-            "icon": "/island20/images/icons/5_icon_04食安.svg",
-            "background": "/island20/images/食安底圖.jpg"
+            "icon": "/images/icons/5_icon_04食安.svg",
+            "background": "/images/食安底圖.jpg"
         },
         {
             "title": "環境運動",
             "keyword": "環境運動",
-            "icon": "/island20/images/icons/5_icon_05運動.svg",
-            "background": "/island20/images/環運底圖.jpg"
+            "icon": "/images/icons/5_icon_05運動.svg",
+            "background": "/images/環運底圖.jpg"
         }
     ],
 
@@ -2640,499 +2640,637 @@ var data = {
             "content": "1972年通車的南橫公路，開闢過程幾乎全採人力修築，施工期間造成116位人員罹難。莫拉克風災後，路基嚴重受損，至今還在修復，一修再修，政府不斷挹注經費，也引發是否還要堅持修復的爭議。",
             "area": "south",
             "keywords": "1970 1972 south 開發利用 南部橫貫公路通車",
-            "tags": [1972, "南部地區", "開發利用"],
-            "images": ["/island20/images/stories/1-A南橫公路(2018.5.23 攝影_傅志男).jpg", "/island20/images/stories/1-B南橫公路(2017.10.14 攝影_傅志男).jpg"]
-        },
-        {
+            "images": ["/images/stories/1-A南橫公路(2018.5.23 攝影_傅志男).jpg", "/images/stories/1-B南橫公路(2017.10.14 攝影_傅志男).jpg"],
+            "labels": ["2018.5南橫公路上明隧道工程已經完工。攝影/傅志男", "2017.10南橫公路梅山口附近大片崩塌地。攝影/傅志男"]
+        }, {
             "id": 2,
             "time": 1977.2,
             "name": "布拉格號油輪在基隆擱淺漏油",
             "content": "科威特籍布拉格號油輪在基隆外海擱淺，是台灣有紀錄以來首起海洋油污事件，洩漏原油高達15,000噸，污染70多公里海岸，並擴散至20海浬外的彭佳嶼海域。",
-            "area": "area1",
-            "keywords": "污染公害 1970 基隆 船舶污染 漏油 海洋污染  油污 海洋汙染 area1",
-            "tags": [1970, "北北基"],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "area": "北北基",
+            "images": ["http://i3.ytimg.com/vi/T7_-S6r40js/maxresdefault.jpg"],
+            "keywords": "污染公害 1970 基隆 船舶污染 漏油 海洋污染  油污 海洋汙染",
+            "links": ["https://youtu.be/T7_-S6r40js"],
+            "linkTitles": ["布拉格油輪漏油污染"],
+        }, {
             "id": 3,
             "time": 1977.11,
             "name": "全台首座核電廠併聯發電",
-            "content": "新北市石門核能電廠，是全台第一座核電廠，廠區內裝設兩部63萬6千瓩汽輪發電機組，每部機組年發電量50億度，宣告台灣啟用核電。2015年提出除役計畫。\n\n<a class='tc blue link underline' href='/' target='_blank'>這是一個連結</a>",
-            "area": "north",
-            "keywords": "1970 1977 north",
-            "tags": [1970, "北部地區"],
-            "images": ["/island20/images/stories/3-1994年核一廠外觀.jpg"],
-            "labels": ["1994年 核一廠外觀"]
-        },
-        {
+            "content": "新北市石門核能電廠，是全台第一座核電廠，廠區內裝設兩部63萬6千瓩汽輪發電機組，每部機組年發電量50億度，宣告台灣啟用核電。2015年提出除役計畫，2019年通過環評。",
+            "area": "北北基",
+            "keywords": "核電 反核 能源 核一廠 石門電廠 非核家園 除役 核廢料 乾貯場 廢核",
+
+
+            "images":["/images/stories/3-A1994年核一廠外觀.jpg", "/images/stories/3-B乾式貯存.jpg"],
+            "labels": ["1994年 新北市第一核能發電廠外觀", "2016年 第一核能發電廠的乾式貯存場"]
+        }, {
             "id": 4,
             "time": 1979.4,
-            "name": "台中多氯聯苯毒油事件",
-            "content": "台中惠明盲校師生長期食用含有多氯聯苯的食用油產生病變，是台灣史上嚴重的公衛事件，受害者到現在身上都還遺留不少後遺症。",
-            "area": "central",
-            "keywords": "1970 1979 central 重大公害",
-            "tags": [1970, "中部地區", "重大公害"],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "name": "多氯聯苯毒油事件",
+            "content": "因油品工廠製程不當，造成多氯聯苯混入食用油，中部地區兩千多位民眾受害，其中台中惠明盲校有近100位師生中毒，是台灣史上嚴重的公衛事件。受害者長期受病痛所苦，毒害連帶影響下一代健康，2009年「台灣油症受害者支持協會」成立，協助爭取基本健康照護權利。",
+            "area": "桃竹苗 中彰投",
+            "keywords": "食在不安 米糠油 油品安全 食安 食品安全 油症 多氯聯苯 惠明盲校 油症受害者  ",
+            "links": ["https://www.youtube.com/watch?v=QJDV-c3ZuLw&t"],
+            "linkTitles": ["與毒共存 惠明人"],
+            "images":["/images/stories/4-A惠明受害者.PNG", "/images/stories/4-B油症.jpg"],
+            "labels": ["油症受害者在身心靈都留下極大的創傷 攝影/林柏樑", "2015年1月 立法院三讀通過「油症患者健康照護服務條例」"]
+        }, {
             "id": 5,
             "time": 1979.7,
-            "name": "彰化彰濱工業區正式動工",
-            "content": "行政院核定彰化縣海埔地編定規劃為基礎工業區用地，中間曾因能源危機暫緩開發，1990年再度復工。總開發範圍3千多公頃，是台灣首次大規模填海造陸，也是全國最大的工業園區。",
-            "area": "central",
-            "keywords": "1970 1979 central 開發利用",
-            "tags": [1970, "中部地區", "開發利用"],
-            "images": ["/island20/images/stories/5-A(1994年彰濱工業區抽砂造陸).jpg", "/island20/images/stories/5-B(2010年空拍彰濱工業區陸港區).jpg", "/island20/images/stories/5-C(2010年彰濱工業區線西區).jpg", "/island20/images/stories/5-D(2012年空拍彰濱工業區).jpg"]
-        },
-        {
+            "name": "彰濱工業區正式動工",
+            "content": "行政院核定彰化縣海埔地編定規劃為基礎工業區用地，一度因能源危機暫緩開發，1990年再度復工，總開發範圍3千多公頃，是台灣首次大規模填海造陸，也是全國最大的工業園區。",
+            "area": "中彰投",
+            "keywords": "開發利用 彰濱 海埔地 填海造陸 工業區 燕鷗  候鳥 潮間帶",
+
+
+            "images":["/images/stories/5-A(1994年彰濱工業區抽砂造陸).jpg", "/images/stories/5-B(2010年彰濱工業區線西區).jpg","/images/stories/5-C 2012年空拍彰濱工業區.jpg"], 
+            "labels": ["1994年 彰濱工業區進行抽沙填海的造陸工程", "2010年 彰濱工業區線西區持續填海", "2012年 廣達三千多公頃的彰濱工業區"]
+        }, {
+            "id": 5-1,
+            "time": 1979,
+            "name": "推動臺灣省五年漁港修建規劃方案",
+            "content": "早期為促進漁業發展，政府陸續編列漁港及周邊公共設施建設經費，累計超過500億元，大小漁港最多時有239座，如今因為漁民高齡化、漁業資源減少，加上部分漁港，先天建港條件不良，約有三分之一的漁港功能走向萎縮。",
+            "area": "不分區及其他'",
+            "keywords": "漁港 廢港 漁撈 廢棄漁港 海岸變遷 淤積 沖刷",
+            "links": ["https://newmedia.pts.org.tw/dawu-fishing-port/"],
+            "linkTitles": ["漁港的黑色幽默"],
+            "images":["/images/stories/5-1   2012.06.10新北市和美漁港.jpg"],
+            "labels": ["2012年6月 新北市和美漁港"]
+        }, {
             "id": 6,
             "time": 1980,
             "name": "淡水紅樹林保育行動",
-            "content": "1980年竹圍紅樹林大舉遭到大規模砍伐，引發爭論，也喚起大眾對紅樹林生態的認識，1986年農委會依文化資產保存法公告設置「淡水河紅樹林自然保留區」，以確保紅樹林的永續。",
-            "area": "north",
-            "keywords": "1980 north",
-            "tags": [1980, "北部地區"],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "content": "1980年台灣省土地開發公司計畫砍伐新北市淡水地區竹圍的紅樹林，建造8,000戶國宅。保育界發起紅樹林保育運動，也喚起大眾對紅樹林生態的認識，1986年農委會依文化資產保存法公告設置「淡水河紅樹林自然保留區」，確保紅樹林的永續。",
+            "area": "北北基",
+            "keywords": "紅樹林保留運動 紅樹林保育  紅樹林自然保留區 挖仔尾 關渡自然公園 淡水河",
+            "links": ["https://www.youtube.com/watch?v=iKDCmj_z30M"],
+            "linkTitles": ["邂逅紅樹林"],
+            "images":["/images/stories/6-1994年6月新北竹圍紅樹林景觀.jpg"],
+            "labels": ["1994年6月 新北市竹圍區紅樹林十分茂密"]
+        }, {
             "id": 7,
             "time": 1982,
             "name": "桃園爆發首起鎘米污染",
-            "content": "爆發首宗鎘米污染事件，桃園市觀音區大潭村農地遭受污染，種出鎘米，調查後發現起因是高銀化工排放含鎘廢水所導致，部分居民也深受病痛所苦。",
-            "area": "north",
-            "keywords": "1980 1982 north 食在不安",
-            "tags": [1980, "北部地區", "食在不安"],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "content": "出現首宗鎘米污染事件，桃園市觀音區大潭村農地遭受污染，種出鎘米，調查後發現，起因是高銀化工排放含鎘廢水所導致，長期食用下來，部分居民也深受病痛所苦。",
+            "area": "桃竹苗",
+            "keywords": "土地污染 土壤污染 土污 土汙 土地汙染 鎘米 高銀汙染 灌排分離 農地工廠 工業廢水",
+            "images": ["http://i3.ytimg.com/vi/gvyiA0e7yV8/maxresdefault.jpg"],
+            "links": ["https://youtu.be/gvyiA0e7yV8"],
+            "linkTitles": ["桃園爆發首起鎘米污染"],
+        }, {
             "id": 8,
             "time": 1982.3,
             "name": "高雄反阿米諾酸公害",
-            "content": "高雄林園區中門村的台灣阿米諾酸公司，因排放廢水污染地下水及土壤，1982年3月28日，三百多位抗爭村民砸毀廠區設備以示不滿。",
-            "area": "south",
-            "keywords": "1980 1982 south 重大公害",
-            "tags": [1980, "南部地區", "重大公害"],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "content": "高雄市林園區中門村的台灣阿米諾酸公司，排放廢水污染水源，當地居民也常聞到不明氣味，出現皮膚病、嘔吐等症狀。 1982年3月28日，工廠發生胺類臭氣外洩，不堪長期忍受污染，300多位抗爭村民砸毀廠區設備，表達不滿。",
+            "area": "高屏",
+            "keywords": "污染公害 空污 空汙 臭氣外洩 林園汙染 公害  水汙染 水污染  阿米諾酸",
+
+
+            "images":["/images/stories/8-A 1982.3.29聯合報民眾難忍阿諾米酸工廠廢氣.jpg", "/images/stories/8-B 1982.5.11 居民井水受污染.jpg"], 
+            "labels": ["1982.3.29 聯合報，居民難忍工廠污染，憤而攻擊廠方", "1982.5.11 聯合報，中門村居民飲用之井水受到污染"]
+        }, {
             "id": 9,
             "time": 1982.4,
-            "name": "台中三晃農藥公害事件",
-            "content": "台中市大里區三晃農藥廠長期污染空氣及地下水。居民數百次陳情，爆發激烈衝突，最後在居民強力抗爭下，1986年三晃農藥停工，是民間採取自力救濟的成功案例。",
-            "area": "central",
-            "keywords": "1980 1982 central 重大公害",
-            "tags": [1980, "中部地區", "重大公害"],
-            "images": ["/island20/images/stories/9-A三晃(攝影蔡明德).jpg", "/island20/images/stories/9-B三晃(攝影蔡明德).jpg", "/island20/images/stories/9-C三晃(攝影_蔡明德).jpg"]
-        },
-        {
-            "id": 10,
-            "time": 1982.4,
-            "name": "蘭嶼反核廢",
-            "content": "蘭嶼核廢貯存場完工，到1996年為止，接收全國的將近十萬桶的低階核廢料，第二期工程擴建時，村民不滿於是展開抗爭，要求核廢遷出蘭嶼。",
-            "area": "island",
-            "keywords": "1980 1982 island",
-            "tags": [1980, "外島地區"],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "name": "台中三晃農藥廠公害",
+            "content": "台中市大里區三晃農藥廠長期污染空氣及地下水，居民數百次陳情，爆發激烈衝突。最後在居民強力抗爭下，1986年三晃農藥停工，是民間採取自力救濟的成功案例。",
+            "area": "中彰投",
+            "keywords": "污染公害 三晃 公民運動 環境風險 三化農藥",
+
+
+            "images":["/images/stories/9-A三晃(攝影蔡明德).jpg", "/images/stories/9-B三晃(攝影蔡明德).jpg","/images/stories/9-C三晃(攝影/蔡明德).jpg"],
+            "labels": ["台中市環保局進行地下水採樣 攝影/蔡明德", "許多居民罹患皮膚病，幼兒也難倖免 攝影/蔡明德", "居民高掛布條展現自力救濟的決心 攝影/蔡明德"]
+        }, {
             "id": 11,
             "time": 1984,
             "name": "桃園中福村鎘米污染",
             "content": "桃園市蘆竹區中福村基力化工廠長期偷排廢水，造成中福村稻田遭到鎘污染，面積高達80多公頃，地方政府計畫整治完成後，不再耕種，作為都市計畫區。",
-            "area": "north",
-            "keywords": "1980 1984 north 食在不安",
-            "tags": [1980, "北部地區", "食在不安"],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "area": "桃竹苗",
+            "keywords": "食在不安 鎘米 重金屬 工業廢水 灌排不分",
+            "images": ["http://i3.ytimg.com/vi/AOWTNh9Rtng/maxresdefault.jpg"],
+            "links": ["https://youtu.be/AOWTNh9Rtng"],
+            "linkTitles": ["桃園中福村鎘米污染"],
+        }, {
             "id": 12,
             "time": 1984,
             "name": "恆春核三廠溫排水珊瑚白化",
-            "content": "屏東恆春的南灣海域，珊瑚發生白化，推測跟核三廠溫排水造成出水口周邊海域水溫升高有關，學術界開始關注溫排水對海洋生態的衝擊。",
-            "area": "south",
-            "keywords": "1980 1984 south",
-            "tags": [1980, "南部地區"],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "content": "屏東縣恆春鎮的南灣海域，珊瑚發生白化，經研究發現跟核三廠溫排水造成出水口周邊海域水溫升高有關，國內開始關注溫排水對海洋生態的衝擊。",
+            "area": "高屏",
+            "keywords": "珊瑚白化 氣候變遷 暖化 珊瑚死亡 珊瑚礁生態 聖嬰現象  墾丁 南灣 秘雕魚 海溫升高",
+            "images": ["https://img.youtube.com/vi/CaqC8pw_mm4/0.jpg"],
+            "links": ["https://youtu.be/CaqC8pw_mm4"],
+            "linkTitles": ["珊瑚白化"],
+        }, {
+            "id": 12-1,
+            "time": 1985,
+            "name": "松材線蟲入侵",
+            "content": "1970年代，林政單位進行林木經營，松木是當時大量造林樹種之一。1985年在新北市石門區，首次證實由松材線蟲引發的松樹萎凋病，推估松材線蟲應該是隨貨物進口而來到台灣，2009年統計時，已經損失了六千多公頃的松木林。",
+            "area": "不分區及其他",
+            "keywords": "松樹死亡 病毒入侵 外來種 病蟲害 松斑天牛 媒介  造林 ",
+            "links": ["https://youtu.be/tzMW0tpFwRE?t=1"],
+            "linkTitles": ["樹木之死"],
+            "images":["/images/stories/12-1A 1993.10柯金源攝-松樹遭受松材線蟲的危害.jpg", "/images/stories/12-1B 1993.10北海岸的松樹遭受松材線蟲的危害.jpg"],
+            "labels": ["遭受松材線蟲危害的松樹會整株萎凋", "1993年10月 北海岸的松樹大面積遭到危害"]
+        }, {
             "id": 13,
             "time": 1986.6,
-            "name": "鹿港反杜邦",
-            "content": "美國杜邦預計在彰化鹿港設置二氧化鈦工廠，遭到居民強烈抗爭，並創下戒嚴時期，首次在總統府前集會遊行的紀錄，1987年3月杜邦宣布撤出彰化。",
-            "area": "central",
-            "keywords": "1980 1984 central 環境運動",
-            "tags": [1980, "中部地區", "環境運動"],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "name": "鹿港反杜邦設廠",
+            "content": "美國杜邦公司預計在彰濱工業區之鹿港區，設置二氧化鈦工廠，遭到居民強烈抗爭，創下戒嚴時期，首次在總統府前集會遊行的紀錄，1987年3月杜邦宣布撤出彰化。",
+            "area": "中彰投",
+            "keywords": "環境運動 反杜邦 鹿港抗爭 鹿港反杜邦 粘錫麟 彰化公害協會 彰化鹿港 反威權 彰化環盟",
+
+
+            "images":["/images/stories/13-A.jpg", "/images/stories/13-B.JPG","/images/stories/13-C.jpg"],
+            "labels": ["反杜邦民眾在總統府前抗爭表達反威權 攝影/蔡明德", "反杜邦凝聚社區居民也啟蒙環境權意識 攝影/蔡明德", "1987年3月 杜邦宣布取消設廠，民眾慶祝。攝影/蔡明德"]
+        }, {
             "id": 14,
             "time": 1986.8,
-            "name": "二仁溪綠牡蠣事件",
-            "content": "台南高雄交界的二仁溪，首次爆發綠牡蠣事件，由於沿岸廢五金和熔煉業者長期排放廢水及棄置廢棄物，導致二仁溪嚴重污染，而露天燃燒廢五金，也讓居民飽受空污威脅。",
-            "area": "",
-            "keywords": "重大公害",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "name": "二仁溪污染",
+            "content": "台南高雄交界的二仁溪出海口，首次發現綠牡蠣，由於沿岸廢五金和熔煉業者長期排放廢水及棄置電子廢棄物，導致二仁溪嚴重污染，而露天燃燒廢五金產生戴奧辛，更讓居民飽受空污威脅。",
+            "area": "雲嘉南 高屏",
+            "keywords": "污染公害 黑龍江 廢水污染 廢五金 電子廢棄物 綠牡蠣 露天焚燒 整治",
+            "links": ["https://newmedia.pts.org.tw/reborn-erren-river/"],
+            "linkTitles": ["重生 二仁溪"],
+            "images":["/images/stories/14-A.jpg", "/images/stories/14-B.jpg"],
+            "labels": ["1995年8月 台南二仁溪畔淘洗廢五金", "2002年2月 二仁溪畔熔煉業的殘跡"]
+        }, {
             "id": 15,
             "time": 1986.11,
-            "name": "新竹反李長榮公害",
-            "content": "新竹李長榮化工，長期排放空污及廢水，周遭居民不滿，展開長達450天的圍廠抗爭，李長榮最後被迫關廠，也促使新竹市公害防治協會的成立。",
-            "area": "",
-            "keywords": "環境運動",
-            "tags": [],
-            "images": ["/island20/images/stories/15-A新竹李長榮圍堵現場_(攝影_蔡明德).jpg", "/island20/images/stories/15-B李長榮化工廠圍堵現場(攝影_蔡明德).jpg", "/island20/images/stories/15-C李長榮事件居民載水(攝影_蔡明德)-09.jpg", "/island20/images/stories/15-D李長榮圍廠現場-15.jpg"]
-        },
-        {
+            "name": "新竹反李長榮化工行動",
+            "content": "新竹市李長榮化工公司，長期排放空污及廢水，水源里居民忍無可忍，展開長達450天的圍廠抗爭，李長榮化工公司最後被迫關廠，也促使新竹市公害防治協會的成立。",
+            "area": "桃竹苗",
+            "keywords": "環境運動  污染公害 李長榮 新竹市公害防治協會 綠色小組  榮化 圍廠抗爭 水源里 公安 工安 石化",
+
+
+            "images":["/images/stories/15-A.jpg", "/images/stories/15-B.jpg","/images/stories/15-C.jpg"],
+            "labels": ["白天圍廠現場阿嬤做手工留守度日 攝影/蔡明德", "地下水遭到污染，居民到鄰村載水 攝影/蔡明德", "全村參與圍廠行動， 連孩童也加入 攝影/蔡明德"]
+        }, {
+            "id": 15-1,
+            "time": 1986,
+            "name": "興建台中火力電廠",
+            "content": "台灣有一半電力來自燃煤，台中火力電廠就占了五分之一，曾經是全世界最大的燃煤電廠，為台灣提供穩定電力。然而在溫室效應和空污爭議下，綠能與天然氣火力發電方式，已逐漸成為未來的能源主流。",
+            "area": "中彰投",
+            "keywords": "污染公害 火力電廠 燃煤 能源政策 二氧化碳排放 碳排 中火 空汙 空氣污染 麗水里  PM2.5 ",
+            "links": ["https://www.youtube.com/watch?v=961feFswqDY"],
+            "linkTitles": ["煙囪下的日常"],
+            "images":["/images/stories/15-1-A.jpg", "/images/stories/15-1-B.JPG"],
+            "labels": ["1996年 台中火力電廠", "麗水里居民一抬頭就能見到煙囪"]
+        }, {
             "id": 16,
             "time": 1987.7,
-            "name": "高雄後勁反五輕",
-            "content": "政府在高雄煉油廠增設第五輕油裂解廠，引發一系列環保抗爭運動，1990年政府強勢動工，在民意壓力下也承諾25年後關廠，2015年底五輕正式熄燈，但後續土壤及地下水污染整治問題，仍待處理。",
-            "area": "",
-            "keywords": "環境運動",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "name": "高雄後勁反五輕運動",
+            "content": "1987年政府計畫在高雄煉油廠增設第五輕油裂解廠，後勁居民反對激烈抗爭，1990年在鎮暴警察戒護下，政府強勢動工並承諾25年後關廠，之後因為五輕工安及污染問題不斷，引發公安疑慮，居民多次圍廠，持續漫長的反五輕運動。",
+            "area": "高屏",
+            "keywords": "環境運動 五輕 第五輕油裂解廠 高雄煉油廠 公安 工安 反五輕 後勁 ",
+            "links": ["https://youtu.be/WJTp_Jqi7QE"],
+            "linkTitles": ["向前向後—迷霧中的石化之路"],
+            "images":["/images/stories/16-A 2008年後勁圍廠.jpg", "/images/stories/16-B2008年居民掛布條表達不滿.jpg","/images/stories/16-Ｃ2015年五輕空拍.jpg"],
+            "labels": ["2008年1月 工安事件頻傳，居民圍廠抗爭", "中油門口的抗議標語是居民長期不滿的心聲", "16-C 2015 年 高雄市楠梓區的五輕廠區空拍"]
+        },{
             "id": 17,
             "time": 1987.12,
             "name": "宜蘭蘇澳反火力電廠",
             "content": "台電計畫在宜蘭無尾港設立火力發電廠，在地人士組成反火電聯盟，經過多年的抗爭，最後因無尾港濕地劃設為全台灣第一座「水鳥保護區」，迫使火力發電廠開發計畫撤銷。",
-            "area": "",
-            "keywords": "",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
+            "area": "宜花東",
+            "keywords": "環境運動 蘇澳火力電廠 燃煤 火力電廠 反火電聯盟 無尾港社區 無尾港文教促進會 空氣汙染 空汙 空污 空氣污染 ",
+
+
+            "images":["/images/stories/17-A 反火電運動在總部前高呼口號.jpg", "/images/stories/17-B 居民發動揭竿起義拚家園活動.png"],
+            "labels": ["反火電運動，成員在總部高喊口號", "居民發動揭竿起義拚家園活動"]
         },
         {
             "id": 18,
             "time": 1987.12,
             "name": "宜蘭反六輕運動",
-            "content": "台塑六輕廠原本規劃選址在宜蘭利澤工業區，時任宜蘭縣長陳定南和多數縣民，多次走上街頭表達反對，展現宜蘭人選擇不要高污染產業的意志。",
-            "area": "",
-            "keywords": "環境運動",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
+            "content": "台塑六輕廠原本規劃選址在宜蘭利澤工業區，時任宜蘭縣長陳定南和多數縣民，多次走上街頭表達反對，展現宜蘭人選擇不要高污染產業的強烈意志，最後六輕落腳雲林麥寮。",
+            "area": "宜花東",
+            "keywords": "開發利用 台塑六輕 台灣塑膠 六輕 石化專區 石化業 陳定南 王永慶 ",
+            "links": ["https://newmedia.pts.org.tw/petrochemical-kingdom/"],
+            "linkTitles": ["海上的石化王國"],
+            "images":["/images/stories/18-A宜蘭人到經濟部前抗議.jpg", "/images/stories/18-B陳定南到經濟部前反對六輕.jpg"],
+            "labels": ["1987.11.20  宜蘭人到經濟部前反對六輕設廠", "時任立委的陳定南表達反六輕的決心"]
         },
         {
             "id": 19,
             "time": 1987,
             "name": "登革熱疫情流行",
-            "content": "台灣在1940年之前有過三次全島大流行，沈寂40年後。1987、1988年高雄大流行，此後疫情不斷，2015年疫情慘重，病例超過4萬人，2百多人死亡。不斷升溫的氣候，更讓疫情更難掌握。",
-            "area": "",
-            "keywords": "",
-            "tags": [],
-            "images": ["/island20/images/stories/19-A宜蘭人到經濟部前抗議.jpg", "/island20/images/stories/19-B宜蘭縣長陳定南到經濟部前反對六輕.jpg", "/island20/images/stories/19-C宜蘭人到台塑大樓前反對六輕.jpg"]
+            "content": "沈寂多年的登革熱疫情在1987、1988年再度在高雄大流行，此後疫情不斷，甚至有跨冬現象出現。2015年疫情最為慘重，病例超過4萬人，兩百多人死亡。因全球暖化氣溫上升，預估未來疫情更難掌握。",
+            "area": "高屏",
+            "keywords": "病媒蚊 斑蚊 暖化 傳染病 流行疫病 跨冬 登革熱  公共衛生",
+
+
+            "images":["/images/stories/19-A 埃及斑蚊.jpg", "/images/stories/19-B噴藥中.jpg"],
+            "labels": ["埃及斑蚊是登革熱的病媒蚊", "噴藥防治能否解決登革熱難題"]
         },
         {
             "id": 20,
             "time": 1988,
             "name": "花蓮中華紙漿廢水污染",
             "content": "中華紙漿公司花蓮設廠四十年以來，長期排放廢水到花蓮溪，不只生態變貌，也影響沿海漁民生計。1988年上千名漁民圍堵工廠抗爭，但污染持續發生，花蓮縣環保局曾多次開罰。",
-            "area": "",
-            "keywords": "",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
+            "area": "宜花東",
+            "keywords": "花蓮溪 廢水排放 紙漿  工業廢水 河川污染",
+            "images":["/images/stories/20-A 1993年花蓮溪口中華紙漿廠廢水.jpg", "/images/stories/20-B 2018年華紙廢水排放花蓮溪"],
+            "labels": ["1993年 中華紙漿廢水排放花蓮溪", "2018年 中華紙漿廢水仍持續排放花蓮溪"]
+        },
+        {
+            "id": 20-1,
+            "time": 1988.2,
+            "name": "蘭嶼反核廢",
+            "content": "1988年2月20日達悟族人發起驅逐惡靈示威，是蘭嶼反核廢的首次大型抗爭，多場抗議遊行下來，2002年政府成立「蘭嶼貯存場遷場推動委員會」承諾找尋最終處置場址，但至今都未定案。從1982年蘭嶼貯存場完工以來，加上檢整完畢，共置入十萬桶低階核廢料。",
+            "area": "金馬澎蘭嶼",
+            "keywords": "核廢料 反核 環境正義  驅除惡  220 達悟族人 罐頭工廠 黃色罐頭 台電 台灣電力 核能發電 核電 回饋金 蘭嶼",
+            "links": ["https://youtu.be/ecjm-DVpcA8?t=1"],
+            "linkTitles": ["黃色罐頭與我"],
+            "images":["/images/stories/20-1-A 2012.02.20蘭嶼反核廢行動 (38).jpg", "/images/stories/20-1-B 儲存低階核廢的鐵桶已鏽蝕.jpg","/images/stories/20-1-C拍攝於 2006年11月14日.jpg"],
+            "labels": ["2012.02.20 達悟族人第四次驅除惡靈反核廢行動", "2007-2011年 蘭嶼核廢料桶檢整情形 照片提供/希婻‧瑪飛洑", "蘭嶼貯存場的低階核廢已超過十萬桶"]
         },
         {
             "id": 21,
             "time": 1988.8,
             "name": "原住民還我土地運動",
-            "content": "從1988年到1990年代，來自全台數千名原住民，長期來不滿土地被剝奪，多次走上台北街頭抗議，喊出「還我土地運動」爭取土地權和生存權。",
-            "area": "",
-            "keywords": "環境運動",
-            "tags": [],
-            "images": ["/island20/images/stories/21-A.jpg", "/island20/images/stories/21-B.jpg"]
+            "content": "從1988年到1993年，共有三次大型遊行 ，來自全台數千名原住民，長期來不滿土地被剝奪，走上台北街頭抗議，喊出「還我土地運動」爭取土地權和生存權。",
+            "area": "不分區及其他",
+            "keywords": "環境運動 還我土地運動 原住民保留地  原住民 傳統領域 民族自決",
+            "images":["/images/stories/21-A 1990年代原住民還我土地運動上街(是否為1989年9.27原住民上街遊行).jpg", "/images/stories/21-B 九零年代還我土地遊行001.jpg"],
+            "labels": ["1990年代原住民族北上呼喊還我土地", "不分老少的原住民都參與遊行"]
         },
         {
             "id": 22,
             "time": 1988.9,
-            "name": "高雄林園事件",
-            "content": "高雄林園工業區長期排放工業廢水，早積民怨，9月20日再度排放大量工業廢水導致汕尾漁港內魚蝦大量死亡，引爆居民強力抗爭，索賠13億，創下當年台灣最高的公害賠償金。",
-            "area": "",
-            "keywords": "重大公害",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
+            "name": "高雄林園廢水排放污染",
+            "content": "以石化產業為主的高雄林園工業區，長期排放工業廢水，導致海域污染漁獲大減，早積民怨。9月20日，工業區廢水再次造成汕尾漁港魚蝦大量死亡，引爆居民強力抗爭，進入污水廠切斷電源，廠商停工，事後政府賠償居民13億，創下當年台灣最高的公害賠償金。",
+            "area": "高屏",
+            "keywords": "環境運動 污染公害 抗爭 林園事件 工業廢水 公害賠償 石化業  林園工業區 魚蝦暴斃",
+            "images":["/images/stories/22-A 1988年(待確認)林園空汙008-王金平等人簽約.jpg", "/images/stories/22-B 1988年林園空汙041汕尾港望向林園工業區.jpg","/images/stories/22-C 林園空汙015.jpg"],
+            "labels": ["余政憲、王金平等人協調簽下賠償協議", "從汕尾港望去就可見到林園工業區", "林園居民埋鍋造飯，長期圍廠抗爭"]
         },
         {
             "id": 23,
             "time": 1988,
             "name": "高雄南星計畫填海造陸",
-            "content": "為解決廢棄物無處可去，1988年高雄市政府在大林蒲地區推動南星計畫用廢棄物填海，漁民圍堵抗議，1990年起陸續分期展開廢棄物填海工程，也引發爭議。",
-            "area": "",
-            "keywords": "開發利用",
-            "tags": [],
-            "images": ["/island20/images/stories/23-A.jpg", "/island20/images/stories/23-B.jpg", "/island20/images/stories/23-C.jpg"]
+            "content": "為解決事業廢棄物去向，1988年高雄市政府在大林蒲、鳳鼻頭沿岸推動南星計畫，利用爐石、爐碴、飛灰及廢輪胎等廢棄物填海造地，1990年起陸續分期展開工程，期間引發海岸變貌、污染、漁民圍堵抗議等爭議。",
+            "area": "高屏",
+            "keywords": "開發利用 南星計畫 事業廢棄物 垃圾處理 再生利用 爐碴 廢棄物 汙染 廢輪胎",
+            "images":["/images/stories/23-A 1997.9高雄南星計畫填海造陸工程.jpg", "/images/stories/23-B 2012.2高雄南星計畫填海造陸工程。.jpg","/images/stories/23-C 2017.9高雄南星計畫。.jpg"],
+            "labels": ["1997年9月 南星計畫分三期填海，範圍212公頃", "政府希望藉南星計畫解決廢棄物去向問題", "2017年9月 南星計畫陸續完工，自然海岸消失"]
         },
         {
             "id": 24,
             "time": 1989.3,
-            "name": "森林保育運動",
-            "content": "長期關心山林的賴春標，在人間雜誌發表「丹大林區砍伐現場報告」，讓大眾發現原始森林遭到嚴重破壞，引發許多民眾，選擇在3月12日植樹節走上街頭，要求停止砍伐國有林，替森林保育運動揭開序幕。",
-            "area": "",
-            "keywords": "環境運動",
-            "tags": [],
-            "images": ["/island20/images/stories/24.jpg"]
+            "name": "森林保育運動興起",
+            "content": "長期關心山林的賴春標，在人間雜誌發表「丹大林區砍伐現場報告」，揭露原始森林遭到嚴重破壞，促使許多民眾選擇在3月12日植樹節走上街頭，要求停止砍伐國有林，替森林保育運動揭開序幕。",
+            "area": "不分區及其他",
+            "keywords": "森林保育 賴春標 山林保育 植樹節 林務局 林班地 伐木造林",
+            "links": ["https://youtu.be/wU0OmHoF8JI"],
+            "linkTitles": ["丹大之傷"],
+            "images":["/images/stories/24-1989年.丹大8林班-賴春標.蔡仁堅.彭美媛-森林保育現場環境觀察.jpg"],
+            "labels": ["1989年 賴春標等人在丹大林班地拉布條抗議"]
+        },
+        {
+            "id": 24-1,
+            "time": 1989,
+            "name": "計畫開闢北投高山纜車",
+            "content": "1989年陽明山國家公園管理處計畫闢建北投公園到陽明山的高山纜車，由於必須穿越山林而有破壞水土保持之虞，引起爭議。2015年台北市政府決議北投纜車停止興建，讓此事件劃下休止符。",
+            "area": "北北基",
+            "keywords": "開發利用 陽明山國家公園 水土保持  坡地開發 高山纜車 纜車政策 北投纜車 保護區",
+            "links": ["https://www.youtube.com/watch?v=9J4JYjjLWA8"],
+            "linkTitles": ["北纜的條件"],
+            "images":["/images/stories/24-1民眾反對北投纜車開發案.jpg"],
+            "labels": ["北投居民多次反對興建北投纜車"]
+        },
+        {
+            "id": 24-2,
+            "time": 1990.4,
+            "name": "澎湖沙港獵捕海豚爭議",
+            "content": "早期澎湖縣湖西鄉沙港村，每年漁民會圍捕海豚，1990年血腥的畫面流傳國際，引發撻伐，台灣在國際保育壓力之下，將鯨豚列入海洋保育類野生動物名錄之列。",
+            "area": "金馬澎蘭嶼",
+            "keywords": "鯨豚保育 宰殺海豚 海豬 保育類 野生動物 海洋哺乳類 魚翅 黃牌",
+            "images":["/images/stories/24-2-A 1993.02澎湖沙港圈養的海豚 (1).jpg", "/images/stories/24-2-B 1993.02澎湖沙港圈養的海豚.jpg","/images/stories/24-2-C 1991.3.3 聯合報 漁民盼合法合理捕海豚  單則.jpg"],
+            "labels": ["1993年 澎湖沙港漁民將海豚圈養起來", "1993年 民眾圍觀澎湖沙港的圈養海豚", "1991年3月3日聯合報"]
         },
         {
             "id": 25,
             "time": 1990.6,
-            "name": "歐菲莉颱風\n花蓮銅門村土石流",
-            "content": "歐菲莉颱風帶來了巨大的土石洪流，活埋了花蓮縣秀林鄉的銅門村，奪走了三十多條村民的生命，這場悲劇，成為日後常被提及的土石流災害案例。",
-            "area": "",
-            "keywords": "",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
+            "name": "歐菲莉颱風帶來花蓮銅門村土石流",
+            "content": "歐菲莉颱風夾帶豪雨形成巨大的土石洪流，嚴重衝擊花蓮縣秀林鄉的銅門村，造成三十多位村民死亡，這場悲劇，成為日後常被提及的土石流災害案例。",
+            "area": "宜花東",
+            "keywords": "天災地變 土石流 潛勢溪流 銅門村 泥流 颱風 滅村",
+            "images":["/images/stories/25-A 200510花蓮銅門村.jpg", "/images/stories/25-B 200510花蓮銅門村(13).jpg","/images/stories/25-C 200510花蓮銅門村.jpg"], 
+            "labels": ["歐菲莉颱風受創最為慘重的余家受難者紀念碑", "2005年 花蓮縣秀林鄉銅門村聚落", "銅門村警示牌旁的攔砂壩淤滿土石，雜草叢生"]
         },
         {
             "id": 26,
             "time": 1990.8,
-            "name": "嘉義東石淹水39天",
-            "content": "楊希颱風來襲，因嘉義東石北段海堤潰決，造成網寮村連續淹水長達三十九天，居民苦不堪言。",
-            "area": "",
-            "keywords": "",
-            "tags": [],
-            "images": ["/island20/images/stories/26-A.jpg", "/island20/images/stories/26-B.jpg", "/island20/images/stories/26-C.jpg", "/island20/images/stories/26-D.jpg"]
+            "name": "楊希颱風造成嘉義東石淹水39天",
+            "content": "楊希颱風來襲，因嘉義縣東石鄉北段海堤潰決，造成網寮村連續淹水長達三十九天，居民苦不堪言。由於地處低窪，至今仍不時遭受淹水之苦。",
+            "area": "雲嘉南",
+            "keywords": "天災地變 海水倒灌 漲潮 淹水 風災 颱風 楊希 地層下陷",
+
+
+            "images": ["/images/stories/26-A 1990嘉義東石網寮027.jpg", "/images/stories/26-B.jpg", "/images/stories/26-C 2005.06嘉義東石鄉網寮村被水圍困2.jpg"],
+            "labels": ["1990年8月 大水遲遲不退，沿海居民無奈只能照常度日", "1990年8月 村莊廟宇自身難保，泡在積水不退的海水中", "2005年6月 接連幾場豪雨，網寮村再度陷入淹水困境"]
         },
         {
             "id": 27,
             "time": 1990.9,
-            "name": "黛特颱風\n花蓮紅葉村山洪爆發",
+            "name": "黛特颱風衝擊花蓮紅葉村",
             "content": "黛特颱風在台灣北部和東部都造成災情，尤其花蓮縣紅葉村受災最為嚴重，洪水沖破堤防，部落道路成為河流，兩旁的住家全數被沖毀。",
-            "area": "",
-            "keywords": "",
-            "tags": [],
-            "images": ["/island20/images/stories/27-A.jpg", "/island20/images/stories/27-B.jpg"]
+            "area": "宜花東",
+            "keywords": "天災地變 紅葉村 風災 颱風 花蓮 土石流 黛特",
+
+
+            "images": ["/images/stories/27-A.jpg", "/images/stories/27-B 1990花蓮瑞穗紅葉村023.jpg"],
+            "labels": ["山洪暴發，導致花蓮紅葉村多處房屋受災", "大量的土砂淤滿紅葉村居民住家"]
         },
         {
             "id": 28,
             "time": 1991.1,
-            "name": "新中橫公路通車",
-            "content": "政府規劃的三條東西向橫貫公路之一， 因生態豐富加上通過玉山國家公園而引發保育跟開路需求的爭議。由於沿線通過多處脆弱地質，颱風大雨時常傳出災情。",
-            "area": "",
-            "keywords": "",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
+            "name": "新中橫公路全線通車",
+            "content": "新中橫公路原計畫橫貫中央山脈，因沿線生態豐富加上通過玉山國家公園範圍，引發保育跟開路需求的爭議。由於通過多處脆弱地質，颱風大雨時常傳出災情。",
+            "area": "雲嘉南 中彰投 宜花東",
+            "keywords": "中橫公路 公路建設 中橫 開路爭議 路基流失",
+
+
+            "images": ["/images/stories/28-A 1998年5月南投信義新中橫公路.jpg", "/images/stories/28-B2001年08月-桃芝颱風之後-陳有蘭溪流域災情.jpg", "/images/stories/28-C 2001年08月-桃芝颱風後陳有蘭溪流域災情.jpg"],
+            "labels": ["1998年 新中橫公路貫穿山區，有許多彎曲路段", "2001年 新中橫公路沿線地質脆弱", "每逢颱風豪雨，常見路斷、地基流失等災情"]
         },
         {
             "id": 29,
-            "time": 1991.7,
-            "name": "六輕落腳雲林麥寮",
-            "content": "台塑六輕在宜蘭設廠計畫受阻，積極找尋新地點，桃園觀音、嘉義鰲鼓都曾被列為候選廠址，最後落腳雲林麥寮，雲林民眾萬人熱烈歡迎，認為可帶動地方發展。",
-            "area": "",
-            "keywords": "開發利用",
-            "tags": [],
-            "images": ["/island20/images/stories/29-A.jpg", "/island20/images/stories/29-B.jpg"]
+            "time": 1991.5,
+            "name": "反核運動興起",
+            "content": "在車諾堡核災發生後，核能安全在國際間引發討論，當時政府正計畫在新北市貢寮區興建核四廠，當地居民成立自救會，許多學者也投入反核運動，1991年5月舉辦首次反核大遊行。",
+            "area": "北北基",
+            "keywords": "貢寮 反核 非核家園 廢核 核能發電 核電廠 核廢料 輻射 原子能 車諾比 核災 俄羅斯 核四",
+
+
+            "images": ["/images/stories/29-A 1991年反核遊行002.jpg", "/images/stories/29-B大批警力在核四預定地與場外民眾相望.jpg", "/images/stories/29-C 1992年03月-反核035.jpg"],
+            "labels": ["1991年5月 不少團體參與反核遊行", "大量警力駐守貢寮核四預定地，防堵抗爭民眾", "1992年 反核民眾在立法院抗議請願"]
         },
         {
             "id": 30,
-            "time": 1991.1,
-            "name": "新北貢寮反核保警意外死亡",
-            "content": "政府規劃在新北市貢寮興建核四廠，居民反對，並成立鹽寮反核自救會，是全台反核運動開端。10月3日警民爆發嚴重衝突，混亂中，一名保警被民眾林順源意外撞死，判處無期徒刑，十多位居民被起訴，形成當地白色恐怖效應。",
-            "area": "",
-            "keywords": "",
-            "tags": [],
-            "images": ["/island20/images/stories/30-A.jpg", "/island20/images/stories/30-B.jpg", "/island20/images/stories/30-C.jpg"]
+            "time": 1991.7,
+            "name": "六輕落腳雲林麥寮",
+            "content": "台塑六輕在宜蘭設廠計畫受阻，積極找尋新地點，桃園觀音、嘉義鰲鼓都曾被列為候選廠址，雲林縣政府認為可帶動地方發展，動員萬人熱烈歡迎，最後落腳雲林縣麥寮鄉。",
+            "area": "雲嘉南",
+            "keywords": "開發利用 填海造陸 六輕 第六輕油裂解廠 台灣塑膠 石化 煉油廠 麥寮",
+            "links": ["https://youtu.be/RXsOax8262c"],
+            "linkTitles": ["新世界的迷失"],
+            "images": ["/images/stories/30-A 1991.7雲林萬人歡迎大會.jpg", "/images/stories/30-B.jpg"],
+            "labels": ["1991.7.15 雲林萬人遊行歡迎台塑設廠", "1991.7.15 燃放鞭炮迎六輕，期待地方繁榮"]
         },
         {
             "id": 31,
             "time": 1992.5,
-            "name": "高雄大林蒲526圍廠抗爭事件",
-            "content": "5月2日晚間，高雄中油大林廠發出巨響，並排放不明氣體，居民對此難以再忍受，在廠外搭棚架長期抗爭，26日警方拆棚架、搜民宅抓人等強力打壓，39人遭到起訴，多人被關。",
-            "area": "",
-            "keywords": "環境運動",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
+            "name": "高雄大林蒲526圍廠抗爭",
+            "content": "5月2日晚間，高雄中油大林廠發出巨響，並排放不明氣體，工安問題頻繁，居民難以再忍受，於是在廠外搭棚架長期抗爭，26日警方拆棚架、搜民宅抓人等強力打壓，39人遭到起訴，多人被關。",
+            "area": "高屏",
+            "keywords": "環境運動 大林 大林蒲 公安 工安 圍廠行動 中油 林園工業區",
+            "links": ["https://youtu.be/Wv0WZPfauPE/"],
+            "linkTitles": ["回憶當年大林蒲526事件"],
+            "images": ["/images/stories/31-A 1992.5.4聯合報大林蒲闈廠.jpg", "/images/stories/31-B 1992.5.17經濟日報大林蒲民眾持續圍廠.jpg"],
+            "labels": ["1992.5.4聯合報，大林蒲民眾不滿工廠毒氣搭篷抗爭", "1992.5.17經濟日報，大林蒲民眾持續圍廠"]
         },
         {
             "id": 32,
             "time": 1992.7,
             "name": "新北市垃圾大戰",
-            "content": "新北市新莊瓊林里居民拒絕讓臨時垃圾場繼續營運，僵持將近半個月，新莊市每天350噸的生活垃圾無處可去，只能堆置在路口，臭氣薰天。根據環保署調查，當年有七成鄉鎮都有垃圾去處問題。",
-            "area": "",
-            "keywords": "",
-            "tags": [],
-            "images": ["/island20/images/stories/32-A.jpg", "/island20/images/stories/32-B.jpg", "/island20/images/stories/32-C.jpg"]
+            "content": "新北市新莊區瓊林里居民拒絕讓臨時垃圾場繼續營運，僵持將近半個月，新莊區每天350噸的生活垃圾無處可去，只能堆置在路口，臭氣薰天。根據環保署調查，當年有七成鄉鎮都有垃圾去處的難題。",
+            "area": "北北基",
+            "keywords": "污染公害 廢棄物 垃圾大戰 焚化爐 掩埋場 清潔隊 垃圾車 回收 ",
+
+
+            "images": ["/images/stories/32-A.jpg", "/images/stories/32-B 199207台北縣新莊垃圾爭議-柯金源攝004.jpg", "/images/stories/32-C.jpg"],
+            "labels": ["新莊區垃圾無處可去，堆積如山僵持將近半個月", "垃圾堆置在街道上引發衛生疑慮", "河岸成為垃圾的去處之一"]
         },
         {
             "id": 33,
             "time": 1992.8,
-            "name": "輻射屋事件",
-            "content": "台北民生別墅爆發第一起輻射屋事件，20多年來，全台共發現300多棟、1661戶輻射屋，估計受輻射暴露影響的人數，超過一萬人，陸續有居民罹患白血病、甲狀腺癌、乳癌等疾病。",
-            "area": "",
-            "keywords": "重大公害",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "name": "輻射屋污染",
+            "content": "台北市民生別墅爆發第一起輻射鋼筋事件，20多年來，全台共發現300多棟、1661戶輻射屋，估計受輻射暴露影響的人數，超過一萬人，陸續有居民罹患白血病、甲狀腺癌、乳癌等疾病。",
+            "area": "北北基",
+            "keywords": "污染公害 輻射鋼筋 輻射屋 原能會 王玉麟 輻射污染 輻射汙染",
+            "links": ["https://www.youtube.com/watch?v=B0voLPuo7TM"],
+            "linkTitles": ["輻射屋二十年"],
+            "images": ["/images/stories/33-輻射民生別墅.jpg"],
+            "labels": ["台北市民生別墅最早爆發出使用輻射鋼筋"]
+        }, {
             "id": 34,
             "time": 1992.12,
             "name": "高雄反美濃水庫運動",
-            "content": "早在日治時期就已評估效益不大而作罷，國民政府來台後再度進行調查，居民1992年在公聽會中確知要興建水庫後，展開反美濃水庫行動，認為當地環境不適宜作水庫開發。",
-            "area": "",
-            "keywords": "環境運動",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "content": "1992年行政院核定美濃水庫工程經費，預計隔年動工，美濃居民獲知後，以生態保育、文化保存與守護家園為訴求，展開反美濃水庫運動，最後讓水庫暫停興建。",
+            "area": "高屏",
+            "keywords": "環境運動 反水庫 美濃愛鄉協進會 水資源 水利署 美濃",
+            "images": ["http://i3.ytimg.com/vi/JVjCJseudo4/maxresdefault.jpg"],
+            "links": ["https://youtu.be/JVjCJseudo4"],
+            "linkTitles": ["反美濃水庫運動"]
+        }, {
             "id": 35,
-            "time": 1993.3,
-            "name": "基隆大旱",
-            "content": "由於降雨不多，加上未有颱風帶來豐沛水氣，全台發生嚴重乾旱，當時以「雨港」著稱的基隆，更是新山水庫見底，嚴重影響民生用水 ，引發民怨。基隆市長設壇祭拜，焚香乞求老天降雨。",
-            "area": "",
-            "keywords": "",
-            "tags": [],
-            "images": ["/island20/images/stories/35-A(1993.09基隆市祈雨) .jpg", "/island20/images/stories/35-B(1993.09基隆市祈雨) .jpg", "/island20/images/stories/35-C.jpg"]
-        },
-        {
-            "id": 36,
             "time": 1993.4,
             "name": "高雄大社工業區不明氣體外洩",
-            "content": "高雄大社工業區發生不明氣體外洩，造成村民多人嗆咳、嘔吐甚至昏倒，居民發動圍廠抗爭，前經濟部長江丙坤同意大社工業區在2015年與中油五輕一併遷廠。五輕關廠後，民眾要求政府實踐承諾。",
-            "area": "",
-            "keywords": "重大公害",
-            "tags": [],
-            "images": ["/island20/images/stories/36-A.jpg", "/island20/images/stories/36-B.jpg", "/island20/images/stories/36-C.jpg", "/island20/images/stories/36-D.jpg"]
-        },
-        {
+            "content": "高雄大社工業區發生不明氣體外洩，造成村民多人嗆咳、嘔吐甚至昏倒，居民發動圍廠抗爭，時任經濟部長江丙坤同意大社工業區，在2015年與中油五輕一併遷廠。",
+            "area": "高屏",
+            "keywords": "環境運動 大社 工業區 空氣汙染 空污  圍廠抗爭",
+
+
+            "images": ["/images/stories/35-A大社抗爭運動018.jpg", "/images/stories/35-B.jpg", "/images/stories/35-C 大社抗爭運動069.jpg"],
+            "labels": ["居民搭起帳棚進行長期圍廠行動", "時任經濟部長的江丙坤南下召開協調會", "大社居民積怨已久，群情激憤"]
+        }, {
+            "id": 35-1,
+            "time": 1993.6,
+            "name": "公告「德基水庫集水區陡坡農用地處理事宜」",
+            "content": "早期政府為了安置榮民，輔導上山種植果樹，陸續也有農民上山租地開墾，開發面積擴大，農業型態由果樹轉種蔬菜，水土保持出問題，影響下游德基水庫，於是政府公告「德基水庫集水區陡坡農用地處理事宜」計畫收回超限利用的林班地，執行多年成果不彰。",
+            "area": "中彰投",
+            "keywords": "開發利用 林務局 超限利用 水土保持 山坡地 高山農業 林班地 造林 梨山 農業上山 榮民 溫帶水果",
+            "links": ["https://newmedia.pts.org.tw/lishan-high-mountain-farms/"],
+            "linkTitles": ["咬一口高山青翠"],
+            "images": ["/images/stories/35-1-A 2005年7月 梨山福壽山農場空拍，可見山頭崩落.jpg", "/images/stories/35-1-B 2010年 梨山福壽山農場山頭裸露.jpg"],
+            "labels": ["2005年 梨山地區開墾，可見下游處崩塌", "2010年 梨山作物收成後，大量裸露的地表"]
+        }, {
+            "id": 35-2,
+            "time": 1993.7,
+            "name": "金山核二廠出水口發現畸形魚",
+            "content": "新北市金山區居民在核二廠排水處發現畸形的花身雞魚，魚體彎曲如同戲偶駝背人物秘雕，被稱「祕雕魚」，事件傳出後，引發大眾對核二廠溫排水造成海洋生態衝擊的關注。",
+            "area": "北北基",
+            "keywords": "秘雕魚 畸形魚 核污染  魚體病變 突變 核二廠 海水升溫 溫排水 輻射汙染 污染 花身雞魚",
+            "links": ["https://youtu.be/3xRyMVONxKk?t=1"],
+            "linkTitles": ["核處是魚家"],
+            "images": ["/images/stories/35-2-1998.10核電廠周邊海域受污染出現秘雕魚現象.jpg"],
+            "labels": ["1998年 核電廠海域出現俗稱秘雕魚的病變魚體"]
+        }, {
+            "id": 36,
+            "time": 1993.9,
+            "name": "基隆大旱",
+            "content": "由於春、夏季降雨不多，全台發生嚴重乾旱。素以「雨港」著稱的基隆，面對新山水庫逐漸見底，已嚴重影響民生生活用水 ，並引發民怨。基隆市長只好遵循古禮，設壇祭天、披麻帶孝，乞求天降甘霖。",
+            "area": "北北基",
+            "keywords": "天災地變 乾旱 氣候變遷 枯水 缺水",
+
+
+            "images": ["/images/stories/36-A 1993.09.12基隆新山水庫乾旱.jpg", "/images/stories/36-B 1993.09.14基隆林水木市長祈雨-.jpg", "/images/stories/36-C 1993.09明德水庫乾旱.jpg"],
+            "labels": ["基隆新山水庫水位持續降低", "基隆市長設壇率眾跪地祈求天降甘霖", "當時苗栗明德水庫也乾裂見底"]
+        }, {
             "id": 37,
             "time": 1993,
             "name": "興建新北市淡水港第一期工程",
-            "content": "為了因應砂石西運，1993年開始動工興建砂石專用的淡水港。1999年行政院更名為台北港，擴大營運目標與量體，台北港從砂石專用，蛻變為綜合性大商港，興建之後，海岸侵蝕與土地徵收問題陸續浮現。",
-            "area": "",
-            "keywords": "",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
-            "id": 38,
-            "time": 1993.7,
-            "name": "核二廠秘雕魚事件",
-            "content": "新北市金山區居民范正堂在核二廠排水處發現畸形的花身雞魚，魚體彎曲如同戲偶人物秘雕，被稱「祕雕魚」，事件傳出後，引發大眾對核二廠溫排水造成生態衝擊的關注。",
-            "area": "",
-            "keywords": "",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "content": "為了因應東部砂石西運，以及中國砂石進口，1993年在新北市八里海岸動工興建砂石專用港，1999年行政院變更計畫擴大營運目標與量體。台北港從砂石專用，蛻變為綜合性商港，但港口主體陸續完工之後，海岸侵蝕與土地徵收問題也逐一浮現。",
+
+            "keywords": "填海造陸 土地徵收 台北港 淡水港 新市鎮",
+            "links": ["https://newmedia.pts.org.tw/changing-tamsui-river/"],
+            "linkTitles": ["變遷 淡水河"],
+            "images": ["/images/stories/37-1994年台北港.jpg"],
+            "labels": ["1994年 台北港空拍"]
+        }, {
             "id": 39,
             "time": 1994.3,
             "name": "反高爾夫球場行動",
-            "content": "九零年代興盛的高爾夫球場，引發破壞水土的爭議，環保團體發起「全民救水源反高球行動」，反對政府讓侵占國土的高爾夫球場就地合法。",
-            "area": "",
-            "keywords": "",
-            "tags": [],
-            "images": ["/island20/images/stories/39-A.jpg", "/island20/images/stories/39-B.jpg"]
-        },
-        {
+            "content": "1990年代興盛的高爾夫球場，引發破壞水土的爭議，環保團體發起「全民救水源反高球行動」，反對政府讓高爾夫球場就地合法。",
+            "area": "不分區及其他",
+            "keywords": "開發利用 高爾夫 高耗水 農藥 草坪 水土保持",
+
+
+            "images": ["/images/stories/39-A 1995年高爾夫球場草地維護需消耗大量水資源和農藥.jpg", "/images/stories/39-B 1996年新北市八里高爾夫球場.jpg", "/images/stories/39-C 1996年新北大屯高爾夫球場空拍.jpg"],
+            "labels": ["1995年 高爾夫球場草地維護需高耗水和農藥", "1996年 新北市八里高爾夫球場", "1996年 新北市大屯高爾夫球場空拍"]
+        }, {
             "id": 40,
             "time": 1994.4,
             "name": "台灣遭到培利貿易法案制裁",
-            "content": "早期台灣保育觀念未起，1994年4月12日台灣因使用犀牛角與虎骨等中藥材，遭到美國培利貿易法案制裁，台灣因而修改野保法，禁止民間繁殖野生動物，各地野生動物養殖業者集體到立法院抗議、陳情。",
-            "area": "",
-            "keywords": "",
-            "tags": [],
-            "images": ["/island20/images/stories/40-A.jpg", "/island20/images/stories/40-B.jpg"]
-        },
-        {
+            "content": "1994年4月12日台灣因使用犀牛角與虎骨等中藥材，遭到美國培利貿易法案制裁，在國際保育聲浪下，台灣重新檢討修訂野生動物保育法，其中包含禁止民間繁養殖保育類野生動物。",
+            "area": "不分區及其他",
+            "keywords": "野生動物 野保法 生態保育 動物進口 野生動物貿易 動物繁殖",
+
+
+            "images": ["/images/stories/40-A.jpg", "/images/stories/40-B.jpg", "/images/stories/40-C199405野生動物飼養業者到立法院請願 (1).jpg"],
+            "labels": ["1994年 野保法未修之前，連老虎也能飼養繁殖", "1994年 業者攜帶飼養的野生動物到立法院抗議", "1994年 野保法修法讓野生動物更有保障"]
+        }, {
             "id": 41,
             "time": 1994.4,
             "name": "新北市淡海新市鎮開發",
             "content": "淡海新市鎮特定區計畫第一期工程開始動工，並填掉豐富潮間帶，做為垃圾與污水處理廠用地，此外為了紓解市區壓力而興闢的淡海新市鎮，因徵收人民土地給財團開發，引起抗爭。",
-            "area": "",
-            "keywords": "開發利用",
-            "tags": [],
-            "images": ["/island20/images/stories/41-A.jpg", "/island20/images/stories/41-B.jpg"]
-        },
-        {
+            "area": "北北基",
+            "keywords": "開發利用 填海造陸 台北港 新市鎮 淡水 海岸變遷",
+
+
+            "images": ["/images/stories/41-A 1996年「國家建設六年計畫淡海新市鎮開發計畫」說明看板1.jpg", "/images/stories/41-B 1996年淡海新市鎮填海造陸.jpg", "/images/stories/41-C 2006.06.12淡水海岸的沙崙海水浴場和淡海新市鎮.jpg"],
+            "labels": ["1996年 國家建設六年計畫淡海新市鎮開發看板", "1996年 淡海新市鎮填海造陸，潮間帶生態消失", "2006年 淡海新市鎮垃圾與污水處理廠的預定地"]
+        }, {
             "id": 42,
             "time": 1994.5,
             "name": "核四公投",
-            "content": "政府預計在新北市貢寮興建核四廠，新北市貢寮鄉舉辦地方性公投，突顯威權決策，希望公民有權利決定核四廠是否興建，當時投票率將近六成，其中96%反對蓋核四。",
-            "area": "",
-            "keywords": "環境運動",
-            "tags": [],
-            "images": ["/island20/images/stories/42-A.jpg", "/island20/images/stories/42-B.jpg", "/island20/images/stories/42-C.jpg", "/island20/images/stories/42-D.jpg"]
-        },
-        {
+            "content": "政府預計在新北市貢寮區興建核四廠，貢寮舉辦地方性公投，希望公民有權利決定核四廠是否興建，當時投票率將近六成，其中96%反對蓋核四",
+            "area": "北北基",
+            "keywords": "核四公投 核電 反核  非核家園 能源 地方公投 核廢料 公投 貢寮",
+            "links": ["https://www.youtube.com/watch?v=OOtU6Lb6mM8"],
+            "linkTitles": ["給我一座核四廠"],
+            "images": ["/images/stories/42-A 反核-核四公投記者會001.jpg", "/images/stories/42-B.jpg", "/images/stories/42-C1994年5月22日-台北縣貢寮鄉-核四廠公民投票 (5).jpg"],
+            "labels": ["民間團體推動核四公投記者會", "1994年 新北市貢寮區舉辦核四公民投票", "1994年 新北市貢寮區核四興建與否的公投選票"]
+        }, {
             "id": 43,
             "time": 1994.6,
             "name": "反對興建屏東瑪家水庫",
             "content": "屏東縣因用水需求增加，政府計畫在瑪家鄉新好茶部落開闢水庫，部落居民不願遷村走上街頭強力反對。1996 年瑪家水庫在環評審查時，環評委員認為開闢對環境有重大衝擊，決議進入二階。",
             "area": "",
-            "keywords": "",
-            "tags": [],
-            "images": ["/island20/images/stories/43-A.jpg", "/island20/images/stories/43-B.jpg"]
-        },
-        {
+            "keywords": "反水庫 水資源 瑪家水庫 二階環評 缺水 遷村 原住民 環境正義",
+
+
+            "images": ["/images/stories/43-A.jpg", "/images/stories/43-B.jpg"],
+            "labels": ["部落居民不願遷村，北上反對瑪家水庫興建", "屏東瑪家水庫將從隘寮溪取水，遭到農民反對"]
+        }, {
             "id": 44,
             "time": 1994.6,
-            "name": "桃園RCA土地污染",
-            "content": "RCA桃園廠非法傾倒有機溶劑事件爆發 土地和地下水都遭受嚴重汙染，受影響人數超過六千人，受害員工走上官司訴訟的漫漫長路，而污染整治工作也尚未完成。",
-            "area": "",
-            "keywords": "重大公害",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "name": "RCA桃園廠土地污染公害",
+            "content": "RCA桃園廠非法傾倒有機溶劑事件爆發，相關單位才發現土壤和地下水都遭受嚴重污染，受影響人數超過六千人，受害員工走上官司訴訟的漫漫長路，不少受害者因病痛而離世，然而污染整治工作也尚未完成。",
+            "area": "桃竹苗",
+            "keywords": "污染公害 RCA 美國無線電  水土汙染 整治 公害賠償 湯姆笙 奇異公司 官司訴訟 職災 環境正義",
+            "links": ["https://www.youtube.com/watch?v=vlcdK3SE0bc"],
+            "linkTitles": ["RCA工人的等待"],
+            "images": ["/images/stories/44-A 1998.05.18-桃園RCA水土汙染 (6).jpg", "/images/stories/image2"],
+            "labels": ["1998年 RCA桃園廠廠房", "2014年 受害員工漫漫求償路走來艱辛"]
+        }, {
             "id": 45,
             "time": 1994.6,
             "name": "花蓮和平水泥專區動工",
-            "content": "1986年行政院核定「水泥工業長期發展方案」，水泥工廠東移，並擬定「和平水泥專區」，1993年起強制徵收原住民保留地造成部落居民不滿，1994年6月花蓮和平水泥專區動工，爆發嚴重的警民衝突。",
-            "area": "",
-            "keywords": "開發利用",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "content": "1986年行政院核定「水泥工業長期發展方案」，水泥業東移，並擬定400公頃的「和平水泥專區」，強制徵收原住民保留地造成部落居民不滿，1994年6月花蓮和平水泥專區動工，爆發嚴重的警民衝突。",
+            "area": "宜花東",
+            "keywords": "開發利用 產業東移 採礦 水泥 大理石 石灰石 亞泥 台泥 亞洲水泥 台灣水泥 新城山",
+            "links": ["https://www.youtube.com/watch?v=8PTIMPJToCA"],
+            "linkTitles": ["蒙塵的希望"],
+            "images": ["/images/stories/image1", "/images/stories/image2"],
+            "labels": ["花蓮居民在工業局前反對水泥產業東移", "2000年 施工中的和平水泥專區"]
+        }, {
             "id": 46,
             "time": 1994.7,
-            "name": "雲林麥寮六輕填海造陸",
-            "content": "雲林麥寮六輕工業區正式動工，以抽砂填海的方式打造石化王國的新生地，平均每天造出兩公頃的速度，號稱是當時全世界最大的填海造陸工程。",
-            "area": "",
-            "keywords": "開發利用",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "name": "雲林麥寮六輕開始填海造陸",
+            "content": "雲林麥寮六輕工業區正式動工，以抽砂填海的方式打造石化王國，平均每天造出兩公頃的速度，號稱是當時全世界最大的填海造陸工程。",
+            "area": "雲嘉南",
+            "keywords": "開發利用 填海造陸 六輕工業區 石化專區 離島工業區 空氣汙染 水土汙染 養殖 污染 土壤液化",
+            "links": ["https://newmedia.pts.org.tw/petrochemical-kingdom/"],
+            "linkTitles": ["海上石化王國"],
+            "images": ["/images/stories/image1", "/images/stories/image2"],
+            "labels": ["1993年 六輕工業區預定地未填海前的自然樣貌", "2009年12月 六輕持續進行填海造陸工程"]
+        }, {
             "id": 47,
             "time": 1994.7,
             "name": "林義雄為停建核四絕食抗議",
-            "content": "核四編列八年預算在立法院審查，為了停建核四，林義雄開始在立法院禁食抗爭，在達成十萬連署後，林義雄也結束禁食，在各地發起核四公投活動。並於該年年底及1997年分別舉辦核四公投千里苦行。",
-            "area": "",
-            "keywords": "環境運動",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "content": "立法院進行核四廠八年預算審查，林義雄靜坐絕食，並發起「核四公投，萬人連署」，在達成十萬連署後，林義雄結束禁食，同年九月創立核四公投促進會，展開「核四公投，千里苦行」行動，訴求由人民作主，決定核四是否興建。",
+            "area": "不分區及其他",
+            "keywords": "環境運動 林義雄 絕食 公投 貢寮 反核 非核家園 廢核 核電",
+
+
+            "images": ["/images/stories/image1", "/images/stories/image2", "/images/stories/image3"],
+            "labels": ["1994年 林義雄在立法院前靜坐", "1994年 林義雄結束禁食展開千里苦行", "核四公投促進會靜坐被大批警力包圍"]
+        }, {
             "id": 48,
             "time": 1994.12,
             "name": "台南反濱南工業區運動",
-            "content": "燁隆、東帝士集團計畫在台南七股潟湖填海開發濱南工業區，當地是保育類黑面琵鷺棲地，也是重要養殖區，保育人士與漁民強烈反彈。濱南案有條件通過環評後，2006年在營建署區委會遭到退回，如今已劃入台江國家公園範圍。",
-            "area": "",
-            "keywords": "",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
-        },
-        {
+            "content": "燁隆、東帝士集團啟動濱南工業區計劃，預計在台南七股潟湖興建七輕與大煉鋼廠，因預定地是養殖漁業區，更是保育類黑面琵鷺遷徙渡冬的重要棲地，引起保育人士與漁民強烈反彈，濱南案有條件通過環評後，在營建署區委會遭到退回，現今已劃入台江國家公園範圍。",
+
+            "keywords": "環境運動 七輕 反濱南 填海造陸 工業區 七股 潟湖 養殖 台江 台江國家公園 黑面琵鷺 生態旅遊",
+
+
+            "images": ["/images/stories/image1", "/images/stories/image2", "/images/stories/image3"],
+            "labels": ["反七輕居民對於重工業進駐面露愁容", "對於濱南工業區進駐，地方有支持有反對", "學生團體爭取留下七股潟湖濕地生態，反對開發"]
+        }, {
             "id": 49,
             "time": 1994,
             "name": "台中反拜耳設廠",
-            "content": "1994年底，德商拜耳公司向經濟部申請計畫在台中港設廠，當時立法院、台灣省議會及民間興起反對拜耳設廠的聲浪，甚至發起公民投票，1998年3月，拜耳公司正式終止來台設資設廠計畫。",
-            "area": "",
-            "keywords": "",
-            "tags": [],
-            "images": ["/island20/images/stories/49-A(1996.09.07台中反拜耳說明會 廖永春).jpg", "/island20/images/stories/49-B(1996.09.07台中反拜耳說明會).jpg", "/island20/images/stories/49-C(1996.09.07台中反拜耳說明會).jpg"]
-        },
-        {
+            "content": "1994年底，德商拜耳公司向經濟部申請計畫在台中港設廠。因周邊居民對於拜耳公司的工安紀錄，以及生產過程可能產生有害氣體等疑慮，因此民間興起反對拜耳公司設廠的聲浪，甚至發起公民投票，1998年3月，拜耳公司正式終止來台投資的設廠計畫。",
+            "area": "中彰投",
+            "keywords": "環境運動 反拜耳 公民運動 化學工廠 反投資 台中港務局 公投 公民投票 汙染",
+
+
+            "images": ["/images/stories/image1", "/images/stories/image2"],
+            "labels": ["主導反拜耳的省議員廖永來，後來當選台中縣長", "1996年 反拜耳設廠行動聯盟陸續舉辦說明會"]
+        }, {
+            "id": 49-1,
+            "time": 1995.5,
+            "name": "南橫高速公路計畫",
+            "content": "政府計畫興闢南橫高速公路，計畫從屏東竹田貫穿到台東太麻里，全長53公里，由於將穿越大武山自然保留區，而引起環保團體反對，加上工程經費高昂，以及文化資產法保存法的保障，因而停工。",
+            "area": "高屏 宜花東",
+            "keywords": "大武山 南橫高 保護區 開路爭議 開路 國工局 南迴公路 國家建設六年 六年國建 ",
+
+
+            "images": ["/images/stories/image1"],
+            "labels": ["1995 年 環保團體呼籲停建南橫高速公路"]
+        }, {
             "id": 50,
             "time": 1995.6,
             "name": "花蓮反亞泥運動",
-            "content": "花蓮秀林鄉原本具有耕作權土地的太魯閣族人，被鄉公所以涉嫌偽造的文書資料塗銷，違法出租給亞泥20年。1995年6月亞泥與鄉公所租約到期，花蓮太魯閣族人不滿土地遭財團開山採礦，展開漫長抗爭。",
-            "area": "",
-            "keywords": "開發利用",
-            "tags": [],
-            "images": ["https://fakeimg.pl/600x480/?text=story&retina=1"]
+            "content": "花蓮縣秀林鄉的太魯閣族人，原本具有耕作權的土地，被鄉公所以涉嫌偽造的文書資料塗銷，違法出租給亞泥20年。1995年6月亞泥與鄉公所租約到期，花蓮太魯閣族人不滿土地遭財團開山採礦，展開漫長抗爭。",
+            "area": "宜花東",
+            "keywords": "環境運動 開發利用 反亞泥 採礦 水泥 台泥 亞洲水泥 新城山礦區 太魯閣族 原住民 環境正義 傳統領域 礦業法 ",
+            "links": ["https://youtu.be/DwvwCxkHN-Q?t=1"],
+            "linkTitles": ["礦下家園"],
+            "images": ["/images/stories/image1", "/images/stories/image2", "/images/stories/image3"],
+            "labels": ["2014年 部落族人在太魯閣路跑賽時抗議", "2016年 花蓮亞泥新城山礦區", "2017 年 環團在亞洲水泥公司前模擬採礦情境"]
+        }, {
+            "id": 50-1,
+            "time": 1995.6,
+            "name": "新北市三峽白雞地區地滑",
+            "content": "早期山坡地的地價較低，加上景觀好，建商因此大肆收購、伺機開發，但部分建案欠缺地質完整評估。1995年6月25日宜蘭附近發生規模6.5的牛鬥強震，造成新北市三峽白雞地區的山坡地大規模崩塌，多處住宅的地基出現嚴重地滑、道路路基也流失。",
+            "area": "北北基",
+            "keywords": "天災地變 三峽 白雞山 土石流 地滑 地質敏感 地震 山坡地 擋土牆 颱風 坡地住宅",
+
+
+            "images": ["/images/stories/image1", "/images/stories/image2", "/images/stories/image3"],
+            "labels": ["早期開發大規模的挖山填谷，地質鬆軟易釀災", "山坡地住宅沿自然河谷崩塌滑落 ", "新北市三峽白雞地區電線杆滑落、路基消失"]
         },
         {
             "id": 51,
@@ -3152,7 +3290,7 @@ var data = {
             "area": "",
             "keywords": "",
             "tags": [],
-            "images": ["/island20/images/stories/52-A.jpg", "/island20/images/stories/52-B(顏色不知道可以調嗎).jpg", "/island20/images/stories/52-C(1991.08.25反台泥設廠).jpg"]
+            "images": ["/images/stories/52-A.jpg", "/images/stories/52-B(顏色不知道可以調嗎).jpg", "/images/stories/52-C(1991.08.25反台泥設廠).jpg"]
         },
         {
             "id": 53,
