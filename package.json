@@ -8,7 +8,7 @@
     "dragscroll": "0.0.8",
     "gsap": "^2.0.1",
     "image-promise": "^5.0.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "jquery-mobile": "^1.4.1",
     "jquery-mousewheel": "^3.1.13",
     "jquery-ui": "^1.12.1",
