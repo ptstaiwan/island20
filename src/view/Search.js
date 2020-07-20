@@ -12,14 +12,15 @@ import Image from "react-graceful-image";
 import Swiper from 'swiper/dist/js/swiper.js';
 import Nav from '../component/Nav';
 import Cookies from 'universal-cookie';
+import islandTitle from '../assets/images/islandTitle.svg';
 
 // Story Data
 const story_data = data.stories;
 const topic_data = data.topics;
 const date_data = data.dates;
 var divides = [];
-var offset_i = 520;
-var offset_w = 440;
+var offset_i = 352;
+var offset_w = 352;
 
 class Search extends Component {
   constructor(props) {
@@ -260,7 +261,8 @@ class Search extends Component {
   // Story Component
   storyList = () => {
     let filteredStories = story_data.filter((s) => {
-      return s.keywords.indexOf(this.state.search) !== -1 && s.keywords.indexOf(this.state.area) !== -1;
+      var check = s.keywords+" "+s.name+" "+s.content+" "+s.time;
+      return check.indexOf(this.state.search) !== -1 && check.indexOf(this.state.area) !== -1;
     });
     return (<ul id="storyBox" className="storyBox tc pa0 nowrap list overflow-x-scroll dragscroll z4 relative">{filteredStories.map((s, i) => {
       return this.stories(s, i);
@@ -420,7 +422,7 @@ class Search extends Component {
 
     var link = "";
     if(this.state.topic > 5) {
-      link = "https://fakeimg.pl/1920x1080/?text=search&retina=1"
+      link = topic_data[0].background
     } else {
       link = topic_data[this.state.topic].background;
     }
@@ -433,13 +435,23 @@ class Search extends Component {
     }
 
     var all_links = [];
-    if(!this.state.content.links) ;
+    if(!this.state.content.linkTitles) ;
     else {
       all_links = [(<br/>)];
       for(var i = 0; i < this.state.content.links.length; i++) {
         var temp = (<a className='tc blue link underline' href={this.state.content.links[i]} target='_blank'>{this.state.content.linkTitles[i]}</a>);
         all_links.push(temp);
       }
+    }
+
+    if(this.state.content.video) {
+      var videoID = this.state.content.links[0].split('be/')[1];
+      all_content = (
+        <div className="video-container mv4">
+          <iframe width="853" height="480" src={"https://www.youtube.com/embed/"+videoID} frameborder="0" allowfullscreen></iframe>
+        </div>
+      )
+      all_links = null;
     }
 
     return (
@@ -451,9 +463,11 @@ class Search extends Component {
         <div className="mw8-ns center ph3-ns mb4-ns pt4-l pt5">
           <div className="cf mb3-ns mb2">
             <div className="fl w-100 w-30-l flex aic mb3 mb0-l ph0-ns ph3 patitle">
-              <h2 className="ma0 nowrap">大事紀標題</h2>
+              <h2 className="mh4-l mv0 nowrap center">
+                <img id="islandTitle" src={islandTitle} width="100%" height="60px" alt="島嶼時光機"/>
+              </h2>
             </div>
-            <div className="fl w-100 w-60-l">
+            <div className="fl w-100 w-60-l mv3-l">
               <form className="flex space-between aic" style={form} onSubmit={this.updateSearch.bind(this)}>
                 <input id="search_input" className="w-100 ph2" type="text" ref="keyword" placeholder="搜尋紀事"/>
                 <select name="areas" ref="areas" className="w150">
