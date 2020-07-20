@@ -47,7 +47,7 @@ class Search extends Component {
       this.setState({ open: true, content: c});
     }
     $(document).ready(function(){
-      console.log("swiper!");
+      //console.log("swiper!");
       var mySwiper = new Swiper ('.swiper-container', { // eslint-disable-line no-unused-vars
         // Optional parameters
         autoHeight: true,
@@ -128,8 +128,8 @@ class Search extends Component {
     // var images  = [];
     loadImage(images)
     .then(function (allImgs) {
-      console.log(allImgs.length, 'images loaded!', allImgs);
-      console.log($t.state.view);
+      //console.log(allImgs.length, 'images loaded!', allImgs);
+      //console.log($t.state.view);
       loaded = true;
 
       if(p >= 100) {

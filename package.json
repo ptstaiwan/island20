@@ -81,5 +81,17 @@
     ],
     "snapshotDelay": 300
   },
-  "homepage": "https://youwenliang.github.io/island20"
+  "homepage": "https://youwenliang.github.io/island20",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

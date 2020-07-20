@@ -153,8 +153,8 @@ class Page extends Component {
     // var images  = [];
     loadImage(images)
     .then(function (allImgs) {
-      console.log(allImgs.length, 'images loaded!', allImgs);
-      console.log($t.state.view);
+      //console.log(allImgs.length, 'images loaded!', allImgs);
+      //console.log($t.state.view);
       loaded = true;
 
       if(p >= 100) {
@@ -387,7 +387,7 @@ class Page extends Component {
     // var images  = [];
     loadImage(images)
     .then(function (allImgs) {
-      console.log(allImgs.length, 'images loaded!', allImgs);
+      //console.log(allImgs.length, 'images loaded!', allImgs);
       loaded = true;
 
       if(p >= 100) {
