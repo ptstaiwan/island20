@@ -3,13 +3,24 @@ import { render } from 'react-snapshot';
 import './index.css';
 import App from './App';
 import { BrowserRouter } from "react-browser-router";
+import { createBrowserHistory } from 'history';
 import registerServiceWorker from './registerServiceWorker';
+import ReactGA from 'react-ga';
 import $ from 'jquery';
 import {TweenMax} from "gsap/all";
 import ScrollMagic from 'scrollmagic'; // eslint-disable-line no-unused-vars
 
+const history = createBrowserHistory();
+ReactGA.initialize('UA-88451663-9');
+
+// Initialize google analytics page view tracking
+history.listen(location => {
+  ReactGA.set({ page: location.pathname }); // Update the user's current page
+  ReactGA.pageview(location.pathname); // Record a pageview for the given page
+});
+
 render((
-<BrowserRouter basename="island20">
+<BrowserRouter basename="island20" history={history}>
 	<App />
 </BrowserRouter>), 
 document.getElementById('root'));
