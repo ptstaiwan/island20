@@ -1,16 +1,17 @@
 {
   "files": {
-    "main.css": "/island20/static/css/main.e48dafc6.chunk.css",
-    "main.js": "/island20/static/js/main.4b5cef05.chunk.js",
-    "main.js.map": "/island20/static/js/main.4b5cef05.chunk.js.map",
-    "runtime~main.js": "/island20/static/js/runtime~main.c4127c49.js",
-    "runtime~main.js.map": "/island20/static/js/runtime~main.c4127c49.js.map",
-    "static/js/2.3c1043f5.chunk.js": "/island20/static/js/2.3c1043f5.chunk.js",
-    "static/js/2.3c1043f5.chunk.js.map": "/island20/static/js/2.3c1043f5.chunk.js.map",
+    "main.css": "/island20/static/css/main.70f0906f.chunk.css",
+    "main.js": "/island20/static/js/main.b9cd9daa.chunk.js",
+    "main.js.map": "/island20/static/js/main.b9cd9daa.chunk.js.map",
+    "runtime-main.js": "/island20/static/js/runtime-main.0a8ebc84.js",
+    "runtime-main.js.map": "/island20/static/js/runtime-main.0a8ebc84.js.map",
+    "static/js/2.6959457b.chunk.js": "/island20/static/js/2.6959457b.chunk.js",
+    "static/js/2.6959457b.chunk.js.map": "/island20/static/js/2.6959457b.chunk.js.map",
     "index.html": "/island20/index.html",
-    "precache-manifest.b3878170335185f628f4ef2285a7b80a.js": "/island20/precache-manifest.b3878170335185f628f4ef2285a7b80a.js",
+    "precache-manifest.7a19bec79988ac12229a46b5ac28ffa9.js": "/island20/precache-manifest.7a19bec79988ac12229a46b5ac28ffa9.js",
     "service-worker.js": "/island20/service-worker.js",
-    "static/css/main.e48dafc6.chunk.css.map": "/island20/static/css/main.e48dafc6.chunk.css.map",
+    "static/css/main.70f0906f.chunk.css.map": "/island20/static/css/main.70f0906f.chunk.css.map",
+    "static/js/2.6959457b.chunk.js.LICENSE.txt": "/island20/static/js/2.6959457b.chunk.js.LICENSE.txt",
     "static/media/4_數字_1.gif": "/island20/static/media/4_數字_1.d15805d9.gif",
     "static/media/4_數字_2.gif": "/island20/static/media/4_數字_2.9efa3d3b.gif",
     "static/media/4_數字_3.gif": "/island20/static/media/4_數字_3.1d15af77.gif",
@@ -33,6 +34,7 @@
     "static/media/google_earth.svg": "/island20/static/media/google_earth.fe49f8bb.svg",
     "static/media/hand.svg": "/island20/static/media/hand.f92ac56d.svg",
     "static/media/home.jpg": "/island20/static/media/home.80892c54.jpg",
+    "static/media/islandTitle.svg": "/island20/static/media/islandTitle.127acec0.svg",
     "static/media/kinmen-static.png": "/island20/static/media/kinmen-static.530dfa05.png",
     "static/media/line-logo.svg": "/island20/static/media/line-logo.23e960db.svg",
     "static/media/lock.svg": "/island20/static/media/lock.a57441a4.svg",
@@ -44,8 +46,11 @@
     "static/media/phone_stop.svg": "/island20/static/media/phone_stop.282efb51.svg",
     "static/media/share.svg": "/island20/static/media/share.31b15d2c.svg",
     "static/media/taiwan-static.png": "/island20/static/media/taiwan-static.1aef6f68.png",
+    "static/media/timelinetitle.svg": "/island20/static/media/timelinetitle.6447a2d2.svg",
     "static/media/timemachine.svg": "/island20/static/media/timemachine.571c0acb.svg",
     "static/media/timemachinehand.svg": "/island20/static/media/timemachinehand.acc04d65.svg",
+    "static/media/共用底圖.jpg": "/island20/static/media/共用底圖.8b0e12e8.jpg",
+    "static/media/大事記.svg": "/island20/static/media/大事記.1cf6437e.svg",
     "static/media/山右.svg": "/island20/static/media/山右.874b2c56.svg",
     "static/media/山左.svg": "/island20/static/media/山左.89a4c146.svg",
     "static/media/山水污染分層-01.svg": "/island20/static/media/山水污染分層-01.3fc0203d.svg",
@@ -60,5 +65,11 @@
     "static/media/水左.svg": "/island20/static/media/水左.72536b94.svg",
     "static/media/污右.svg": "/island20/static/media/污右.ecbb34ca.svg",
     "static/media/污左.svg": "/island20/static/media/污左.364ca8a3.svg"
-  }
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0a8ebc84.js",
+    "static/js/2.6959457b.chunk.js",
+    "static/css/main.70f0906f.chunk.css",
+    "static/js/main.b9cd9daa.chunk.js"
+  ]
 }
