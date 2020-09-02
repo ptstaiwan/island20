@@ -13,7 +13,7 @@ import Swiper from 'swiper/dist/js/swiper.js';
 import Nav from '../component/Nav';
 import Cookies from 'universal-cookie';
 import islandTitle from '../assets/images/islandTitle.svg';
-import thumbnail from '../assets/thumbnail/home.jpg';
+import thumbnail from '../assets/thumbnail/search.jpg';
 
 // Story Data
 const story_data = data.stories;
