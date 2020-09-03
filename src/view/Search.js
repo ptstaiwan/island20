@@ -13,6 +13,7 @@ import Swiper from 'swiper/dist/js/swiper.js';
 import Nav from '../component/Nav';
 import Cookies from 'universal-cookie';
 import islandTitle from '../assets/images/islandTitle.svg';
+import thumbnail from '../assets/thumbnail/search.jpg';
 
 // Story Data
 const story_data = data.stories;
@@ -457,7 +458,15 @@ class Search extends Component {
     return (
       <section id="timeline" className="min-vh-100 bg-white pv5-l pv4">
         <Helmet>
-            <title>台灣環境史三十年大事紀 - 我們的島二十週年</title>
+            <title>穿梭島嶼時光機｜完整收錄1970-2019年間的台灣環境重要大事｜我們的島</title>
+            <meta name="description" content="搭上小島號時光機，就能帶您穿梭台灣環境事件現場，出發吧！"/>
+            <meta property="og:title" content="穿梭島嶼時光機｜完整收錄1970-2019年間的台灣環境重要大事｜我們的島"/>
+            <meta property="og:description" content="搭上小島號時光機，就能帶您穿梭台灣環境事件現場，出發吧！"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:locale" content="zh_TW"/>
+            <meta property="og:site_name" content="穿梭島嶼時光機｜完整收錄1970-2019年間的台灣環境重要大事｜我們的島"/>
+            <meta property="og:url" content="https://newmedia.pts.org.tw/island20/timeline"/>
+            <meta property="og:image" content={thumbnail}/>
         </Helmet>
         <Nav timeline={false} notfix={true} show={true}/>
         <div className="mw8-ns center ph3-ns mb4-ns pt4-l pt5">

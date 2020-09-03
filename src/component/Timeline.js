@@ -51,7 +51,7 @@ class Timeline extends Component {
             </figure>
           </a>
         </div>
-        <div className="center mw400 w-100 w-40-l ph2 tl hide">
+        <div className="fl mw400 w-100 w-40-l ph2 tl hide">
           <img className="mb3" src={title} alt="島嶼時光機" />
           <h5 className="f5 mt0 tracked fw5 o-50">台灣環境大事記</h5>
           <h3 className="fw4 lh-copy">從「天災地變」到「食在不安」，<br/>完整收錄1970到2019年間的台灣環境重要大事記。</h3>
